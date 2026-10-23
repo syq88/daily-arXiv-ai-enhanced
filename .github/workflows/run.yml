@@ -10,10 +10,6 @@ on:
   schedule:
     - cron: "30 17 * * *"
   workflow_dispatch:
-  # Temporary recovery trigger; remove after a successful end-to-end run.
-  push:
-    branches: [main]
-    paths: ['.github/workflows/run.yml']
 
 
 env:
