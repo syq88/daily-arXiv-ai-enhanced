@@ -3,6 +3,9 @@
 
 name: arXiv-daily-ai-enhanced
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "30 17 * * *"
@@ -16,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Verify repository push permission
+      run: git push --dry-run origin HEAD:main
     - name: Install dependencies
       run: |
         curl -LsSf https://astral.sh/uv/install.sh | sh
