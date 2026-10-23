@@ -2,6 +2,7 @@ import os
 import json
 import sys
 import re
+from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Dict
 from queue import Queue
@@ -18,6 +19,7 @@ from langchain.prompts import (
     HumanMessagePromptTemplate,
 )
 from structure import Structure
+from checkpoints import CheckpointStore
 from content_filter import is_sensitive
 from runtime import build_chat_openai_kwargs, raise_if_processing_failed
 
@@ -31,6 +33,10 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", type=str, required=True, help="jsonline data file")
     parser.add_argument("--max_workers", type=int, default=1, help="Maximum number of parallel workers")
+    parser.add_argument(
+        "--checkpoint-dir",
+        help="Directory for per-paper checkpoints (default: beside the input data)",
+    )
     return parser.parse_args()
 
 def process_single_item(chain, item: Dict, language: str) -> Dict:
@@ -105,6 +111,8 @@ def process_single_item(chain, item: Dict, language: str) -> Dict:
             "language": language,
             "content": item['summary']
         })
+        if response is None:
+            raise ValueError("Model returned no structured summary")
         item['AI'] = response.model_dump()
     except langchain_core.exceptions.OutputParserException as e:
         # 尝试从错误信息中提取 JSON 字符串并修复
@@ -122,9 +130,13 @@ def process_single_item(chain, item: Dict, language: str) -> Dict:
             except Exception as json_e:
                 print(f"Failed to parse JSON for {item.get('id', 'unknown')}: {json_e}", file=sys.stderr)
         
-        # Merge partial data with defaults to ensure all fields exist
-        item['AI'] = {**default_ai_fields, **partial_data}
-        print(f"Using partial AI data for {item.get('id', 'unknown')}: {list(partial_data.keys())}", file=sys.stderr)
+        try:
+            item['AI'] = Structure.model_validate(partial_data).model_dump()
+        except Exception as parse_error:
+            raise RuntimeError(
+                f"Invalid structured summary for {item.get('id', 'unknown')}"
+            ) from parse_error
+        print(f"Recovered structured summary for {item.get('id', 'unknown')}", file=sys.stderr)
     except Exception as e:
         print(f"Unexpected error for {item.get('id', 'unknown')}: {e}", file=sys.stderr)
         raise RuntimeError(f"AI request failed for {item.get('id', 'unknown')}") from e
@@ -140,8 +152,11 @@ def process_single_item(chain, item: Dict, language: str) -> Dict:
             return None
     return item
 
-def process_all_items(data: List[Dict], model_name: str, language: str, max_workers: int) -> List[Dict]:
-    """并行处理所有数据项"""
+def process_all_items(
+    data: List[Dict], model_name: str, language: str, max_workers: int,
+    checkpoint_dir=None, on_result=None,
+) -> List[Dict]:
+    """Reuse completed papers and checkpoint each newly completed summary."""
     llm = ChatOpenAI(
         **build_chat_openai_kwargs(
             model_name=model_name,
@@ -151,52 +166,97 @@ def process_all_items(data: List[Dict], model_name: str, language: str, max_work
     ).with_structured_output(Structure, method="function_calling")
 
     print('Connect to:', model_name, file=sys.stderr)
-    
     prompt_template = ChatPromptTemplate.from_messages([
         SystemMessagePromptTemplate.from_template(system),
-        HumanMessagePromptTemplate.from_template(template=template)
+        HumanMessagePromptTemplate.from_template(template=template),
     ])
-
     chain = prompt_template | llm
-    
-    # 使用线程池并行处理
-    processed_data = [None] * len(data)  # 预分配结果列表
+    store = None
+    if checkpoint_dir is not None:
+        store = CheckpointStore(checkpoint_dir, {
+            "model": model_name.strip(),
+            "language": language,
+            "base_url": os.environ.get(
+                "OPENAI_BASE_URL", "https://api.openai.com/v1"
+            ).strip().rstrip("/"),
+            "system_prompt": system,
+            "user_prompt": template,
+            "schema": Structure.model_json_schema(),
+        })
+
+    processed_data = [None] * len(data)
+    pending = []
     processing_errors = []
+    for idx, item in enumerate(data):
+        key = store.key(item) if store is not None else None
+        cached = store.load(key) if store is not None else None
+        if cached is not None:
+            try:
+                Structure.model_validate(cached.get("AI"))
+                if cached.get("id") != item.get("id"):
+                    raise ValueError("Checkpoint paper ID mismatch")
+            except (ValueError, TypeError):
+                print(f"Ignoring invalid summary checkpoint for {item.get('id')}", file=sys.stderr)
+                cached = None
+        if cached is not None:
+            processed_data[idx] = cached
+            if on_result is not None:
+                on_result(cached)
+        else:
+            pending.append((idx, key))
+
+    print(
+        f"Resume: reused {len(data) - len(pending)} paper(s); "
+        f"{len(pending)} paper(s) need AI processing.",
+        file=sys.stderr,
+    )
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # 提交所有任务
-        future_to_idx = {
-            executor.submit(process_single_item, chain, item, language): idx
-            for idx, item in enumerate(data)
+        future_to_item = {
+            executor.submit(process_single_item, chain, dict(data[idx]), language): (idx, key)
+            for idx, key in pending
         }
-        
-        # 使用tqdm显示进度
         for future in tqdm(
-            as_completed(future_to_idx),
-            total=len(data),
-            desc="Processing items"
+            as_completed(future_to_item),
+            total=len(pending),
+            desc="Processing items",
         ):
-            idx = future_to_idx[future]
+            idx, key = future_to_item[future]
             try:
                 result = future.result()
+            except Exception as error:
+                paper_id = data[idx].get("id", str(idx))
+                print(f"Skipping failed paper {paper_id}: {error}", file=sys.stderr)
+                processing_errors.append(f"{paper_id}: {error}")
+                continue
+            if result is not None:
+                if store is not None:
+                    store.save(key, result)
                 processed_data[idx] = result
-            except Exception as e:
-                print(f"Item at index {idx} generated an exception: {e}", file=sys.stderr)
-                processing_errors.append(str(e))
+                if on_result is not None:
+                    on_result(result)
 
-    raise_if_processing_failed(processing_errors)
-    
-    return processed_data
+    successful_data = [item for item in processed_data if item is not None]
+    if processing_errors:
+        print(
+            f"Skipped {len(processing_errors)} failed paper(s); "
+            f"keeping {len(successful_data)} processed paper(s).",
+            file=sys.stderr,
+        )
+    raise_if_processing_failed(
+        processing_errors, successful_count=len(successful_data)
+    )
+    return successful_data
 
 def main():
     args = parse_args()
     model_name = os.environ.get("MODEL_NAME", "gpt-4o-mini")
     language = os.environ.get("LANGUAGE", 'Chinese')
 
-    # 检查并删除目标文件
     target_file = args.data.replace('.jsonl', f'_AI_enhanced_{language}.jsonl')
-    if os.path.exists(target_file):
-        os.remove(target_file)
-        print(f'Removed existing file: {target_file}', file=sys.stderr)
+    progress_file = target_file + ".partial"
+    checkpoint_dir = args.checkpoint_dir or str(
+        Path(args.data).parent / ".ai-checkpoints"
+    )
 
     # 读取数据
     data = []
@@ -215,19 +275,25 @@ def main():
     data = unique_data
     print('Open:', args.data, file=sys.stderr)
     
-    # 并行处理所有数据
-    processed_data = process_all_items(
-        data,
-        model_name,
-        language,
-        args.max_workers
-    )
-    
-    # 保存结果
-    with open(target_file, "w") as f:
+    # Flush every completed paper, including restored checkpoints.
+    with open(progress_file, "w", encoding="utf-8") as progress:
+        def save_progress(item):
+            progress.write(json.dumps(item, ensure_ascii=False) + "\n")
+            progress.flush()
+            os.fsync(progress.fileno())
+
+        processed_data = process_all_items(
+            data, model_name, language, args.max_workers,
+            checkpoint_dir=checkpoint_dir, on_result=save_progress,
+        )
+
+    # Publish a complete output in original input order only after batch success.
+    with open(progress_file, "w", encoding="utf-8") as output:
         for item in processed_data:
-            if item is not None:
-                f.write(json.dumps(item) + "\n")
+            output.write(json.dumps(item, ensure_ascii=False) + "\n")
+        output.flush()
+        os.fsync(output.fileno())
+    os.replace(progress_file, target_file)
 
 if __name__ == "__main__":
     main()

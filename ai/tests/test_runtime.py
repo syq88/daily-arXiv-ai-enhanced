@@ -31,9 +31,17 @@ class BuildChatOpenAIKwargsTests(unittest.TestCase):
         )
 
     def test_processing_error_is_reported_after_a_batch(self):
-        """Catches swallowing authentication failures and publishing fallback summaries."""
+        """A fully failed batch must still report authentication or API failures."""
         with self.assertRaisesRegex(RuntimeError, r"2 paper\(s\) failed"):
             raise_if_processing_failed(["401 Unauthorized", "401 Unauthorized"])
+
+    def test_partial_failure_keeps_successful_results(self):
+        raise_if_processing_failed(
+            ["Model returned no structured summary"], successful_count=100
+        )
+
+    def test_error_free_empty_batch_is_allowed(self):
+        raise_if_processing_failed([], successful_count=0)
 
 
 if __name__ == "__main__":

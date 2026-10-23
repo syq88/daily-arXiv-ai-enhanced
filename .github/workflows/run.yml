@@ -97,7 +97,19 @@ jobs:
                 ;;
         esac
         
+    - name: Restore AI checkpoints
+      id: ai_checkpoint_restore
+      if: steps.dedup_check.outputs.has_new_content == 'true'
+      uses: actions/cache/restore@v4
+      continue-on-error: true
+      with:
+        path: ${{ runner.temp }}/arxiv-ai-checkpoints
+        key: arxiv-ai-v1-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+        restore-keys: |
+          arxiv-ai-v1-${{ runner.os }}-${{ github.ref_name }}-
+
     - name: AI Enhancement Processing
+      id: ai_enhance
       if: steps.dedup_check.outputs.has_new_content == 'true'
       run: |
         source .venv/bin/activate
@@ -110,7 +122,8 @@ jobs:
         export LANGUAGE="${{ vars.LANGUAGE }}"
         export MODEL_NAME="${{ vars.MODEL_NAME }}"
         
-        python enhance.py --data ../data/${today}.jsonl
+        python enhance.py --data ../data/${today}.jsonl \
+          --checkpoint-dir "$RUNNER_TEMP/arxiv-ai-checkpoints"
         
         # 检查AI处理是否成功 / Check if AI processing was successful
         if [ $? -ne 0 ]; then
@@ -119,6 +132,14 @@ jobs:
         fi
         echo "AI增强处理完成 / AI enhancement processing completed"
         
+    - name: Save AI checkpoints
+      if: always() && steps.ai_enhance.outcome != '' && steps.ai_enhance.outcome != 'skipped'
+      uses: actions/cache/save@v4
+      continue-on-error: true
+      with:
+        path: ${{ runner.temp }}/arxiv-ai-checkpoints
+        key: arxiv-ai-v1-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+
     - name: Convert to Markdown
       if: steps.dedup_check.outputs.has_new_content == 'true'
       run: |

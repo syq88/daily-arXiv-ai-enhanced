@@ -32,7 +32,9 @@ def build_chat_openai_kwargs(model_name: str, base_url: str, api_key: str) -> di
     return kwargs
 
 
-def raise_if_processing_failed(errors: list[str]) -> None:
-    """Make a failed AI batch fail the workflow instead of publishing placeholders."""
-    if errors:
+def raise_if_processing_failed(
+    errors: list[str], *, successful_count: int = 0
+) -> None:
+    """Fail only when errors leave no usable paper results to publish."""
+    if errors and successful_count == 0:
         raise RuntimeError(f"{len(errors)} paper(s) failed AI enhancement: {errors[0]}")
