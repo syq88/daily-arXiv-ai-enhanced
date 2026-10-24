@@ -480,7 +480,8 @@ async function loadPapersByDateRange(startDate, endDate) {
           .attr('transform', `translate(${margin.left},${margin.top})`);
 
       // 设置比例尺
-      const x = d3.scaleTime()
+      // Date keys are Beijing calendar days; UTC coordinates avoid browser timezone shifts.
+      const x = d3.scaleUtc()
         .domain(d3.extent(validDatesInRange, d => new Date(d)))
         .range([0, width]);
 
@@ -519,16 +520,16 @@ async function loadPapersByDateRange(startDate, endDate) {
         const endDate = new Date(dates[dates.length - 1]);
         
         // 检查是否跨年
-        const sameYear = startDate.getFullYear() === endDate.getFullYear();
+        const sameYear = startDate.getUTCFullYear() === endDate.getUTCFullYear();
         // 检查是否在同一个月
-        const sameMonth = sameYear && startDate.getMonth() === endDate.getMonth();
+        const sameMonth = sameYear && startDate.getUTCMonth() === endDate.getUTCMonth();
         
         if (sameMonth) {
-          return d3.timeFormat("%d"); // 只显示日
+          return d3.utcFormat("%d"); // 只显示日
         } else if (sameYear) {
-          return d3.timeFormat("%m-%d"); // 显示月-日
+          return d3.utcFormat("%m-%d"); // 显示月-日
         } else {
-          return d3.timeFormat("%Y-%m-%d"); // 显示完整日期
+          return d3.utcFormat("%Y-%m-%d"); // 显示完整日期
         }
       }
 
@@ -575,11 +576,11 @@ async function loadPapersByDateRange(startDate, endDate) {
       const endDate = new Date(validDatesInRange[validDatesInRange.length - 1]);
       let xAxisTitle = "";
       
-      if (startDate.getFullYear() === endDate.getFullYear()) {
-        if (startDate.getMonth() === endDate.getMonth()) {
-          xAxisTitle = `${startDate.getFullYear()}/${String(startDate.getMonth() + 1).padStart(2, '0')}`;
+      if (startDate.getUTCFullYear() === endDate.getUTCFullYear()) {
+        if (startDate.getUTCMonth() === endDate.getUTCMonth()) {
+          xAxisTitle = `${startDate.getUTCFullYear()}/${String(startDate.getUTCMonth() + 1).padStart(2, '0')}`;
         } else {
-          xAxisTitle = `${startDate.getFullYear()}`;
+          xAxisTitle = `${startDate.getUTCFullYear()}`;
         }
       }
       
@@ -762,6 +763,7 @@ function parseJsonlData(jsonlText, date) {
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
+    timeZone: 'Asia/Shanghai',
     year: 'numeric',
     month: 'numeric',
     day: 'numeric'

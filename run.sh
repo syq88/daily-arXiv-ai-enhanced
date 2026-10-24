@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Use Beijing time consistently for local runs and Python log timestamps.
+export TZ=Asia/Shanghai
+
 # 本地测试脚本 / Local testing script
 # 主要工作流已迁移到 GitHub Actions (.github/workflows/run.yml)
 # Main workflow has been migrated to GitHub Actions (.github/workflows/run.yml)
@@ -55,8 +58,9 @@ fi
 echo ""
 echo "=== 开始本地调试流程 / Starting Local Debug Workflow ==="
 
-# 获取当前日期 / Get current date
-today=`date -u "+%Y-%m-%d"`
+# Freeze the Beijing run date for crawling, deduplication and output files.
+today=$(date "+%Y-%m-%d")
+export ARXIV_RUN_DATE="$today"
 
 echo "本地测试：爬取 $today 的arXiv论文... / Local test: Crawling $today arXiv papers..."
 

@@ -8,11 +8,13 @@ permissions:
 
 on:
   schedule:
-    - cron: "30 17 * * *"
+    # GitHub cron uses UTC: 19:00 UTC is 03:00 the next day in Beijing.
+    - cron: "0 19 * * *"
   workflow_dispatch:
 
 
 env:
+  TZ: Asia/Shanghai
   GIT_AUTHOR_NAME: ${{ vars.NAME || 'github-actions[bot]' }}
   GIT_AUTHOR_EMAIL: ${{ vars.EMAIL || '41898282+github-actions[bot]@users.noreply.github.com' }}
   GIT_COMMITTER_NAME: ${{ vars.NAME || 'github-actions[bot]' }}
@@ -42,7 +44,10 @@ jobs:
       id: crawl_step
       run: |
         source .venv/bin/activate
-        today=$(date -u "+%Y-%m-%d")
+        today=$(date "+%Y-%m-%d")
+        # Keep every later step on the same Beijing date, even across midnight.
+        echo "ARXIV_RUN_DATE=$today" >> "$GITHUB_ENV"
+        echo "Beijing run time: $(date '+%Y-%m-%d %H:%M:%S %Z %z')"
         echo "开始爬取 $today 的arXiv论文... / Starting to crawl $today arXiv papers..."
         
         # 检查今日文件是否已存在，如存在则删除 / Check if today's file exists, delete if found

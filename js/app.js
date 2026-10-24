@@ -1670,6 +1670,7 @@ function toggleView() {
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
+    timeZone: 'Asia/Shanghai',
     year: 'numeric',
     month: 'numeric',
     day: 'numeric'

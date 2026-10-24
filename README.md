@@ -145,3 +145,13 @@ We sincerely thank the following individuals and organizations for their promoti
 
 # Buy me a coffee
 [here](./buy-me-a-coffee/README.md)
+
+## 本仓库的运行时间
+
+- 每天北京时间 **03:00** 定时开始抓取（GitHub cron 配置为 UTC 19:00）。
+  GitHub Actions 的调度可能延迟，03:00 是计划启动时间。
+- 工作流和本地 `run.sh` 统一使用 `Asia/Shanghai`。
+- 输出文件以任务启动时的北京时间日期命名，例如 `2026-10-24.jsonl`。
+  工作流通过 `ARXIV_RUN_DATE` 固定日期，去重、AI 处理和发布使用同一日期。
+- 网站和统计页按北京时间日历日期显示；文件日期表示日报运行日期，
+  不会修改论文在 arXiv 上的原始发表时间。

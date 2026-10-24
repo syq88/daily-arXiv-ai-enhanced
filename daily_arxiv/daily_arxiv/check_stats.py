@@ -11,7 +11,18 @@
 import json
 import sys
 import os
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
+
+# Beijing is UTC+08:00; use an explicit offset even outside the workflow.
+BEIJING_TIMEZONE = timezone(timedelta(hours=8), name="Asia/Shanghai")
+
+
+def get_run_date():
+    """Use the date captured at run start, or today's date in Beijing."""
+    configured_date = os.environ.get("ARXIV_RUN_DATE", "").strip()
+    if configured_date:
+        return date.fromisoformat(configured_date)
+    return datetime.now(BEIJING_TIMEZONE).date()
 
 def load_papers_data(file_path):
     """
@@ -73,7 +84,8 @@ def perform_deduplication():
              - "error": 处理错误 / Processing error
     """
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    run_date = get_run_date()
+    today = run_date.isoformat()
     today_file = f"../data/{today}.jsonl"
     history_days = 7  # 向前追溯几天的数据进行对比
 
@@ -91,7 +103,7 @@ def perform_deduplication():
         # 收集历史多日 ID 集合
         history_ids = set()
         for i in range(1, history_days + 1):
-            date_str = (datetime.now() - timedelta(days=i)).strftime("%Y-%m-%d")
+            date_str = (run_date - timedelta(days=i)).isoformat()
             history_file = f"../data/{date_str}.jsonl"
             _, past_ids = load_papers_data(history_file)
             history_ids.update(past_ids)
