@@ -24,3 +24,10 @@
 - The crawler still gathers the current paper list. Resuming AI processing
   reuses matching papers in that list; it does not automatically backfill old
   arXiv dates.
+- The workflow restores the `data` branch before crawling and deduplication.
+  Only successfully published AI outputs from earlier dates count as history,
+  so a raw paper whose AI request failed can be retried if it is crawled again.
+  History has no seven-day limit; IDs are compared without arXiv version suffixes.
+  A rerun on the same Beijing date can still use its per-paper checkpoints.
+  When every crawled paper already appeared on an earlier date, the workflow
+  skips AI processing and does not create a new date on the website.

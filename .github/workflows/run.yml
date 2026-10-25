@@ -6,6 +6,11 @@ name: arXiv-daily-ai-enhanced
 permissions:
   contents: write
 
+# Serialize scheduled and manual runs so they see the latest published history.
+concurrency:
+  group: arxiv-daily-${{ github.repository }}
+  cancel-in-progress: false
+
 on:
   schedule:
     # GitHub cron uses UTC: 19:00 UTC is 03:00 the next day in Beijing.
@@ -35,6 +40,8 @@ jobs:
         git var GIT_COMMITTER_IDENT
     - name: Verify repository push permission
       run: git push --dry-run origin HEAD:main
+    - name: Restore published data history
+      run: bash scripts/restore-data-history.sh
     - name: Install dependencies
       run: |
         curl -LsSf https://astral.sh/uv/install.sh | sh

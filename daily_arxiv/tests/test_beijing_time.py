@@ -63,7 +63,7 @@ class BeijingRunDateTests(unittest.TestCase):
             (root / "daily_arxiv").mkdir()
             (root / "data").mkdir()
             today = root / "data/2026-10-24.jsonl"
-            history = root / "data/2026-10-23.jsonl"
+            history = root / "data/2026-10-23_AI_enhanced_Chinese.jsonl"
             today.write_text(
                 '{"id":"old"}\n{"id":"new"}\n', encoding="utf-8"
             )

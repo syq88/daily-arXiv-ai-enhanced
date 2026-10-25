@@ -4,14 +4,16 @@
 用于获取去重检查的状态结果 / Used to get deduplication check status results
 
 功能说明 / Features:
-- 检查当日与昨日论文数据的重复情况 / Check duplication between today's and yesterday's paper data
+- 检查当日与已发布历史论文的重复情况 / Compare today with all published history
 - 删除重复论文条目，保留新内容 / Remove duplicate papers, keep new content
 - 根据去重后的结果决定工作流是否继续 / Decide workflow continuation based on deduplication results
 """
 import json
 import sys
 import os
+import re
 from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
 
 # Beijing is UTC+08:00; use an explicit offset even outside the workflow.
 BEIJING_TIMEZONE = timezone(timedelta(hours=8), name="Asia/Shanghai")
@@ -23,6 +25,26 @@ def get_run_date():
     if configured_date:
         return date.fromisoformat(configured_date)
     return datetime.now(BEIJING_TIMEZONE).date()
+
+
+def normalize_paper_id(value):
+    """Treat arXiv URLs and version suffixes as the same paper."""
+    value = str(value or "").strip()
+    value = re.sub(r"^https?://(?:export\.)?arxiv\.org/(?:abs|pdf)/", "", value)
+    value = value.removesuffix(".pdf")
+    return re.sub(r"v\d+$", "", value)
+
+
+def load_published_history(data_dir, run_date):
+    """Only successful earlier outputs count; failed raw papers remain retryable."""
+    history_ids = set()
+    for path in sorted(Path(data_dir).glob("*_AI_enhanced_*.jsonl")):
+        match = re.fullmatch(r"(\d{4}-\d{2}-\d{2})_AI_enhanced_.+\.jsonl", path.name)
+        if match is None or date.fromisoformat(match[1]) >= run_date:
+            continue
+        _, ids = load_papers_data(path)
+        history_ids.update(ids)
+    return history_ids
 
 def load_papers_data(file_path):
     """
@@ -47,11 +69,14 @@ def load_papers_data(file_path):
                 if line.strip():
                     data = json.loads(line)
                     papers.append(data)
-                    ids.add(data.get('id', ''))
+                    paper_id = normalize_paper_id(data.get('id'))
+                    if not paper_id:
+                        raise ValueError(f"Missing paper ID in {file_path}")
+                    ids.add(paper_id)
         return papers, ids
     except Exception as e:
         print(f"Error reading {file_path}: {e}", file=sys.stderr)
-        return [], set()
+        raise
 
 def save_papers_data(papers, file_path):
     """
@@ -87,40 +112,38 @@ def perform_deduplication():
     run_date = get_run_date()
     today = run_date.isoformat()
     today_file = f"../data/{today}.jsonl"
-    history_days = 7  # 向前追溯几天的数据进行对比
 
     if not os.path.exists(today_file):
         print("今日数据文件不存在 / Today's data file does not exist", file=sys.stderr)
         return "no_data"
 
     try:
-        today_papers, today_ids = load_papers_data(today_file)
+        today_papers, _ = load_papers_data(today_file)
         print(f"今日论文总数: {len(today_papers)} / Today's total papers: {len(today_papers)}", file=sys.stderr)
 
         if not today_papers:
             return "no_data"
 
-        # 收集历史多日 ID 集合
-        history_ids = set()
-        for i in range(1, history_days + 1):
-            date_str = (run_date - timedelta(days=i)).isoformat()
-            history_file = f"../data/{date_str}.jsonl"
-            _, past_ids = load_papers_data(history_file)
-            history_ids.update(past_ids)
+        history_ids = load_published_history("../data", run_date)
+        print(f"已发布历史去重库大小: {len(history_ids)} / Published history deduplication library size: {len(history_ids)}", file=sys.stderr)
 
-        print(f"历史{history_days}日去重库大小: {len(history_ids)} / History {history_days} days deduplication library size: {len(history_ids)}", file=sys.stderr)
+        seen_ids = set(history_ids)
+        new_papers = []
+        for paper in today_papers:
+            paper_id = normalize_paper_id(paper.get('id'))
+            if paper_id not in seen_ids:
+                new_papers.append(paper)
+                seen_ids.add(paper_id)
+        duplicate_count = len(today_papers) - len(new_papers)
 
-        duplicate_ids = today_ids & history_ids
-
-        if duplicate_ids:
-            print(f"发现 {len(duplicate_ids)} 篇历史重复论文 / Found {len(duplicate_ids)} historical duplicate papers", file=sys.stderr)
-            new_papers = [paper for paper in today_papers if paper.get('id', '') not in duplicate_ids]
+        if duplicate_count:
+            print(f"移除 {duplicate_count} 条历史或当日重复记录 / Removed {duplicate_count} historical or same-day duplicate records", file=sys.stderr)
 
             print(f"去重后剩余论文数: {len(new_papers)} / Remaining papers after deduplication: {len(new_papers)}", file=sys.stderr)
 
             if new_papers:
                 if save_papers_data(new_papers, today_file):
-                    print(f"已更新今日文件，移除 {len(duplicate_ids)} 篇重复论文 / Today's file updated, removed {len(duplicate_ids)} duplicate papers", file=sys.stderr)
+                    print(f"已更新今日文件，移除 {duplicate_count} 条重复记录 / Today's file updated, removed {duplicate_count} duplicate records", file=sys.stderr)
                     return "has_new_content"
                 else:
                     print("保存去重后的数据失败 / Failed to save deduplicated data", file=sys.stderr)
