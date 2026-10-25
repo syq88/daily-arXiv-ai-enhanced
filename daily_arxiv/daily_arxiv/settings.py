@@ -19,6 +19,12 @@ NEWSPIDER_MODULE = "daily_arxiv.spiders"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# Fetch listing pages gently. Metadata is parsed locally without API fan-out.
+CONCURRENT_REQUESTS_PER_DOMAIN = 1
+DOWNLOAD_DELAY = 3
+DOWNLOAD_TIMEOUT = 30
+RETRY_TIMES = 4
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 

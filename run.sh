@@ -77,7 +77,11 @@ else
 fi
 
 cd daily_arxiv
-scrapy crawl arxiv -o ../data/${today}.jsonl
+python -m daily_arxiv.crawl --output ../data/${today}.jsonl
+if [ $? -ne 0 ]; then
+    echo "爬取不完整，停止处理 / Crawl incomplete, stopping"
+    exit 1
+fi
 
 if [ ! -f "../data/${today}.jsonl" ]; then
     echo "爬取失败，未生成数据文件 / Crawling failed, no data file generated"

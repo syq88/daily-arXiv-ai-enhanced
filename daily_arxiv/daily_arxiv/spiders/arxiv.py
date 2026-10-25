@@ -1,77 +1,99 @@
-import scrapy
 import os
 import re
+from datetime import datetime
+from urllib.parse import parse_qs, urlparse
+
+import scrapy
+
+
+def text_of(selector, css):
+    return " ".join(selector.css(css).xpath("string(.)").get(default="").split())
 
 
 class ArxivSpider(scrapy.Spider):
+    name = "arxiv"
+    allowed_domains = ["arxiv.org"]
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        categories = os.environ.get("CATEGORIES", "cs.CV")
-        categories = categories.split(",")
-        # 保存目标分类列表，用于后续验证
-        self.target_categories = set(map(str.strip, categories))
+        self.target_categories = {
+            cat.strip() for cat in os.environ.get("CATEGORIES", "cs.CV").split(",")
+            if cat.strip()
+        }
+        if not self.target_categories:
+            raise ValueError("CATEGORIES must contain at least one arXiv category")
         self.start_urls = [
-            f"https://arxiv.org/list/{cat}/new" for cat in self.target_categories
-        ]  # 起始URL（计算机科学领域的最新论文）
-
-    name = "arxiv"  # 爬虫名称
-    allowed_domains = ["arxiv.org"]  # 允许爬取的域名
+            f"https://arxiv.org/list/{cat}/new?skip=0&show=2000"
+            for cat in sorted(self.target_categories)
+        ]
+        self.seen_ids = set()
 
     def parse(self, response):
-        # 提取每篇论文的信息
-        anchors = []
-        for li in response.css("div[id=dlpage] ul li"):
-            href = li.css("a::attr(href)").get()
-            if href and "item" in href:
-                anchors.append(int(href.split("item")[-1]))
+        headings = response.css("h3").xpath("string(.)").getall()
+        heading = next((h.strip() for h in headings if "Showing new listings for " in h), None)
+        if heading is None:
+            raise ValueError(f"Missing arXiv announcement date: {response.url}")
+        listing_date = datetime.strptime(
+            heading.split(" for ", 1)[1].strip(), "%A, %d %B %Y"
+        ).date().isoformat()
+        if getattr(self, "crawler", None) is not None:
+            self.crawler.stats.inc_value("arxiv/listing_pages_parsed")
+        self.logger.info("arXiv announcement batch: %s; URL: %s", listing_date, response.url)
 
-        # 遍历每篇论文的详细信息
         for paper in response.css("dl dt"):
-            paper_anchor = paper.css("a[name^='item']::attr(name)").get()
-            if not paper_anchor:
+            section = paper.xpath("preceding::h3[1]").xpath("string(.)").get(default="").strip().lower()
+            if "replacement" in section:
                 continue
-                
-            paper_id = int(paper_anchor.split("item")[-1])
-            if anchors and paper_id >= anchors[-1]:
+            if not ("new submission" in section or "cross" in section):
+                raise ValueError(f"Unrecognized arXiv listing section: {section}")
+            link = paper.css("a[title='Abstract']::attr(href)").get()
+            if not link or "/abs/" not in link:
+                raise ValueError("Missing arXiv abstract link")
+            paper_id = link.split("/abs/", 1)[1]
+            identity = re.sub(r"v\d+$", "", paper_id)
+            if identity in self.seen_ids:
+                continue
+            details = paper.xpath("following-sibling::dd[1]")
+            subjects = text_of(details, ".list-subjects")
+            categories = list(dict.fromkeys(re.findall(r"\(([\w.-]+)\)", subjects)))
+            if not categories:
+                raise ValueError(f"Missing categories for {paper_id}")
+            if not self.target_categories.intersection(categories):
                 continue
 
-            # 获取论文ID
-            abstract_link = paper.css("a[title='Abstract']::attr(href)").get()
-            if not abstract_link:
+            title = re.sub(r"^Title:\s*", "", text_of(details, ".list-title"))
+            authors = [
+                " ".join(author.xpath("string(.)").get(default="").split())
+                for author in details.css(".list-authors a")
+            ]
+            summary = text_of(details, "p.mathjax")
+            if not title or not authors or not summary:
+                raise ValueError(f"Incomplete listing metadata for {paper_id}")
+            comment = re.sub(r"^Comments:\s*", "", text_of(details, ".list-comments")) or None
+            self.seen_ids.add(identity)
+            yield {
+                "id": paper_id,
+                "title": title,
+                "authors": authors,
+                "categories": categories,
+                "summary": summary,
+                "comment": comment,
+                "abs": response.urljoin(link),
+                "pdf": f"https://arxiv.org/pdf/{paper_id}",
+                "listing_date": listing_date,
+                "listing_type": "cross_list" if "cross" in section else "new",
+            }
+
+        # Follow the next listing page when a category exceeds the page size.
+        current_skip = int(parse_qs(urlparse(response.url).query).get("skip", ["0"])[0])
+        candidates = []
+        for href in response.css("a[href*='skip=']::attr(href)").getall():
+            url = response.urljoin(href)
+            parsed = urlparse(url)
+            if parsed.netloc != urlparse(response.url).netloc or parsed.path != urlparse(response.url).path:
                 continue
-                
-            arxiv_id = abstract_link.split("/")[-1]
-            
-            # 获取对应的论文描述部分 (dd元素)
-            paper_dd = paper.xpath("following-sibling::dd[1]")
-            if not paper_dd:
-                continue
-            
-            # 提取论文分类信息 - 在subjects部分
-            subjects_text = paper_dd.css(".list-subjects .primary-subject::text").get()
-            if not subjects_text:
-                # 如果找不到主分类，尝试其他方式获取分类
-                subjects_text = paper_dd.css(".list-subjects::text").get()
-            
-            if subjects_text:
-                # 解析分类信息，通常格式如 "Computer Vision and Pattern Recognition (cs.CV)"
-                # 提取括号中的分类代码
-                categories_in_paper = re.findall(r'\(([^)]+)\)', subjects_text)
-                
-                # 检查论文分类是否与目标分类有交集
-                paper_categories = set(categories_in_paper)
-                if paper_categories.intersection(self.target_categories):
-                    yield {
-                        "id": arxiv_id,
-                        "categories": list(paper_categories),  # 添加分类信息用于调试
-                    }
-                    self.logger.info(f"Found paper {arxiv_id} with categories {paper_categories}")
-                else:
-                    self.logger.debug(f"Skipped paper {arxiv_id} with categories {paper_categories} (not in target {self.target_categories})")
-            else:
-                # 如果无法获取分类信息，记录警告但仍然返回论文（保持向后兼容）
-                self.logger.warning(f"Could not extract categories for paper {arxiv_id}, including anyway")
-                yield {
-                    "id": arxiv_id,
-                    "categories": [],
-                }
+            skip = int(parse_qs(parsed.query).get("skip", ["0"])[0])
+            if skip > current_skip:
+                candidates.append((skip, url))
+        if candidates:
+            yield response.follow(min(candidates)[1], callback=self.parse)
