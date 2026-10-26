@@ -13,8 +13,8 @@ concurrency:
 
 on:
   schedule:
-    # GitHub cron uses UTC: 19:00 UTC is 03:00 the next day in Beijing.
-    - cron: "0 19 * * *"
+    # 02:00 UTC is 10:00 Beijing, after the 08:00/09:00 arXiv release.
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 

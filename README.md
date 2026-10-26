@@ -148,8 +148,8 @@ We sincerely thank the following individuals and organizations for their promoti
 
 ## 本仓库的运行时间
 
-- 每天北京时间 **03:00** 定时开始抓取（GitHub cron 配置为 UTC 19:00）。
-  GitHub Actions 的调度可能延迟，03:00 是计划启动时间。
+- 每天北京时间 **10:00** 定时开始抓取（GitHub cron 配置为 UTC 02:00），晚于 arXiv 常规更新时间（北京时间夏令时 08:00、冬令时 09:00）。
+  GitHub Actions 的调度可能延迟，10:00 是计划启动时间。
 - 工作流和本地 `run.sh` 统一使用 `Asia/Shanghai`。
 - 输出文件以任务启动时的北京时间日期命名，例如 `2026-10-24.jsonl`。
   工作流通过 `ARXIV_RUN_DATE` 固定日期，去重、AI 处理和发布使用同一日期。
