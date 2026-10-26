@@ -56,6 +56,30 @@ class ListingCrawlerTests(unittest.TestCase):
         papers = list(self.spider.parse(response('<h3>Cross submissions</h3>' + entry(1, "other", "cs.CL"))))
         self.assertEqual([], papers)
 
+    def test_cv_cross_lists_require_ro_overlap(self):
+        body = '<h3>New submissions</h3>' + entry(1, "cv", "cs.CV", "; Learning (cs.LG)")
+        body += '<h3>Cross submissions</h3>' + entry(2, "ro-cv", "cs.RO", "; Vision (cs.CV)")
+        body += entry(3, "lg-cv", "cs.LG", "; Vision (cs.CV)")
+        body += entry(4, "cl-cv", "cs.CL", "; Vision (cs.CV)")
+        body += entry(5, "optics-cv", "physics.optics", "; Vision (cs.CV)")
+        papers = list(self.spider.parse(response(body)))
+        self.assertEqual(["cv", "ro-cv"], [p["id"] for p in papers])
+
+    def test_ro_cv_overlap_can_have_additional_categories(self):
+        self.assertTrue(self.spider.matches_categories(["cs.RO", "cs.AI", "cs.CV"]))
+        self.assertTrue(self.spider.matches_categories(["cs.LG", "cs.RO", "cs.CV"]))
+        self.assertFalse(self.spider.matches_categories(["cs.RO", "cs.AI"]))
+        self.assertFalse(self.spider.matches_categories([]))
+
+    def test_other_explicit_primary_categories_are_respected(self):
+        with patch.dict(os.environ, {"CATEGORIES": "cs.CV,cs.CL"}):
+            spider = ArxivSpider()
+        self.assertTrue(spider.matches_categories(["cs.CL", "cs.CV"]))
+        with patch.dict(os.environ, {"CATEGORIES": "cs.LG"}):
+            spider = ArxivSpider()
+        self.assertTrue(spider.matches_categories(["cs.LG", "cs.CV"]))
+        self.assertFalse(spider.matches_categories(["cs.RO", "cs.CV"]))
+
     def test_duplicates_across_categories_and_versions_are_emitted_once(self):
         first = response('<h3>New submissions</h3>' + entry(1, "2610.30814v1"))
         second = response('<h3>Cross submissions</h3>' + entry(2, "2610.30814v2"))

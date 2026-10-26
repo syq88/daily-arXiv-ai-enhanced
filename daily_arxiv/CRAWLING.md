@@ -1,9 +1,12 @@
 # Crawl scope and announcement dates
 
 - `CATEGORIES` is read from the environment (the GitHub workflow uses the
-  repository variable). `cs.CV` alone selects papers indexed in Computer Vision,
-  including papers whose primary category is elsewhere and secondary category
-  is `cs.CV`. It does not select every paper from those other categories.
+  repository variable). It selects papers whose primary category matches a
+  configured category. When `cs.CV` is configured, cross-listed papers are
+  additionally included only when their categories contain both `cs.RO` and
+  `cs.CV`. Thus CV primary papers and RO/CV overlap are kept, while cross-lists
+  such as `cs.LG,cs.CV` or `cs.CL,cs.CV` are excluded unless their primary
+  category was explicitly configured. Other category tags remain intact.
 - The crawler reads the current `/list/<category>/new` announcement batch,
   including new submissions and cross-lists, excluding replacements. It follows
   listing pagination and emits each arXiv paper only once across categories.
@@ -16,9 +19,9 @@
 - arXiv normally announces at 20:00 US Eastern, Sunday through Thursday.
   This corresponds to 08:00 Beijing during US daylight saving time, or 09:00
   during US standard time, Monday through Friday. Holiday exceptions apply.
-  The daily workflow runs at 10:00 Beijing (02:00 UTC), after either regular
-  announcement time. GitHub Actions scheduling can be delayed, and a weekend
-  or holiday run may still see the previous announcement batch. Official schedule:
+  A 03:00 Beijing run normally sees the previous announcement batch. The
+  requested 03:00 schedule is retained; running a job does not make arXiv
+  release a new batch. Official schedule:
   https://info.arxiv.org/help/availability.html
 - `python -m daily_arxiv.crawl --output ../data/YYYY-MM-DD.jsonl`, run from
   `daily_arxiv/`, validates the crawl's completion. Failed requests, parse errors,

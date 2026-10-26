@@ -28,6 +28,14 @@ class ArxivSpider(scrapy.Spider):
         ]
         self.seen_ids = set()
 
+    def matches_categories(self, categories):
+        """Keep selected primary categories; CV additionally includes RO/CV overlap."""
+        if not categories:
+            return False
+        if categories[0] in self.target_categories:
+            return True
+        return "cs.CV" in self.target_categories and {"cs.RO", "cs.CV"}.issubset(categories)
+
     def parse(self, response):
         headings = response.css("h3").xpath("string(.)").getall()
         heading = next((h.strip() for h in headings if "Showing new listings for " in h), None)
@@ -58,7 +66,7 @@ class ArxivSpider(scrapy.Spider):
             categories = list(dict.fromkeys(re.findall(r"\(([\w.-]+)\)", subjects)))
             if not categories:
                 raise ValueError(f"Missing categories for {paper_id}")
-            if not self.target_categories.intersection(categories):
+            if not self.matches_categories(categories):
                 continue
 
             title = re.sub(r"^Title:\s*", "", text_of(details, ".list-title"))
