@@ -5,6 +5,7 @@ name: arXiv-daily-ai-enhanced
 
 permissions:
   contents: write
+  actions: read
 
 # Serialize scheduled and manual runs so they see the latest published history.
 concurrency:
@@ -13,8 +14,10 @@ concurrency:
 
 on:
   schedule:
-    # 02:00 UTC is 10:00 Beijing, after the 08:00/09:00 arXiv release.
-    - cron: "0 2 * * *"
+    # Avoid the hourly peak. Beijing: 10:17, with 11:47 and 14:17 fallbacks.
+    - cron: "17 2 * * *"
+    - cron: "47 3 * * *"
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 
@@ -26,7 +29,54 @@ env:
   GIT_COMMITTER_EMAIL: ${{ vars.EMAIL || '41898282+github-actions[bot]@users.noreply.github.com' }}
 
 jobs:
+  check_daily_run:
+    name: Check daily run
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Skip scheduled fallbacks after a successful Beijing-day run
+        id: check
+        uses: actions/github-script@v8
+        with:
+          script: |
+            // Manual dispatch always runs, including retries of failed papers.
+            if (context.eventName !== 'schedule') {
+              core.setOutput('should_run', 'true');
+              return;
+            }
+            const beijingDay = value => new Date(value).toLocaleDateString(
+              'en-CA', { timeZone: 'Asia/Shanghai' }
+            );
+            const today = beijingDay(new Date());
+            try {
+              const { data } = await github.rest.actions.listWorkflowRuns({
+                ...context.repo,
+                workflow_id: 'run.yml',
+                branch: context.ref.replace('refs/heads/', ''),
+                status: 'success',
+                per_page: 100,
+              });
+              const completed = data.workflow_runs.find(run =>
+                run.id !== context.runId &&
+                run.status === 'completed' &&
+                run.conclusion === 'success' &&
+                beijingDay(run.created_at) === today
+              );
+              core.setOutput('should_run', completed ? 'false' : 'true');
+              if (completed) {
+                core.notice('Already completed for Beijing date ' + today +
+                  '; skip scheduled fallback. Run: ' + completed.html_url);
+              }
+            } catch (error) {
+              // History lookup failures must not prevent a real crawl.
+              core.warning('Cannot check earlier runs; continuing: ' + error.message);
+              core.setOutput('should_run', 'true');
+            }
+
   build:
+    needs: check_daily_run
+    if: needs.check_daily_run.outputs.should_run == 'true'
 
     runs-on: ubuntu-latest
 

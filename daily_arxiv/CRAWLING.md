@@ -19,9 +19,14 @@
 - arXiv normally announces at 20:00 US Eastern, Sunday through Thursday.
   This corresponds to 08:00 Beijing during US daylight saving time, or 09:00
   during US standard time, Monday through Friday. Holiday exceptions apply.
-  A 03:00 Beijing run normally sees the previous announcement batch. The
-  requested 03:00 schedule is retained; running a job does not make arXiv
-  release a new batch. Official schedule:
+  The daily workflow is scheduled for 10:17 Beijing, with fallback triggers at
+  11:47 and 14:17 (UTC 02:17, 03:47 and 06:17). Scheduled runs first check for
+  an earlier successful run on the same Beijing date and skip processing if
+  one exists. Manual dispatch always runs. The status check uses GitHub Actions
+  read permission and allows processing if the API lookup is unavailable.
+  GitHub may delay or drop scheduled events; the fallback times reduce this
+  risk but cannot guarantee punctual execution. Weekend/holiday runs may still
+  see the previous batch. Official arXiv schedule:
   https://info.arxiv.org/help/availability.html
 - `python -m daily_arxiv.crawl --output ../data/YYYY-MM-DD.jsonl`, run from
   `daily_arxiv/`, validates the crawl's completion. Failed requests, parse errors,
