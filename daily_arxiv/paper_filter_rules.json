@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "description": "Exclude clear domain applications; retain general CV and spatial/embodied methods. No model calls.",
+  "rules": [
+    {
+      "id": "remote_sensing",
+      "label": "遥感与地球观测",
+      "patterns": [
+        "\\bremote[- ]sensing\\b",
+        "\\b(?:earth observation|satellite (?:imagery|images?|video|data)|aerial (?:imagery|images?|image segmentation|reasoning|object detection)|geospatial|hyperspectral|land[- ]cover|land[- ]use|geographic region|OlmoEarth)\\b",
+        "\\b(?:drone imagery|drone referring segmentation|UAV imagery|SAR (?:images?|imagery)|synthetic aperture radar)\\b"
+      ]
+    },
+    {
+      "id": "medical_biological",
+      "label": "医学影像与生物应用",
+      "patterns": [
+        "\\b(?:medical|clinical|biomedical|histopatholog\\w*|histolog\\w*|pathology|cytometry|laparoscop\\w*|surgical|surgery|polyp\\w*|tumou?r\\w*|cancer\\w*|lesion\\w*|retinal|retina|glaucoma|alzheimer\\w*|echocardiograph\\w*|dermatolog\\w*|coronary|angiograph\\w*|prostate|cerebral|pediatric|prosthe\\w*|ki67|ssvep|eeg|connectomics|neurosurg\\w*)\\b",
+        "\\b(?:MRI|CT[- ]to[- ](?:MR|PET)|CT scans?|PET scans?|OCT (?:images?|volumes?|anomaly)|whole[- ]slide|single[- ]cell|cell (?:typing|segmentation)|nucle(?:us|i) segmentation|brain imaging|patient world model|marmosets)\\b",
+        "\\b(?:radiolog\\w*|mammogra\\w*|cellpose|brain age|microscopy|microscopic (?:images?|imaging)|cell instance segmentation)\\b",
+        "\\bcell[\\s:-]+segmentation\\b"
+      ]
+    },
+    {
+      "id": "ai4science",
+      "label": "AI4Science 专项应用",
+      "patterns": [
+        "\\b(?:AI4S|AI for science|scientific discovery|molecular|molecule\\w*|protein\\w*|genomic\\w*|raman|photonic inverse design|photonic (?:device|design)|astronom\\w*|astrophysic\\w*|cosmolog\\w*|solar irradiance|stellar|galax(?:y|ies)|coronal|computational fluid dynamics|turbulence|material(?:s)? discovery)\\b"
+      ]
+    },
+    {
+      "id": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "patterns": [
+        "\\b(?:agricultur\\w*|crop (?:disease|yield|classification)|plant disease|livestock|dairy cows?|beet[- ]root|fish species|marine (?:life|video)|wildlife|camera[- ]trap|wild (?:amur )?tigers?|ivory carvings|biodiversity)\\b"
+      ]
+    },
+    {
+      "id": "industrial_applications",
+      "label": "工业检测与基础设施专项应用",
+      "patterns": [
+        "\\b(?:industrial (?:inspection|defect|anomaly detection)|surface defect|steel defect|weld(?:ing)? defect|crack segmentation|daylight factor|thermal wakes|cooling[- ]water|fault diagnosis|manufacturing defect)\\b"
+      ]
+    },
+    {
+      "id": "other_domain_applications",
+      "label": "其他明确领域应用",
+      "patterns": [
+        "\\b(?:esports|basketball shot|league of legends|historical (?:document|archive)|legislative archives|registers of honorius|emotion recognition in artworks|emotions and art|person re[- ]identification|person anomaly search|crowd video monitoring|facial template inversion|fingerprint recognition)\\b"
+      ]
+    }
+  ],
+  "spatial_title_patterns": [
+    "\\b(?:world[- ](?:action )?models?|world models?|world modeling|world modelling|vision[- ]language[- ]action|VLA|embodied|navigation|SLAM|odometry|structure[- ]from[- ]motion|structure from motion|Gaussian splatting|3D reconstruction|4D reconstruction|spatial reasoning|spatial understanding|scene understanding|occupancy prediction|grasp\\w*|robotic manipulation)\\b"
+  ],
+  "example_context_pattern": "\\b(?:for example|e\\.g\\.|such as|including|we evaluate|evaluation on|experiments on)\\b",
+  "general_method_title_patterns": [
+    "\\b(?:low[- ]rank tensor recovery|tensor completion|tensor recovery)\\b"
+  ]
+}

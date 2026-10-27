@@ -137,6 +137,27 @@ jobs:
         echo "crawl_date=$today" >> $GITHUB_OUTPUT
         echo "爬取完成 / Crawling completed"
         
+
+    - name: Filter application papers
+      id: topic_filter
+      env:
+        PAPER_FILTER_ENABLED: ${{ vars.PAPER_FILTER_ENABLED || 'true' }}
+      run: |
+        source .venv/bin/activate
+        today=${{ steps.crawl_step.outputs.crawl_date }}
+        cd daily_arxiv
+        python -m daily_arxiv.topic_filter --data "../data/${today}.jsonl" --report-dir ../data
+
+    - name: Save application filter audit
+      if: always() && steps.topic_filter.outcome != '' && steps.topic_filter.outcome != 'skipped'
+      uses: actions/upload-artifact@v4
+      continue-on-error: true
+      with:
+        name: paper-filter-${{ github.run_id }}-${{ github.run_attempt }}
+        path: data/${{ steps.crawl_step.outputs.crawl_date }}_*_filter_report.json
+        if-no-files-found: ignore
+        retention-days: 30
+
     - name: Check for duplicates
       id: dedup_check
       run: |
@@ -406,6 +427,7 @@ jobs:
         # These files are already saved to temporary directory, so safe to remove
         rm -rf data/*.jsonl 2>/dev/null || true
         rm -f data/*.md 2>/dev/null || true
+        rm -f data/*_filter_report.json 2>/dev/null || true
         rm -f assets/file-list.txt 2>/dev/null || true
         
         # 检查 data 分支是否存在 / Check if data branch exists

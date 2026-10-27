@@ -88,7 +88,13 @@ if [ ! -f "../data/${today}.jsonl" ]; then
     exit 1
 fi
 
-# 第二步：检查去重 / Step 2: Check duplicates  
+# 第二步：筛选应用论文，再检查去重 / Filter applications before deduplication
+python -m daily_arxiv.topic_filter --data "../data/${today}.jsonl" --report-dir ../data
+if [ $? -ne 0 ]; then
+    echo "论文筛选失败，停止处理 / Paper filtering failed, stopping"
+    exit 1
+fi
+
 echo "步骤2：执行去重检查... / Step 2: Performing intelligent deduplication check..."
 python daily_arxiv/check_stats.py
 dedup_exit_code=$?

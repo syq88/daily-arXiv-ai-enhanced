@@ -159,3 +159,12 @@ We sincerely thank the following individuals and organizations for their promoti
   工作流通过 `ARXIV_RUN_DATE` 固定日期，去重、AI 处理和发布使用同一日期。
 - 网站和统计页按北京时间日历日期显示；文件日期表示日报运行日期，
   不会修改论文在 arXiv 上的原始发表时间。
+
+
+## 应用论文筛选
+
+- 抓取后、AI 摘要生成前，默认过滤标题或摘要开头明确针对遥感、医学影像、AI4Science、农牧生态、工业检测等领域应用的论文；保留通用 CV 与空间智能方法。
+- 不按 `physics`、`space`、`3D` 等单词直接排除。领域只作为实验示例、或判断不明确的论文优先保留；该规则筛选不能替代完整的语义判断。
+- 规则位于 `daily_arxiv/paper_filter_rules.json`。如需关闭，在仓库 Variables 中设置 `PAPER_FILTER_ENABLED=false`；默认开启，无需新增 API Key，也不额外调用模型。
+- 每次记录排除原因和被排除论文的完整原始记录。报告位于 `data/YYYY-MM-DD_*_filter_report.json`；有新论文发布时随 data 分支保存。Actions 的 `paper-filter-运行ID-尝试次数` artifact 另保存 30 天，即使全部被过滤、没有新日报也可查看。
+- 论文全部被过滤时，会正常跳过 AI 和发布步骤；原来的 CV 主分类＋RO/CV 交叉范围及定时设置保持不变。

@@ -36,3 +36,31 @@
   first and removes IDs successfully published on earlier dates before AI work.
   The `/new` crawler does not automatically backfill batches missed during a
   multi-day outage.
+
+
+## Application-domain filter
+
+After the listing crawl and before deduplication/AI summarization, the workflow
+runs `python -m daily_arxiv.topic_filter`. It applies the editable rules in
+`daily_arxiv/paper_filter_rules.json` to titles and the beginning of abstracts.
+Explicit remote-sensing, biomedical, AI4Science, agriculture/ecology, industrial
+inspection and other specialist applications are excluded. General CV and
+spatial/embodied methods are retained; `physics`, `space`, `3D` and references
+to evaluation domains alone are not exclusion criteria. Ambiguous cases are
+kept. This is conservative rule-based filtering, not a semantic relevance model.
+
+`PAPER_FILTER_ENABLED=false` in repository Variables bypasses the filter. The
+filter makes no API requests and leaves kept paper records unchanged, so their
+existing AI checkpoints remain reusable. If nothing remains, the existing
+no-data gate skips AI work and publication successfully.
+
+The filter writes a report with reasons, matched fields, rule/input hashes and
+full excluded records before atomically replacing the daily input. A report
+write failure leaves the original input intact. Reports are copied to the data
+branch with a successful daily publication; the current report is also uploaded
+as a 30-day Actions artifact even when no papers remain. Historical reports are
+retained when switching branches. Run filter tests with:
+
+```
+python -m unittest discover -s daily_arxiv/tests -p test_topic_filter.py -v
+```
