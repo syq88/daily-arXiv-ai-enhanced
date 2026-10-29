@@ -1,0 +1,648 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "7bf1944ba3c1a35d727da846bd0bf66cebb2aca439775a37528c61ab4a413d76",
+  "input_count": 136,
+  "kept_count": 119,
+  "excluded_count": 17,
+  "counts_by_reason": {
+    "medical_biological": 12,
+    "remote_sensing": 2,
+    "agriculture_ecology": 2,
+    "other_domain_applications": 1
+  },
+  "kept_ids": [
+    "2610.35904",
+    "2610.35905",
+    "2610.35910",
+    "2610.36022",
+    "2610.36150",
+    "2610.36168",
+    "2610.36192",
+    "2610.36195",
+    "2610.36203",
+    "2610.36210",
+    "2610.36249",
+    "2610.36269",
+    "2610.36327",
+    "2610.36337",
+    "2610.36340",
+    "2610.36371",
+    "2610.36384",
+    "2610.36419",
+    "2610.36420",
+    "2610.36456",
+    "2610.36460",
+    "2610.36462",
+    "2610.36466",
+    "2610.36467",
+    "2610.36506",
+    "2610.36509",
+    "2610.36540",
+    "2610.36545",
+    "2610.36554",
+    "2610.36569",
+    "2610.36592",
+    "2610.36593",
+    "2610.36610",
+    "2610.36624",
+    "2610.36658",
+    "2610.36665",
+    "2610.36671",
+    "2610.36719",
+    "2610.36722",
+    "2610.36729",
+    "2610.36743",
+    "2610.36750",
+    "2610.36760",
+    "2610.36765",
+    "2610.36781",
+    "2610.36785",
+    "2610.36793",
+    "2610.36809",
+    "2610.36831",
+    "2610.36832",
+    "2610.36838",
+    "2610.36844",
+    "2610.36850",
+    "2610.36853",
+    "2610.36858",
+    "2610.36873",
+    "2610.36874",
+    "2610.36876",
+    "2610.36896",
+    "2610.36951",
+    "2610.36956",
+    "2610.36978",
+    "2610.36986",
+    "2610.37000",
+    "2610.37015",
+    "2610.37036",
+    "2610.37037",
+    "2610.37046",
+    "2610.37093",
+    "2610.37097",
+    "2610.37098",
+    "2610.37110",
+    "2610.37118",
+    "2610.37135",
+    "2610.37138",
+    "2610.37149",
+    "2610.37153",
+    "2610.37178",
+    "2610.37186",
+    "2610.37202",
+    "2610.37211",
+    "2610.37216",
+    "2610.37218",
+    "2610.37219",
+    "2610.37226",
+    "2610.37236",
+    "2610.37257",
+    "2610.37290",
+    "2610.37297",
+    "2610.37309",
+    "2610.37321",
+    "2610.37326",
+    "2610.37341",
+    "2610.37349",
+    "2610.37437",
+    "2610.37471",
+    "2610.37472",
+    "2610.37503",
+    "2610.37510",
+    "2610.37566",
+    "2610.37576",
+    "2610.37579",
+    "2610.37583",
+    "2610.37599",
+    "2610.37613",
+    "2610.37619",
+    "2610.37626",
+    "2610.37633",
+    "2610.37662",
+    "2610.37668",
+    "2610.36079",
+    "2610.36533",
+    "2610.36599",
+    "2610.36662",
+    "2610.36823",
+    "2610.36859",
+    "2610.37196",
+    "2610.37381",
+    "2610.37666"
+  ],
+  "excluded": [
+    {
+      "id": "2610.36379",
+      "title": "Evaluating Federated Vision-Language and Vision-Only Models for Privacy-Aware Breast Cancer Imaging",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Cancer",
+      "paper": {
+        "id": "2610.36379",
+        "title": "Evaluating Federated Vision-Language and Vision-Only Models for Privacy-Aware Breast Cancer Imaging",
+        "authors": [
+          "Malithi Mithsara Wanniarachchi Kankanamge",
+          "Ning Yang",
+          "Sree Bash Debnath",
+          "Md Zobaer Islam",
+          "Abdur R. Shahid"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CR",
+          "cs.LG"
+        ],
+        "summary": "Artificial intelligence (AI) shows promise for breast imaging, but limited labeled data, institutional data fragmentation, and privacy concerns hinder centralized training. We investigate a privacy-aware federated learning framework combining pretrained vision-language models (VLMs) with client-level differential privacy. We compare general-purpose CLIP models, biomedical BiomedCLIP, and an ImageNet-pretrained ViT-B/16 baseline on two public breast imaging datasets, with and without differential privacy. We also evaluate a CLIP ViT-B/16 ablation that removes the text pathway. Evaluation includes patient-level ROC-AUC with bootstrap 95% confidence intervals, baseline comparisons, threshold sensitivity, inter-model agreement, and communication cost. Under federated learning, all five models achieve high normal-versus-sick discrimination (ROC-AUC: 0.940-0.990). However, acquisition year alone achieves 0.974 on the same test partition, raising concerns about confounding rather than genuine pathology recognition. Benign-versus-malignant discrimination remains uncertain (ROC-AUC: 0.504-0.637), with all confidence intervals including 0.50. Removing the text pathway preserves classification accuracy while halving communication cost. Differential privacy reduces ROC-AUC by 0.375, attributable to perturbing the full model state rather than only trainable parameters. These findings highlight the importance of evaluating confounding, predictive reliability, privacy implementation, and deployment efficiency when developing federated AI systems for breast imaging.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.36379",
+        "pdf": "https://arxiv.org/pdf/2610.36379",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36411",
+      "title": "ORBITAL: Optimization of Robust Brain--Computer Inference Through Architecture-Aware Low-Precision Compression",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "EEG",
+      "paper": {
+        "id": "2610.36411",
+        "title": "ORBITAL: Optimization of Robust Brain--Computer Inference Through Architecture-Aware Low-Precision Compression",
+        "authors": [
+          "Saim Rehman",
+          "Muhammad Shafique"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CR",
+          "cs.LG",
+          "eess.SP"
+        ],
+        "summary": "Compact electroencephalography (EEG) decoders enable embedded brain--computer interfaces (BCIs), but compression can alter adversarial robustness without proportional hardware savings. We present ORBITAL, a robustness-constrained framework combining hardware-realizable structured compression, recovery-aware operating-point selection, multi-attack evaluation, and native edge validation. Across nine subjects and three seeds on BCI Competition IV-2a, S25-TRADES achieves the highest observed mean true-union robustness among compressed EEGNet models (23.06% vs 21.27% for standard Full), with 26.27% fewer parameters and 25.10% fewer MACs. Matched controls identify TRADES as the main source of robustness recovery, improving S25 union accuracy by 6.74 percentage points over clean recovery (p=0.0039), while per-example analysis reveals boundary redistribution rather than uniform margin expansion. On Jetson Orin Nano, FP16 compression reduces board energy by up to 16.20% and latency by 8.00%. Despite 99.3% prediction agreement, native INT8 Q/DQ incurs about twice the FP16 latency and energy, demonstrating the need for joint robustness and hardware-aware optimization.",
+        "comment": "Submitted to IEEE ISCAS 2027 for Review",
+        "abs": "https://arxiv.org/abs/2610.36411",
+        "pdf": "https://arxiv.org/pdf/2610.36411",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36428",
+      "title": "FORESEE-MS: Toward Prospective Spatial Forecasting of Future Multiple Sclerosis Lesions from Baseline FLAIR MRI",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Lesions",
+      "paper": {
+        "id": "2610.36428",
+        "title": "FORESEE-MS: Toward Prospective Spatial Forecasting of Future Multiple Sclerosis Lesions from Baseline FLAIR MRI",
+        "authors": [
+          "Maryam Akhavan Aghdam",
+          "Sudip Mittal",
+          "Noorbakhsh Amiri Golilarz",
+          "Shahram Rahimi"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Traditional multiple sclerosis (MS) image analysis has primarily focused on retrospectively detecting and segmenting lesions. This study investigates whether baseline FLAIR MRI can identify regions at risk for future lesion formation beyond population-level spatial patterns. We introduce FORESEE-MS, an evaluation protocol that uses a fold-specific population-prior atlas as a baseline and assesses predictions using pooled voxel-level discrimination (AUROC and AUPRC) and within-patient lesion localization (Recall@Top-K%), with patient-level bootstrap confidence intervals. We evaluated five deep learning models (3D U-Net, Attn+ResBlock+VAE, ViT, and two SwinUNETR variants) using 5-fold cross-validation on 39 subjects from the MSSEG-2 dataset. The atlas achieved the highest pooled voxel-level AUROC and AUPRC, with no deep learning model reliably outperforming it on either metric. However, the 3D U-Net and Attn+ResBlock+VAE achieved higher mean voxel-level within-patient Recall@Top-K% than the atlas at all evaluated thresholds, although most paired confidence intervals for the differences included zero. These findings suggest that baseline FLAIR may contain patient-specific predictive information, but in this small cohort, it remains uncertain whether this information improves lesion forecasting beyond a population-prior atlas.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.36428",
+        "pdf": "https://arxiv.org/pdf/2610.36428",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36487",
+      "title": "Spatial-Frequency Learning for Scanning Transmission Electron Microscopy Image Enhancement",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Microscopy",
+      "paper": {
+        "id": "2610.36487",
+        "title": "Spatial-Frequency Learning for Scanning Transmission Electron Microscopy Image Enhancement",
+        "authors": [
+          "Hesong Li",
+          "Ying Fu",
+          "Ziqi Wu",
+          "Ruiwen Shao",
+          "Tao Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Scanning Transmission Electron Microscopy (STEM) enables the observation of atomic arrangements at sub-angstrom resolution and plays a key role in the discovery and characterization of advanced materials. Raw STEM images are often noisy and blurred due to multiple degradations. Although recent deep learning methods improve STEM images, their performance remains limited under severe degradations. In this work, we propose a spatial-frequency learning framework for STEM image enhancement. Specifically, we design a spatial-frequency fusion network that exploits periodic atomic arrangements in the frequency domain and restores local atomic details in the spatial domain. Spatial- and frequency-domain features are enhanced separately and then fused. We also present a STEM noise calibration method for synthesizing more realistic STEM images. The parameters of scan noise, pointwise noise, and background noise are estimated through statistical analysis and fitting of real STEM images. Using these calibrated parameters, we construct a diverse dataset containing a wider range of atomic arrangements, imaging modes, and degradations. Random masks combine different atomic arrangements to simulate interfaces between multiple materials. Experimental results demonstrate that our method achieves state-of-the-art enhancement performance on synthetic datasets and real images of advanced materials while improving atomic localization accuracy.",
+        "comment": "Accepted by IEEE TPAMI",
+        "abs": "https://arxiv.org/abs/2610.36487",
+        "pdf": "https://arxiv.org/pdf/2610.36487",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36510",
+      "title": "Identity or Evidence? Auditing Evidence Dependence in Agentic Life-Science Benchmarks",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2610.36510",
+        "title": "Identity or Evidence? Auditing Evidence Dependence in Agentic Life-Science Benchmarks",
+        "authors": [
+          "Danai Brilli",
+          "Maria Georgila"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Agentic life-science benchmarks give an agent evidence about a named entity and score an answer against a recorded outcome. That score tests reasoning over evidence only if the evidence, rather than the name, determines the answer. We examine this distinction by varying identity and evidence independently on a clinical-outcome benchmark and published tasks from Biomni and LAB-Bench. Blinding identity matters little when a prompt contains a decisive sequence or passage. It matters a great deal when the prompt is mostly a name and candidate list (0.742 named versus 0.082 blinded; chance 0.093). Across 96 LAB-Bench LitQA2 questions, the gap increases under one fixed passage-redaction scheme (+0.000 to +0.135; per-instance slope +0.147, p= 0.004). On the clinical benchmark, a no-evidence recall probe matches prediction accuracy and recovers a database-specific programme count. So, we argue that benchmarks intended to measure evidence-dependent reasoning should report identity-blinded results, retrieval telemetry, and positive controls.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.36510",
+        "pdf": "https://arxiv.org/pdf/2610.36510",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36756",
+      "title": "Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2610.36756",
+        "title": "Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking",
+        "authors": [
+          "Xi Chen",
+          "Xu Chen",
+          "Xiamgyang Jia",
+          "Wei Wang",
+          "Xu Zhang",
+          "Zhenyuan Shun"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignment and efficient retrieval. Existing methods either rely on complex cross-modal interactions that lead to low retrieval efficiency, or depend on large-scale vision-language adaptation, which requires massive data and computational resources. To address these issues, we develop a fast-then-fine (FTF) retrieval framework centered on interaction-free multi-granular recall and parameter-free text-guided cross-modal reranking with the Balanced Text-guided Interaction Block (BTIB). Specifically, interaction-free multi-granular recall pre-computes gallery embeddings and matches them with the corresponding query embedding without full-gallery token-level text-image interaction, while text-guided cross-modal reranking with BTIB refines local semantic correspondence within the top-K candidate set. Furthermore, an inter- and intra-modal loss is designed to jointly optimize cross-modal alignment across multi-granular representations. Extensive experiments on public benchmarks demonstrate that the FTF achieves competitive retrieval accuracy while significantly improving retrieval efficiency compared with existing methods.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.36756",
+        "pdf": "https://arxiv.org/pdf/2610.36756",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.36857",
+      "title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Crop Classification",
+      "paper": {
+        "id": "2610.36857",
+        "title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
+        "authors": [
+          "Priyanka Goyal",
+          "Maitreyee Sar",
+          "Adway Mitra",
+          "Manjira Sinha"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions remains limited. Geospatial foundation models generate high-dimensional embeddings encoding spatio-temporal land-surface properties, but their utility for agricultural applications remains insufficiently understood. This study presents a representation-agnostic evaluation framework integrating geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation. A 64-dimensional AlphaEarth embedding space is benchmarked against Sentinel-2 reflectance, NDVI-derived phenology, and harmonic features using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021). Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation -- Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, reaching a separability ratio of 1.784 versus a maximum of 1.003 across all engineered features, and exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \\approx 0.17$). However, harmonic and NDVI features show stronger cross-continental transferability (US $\\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), reflecting better distributional alignment. The combined feature space yields balanced performance, supporting hybrid modeling. These findings reveal a fundamental trade-off between representational richness and cross-region transferability, providing a structured framework for feature selection in large-scale crop classification.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.36857",
+        "pdf": "https://arxiv.org/pdf/2610.36857",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37021",
+      "title": "Ground-to-Satellite Knowledge Distillation for Crop Classification under Temporal and Geographic Shift",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Crop Classification",
+      "paper": {
+        "id": "2610.37021",
+        "title": "Ground-to-Satellite Knowledge Distillation for Crop Classification under Temporal and Geographic Shift",
+        "authors": [
+          "Miro Miranda",
+          "Rocco Sedona",
+          "Valerio Marsocci",
+          "Gabriele Cavallaro",
+          "Claudia Paris"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Continuous and up-to-date crop type mapping is essential for agricultural monitoring but is often hampered by limited reference data. The growing availability of ground-level field photographs offers a promising way to address this challenge. When combined with satellite time series, these images provide complementary perspectives on the same parcel, capturing crop characteristics from distinctly different perspectives. However, field photographs are not always available for each satellite pixel at inference time, limiting their potential in scalable crop type mapping. We investigate whether ground photographs can provide privileged supervision for crop classification built on pretrained satellite embeddings. A photo teacher based on frozen CLIP features supervises classifiers trained on AlphaEarth and TESSERA representations; photographs are used only during training. On a paired field photo and satellite imagery dataset with 17 crop classes, knowledge distillation consistently improves over satellite-only classification; for frozen embeddings the margin grows under temporal shift, reaching up to +5.5 macro-F1 points, and widens in geographic holdouts (+3.7 vs +3.0 in-distribution). These results show that ground-view supervision can complement satellite embeddings and improve their robustness without changing inference requirements.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37021",
+        "pdf": "https://arxiv.org/pdf/2610.37021",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37026",
+      "title": "Interpretable Deep Learning Models for Breast Cancer Diagnosis Using Medical Imaging",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Cancer",
+      "paper": {
+        "id": "2610.37026",
+        "title": "Interpretable Deep Learning Models for Breast Cancer Diagnosis Using Medical Imaging",
+        "authors": [
+          "Sami Alnawali",
+          "Muhammad Atif Saeed",
+          "Abdul Hadi",
+          "Azka Atiq",
+          "Akhtar Jamil",
+          "Ahmad Din"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Deep learning shows promise for breast cancer diagnosis, but limited interpretability hinders clinical adoption. We benchmark ten ImageNet-pretrained models (ResNet50, VGG19, InceptionV3, DenseNet121, Xception, MobileNetV2, EfficientNet, ConvNeXt, ViT, and Swin Transformer) for benign-versus-malignant classification on the BreakHis histopathology dataset using a patient-level split, and explain their predictions with Grad-CAM, LIME, Integrated Gradients, and LRP. DenseNet121 performed best, with 99.4% test accuracy and an AUC-ROC of 0.999, and significantly outperformed all other models (p < 0.001). Transformer-based models trailed the CNNs. The explanations consistently highlighted nuclei-rich and glandular regions of diagnostic relevance. Combining transfer learning with explainable AI can thus yield accurate, interpretable tools for breast cancer diagnosis.",
+        "comment": "37 page, 45 Figures",
+        "abs": "https://arxiv.org/abs/2610.37026",
+        "pdf": "https://arxiv.org/pdf/2610.37026",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37074",
+      "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2610.37074",
+        "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
+        "authors": [
+          "Nuria Balbás-Esteban",
+          "Albert Belenguer-Llorens",
+          "Elaheh Moradi",
+          "Jussi Tohka",
+          "Vanessa Gómez-Verdejo",
+          "Carlos Sevilla-Salcedo"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Early identification of neurodegenerative disorders using structural T1-weighted MRI is essential for timely clinical intervention, yet supervised deep learning models often struggle to generalize due to limited annotations and scanner-induced distribution shift. Self-supervised learning offers a promising alternative; however, existing approaches are largely adapted from natural image paradigms, relying on contrastive objectives or generic masked reconstruction with voxel-wise losses, which may not fully capture the distributed morphometric patterns associated with neurodegeneration. We introduce SYMBA (SYstematic Morphometric Brain Autoencoding), a self-supervised pretraining framework specifically designed for structural brain MRI. SYMBA integrates anatomically constrained masking, a multi-scale structural similarity (MS-SSIM) reconstruction objective, and a progressive curriculum that transitions from local anatomical detail to global brain morphology. These components explicitly incorporate neuroanatomical structure into the self-supervised objective rather than relying on generic image priors. Pretrained on 6,953 T1-weighted MRI scans from nine heterogeneous cohorts, SYMBA is evaluated using frozen linear probing on two independent unseen datasets, enabling a strict assessment of out-of-distribution generalization. Across multiple clinical tasks, SYMBA consistently outperforms recent neuroimaging foundation models, achieving 0.930 AUROC for Alzheimer's disease classification, 0.772 for mild cognitive impairment conversion prediction, and strong performance in amyloid status prediction. In low-label regimes, SYMBA demonstrates high sample efficiency, reaching approximately 0.90 AUROC for AD/CN classification using only six labeled subjects.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37074",
+        "pdf": "https://arxiv.org/pdf/2610.37074",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37127",
+      "title": "MCP-Net: Real-Time Coronary Perception Network and Topological Analysis for Robotic Guidewire Navigation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Coronary",
+      "paper": {
+        "id": "2610.37127",
+        "title": "MCP-Net: Real-Time Coronary Perception Network and Topological Analysis for Robotic Guidewire Navigation",
+        "authors": [
+          "Sahar Nasirihaghighi",
+          "Tianyuan Wang",
+          "Kenan Niu",
+          "Stefano Stramigioli"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "summary": "Coronary guidewire navigation during percutaneous coronary intervention requires continuous interpretation of vessel anatomy, guidewire position, and target stenosis under two-dimensional X-ray fluoroscopy. While existing approaches commonly address vessel segmentation or device localization as separate tasks, a robotic system requires a more structured perception of the coronary scene to support downstream navigation. In this work, we present a simulation-driven framework centered on a Multi-Task Coronary Perception Network (MCP-Net) for robotic guidewire navigation, integrating coronary vessel segmentation, vascular topology extraction, and roadmap generation. Starting from three-dimensional coronary CT angiography, we generate simulated fluoroscopy images containing vascular structures, simulated guidewires, stenotic lesions with varying severity, and diverse vascular geometries, together with simulation-derived ground truth. MCP-Net jointly performs coronary vessel segmentation, guidewire-tip localization, and stenosis localization from a single fluoroscopic frame. These predictions are subsequently converted into a structured vascular graph containing centerlines, bifurcations, endpoints, branch directions, and branch angles. By associating the predicted stenosis with this graph, the framework generates a roadmap from the automatically selected graph root toward the target lesion. The results demonstrate that the proposed framework can jointly recover coronary perception targets and transform them into an interpretable vascular representation suitable for downstream robotic navigation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37127",
+        "pdf": "https://arxiv.org/pdf/2610.37127",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37134",
+      "title": "MRI-to-CT Translation of Spinal Images via Anatomy-Guided Pseudo-Pairing and Adversarial Diffusion",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2610.37134",
+        "title": "MRI-to-CT Translation of Spinal Images via Anatomy-Guided Pseudo-Pairing and Adversarial Diffusion",
+        "authors": [
+          "Eduardo Nieto",
+          "Ibai Genua",
+          "Davide Scorza",
+          "Karen López-Linares"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Magnetic Resonance Imaging (MRI) is routinely used to diagnose spinal disorders, but surgical planning often requires Computed Tomography (CT) for better visualization of vertebral bone anatomy. Synthesizing CT from MRI could avoid additional radiation exposure and streamline preoperative assessment. We propose a three-stage framework for spine MRI-to-CT synthesis. First, an anatomy-guided vertebral matching system identifies similar sagittal MRI and CT slices using spine segmentations and aligns them through rigid registration, creating pseudo-paired data from unpaired scans. Second, these pairs train an adversarial diffusion model for MRI-to-CT translation. Third, synthesized slices are assembled into 3D volumes and refined by a network that improves inter-slice continuity and structural coherence. The framework was trained on over 10,000 unpaired sagittal MRI and CT slices and evaluated on 1,911 slices from 83 MRI volumes spanning all spinal regions. Assessment combined distribution-based measures with vertebral segmentation metrics. Compared with diffusion alone, the proposed approach increased binary 3D vertebral Dice from 0.666 to 0.739. Volumetric post-processing reduced visible discontinuities between stacked slices and improved vertebral coherence in axial and coronal views. Combining anatomy-guided pseudo-pairing, adversarial diffusion and 3D refinement improves spine MRI-to-CT synthesis. Vertebral matching primarily enhanced anatomical alignment and fidelity, while volumetric refinement improved 3D consistency. These findings support further development of MRI-derived CT-like visualization for preoperative planning, particularly to preserve fine intensity details while maintaining volumetric coherence.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37134",
+        "pdf": "https://arxiv.org/pdf/2610.37134",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37267",
+      "title": "GradCO: Behavior-Aware Gradient-Conflict Offloading for Text-Based Person Anomaly Search",
+      "exclude": true,
+      "reason": "other_domain_applications",
+      "label": "其他明确领域应用",
+      "field": "title",
+      "matched_text": "Person Anomaly Search",
+      "paper": {
+        "id": "2610.37267",
+        "title": "GradCO: Behavior-Aware Gradient-Conflict Offloading for Text-Based Person Anomaly Search",
+        "authors": [
+          "Zhiheng Fu",
+          "Zixu Li",
+          "Zhiwei Chen",
+          "Jiale Huang",
+          "Fangxu Liu",
+          "Jinhe Bi",
+          "Yupeng Hu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.IR"
+        ],
+        "summary": "Text-based Person Anomaly Search (TPAS) retrieves a target pedestrian using natural-language descriptions of appearance and normal or anomalous behavior. Unlike conventional text-based person retrieval, TPAS must preserve identity cues while distinguishing fine-grained behaviors. It presents two challenges: same-identity, different-behavior hard negatives cause gradient conflict during granular alignment, while strong appearance cues can obscure weak behavioral evidence during aggregation. We propose GradCO (behavior-aware Gradient-Conflict Offloading), comprising three complementary components. Behavior-Aware Mixture-of-Experts (B-MoE) forms appearance, normal-behavior, and anomalous-behavior streams whose roles are learned from retrieval objectives without expert-specific semantic labels. Conflict Offload Learning (COL) uses pair-conditioned offload anchors in similarity computation to reduce the conflicting-gradient burden on the main text representations. Hierarchical Intent Alignment (HIA) aggregates expert similarities and features using query-conditioned weights. Experiments on five TPAS/TIPR benchmarks show GradCO significantly surpasses SOTA methods and validate our design.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37267",
+        "pdf": "https://arxiv.org/pdf/2610.37267",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37314",
+      "title": "A Lightweight Attention-Based CNN with Saliency-Map Interpretability for Skin Cancer Detection",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Cancer",
+      "paper": {
+        "id": "2610.37314",
+        "title": "A Lightweight Attention-Based CNN with Saliency-Map Interpretability for Skin Cancer Detection",
+        "authors": [
+          "Sanjana Islam Kasfia",
+          "Md. Ismiel Hossen Abir",
+          "AKM Bahalul Haque",
+          "Abir Mahmud Shahariar"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Skin cancer is among the most prevalent and life threatening forms of cancer worldwide. Early and accurate diagnosis significantly improves patient survival rates. However, manual dermoscopic assessment remains challenging due to visual similarity. This study proposes an Explainable AI-driven framework for automated binary classification of skin lesions using a lightweight attention-based convolutional neural network (CNN-Attention). The model integrates channel attention to focus on informative regions of dermoscopic images while maintaining low computational complexity. A publicly available dataset comprising 2,637 training and 660 test images was used, with balanced class weights. The proposed model achieved 87 percent accuracy with 1.95 million parameters and 7.45 MB of storage, matching the best baseline (MobileNet) while using approximately half as many parameters and half as much storage. ROC AUC and PR AUC scores reached 0.9475 and 0.9430, respectively. Additionally, saliency maps were incorporated as an explainability technique to visualize regions that influence model decisions. Comparative analysis with VGG16,VGG19,ResNet101,and MobileNet demonstrates the proposed models effectiveness in balancing classification results, computational efficiency, and interpretability.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37314",
+        "pdf": "https://arxiv.org/pdf/2610.37314",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37406",
+      "title": "CTBakeGS: training-free baking of photorealistic CT volume renderings into 3D Gaussian splats",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.37406",
+        "title": "CTBakeGS: training-free baking of photorealistic CT volume renderings into 3D Gaussian splats",
+        "authors": [
+          "Haruki Fukuda",
+          "Constantin Lux",
+          "Wolf Schweitzer",
+          "Tadashi Hosoya",
+          "Lars Ebert"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "summary": "Photorealistic volume rendering of computed tomography (CT) may convey anatomy intuitively, but it needs the CT data, dedicated software and a powerful graphics processor. Three-dimensional Gaussian splatting (3DGS) displays photorealistic scenes in real time on less powerful devices, but existing medical approaches train each scene for minutes to hours. We aimed to convert a CT volume rendering directly into a 3DGS model without training. Splats were placed on an adaptive octree of millimetre-sized cells. Their colour and opacity were computed on the graphics processor with the renderer's lighting, cell opacity was converted analytically into splat opacity, and faint splats were retained stochastically above the 1/255 opacity floor of standard 3DGS rasterisers. Six public CT scans (1.5-mm voxels) were converted with three transfer functions and compared with converged references by peak signal-to-noise ratio (PSNR), structural similarity and a learned perceptual metric. Two-million-splat models reached a PSNR of 32.6 +/- 0.9 dB for bone, 30.1 +/- 1.0 dB for contrast-enhanced vessels and 32.3 +/- 1.5 dB for skin and bone. A conversion pass (usually two or three per model) took 4-30 s on a current laptop and 9-60 s on a desktop with a 4-GB graphics card. On the laptop, the models rendered at 68 frames per second at 800 x 800 pixels. Training-free conversion produced real-time 3DGS models of photorealistic CT renderings in about a minute or less per conversion pass on ordinary computers, with fidelity that we consider sufficient for interactive viewing.",
+        "comment": "Code and project page: this https URL",
+        "abs": "https://arxiv.org/abs/2610.37406",
+        "pdf": "https://arxiv.org/pdf/2610.37406",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37431",
+      "title": "Segmentation Confidence for Arbitrary CNNs",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.37431",
+        "title": "Segmentation Confidence for Arbitrary CNNs",
+        "authors": [
+          "Baris Oguz",
+          "Xing Yao",
+          "Claudia Tawil",
+          "Alison Pouch",
+          "Brett Byram",
+          "Gabriel Arenas",
+          "Nadav Schwartz",
+          "Ipek Oguz"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Convolutional neural networks (CNN) are widely used for medical image segmentation. However, they lack an inherent measure of confidence. Existing methods for estimating prediction uncertainty often require a custom network architecture and/or dedicated training setups and need to be trained from scratch. In addition, the deduction of a single confidence score per input from the uncertainty maps is not always straightforward. In this study, we explore voxel-based uncertainty estimation methods that can be added to existing segmentation pipelines without training from scratch. We also propose a novel method to estimate a single confidence score from the uncertainty maps. Our evaluations on different ROIs and modalities suggest that our confidence score can predict segmentation performance in unseen data.",
+        "comment": "5 pages, 6 figures, published in ISBI 2026",
+        "abs": "https://arxiv.org/abs/2610.37431",
+        "pdf": "https://arxiv.org/pdf/2610.37431",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37545",
+      "title": "GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "satellite images",
+      "paper": {
+        "id": "2610.37545",
+        "title": "GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis",
+        "authors": [
+          "Akshay Krishnan",
+          "Matias Turkulainen",
+          "Jamie Wynn",
+          "Zawar Qureshi",
+          "Mohamed Sayed",
+          "Guillermo Garcia-Hernando",
+          "Sara Vicente",
+          "James Hays",
+          "Michael Firman",
+          "Daniyar Turmukhambetov"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "summary": "Multi-view or video diffusion models have recently emerged as state-of-the-art approaches for novel-view synthesis from sparse image collections. While they can produce high quality images, they tend to hallucinate unrealistic spatial layouts when synthesizing views outside the input views (scene extrapolation). We propose to address this challenge for outdoor scenes by using satellite images as an additional information source to condition the multi-view generative model. We introduce a new satellite-conditioned multi-view diffusion model that combines conditioning from a satellite image and street-level input images when generating novel-views. Our cross-attention based conditioning allows us to retain pretrained multi-view diffusion priors to generate seamless, realistic, novel views from a handful of source views, while also adhering to the scene layout as seen from satellite images. Our model does not use 3D scene reconstruction, and only relies on posed street and satellite views. Our experiments on outdoor datasets show that our model is better than both satellite-conditioned or street-view conditioned baselines on novel-view synthesis, especially on challenging cases where target views have very little overlap with source views. Project page: this https URL",
+        "comment": "Accepted to WACV 2027. Project page: this https URL",
+        "abs": "https://arxiv.org/abs/2610.37545",
+        "pdf": "https://arxiv.org/pdf/2610.37545",
+        "listing_date": "2026-10-28",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
