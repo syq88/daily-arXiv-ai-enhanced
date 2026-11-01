@@ -1,0 +1,1253 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "d9d6f86b0f36b6b807dd790c679b4f1ee7473fb5edd8e2f242b04b44bcad068c",
+  "input_count": 208,
+  "kept_count": 174,
+  "excluded_count": 34,
+  "counts_by_reason": {
+    "medical_biological": 29,
+    "remote_sensing": 3,
+    "agriculture_ecology": 2
+  },
+  "kept_ids": [
+    "2610.37784",
+    "2610.37818",
+    "2610.37860",
+    "2610.37874",
+    "2610.37881",
+    "2610.37882",
+    "2610.37918",
+    "2610.37937",
+    "2610.37983",
+    "2610.38007",
+    "2610.38013",
+    "2610.38042",
+    "2610.38045",
+    "2610.38065",
+    "2610.38086",
+    "2610.38103",
+    "2610.38121",
+    "2610.38153",
+    "2610.38158",
+    "2610.38185",
+    "2610.38223",
+    "2610.38241",
+    "2610.38259",
+    "2610.38265",
+    "2610.38278",
+    "2610.38284",
+    "2610.38296",
+    "2610.38303",
+    "2610.38308",
+    "2610.38319",
+    "2610.38320",
+    "2610.38349",
+    "2610.38352",
+    "2610.38358",
+    "2610.38413",
+    "2610.38425",
+    "2610.38462",
+    "2610.38482",
+    "2610.38494",
+    "2610.38497",
+    "2610.38499",
+    "2610.38511",
+    "2610.38516",
+    "2610.38518",
+    "2610.38547",
+    "2610.38587",
+    "2610.38593",
+    "2610.38600",
+    "2610.38611",
+    "2610.38613",
+    "2610.38623",
+    "2610.38678",
+    "2610.38694",
+    "2610.38720",
+    "2610.38737",
+    "2610.38830",
+    "2610.38926",
+    "2610.38951",
+    "2610.38957",
+    "2610.39001",
+    "2610.39014",
+    "2610.39038",
+    "2610.39147",
+    "2610.39151",
+    "2610.39158",
+    "2610.39160",
+    "2610.39161",
+    "2610.39179",
+    "2610.39183",
+    "2610.39201",
+    "2610.39232",
+    "2610.39265",
+    "2610.39277",
+    "2610.39278",
+    "2610.39283",
+    "2610.39293",
+    "2610.39301",
+    "2610.39306",
+    "2610.39322",
+    "2610.39324",
+    "2610.39330",
+    "2610.39331",
+    "2610.39344",
+    "2610.39356",
+    "2610.39396",
+    "2610.39399",
+    "2610.39403",
+    "2610.39408",
+    "2610.39419",
+    "2610.39423",
+    "2610.39467",
+    "2610.39478",
+    "2610.39505",
+    "2610.39516",
+    "2610.39517",
+    "2610.39530",
+    "2610.39539",
+    "2610.39551",
+    "2610.39553",
+    "2610.39585",
+    "2610.39592",
+    "2610.39602",
+    "2610.39609",
+    "2610.39617",
+    "2610.39619",
+    "2610.39633",
+    "2610.39639",
+    "2610.39646",
+    "2610.39649",
+    "2610.39663",
+    "2610.39664",
+    "2610.39701",
+    "2610.39704",
+    "2610.39715",
+    "2610.39721",
+    "2610.39727",
+    "2610.39778",
+    "2610.39812",
+    "2610.39848",
+    "2610.39857",
+    "2610.39861",
+    "2610.39868",
+    "2610.39880",
+    "2610.39889",
+    "2610.39913",
+    "2610.39924",
+    "2610.39926",
+    "2610.39936",
+    "2610.39937",
+    "2610.39946",
+    "2610.39948",
+    "2610.39955",
+    "2610.40046",
+    "2610.40061",
+    "2610.40115",
+    "2610.40119",
+    "2610.40124",
+    "2610.40131",
+    "2610.40153",
+    "2610.40166",
+    "2610.40175",
+    "2610.40190",
+    "2610.40191",
+    "2610.40212",
+    "2610.40276",
+    "2610.40309",
+    "2610.40333",
+    "2610.40339",
+    "2610.40373",
+    "2610.40453",
+    "2610.40480",
+    "2610.40487",
+    "2610.40495",
+    "2610.40525",
+    "2610.40530",
+    "2610.40599",
+    "2610.40607",
+    "2610.40614",
+    "2610.40616",
+    "2610.40636",
+    "2610.40640",
+    "2610.40643",
+    "2610.40647",
+    "2606.15768",
+    "2610.37806",
+    "2610.37917",
+    "2610.38080",
+    "2610.39167",
+    "2610.39180",
+    "2610.39416",
+    "2610.40002",
+    "2610.40199",
+    "2610.40401",
+    "2610.40632"
+  ],
+  "excluded": [
+    {
+      "id": "2610.37844",
+      "title": "Convex Potential Learning for Optimal Transport Between Medical Images",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.37844",
+        "title": "Convex Potential Learning for Optimal Transport Between Medical Images",
+        "authors": [
+          "Hongyu Kan",
+          "Ivan Medri",
+          "Natasha Ironside",
+          "Kristofor Pas",
+          "Richard Corp",
+          "Shinjini Kundu",
+          "Gustavo Kunde Rohde"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Computing optimal transport maps between medical images plays a fundamental role in morphological analysis. However, existing methods are either difficult to scale to large 3D medical images or rely on regularized formulations that provide only approximate transport maps. To improve the accuracy of downstream medical image analysis, we propose a novel approach for estimating optimal transport maps by parameterizing the convex potential function. By construction, the resulting transport map is guaranteed to be curl-free, consistent with Brenier's theorem. We evaluate the proposed method on both 2D and 3D medical imaging datasets. Experimental results demonstrate that our approach achieves lower transport estimation errors and produces higher-quality image reconstructions than existing methods.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.37844",
+        "pdf": "https://arxiv.org/pdf/2610.37844",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.37965",
+      "title": "Meta-Initialization of Implicit Neural Representations to Accelerate Deformable Medical Image Registration",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.37965",
+        "title": "Meta-Initialization of Implicit Neural Representations to Accelerate Deformable Medical Image Registration",
+        "authors": [
+          "Marat O. Zinovev",
+          "Dmitry V. Sorokin"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Implicit neural representation (INR) methods for deformable medical image registration require the network parameters to be optimized for each new image pair, making adaptation speed a practical limitation. This work investigates whether early adaptation can be accelerated using an initialization learned from a collection of previously solved registration tasks. We examine two schemes: Reptile meta-initialization and STRAINER transfer of the shared component of a coordinate network. KAN-IDIR is used as the base INR displacement-field model. Experiments are conducted on OASIS-1, with 364 consecutive pairs used for training and 49 pairs for test-time adaptation. Registration quality is evaluated using mean Dice and HD95, together with the fraction of voxels with a negative Jacobian determinant at iteration 1500. In the configurations studied, both schemes yield higher Dice and lower HD95 at early iterations than random initialization. Reptile numerically outperforms STRAINER under a small iteration budget, although their pretraining budgets are not matched. As the number of iterations increases, the differences between the schemes shrink. STRAINER pretraining takes 39-40 minutes, compared with 44.98 hours for Reptile.",
+        "comment": "14 pages, 5 figures, 2 tables. English-language author version of a paper presented at GraphiCon 2026, Saint Petersburg, Russia, 22-24 September 2026. Russian-language proceedings forthcoming. Related work updated for this version",
+        "abs": "https://arxiv.org/abs/2610.37965",
+        "pdf": "https://arxiv.org/pdf/2610.37965",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38162",
+      "title": "Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "satellite imagery",
+      "paper": {
+        "id": "2610.38162",
+        "title": "Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in",
+        "authors": [
+          "JianChong Guo",
+          "YuTing Wan",
+          "Kefan Li",
+          "AiLong Ma",
+          "YanFei Zhong"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Building damage assessment (BDA) from very-high-resolution imagery supports disaster response, and deep models now achieve high overall accuracy on public benchmarks. Because damage is spatially clustered, most buildings share the damage level of their neighbours, so overall scores are dominated by such buildings, whereas damaged buildings among intact ones are rare and easily overlooked. A high overall score therefore cannot tell whether a model judges the building itself or relies on its neighbourhood as a shortcut, and this study tests which of the two current models do. We stratify buildings by their agreement with their neighbours, move buildings into new neighbourhoods with their pixels unchanged, and diagnose nine models covering the main paradigms of BDA. All models miss a third to half of the isolated damaged buildings, and in non-flood events they call 73--87% of intact buildings damaged once these are moved into a damaged neighbourhood. We propose a building-evidence plug-in that adds two experts to an existing model without retraining it. One expert sees only the building, and the other sees its surroundings but is trained with seamlessly swapped neighbourhoods so that it learns not to trust them. With each of the nine models, the plug-in maintains or improves overall accuracy, reduces errors on buildings that disagree with their neighbours by 8--18%, and cuts by 40--69% the intact buildings that a damaged neighbourhood turns into damaged ones. It also raises the detection of synthetic isolated damage from 1--6% to 13--39% and carries over to optical--SAR data and to an unseen earthquake. High overall scores thus conceal a systematic reliance on the neighbourhood, which building-level evidence reduces at low cost.",
+        "comment": "22 pages, 9 figures, 11 tables. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2610.38162",
+        "pdf": "https://arxiv.org/pdf/2610.38162",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38289",
+      "title": "PulmoWorld: An Asynchronous Multimodal Medical World Model for Longitudinal Pneumonia Dynamics",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.38289",
+        "title": "PulmoWorld: An Asynchronous Multimodal Medical World Model for Longitudinal Pneumonia Dynamics",
+        "authors": [
+          "Cheng Tang",
+          "Xinyu Zhang",
+          "Jiawei Chen",
+          "Minghui Zhang",
+          "Shaocong Wei",
+          "Wei Li",
+          "Yuxing Chen",
+          "Kongcheng Zhang",
+          "Chun-Mei Feng",
+          "Nanqing Dong",
+          "Xinyuan Zhu",
+          "Ziyan Huang",
+          "Junjun He",
+          "Yirong Chen",
+          "Lingtong Huang",
+          "Min Cen",
+          "Ming Hu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Pneumonia changes across respiration, inflammation, and organ function, while the measurements that describe it arrive at different times and are often incomplete. We introduce PULMOWORLD, a world model for longitudinal pneumonia dynamics that connects asynchronous state estimation, recursive simulation, and evidence-constrained planning. History-aware filtering separates state propagation from observation-driven correction, so a measurement updates the shared belief only when it is observed. That belief supports recursive forecasts of clinical values and modality representations, and summaries of future prognosis. Cap-MBRL searches imagined continuations inside an authorized action set and replaces a frozen fallback only when a candidate meets the risk budget and a predicted-cost margin. On the pneumonia cohort MASS, recursive forecasts are competitive with task-trained sequence models, and simulated future states retain prognostic information. Trained separately on public MIMIC-IV-CXR chest radiographs and clinical trajectories, this model improves prognostic discrimination over latest-value fusion in development and is competitive on long-horizon error on the locked pneumonia panel. In five known-mechanism MASS-Syn environments, Cap-MBRL lowers selection regret relative to direct fallback execution.",
+        "comment": "49 pages, 17 figures",
+        "abs": "https://arxiv.org/abs/2610.38289",
+        "pdf": "https://arxiv.org/pdf/2610.38289",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38346",
+      "title": "Knowledge-structured and evidence-aware semantic self-distillation for glomerular pathology foundation model",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "pathology",
+      "paper": {
+        "id": "2610.38346",
+        "title": "Knowledge-structured and evidence-aware semantic self-distillation for glomerular pathology foundation model",
+        "authors": [
+          "Qiming He",
+          "Jing Li",
+          "Zihan Wang",
+          "Tian Guan",
+          "Yifei Ma",
+          "Zimo Zhao",
+          "Yanxia Wang",
+          "Hongjing Chen",
+          "Yexing Zhang",
+          "Yizhi Wang",
+          "Xinrui Chen",
+          "Xitong Ling",
+          "Minxi Ouyang",
+          "Yujie Xie",
+          "Lianghui Zhu",
+          "Yiqing Liu",
+          "Qingxia Hou",
+          "Shuyan Zhao",
+          "Xiaoqin Wang",
+          "Lili Ma",
+          "Qiang Huang",
+          "Zhiyuan Shen",
+          "Junru Cheng",
+          "Siqi Zeng",
+          "Chao He",
+          "Yonghong He",
+          "Zhe Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Visual foundation models learn rich pathological morphology but lack explicit concept-level supervision. Vision--language pretraining can provide this supervision but requires costly image--text pairs. Here, we introduce GloSAGE, a semantic self-distillation framework that uses lesion profiles predicted by a pretrained visual teacher to construct structured pathology descriptions. Reliability-guided selection identifies image--text anchors, while Knowledge-Structured Pathology Text Synthesis and Evidence-Guided Negative-pair Construction account for partially observed lesions. Image--text alignment trains projection layers while retaining the frozen visual encoder; an intermediate Semantic Transfer Layer supplies features for downstream tasks. Developed on GloMillion and evaluated across seven glomerulus- and case-level cohorts, GloSAGE supported zero-shot lesion recognition, image--text retrieval, hard-negative discrimination and concept-intervention analyses. It outperformed its source visual model in most lesion-recognition tasks and improved lesion grading, while supporting competitive case-level disease classification, injury grading and baseline renal function estimation. Ablations supported the combined contributions of knowledge-structured text and evidence-guided negatives, and the intermediate transfer layer improved mean lesion-recognition ROC-AUC relative to the complete projection output. A frozen language model conditioned on GloSAGE features generated glomerular descriptions. These findings suggest that teacher-derived lesion profiles can provide annotation-efficient semantic supervision for extending a glomerular visual foundation model.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.38346",
+        "pdf": "https://arxiv.org/pdf/2610.38346",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38360",
+      "title": "SparseTokenGS: Gaussian-based Sparse-View CBCT Reconstruction via Reusable Token Pool",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "lesion",
+      "paper": {
+        "id": "2610.38360",
+        "title": "SparseTokenGS: Gaussian-based Sparse-View CBCT Reconstruction via Reusable Token Pool",
+        "authors": [
+          "Zihan Deng",
+          "Zhenzhen Gong",
+          "Yujie Liu",
+          "Jiaxin Gong",
+          "Dingkun Liu",
+          "Kexian Xie",
+          "Yixing Huang",
+          "Peng Jin",
+          "Tianye Niu",
+          "Zhisheng Wang",
+          "Fenglin Liu",
+          "Hongming Shan",
+          "Lequan Yu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Sparse-view cone-beam computed tomography is widely used for fast, low-dose volumetric imaging and lesion localization in dentistry and image-guided interventions, but it introduces severe artifacts. Feed-forward Gaussian methods transfer the reconstruction cost to training and decode each coordinate from projection-aligned features and neighboring anchors. However, information from the whole scan is written only when the field is constructed and cannot be retrieved during coordinate decoding, leaving the volume inconsistent within the scan. This is a common limitation of such methods: once the field is fixed, decoding uses only local features and reconstruction quality drops substantially. We propose SparseTokenGS, a Gaussian-based method for sparse-view cone-beam computed tomography reconstruction via a reusable token pool. Anchor Token Fusion and Point-Token Attention query this shared pool at the anchors and at the query coordinates, respectively. The local Gaussian prior is retained, and the volume is reconstructed in one forward pass, without per-scan optimization or a projection-domain loss. On three public chest and dental datasets, SparseTokenGS achieves the highest reconstruction performance among the compared methods. On clinical dental scans, reconstruction from only six projections reaches 29.51 decibels in peak signal-to-noise ratio and a structural similarity of 0.842 against the full-view reference, and off-the-shelf tooth-and-pulp segmentation keeps these structures separable for root-canal localization. Experiments on volcanic rock and chicken show performance after same-object adaptation. A reusable token pool gives feed-forward reconstruction a mechanism that keeps scan-wide context available through decoding and can benefit future rapid clinical lesion localization and analysis. The code is available at: this https URL.",
+        "comment": "10 pages, 12 figures. Submitted to IEEE Transactions on Medical Imaging",
+        "abs": "https://arxiv.org/abs/2610.38360",
+        "pdf": "https://arxiv.org/pdf/2610.38360",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38389",
+      "title": "Visually Irrelevant Hallucinations in Medical Vision-Language Models",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.38389",
+        "title": "Visually Irrelevant Hallucinations in Medical Vision-Language Models",
+        "authors": [
+          "Ke Zou",
+          "Nan Zhou",
+          "Tao Yang",
+          "Meng Liu",
+          "Linchao He",
+          "Zehui Liao",
+          "Ling Huang",
+          "Guangren Huang",
+          "Yidi Chen",
+          "Yi Zhang",
+          "Hu Chen",
+          "Huazhu Fu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical vision-language models (VLMs) show strong performance in radiology report generation (RRG) and medical visual question answering (Med-VQA), producing free-form clinical descriptions and answers from medical images. However, they may generate clinically meaningful statements that lack visual evidence or contradict image content. We refer to these errors as visually irrelevant hallucinations and investigate them at the phrase level. We propose CLEAR (Counterfactual Localized Evaluation of Alignment and Response), a model-agnostic post-hoc framework for phrase-level hallucination risk estimation. CLEAR decomposes generated responses into visually assessable clinical phrases. For each phrase, phrase-conditioned grounding identifies a candidate visual region, which is selectively perturbed by a localized counterfactual intervention. CLEAR characterizes the intervention using two complementary auditing cues: response cues, capturing semantic and clinically meaningful changes in the generated response, and alignment cues, measuring changes in image-phrase compatibility. These cues are normalized and jointly modeled to estimate phrase-level hallucination risk. Across four datasets spanning RRG and Med-VQA, CLEAR outperforms state-of-the-art hallucination detection baselines across multiple medical and general-purpose VLMs. On MIMIC-CXR, CLEAR improves AUPRC from 85.10% to 90.23%. Its effectiveness is further validated on a GT-derived controlled VIH benchmark. These results establish visually irrelevant hallucination as an important fine-grained reliability failure mode in medical VLMs and demonstrate the value of model-agnostic visual-support auditing for more trustworthy multimodal clinical generation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.38389",
+        "pdf": "https://arxiv.org/pdf/2610.38389",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38507",
+      "title": "UnMixMamba: Unmixing Guided State Space Subpixel Mapping of Crops from MODIS Time Series",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "abstract_intro",
+      "matched_text": "Agriculture",
+      "paper": {
+        "id": "2610.38507",
+        "title": "UnMixMamba: Unmixing Guided State Space Subpixel Mapping of Crops from MODIS Time Series",
+        "authors": [
+          "Motasem Alkayid",
+          "Yimin Zhu",
+          "Naser El-Sheimy",
+          "Lincoln Linlin Xu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Subpixel mapping (SPM) of crop types from \\SI{250}{m} Moderate Resolution Imaging Spectroradiometer (MODIS) time series to field-scale Agriculture and Agri-Food Canada (AAFC) labels supports acreage estimation and agricultural monitoring. Three difficulties remain: (i)~spectral-temporal coupling and mixed pixels that break direct coarse-to-fine classifiers; (ii)~intra-class endmember variability that a single spectrum per crop cannot capture; and (iii)~uniform refinement on the high-resolution (HR) grid, which treats every subpixel the same, so most of the effort goes to easy pixels while errors remain in the minority class. UnMixMamba addresses them as follows. For~(i), a temporal-spectral-spatial decoupled (TSSD) factorization estimates simplex fractions and drives AAFC classification from the same mixture field, instead of mapping low-resolution (LR) observations directly to HR logits. For~(ii), \\(\\times 8\\) abundance super-resolution and a learnable per-crop variant endmember bank reconstruct the MODIS cube at LR and HR under a linear mixing model. For~(iii), the predicted crop fractions decide where a fixed Mamba token budget is spent, so HR refinement focuses on the minority class instead of the full grid. On Alberta 2015 under a fixed spatial-block protocol, UnMixMamba reaches OA 0.8397, mIoU 0.6640, AA 0.7837, and Kappa 0.7715, ahead of ST-DRes, ESPCN, FineCrop, AgriFM, and classical SPM baselines. The task is closed-set four-crop mapping inside a known agricultural mask.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.38507",
+        "pdf": "https://arxiv.org/pdf/2610.38507",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.38776",
+      "title": "A 211K Parameter Foundation Model: Genetic Prompting in Neural Cellular Automata",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.38776",
+        "title": "A 211K Parameter Foundation Model: Genetic Prompting in Neural Cellular Automata",
+        "authors": [
+          "John Kalkhof",
+          "Niklas Ihm",
+          "Daniel Kirste",
+          "Anirban Mukhopadhyay"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "The scale of modern foundation models enables broad task generalization. In medical imaging, where segmentation demands vary widely across clinical contexts, such flexibility is invaluable. But current models, such as SAM trade adaptability for scale, locking their utility behind high-end infrastructure and leaving behind the low-resource environments most in need of diagnostic support. To bridge this gap, we introduce Foundational-NCA, a lightweight foundation model capable of adapting to a wide range of medical segmentation tasks without retraining. Built on Neural Cellular Automata (NCA), Foundational-NCA incorporates gradient-based learning with genetic optimization over a latent task space, using a compact task vector to guide predictions. This enables dynamic adaptation via a genetic prompt mechanism, allowing the model to generalize across tasks while keeping the parameter count magnitudes lower at just 211 thousand, compared to SAM-based models with 38.9 to 636 million parameters. We evaluate Foundational-NCA on 15 trained and 6 entirely unseen segmentation tasks from the TotalSegmentator dataset, achieving an average Dice score of 84.5% on known tasks and 60.4% on unseen ones. These results demonstrate that task generalization is possible in ultra-compact models, laying the groundwork for resource-efficient, deployable foundation models in clinical environments where infrastructure is limited. By reducing model size by over 180 times, Foundational-NCA takes a step toward a more equitable future for medical AI, one where powerful tools are within reach of every healthcare setting.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.38776",
+        "pdf": "https://arxiv.org/pdf/2610.38776",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39414",
+      "title": "Anatomical Prior-Guided Routing for 3D Lung Tumor Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2610.39414",
+        "title": "Anatomical Prior-Guided Routing for 3D Lung Tumor Segmentation",
+        "authors": [
+          "Uihyeon Maeng",
+          "Jonghun Kim",
+          "Hyunjin Park"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Accurate lung tumor segmentation in computed tomography (CT) is essential for treatment planning, response assessment, and quantitative imaging analysis. However, 3D lung tumor segmentation remains challenging because tumors occupy only a small portion of the whole volume and exhibit heterogeneous appearances across anatomical locations. In patch-based training and sliding-window inference for 3D medical image segmentation, location-dependent heterogeneity is further amplified because cropped image patches provide limited global anatomical context, making it difficult for a model to adapt its feature processing according to the anatomical region from which each patch is extracted. To address this limitation, we propose an Anatomical Prior-guided Routing Module (APRM) for lung tumor segmentation. For each image patch, we obtain anatomical prior information of regional occupancy and deterministically select an anatomical routing gate. The selected gate then performs sparse feature routing over a shared expert adapter pool, enabling anatomy-specific feature adaptation while sharing expert capacity across regions. We evaluate APRM on two datasets with various backbone networks and demonstrate consistent improvements over baseline models. Furthermore, feature visualizations show that APRM produces different feature responses depending on patch location, indicating that the proposed routing mechanism effectively adapts feature processing according to anatomical context.",
+        "comment": "Accepted to ACCV 2026 (Oral), 18 pages, 6 figures",
+        "abs": "https://arxiv.org/abs/2610.39414",
+        "pdf": "https://arxiv.org/pdf/2610.39414",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39441",
+      "title": "PathCowork: Learning from real-world pathology practice to build AI copilots",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "pathology",
+      "paper": {
+        "id": "2610.39441",
+        "title": "PathCowork: Learning from real-world pathology practice to build AI copilots",
+        "authors": [
+          "Sheng Wang",
+          "Jialu Yao",
+          "Maria V. Rossi",
+          "Shunsuke Koga",
+          "Esther Baranov",
+          "MacLean P. Nasrallah",
+          "Songhao Li",
+          "Jonathan Xu",
+          "Wei Du",
+          "Cindy McGrath",
+          "Timothy Chao",
+          "Anne Wang",
+          "Zhaohai Yang",
+          "Daniel Akuma",
+          "Selemon M. Walle",
+          "Olga Pozdnyakova",
+          "Edward B. Lee",
+          "Zahra Alipour",
+          "Annapurna Saksena",
+          "Rashmi Tondon",
+          "Nikolina Dioufa",
+          "David E. Elder",
+          "George J. Netto",
+          "Xiaowei Xu",
+          "Zhi Huang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical AI learns from the answers doctors record, but rarely from how they interpret the evidence to reach them. Here we introduce PathCowork, a framework that turns pathologists' narrated examinations into supervision for visual grounding and procedures that guide diagnostic AI agents. Synchronized gaze, narration and navigation link visual findings to the process of interpreting them. Across 48 sessions from 16 pathologists, the platform captured 1,028 minutes of slide review. Using these data, we trained PathCowork-1T for server deployment and PathCowork-27B for local deployment, with improved visual grounding. Across five organ-specific evaluations, agents combining this grounding with recorded diagnostic procedures achieved primary task scores averaging 17.9 and 24.1 percentage points higher than Claude Code and Codex, respectively, with shorter processing times and lower inference costs. Compared to the state-of-the-art multiple-instance learning AIs, the PathCowork agent-proposed regions achieved higher prostate-grading scores with limited slide labels. PathCowork can also help construct pathology AI benchmarks where questions derived from the recordings identified difficulties in recognizing viewing context and rejecting inapplicable premises. In summary, PathCowork proposes a new paradigm to scale up the data collection and train pathology AI through transparent reasoning from diagnostic sessions, opening a path towards systems that learn directly from routine clinical practice.",
+        "comment": "56 pages, including supplementary information. Code, models and demonstration videos: this https URL",
+        "abs": "https://arxiv.org/abs/2610.39441",
+        "pdf": "https://arxiv.org/pdf/2610.39441",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39520",
+      "title": "BRIDGE: Learning Brain-Gut Metabolic Evidence for Alzheimer's Disease Diagnosis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Alzheimer",
+      "paper": {
+        "id": "2610.39520",
+        "title": "BRIDGE: Learning Brain-Gut Metabolic Evidence for Alzheimer's Disease Diagnosis",
+        "authors": [
+          "Pengli Zhu",
+          "Ruxi Chang",
+          "Tianliang Yao",
+          "Yu Jiang",
+          "Shengyuan Liu",
+          "Yiyang Lin",
+          "Xiaoyi Duan",
+          "Shuang Wu",
+          "Yixuan Yuan",
+          "Alzheimer's Disease Neuroimaging Initiative"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Alzheimer's disease (AD) diagnosis may benefit from gut metabolic information associated with brain-gut interactions, yet existing models largely analyze cerebral glucose metabolism alone. Although whole-body fluorodeoxyglucose positron emission tomography (FDG-PET) can provide paired brain-gut observations, routine brain examinations rarely include gut imaging, limiting direct use of this information for diagnosis. In this paper, we present BRIDGE (Brain and Gut Representation Integration via Distribution-Guided Enhancement), a two-stage framework for transferring brain-gut metabolic knowledge to brain-only diagnosis. Specifically, BRIDGE integrates a conditional brain-to-gut latent transport module and a disease-evidence-guided cerebral pathway to capture subject-specific cross-organ correspondence and disease-relevant cerebral representations. For the cerebral pathway, a large language model (LLM) helps organize literature-derived descriptors into human-approved semantic anchors that guide feature learning. Additionally, we introduce a counterfactual-guided residual fusion mechanism, which uses matched and non-matched virtual-gut evidence to supervise a confidence gate and dynamically regulate the contribution of transported cross-organ information. At inference, BRIDGE exploits complementary gut-related context using brain PET alone, without measured gut PET. Extensive experiments across public and private cohorts demonstrate that BRIDGE outperforms brain-only and cross-organ baselines, achieving AUC gains of 6.0% and 5.2% over its brain-only counterpart for CN/MCI and CN/AD diagnosis, respectively. Notably, its ability to transfer complementary brain-gut metabolic context while preserving brain PET as the sole inference input highlights its potential for clinically practical diagnosis. Our code is available at this https URL.",
+        "comment": "10 pages, 6 figures",
+        "abs": "https://arxiv.org/abs/2610.39520",
+        "pdf": "https://arxiv.org/pdf/2610.39520",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39534",
+      "title": "MOSAIC-Flow: Orthogonal-Axis and Status-Conditioned Fusion for Missing-Sequence Completion in Brain Tumor MRI",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2610.39534",
+        "title": "MOSAIC-Flow: Orthogonal-Axis and Status-Conditioned Fusion for Missing-Sequence Completion in Brain Tumor MRI",
+        "authors": [
+          "Pengli Zhu",
+          "Zhihao Peng",
+          "Yixuan Yuan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Missing-sequence completion is important for comprehensive brain tumor characterization, but cross-modal fusion can obscure sequence-specific contrast and lose fine-grained three-dimensional tumor detail. To address this challenge, we introduce Modality-aware Orthogonal-axis Status-conditioned Attentive Integration for Completion (MOSAIC-Flow), a unified framework for missing-sequence completion that learns a target-conditioned velocity field while keeping the seven acquired volumes fixed throughout the transport. Specifically, modality-aware stems independently encode each sequence, and orthogonal-axis refinement captures axial, coronal, and sagittal dependencies while retaining the three-dimensional representation. Status-conditioned prototype fusion uses compact modality and availability tokens to route and modulate pooled queries from the fused visual representation, enabling target-adaptive conditioning without dense voxel-to-voxel attention. A conditional flow matching objective transports target-channel noise toward the single missing sequence, while four Heun trajectories are averaged to produce the completion. Evaluation across structural, diffusion, and contrast-enhanced MRI in UCSF-PDGM demonstrates consistent whole-brain and tumor-region fidelity across all eight single-target completion tasks, with the strongest performance on structural sequences. Code is available at this https URL.",
+        "comment": "5 pages, 4 figures",
+        "abs": "https://arxiv.org/abs/2610.39534",
+        "pdf": "https://arxiv.org/pdf/2610.39534",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39584",
+      "title": "DOSE: Dominance-Guided Ordinal Severity Estimation from Sparse Relative Annotations",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.39584",
+        "title": "DOSE: Dominance-Guided Ordinal Severity Estimation from Sparse Relative Annotations",
+        "authors": [
+          "Tushir Sahu",
+          "Hideaki Hayashi",
+          "Hajime Nagahara"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical severity estimation commonly relies on absolute grade annotations, which are fundamentally ordinal, yet existing methods often treat the grades as independent categories. Learning-to-rank methods, which can be trained using relative annotations based on severity comparisons of image pairs, can provide continuous severity rankings but cannot directly predict discrete severity grades. We propose Dominance-guided Ordinal Severity Estimation from Sparse Relative Annotations (DOSE), a framework for learning ordinal medical severity from sparse pairwise comparisons without using absolute annotations. DOSE aggregates the observed comparisons through a global comparison graph to estimate a dominance score for each image. Differences between dominance scores set cumulative margins in the embedding space, so that pairs with larger estimated severity differences are separated more strongly, and also generate pseudo-pairs that supervise a scalar severity head alongside the observed comparisons. The learned continuous severity axis is converted into discrete grades via label-free score calibration, with tie-anchored segmentation as the main calibration method. In the experiment, DOSE consistently outperformed pairwise-ranking baselines on ACNE04, IDRiD, and LIMUC under different pair budgets. Code is available at this https URL",
+        "comment": "Accepted to WACV 2027. 8 pages, 4 figures. Adjust the counts if you add the supplementary material",
+        "abs": "https://arxiv.org/abs/2610.39584",
+        "pdf": "https://arxiv.org/pdf/2610.39584",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39648",
+      "title": "Annotation-Free Representation Learning for Polyp Retrieval in Colonoscopy Videos",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Polyp",
+      "paper": {
+        "id": "2610.39648",
+        "title": "Annotation-Free Representation Learning for Polyp Retrieval in Colonoscopy Videos",
+        "authors": [
+          "Luca Parolari",
+          "Lamberto Ballan",
+          "Carlo Biffi",
+          "Loic Le Folgoc"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Colonoscopy is inherently comparative: reliable visual assessment of polyps often depends on complementary views acquired under different viewpoints and imaging conditions. Retrieving such views requires polyp tracklet representations, which recent contrastive methods learn from temporal cues but still build from manually annotated bounding boxes. We propose an annotation-free framework that constructs tracklet views directly from raw colonoscopy videos, enabling temporal self-supervised learning on full-procedure videos, including frames without visible polyps. On REAL-Colon, our method achieves state-of-the-art results on tracklet retrieval and re-identification, outperforming both self-supervised and supervised baselines. We then introduce few-shot polyp retrieval, a task closer to clinical use, where a few observations of a target polyp are used to retrieve its remaining tracklets: with only two examples, our method surpasses most competing methods given ten. Finally, we show that a modest number of unlabeled procedures suffices for competitive performance, making on-site model development more practical. Code is available at this https URL.",
+        "comment": "Under submission at ISBI 2027",
+        "abs": "https://arxiv.org/abs/2610.39648",
+        "pdf": "https://arxiv.org/pdf/2610.39648",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.39835",
+      "title": "Aligning Medical Vision Language Models at the Capability Boundary with Entropy Adaptive Rubric Grounding",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.39835",
+        "title": "Aligning Medical Vision Language Models at the Capability Boundary with Entropy Adaptive Rubric Grounding",
+        "authors": [
+          "Hongyu Bai",
+          "Jiaqi Zeng",
+          "Chunzheng Zhu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Medical diagnostic reasoning requires verifiable links between visual evidence and clinical knowledge, yet current medical vision language models are aligned with objectives that reward the wrong behavior. Uniform supervised fine tuning lets easy cases dominate updates while clinically critical boundary cases saturate prematurely. Sparse rewards based only on final-answer correctness cannot assess anatomical grounding or clinical logic, inviting reward hacking through answer shortcuts. We propose MedCBR, a two-stage alignment framework coupling boundary-aware preference optimization with rubric-grounded reinforcement learning. First, we construct counterfactual boundary preferences at the model's capability frontier using empirical pass rates and preference pairs that share reasoning prefixes but diverge at decisive diagnostic branches. Difficulty Weighted Boundary Preference Optimization (DBPO) concentrates learning on this calibrated boundary region. Second, we distill reusable clinical rubrics from boundary trajectories and activate them according to prediction entropy. Entropy Gated Grounded Policy Optimization (EGPO) rewards answer correctness, anatomical grounding, and reasoning fidelity while suppressing rubric noise on reliable samples. A reference policy anchored to the boundary-aligned model couples population-level boundary priors with instance-level uncertainty, making diagnostic reasoning more accurate and clinically grounded. Experiments on six medical benchmarks show consistent improvements over strong general, specialized, and reinforcement learning baselines, reaching 61.2% average accuracy with the largest gains on challenging differential diagnosis tasks. Ablations show super-additive gains: combining the two stages exceeds the sum of their individual improvements.",
+        "comment": "Accepted at ACM Multimedia Asia 2026 (MMAsia 2026). 10 pages, 4 figures",
+        "abs": "https://arxiv.org/abs/2610.39835",
+        "pdf": "https://arxiv.org/pdf/2610.39835",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40018",
+      "title": "DINOv2 for PET: A Pre-Training Domain Benchmark Across Classification, Segmentation, and Prognosis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.40018",
+        "title": "DINOv2 for PET: A Pre-Training Domain Benchmark Across Classification, Segmentation, and Prognosis",
+        "authors": [
+          "Roxanne De Maeyer",
+          "Yannick Brackenier",
+          "Vicky De Ridder",
+          "Simon DeKeyser",
+          "Maarten Larmuseau",
+          "Jef Vandemeulebroucke"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "DINO (self-DIstillation with NO labels) has become a stan- dard for self-supervised pre-training, producing features that generalise across datasets and downstream tasks. In medical imaging it has been adopted mainly for radiology (X-ray, CT and MRI), where even natural- image DINO features transfer well. In the literature, these features have been reported to transfer worse to functional imaging such as PET. Yet PET-specific DINO models have barely been introduced, and even less validated across multiple tasks and datasets. We present PET-DINOv2-2D, the first DINOv2 model pre-trained on 2D PET, and benchmark it against open-source encoders: the origi- nal DINOv2 (pre-trained on the LVD-142M natural-image dataset) and OmniRad (pre-trained on CT, MRI and ultrasound). Using the same lightweight heads for every backbone, and despite far less pre-training data, PET-DINOv2-2D matches or outperforms both on three down- stream PET tasks: normal/abnormal classification, lesion segmentation and recurrence-free survival prognosis. Its advantage is largest when few labels are available, suggesting that PET pre-training gives more transferable, label-efficient features. Code is made available at this https URL.",
+        "comment": "8 pages + references, MICCAI 2026, CaPTion workshop",
+        "abs": "https://arxiv.org/abs/2610.40018",
+        "pdf": "https://arxiv.org/pdf/2610.40018",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40029",
+      "title": "Segment Anything Model Based Context Guided Mamba Unet for Medical Image Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.40029",
+        "title": "Segment Anything Model Based Context Guided Mamba Unet for Medical Image Segmentation",
+        "authors": [
+          "Chenchen Wang",
+          "You Zhou"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical image segmentation is crucial for clinical diagnosis and treatment planning, requiring both global contextual understanding and fine-grained structural precision. While the Segment Anything Model (SAM) demonstrates strong generalization capabilities, its direct application to medical images often lacks domain-specific adaptability. Meanwhile, State Space Models (SSMs)-based methods, such as Mamba, efficiently capture long-range dependencies but may struggle with preserving fine anatomical details. To address these challenges, we propose a segment anything model based context guided mamba unet, SAMBA-UNet, a novel framework that integrates SAM's context knowledge with Mamba's hierarchical feature learning to enhance both global representation and local detail refinement. Specifically, we introduce the Hierarchical Context Enhancement Module (HCEM), an attention-based fusion module that deeply incorporates the multi-level features of SAM and Mamba to improve detail perception and segmentation precision. Additionally, we employ LoRA and Adapter-based fine-tuning to adapt SAM to medical imaging tasks, further enhancing its domain-specific segmentation capability and robustness. We conducted a comprehensive study on several medical segmentation datasets, including Synapse, ISIC17, and ISIC18, evaluating our method across multiple metrics. Experimental results demonstrate that SAMBA-UNet achieves state-of-the-art performance, effectively balancing generalization, segmentation accuracy, and computational efficiency. Our code will be released upon acceptance.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40029",
+        "pdf": "https://arxiv.org/pdf/2610.40029",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40068",
+      "title": "BRACHIO: Broad Representations Across Centres for Head-and-neck Imaging Oncology (HECKTOR 2026)",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "cancer",
+      "paper": {
+        "id": "2610.40068",
+        "title": "BRACHIO: Broad Representations Across Centres for Head-and-neck Imaging Oncology (HECKTOR 2026)",
+        "authors": [
+          "Roxanne De Maeyer",
+          "Ine Dirks",
+          "Yannick Brackenier",
+          "Simon DeKeyser",
+          "Jef Vandemeulebroucke",
+          "Vicky De Ridder"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "The HECKTOR 2026 challenge benchmarks machine learning for head and neck cancer, where teams delineate primary and nodal tumour volumes, perform TN staging, and predict recurrence-free survival (RFS). This report describes the submissions for the HECKTOR challenge of team nucli. As the three tasks span both dense and global information from multicentric PET/CT scans, we utilise self-supervised pre-trained encoders, training a 2D DINOv2 encoder (PET-DINOv2-MIPs) on HECKTOR 2026's PET scans. Our final test submission ensembles a DynUNet trained from scratch with a SwinUNETR whose Swin trunk was initialised from a SimMIM-pre-trained checkpoint for segmentation, reaching a mean Dice of 0.5409. For TN staging, GTVp/GTVn geometric features from the segmentation masks are fit to stage probabilities by logistic regression (LR) and fused with PET-DINOv2-MIPs deep features (PCA + LR) via a second-level LR, reaching balanced accuracies of 0.3962 (T-stage) and 0.6432 (N-stage). For the RFS prognosis task, we fine-tune the last two blocks of the PET-DINOv2-MIPs ViT-S encoder jointly with an MLP head under a CoxPH loss, concatenating clinical covariates with the imaging features, reaching a test Harrell's C-index of 0.6577 and a weighted challenge score of 0.5802. The prognosis result is comparable to the best entry of the previous edition and consistent with our internal cross-validation, while our segmentation result is well below it and limits the staging results that depend on it.",
+        "comment": "HECKTOR Challenge 2026, MICCAI, head and neck cancer, PET imaging",
+        "abs": "https://arxiv.org/abs/2610.40068",
+        "pdf": "https://arxiv.org/pdf/2610.40068",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40073",
+      "title": "Uncertainty-aware Coarse-to-Fine Main Pancreatic Duct Segmentation for Width Measurement in 3D MRCP",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "cancer",
+      "paper": {
+        "id": "2610.40073",
+        "title": "Uncertainty-aware Coarse-to-Fine Main Pancreatic Duct Segmentation for Width Measurement in 3D MRCP",
+        "authors": [
+          "Zipei Zhang",
+          "Jaakko Sahlsten",
+          "Mikko Saukkoriipi",
+          "Johanna Ronkainen",
+          "Mona Lehto",
+          "Akseli Aittoniemi",
+          "Irina Rinta-Kiikka",
+          "Kimmo Kaski"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Assessment of the main pancreatic duct (MPD) from volumetric magnetic resonance cholangiopancreatography (MRCP) scans is an essential task for ductal dilatation diagnosis and pancreatic cancer analysis. However, manual assessment is affected by reader variability in which automated analysis may assist. Nevertheless, fully automated and uncertainty-aware MPD analysis from volumetric MRCP remains underexplored area of research. In this study, we propose an automatic and uncertainty-aware deep learning-based pipeline for MPD segmentation and maximum-width analysis from MRCP scans. A coarse localisation model first identifies the ductal region-of-interest, followed by a fine model that segments the MPD within the region. The dataset consists of 256 MPD-segmented MRCP scans from 69 patients. A randomly selected holdout test subset of 14 patients with 55 MRCP volumes was used for evaluation. We employed a five-model cross-validation ensemble for improved performance and uncertainty estimation. The best MPD segmentation performance was 0.634 DSC, 0.744 precision, and 0.593 recall. The mean absolute error for maximum MPD width prediction was 0.355~mm and dilated MPD ($\\geq 5$~mm) was detected with 75.0\\% sensitivity and 74.4\\% specificity. These novel results suggest that automated MPD segmentation can be used to aid MRCP-based duct measurements.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40073",
+        "pdf": "https://arxiv.org/pdf/2610.40073",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40085",
+      "title": "Morphology-Aware Channel-Decoupled Mamba Network for Medical Image Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.40085",
+        "title": "Morphology-Aware Channel-Decoupled Mamba Network for Medical Image Segmentation",
+        "authors": [
+          "Chenchen Wang",
+          "You Zhou"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Accurate multi-organ segmentation in computed tomography (CT) is essential for computer-aided diagnosis, treatment planning, and disease monitoring. However, substantial variations in organ shape and size, together with low tissue contrast and ambiguous boundaries, complicate the modeling of heterogeneous anatomical structures. To address these challenges, we propose a Morphology-Aware Channel-Decoupled Mamba Network (MCDNet), which integrates adaptive local structural enhancement with channel-decoupled long-range modeling. Specifically, we introduce a Morphology-Aware Channel-Decoupled State-Space (MCSS) block that divides feature channels into separate processing groups, allowing differentiated structural representations to be learned within an efficient state-space framework. Within each group, a Morphology-Aware Enhancement Module (MAEM) combines deformable convolutions with channel attention to adapt local feature extraction to anatomical shape variations. Group-wise state-space modeling then captures long-range spatial dependencies, and channel gating adaptively integrates the resulting features. Experiments on the Synapse abdominal CT dataset demonstrate the effectiveness of MCDNet, achieving an average Dice Similarity Coefficient of 81.61% for multi-organ segmentation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40085",
+        "pdf": "https://arxiv.org/pdf/2610.40085",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40088",
+      "title": "Neural Blind Deconvolution for Image Scanning Microscopy",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Microscopy",
+      "paper": {
+        "id": "2610.40088",
+        "title": "Neural Blind Deconvolution for Image Scanning Microscopy",
+        "authors": [
+          "Eliot Guez",
+          "Nathan Buskulic",
+          "Lisa Cuneo",
+          "Luca Calatroni",
+          "Giuseppe Vicidomini"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Image scanning microscopy (ISM) acquires one scanned image per detector element, which are then fused into a single image by multi-image deconvolution to obtain a super-resolved image. Its accuracy, however, depends on point spread function (PSF) models that sample- and system-induced aberrations often invalidate. Since differences between the scanned images encode aberration information, we propose a training-free blind Deep Image Prior (DIP) framework that jointly estimates the specimen and the detector-dependent PSFs. The PSFs are parametrised through the detector geometry and shared excitation and emission PSFs, reducing the unknowns while preserving the physical ISM model, and a Gaussian pre-initialisation stabilises the blind optimisation. On experimental tubulin data, blind DIP recovers finer filamentous structures than multi-image deconvolution and DIP with fixed theoretical PSFs, while adapting the PSFs to the measurements.",
+        "comment": "4 pages, 2 figures",
+        "abs": "https://arxiv.org/abs/2610.40088",
+        "pdf": "https://arxiv.org/pdf/2610.40088",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40094",
+      "title": "RepConTUR: A Report-Conditioned Volumetric Multimodal Model for Abdominal Tumor Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2610.40094",
+        "title": "RepConTUR: A Report-Conditioned Volumetric Multimodal Model for Abdominal Tumor Segmentation",
+        "authors": [
+          "Seunghwan Lee",
+          "Sangjoon Park",
+          "Jongmin Lee",
+          "Yoon Jo Kim",
+          "Wonyoung Cho",
+          "Jin Sung Kim",
+          "Han Joo Chae"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Tumor delineation is required for radiotherapy planning, yet automatic segmentation is limited by errors, predominantly false positives, that distort dose and increase editing time. The radiology report accompanies the scan and localizes disease at the suborgan level, but existing text-promptable models condition on short referring phrases, and most operate in 2D. We present RepConTUR, a single native-3D early-fusion multimodal model that conditions volumetric abdominal tumor segmentation on the narrative report. We extend AbdomenAtlas 3.0 to a suborgan-level promptable segmentation dataset and generate report-based VQA pairs, yielding four report-derived tasks on the same annotations: referring segmentation (RES), report-grounded segmentation (GSEG), report generation (RRG), and visual question answering (VQA). We train RepConTUR, comprising a 3D CT encoder, an early-fusion language model, and a native-3D segmentation module, jointly on the four tasks. Across liver, kidney and pancreas, RepConTUR attains the highest Dice similarity coefficient (DSC), instance-wise precision, and detection F1 among the text-promptable baselines, and adding the report raises mean precision while leaving recall comparable. Against two vision-only specialists, nnU-Net and the report-supervised R-Super, RepConTUR attains the highest value on every in-domain metric for liver and pancreas and the highest mean DSC, recall, precision, and detection F1 over the four out-of-distribution public cohorts. Ablations indicate that conditioning on the narrative report raises detection F1 from 0.499 to 0.528 within the same model, that joint GSEG training raises RES F1 from 0.450 to 0.482, and that the native-3D segmentation module raises GSEG F1 from 0.139 to 0.528 over its 2D counterpart. Code is available at this https URL.",
+        "comment": "Submitted to CVPR 2027",
+        "abs": "https://arxiv.org/abs/2610.40094",
+        "pdf": "https://arxiv.org/pdf/2610.40094",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40121",
+      "title": "Learning a Motion Manifold to Constrain Ambiguity in Unsupervised 4D Medical Image Interpolation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.40121",
+        "title": "Learning a Motion Manifold to Constrain Ambiguity in Unsupervised 4D Medical Image Interpolation",
+        "authors": [
+          "Haojin Li",
+          "Huazhu Fu",
+          "Heng Li",
+          "Jiang Liu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Unsupervised 4D medical image interpolation reconstructs intermediate anatomical states from temporally sparse observations without intermediate supervision. Distinct motion fields may attain comparable endpoint agreement while producing different intermediate anatomy, giving rise to motion ambiguity. This ambiguity is difficult to constrain when many independently adjustable motion variables must be estimated from the observed endpoints. We develop a framework that learns a motion manifold to restrict candidate motion fields while retaining sample-specific variation. Cross-Sample Spectral Basis Learning extracts recurring motion structure from endpoint-derived dense estimates and encodes it in a shared spectral basis. Sample-Conditioned Cayley Basis Reorientation uses predicted motion coordinates to rotate the effective motion directions for each endpoint pair without increasing the number of independent coordinates. Their composition defines a nonlinear family of complete velocity fields across endpoint pairs, accommodating anatomical and motion-state differences within a restricted representation. Integrating each predicted field supports bidirectional reconstruction at arbitrary intermediate times. Theoretical analysis establishes sufficient conditions under which endpoint observations distinguish nearby motions within the learned family. Experiments on ACDC and 4D-Lung demonstrate state-of-the-art performance among the evaluated methods trained without intermediate volumes and competitive results against methods using intermediate supervision.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40121",
+        "pdf": "https://arxiv.org/pdf/2610.40121",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40137",
+      "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Earth observation",
+      "paper": {
+        "id": "2610.40137",
+        "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+        "authors": [
+          "Thijs L van der Plas",
+          "Jacob JW Bakermans",
+          "Ioannis N Athanasiadis"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretability, as the semantic meaning of Earth embeddings is unknown. To address this challenge, we borrow methods from the field of computational neuroscience, which aim to interpret activity in (biological) neurons. Here, we adapt and apply these methods to assign meaning to AlphaEarth embeddings. We analyse embedding features both as stand-alone data, equivalent to spontaneous neural activity, and in relation to land cover and elevation correlates, equivalent to stimulus-response neural activity. We demonstrate correlational and multi-scale structure in the embedding features. Embedding features can display highly specific and directional tuning to land cover and elevation, such as a `North vs South woodland edge' response. When we remove the main trends of combined land cover responses (like water versus land tuning), we discover fine-grained representational details with increased effective dimensionality. Together, our analyses start to unravel what these Earth embeddings represent, which is critical for developing trustworthy downstream applications.",
+        "comment": "Originally published at the EurIPS 2025 REO workshop",
+        "abs": "https://arxiv.org/abs/2610.40137",
+        "pdf": "https://arxiv.org/pdf/2610.40137",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40284",
+      "title": "LoRe-MIM: Lost-or-Replaced Masked Image Modeling for Self-Supervised Representation Learning in Whole-Body PET/CT",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2610.40284",
+        "title": "LoRe-MIM: Lost-or-Replaced Masked Image Modeling for Self-Supervised Representation Learning in Whole-Body PET/CT",
+        "authors": [
+          "Amartya Bhattacharya",
+          "Bashirul Azam Biswas",
+          "Biratal Raj Wagle",
+          "Michael S. Leapman",
+          "Matthew E. Maeder",
+          "James B. Yu",
+          "Indrani Bhattacharya"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deep learning models for whole-body positron emission tomography/computed tomography (PET/CT) hold significant clinical potential for disease detection, treatment planning, and response assessment. However, the time and cost associated with expert annotations remain major bottlenecks in developing robust and generalizable models. Although self-supervised learning (SSL) has emerged as a promising approach to mitigating annotation scarcity, its application to whole-body PET/CT remains relatively underexplored due to the limited availability of large-scale datasets and the challenges associated with learning complementary cross-modal representations. To address these limitations, we curate a heterogeneous, multi-tracer, multi-institutional cohort comprising 6,531 whole-body PET/CT scans and propose LoRe-MIM (Lost-Or-Replaced Masked Image Modelling), a novel self-supervised framework designed to learn multimodal representations through masked image reconstruction. Specifically, LoRe-MIM introduces a masking strategy in which image regions are either replaced with zeros (Lost) or substituted with corresponding complementary imaging modality (Replaced), encouraging the model to capture both modality-specific characteristics and cross-modal relationships. We evaluate the learned representations across multiple downstream tasks, including multimodal PET/CT image reconstruction, patch-based classification into cancer vs. non-cancer, whole-body lesion segmentation, label-efficient training, and robustness assessment. Experimental results demonstrate that LoRe-MIM consistently outperforms the corresponding state-of-the-art baselines across these tasks, highlighting its potential as a scalable and generalizable self-supervised learning framework for whole-body PET/CT analysis.",
+        "comment": "25 pages, 9 figures",
+        "abs": "https://arxiv.org/abs/2610.40284",
+        "pdf": "https://arxiv.org/pdf/2610.40284",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40302",
+      "title": "Self-training for cross-centre coronary vessel segmentation in X-ray angiography using pre-contrast frame subtraction",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "coronary",
+      "paper": {
+        "id": "2610.40302",
+        "title": "Self-training for cross-centre coronary vessel segmentation in X-ray angiography using pre-contrast frame subtraction",
+        "authors": [
+          "Danial Moafi",
+          "Aida Moafi",
+          "Mostafa Aryafar",
+          "Ashkan Sami",
+          "Maryam Aryafar"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Deep learning models for coronary vessel segmentation in X-ray angiography often perform poorly on data from centres that were not represented in training. Apart from differences in equipment, the labels of the largest public dataset (ARCADE) are incomplete, as only the segments defined in the SYNTAX score are annotated. In this study, we evaluated whether self-training with pseudo-labels can improve performance on external data without additional manual annotation. Pseudo-labels were generated from two sources, namely the predictions of an nnU-Net model trained on ARCADE and a contrast map obtained by subtracting a pre-contrast frame from the same sequence. The nnU-Net predictions were extended along the contrast map, and pixels detected only in the subtraction image were assigned an ignore label and excluded from the loss. Six models were trained and tested on ARCADE and on two external datasets (XCAD and XACV). All first-round models initialised with the baseline predictions performed better than both the baseline and a control model fine-tuned for the same number of epochs. The model trained on the XCAD pool improved the macro-averaged Dice score by 2.7 points (95% CI 2.3-3.2), while the control decreased it by 0.6 points. A second round of self-training did not lead to further improvement. When an external model trained on 50 fully annotated images was used to generate the initial labels, the XCAD Dice score increased from 0.623 to 0.745 without any XCAD labels, although performance on XACV did not improve because large main vessels were missed. These results suggest that the benefit of self-training depends largely on the sensitivity of the model used to generate the initial pseudo-labels.",
+        "comment": "7 pages, 2 figures, 3 tables",
+        "abs": "https://arxiv.org/abs/2610.40302",
+        "pdf": "https://arxiv.org/pdf/2610.40302",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40327",
+      "title": "Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Clinical",
+      "paper": {
+        "id": "2610.40327",
+        "title": "Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support",
+        "authors": [
+          "Xuewen Zhou",
+          "Zhen Chen"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Radiological risk stratification and management planning are essential downstream tasks in medical imaging. Automating these tasks is challenging because clinical guideline criteria are distributed across prose, tables, and cross-referenced definitions. We present Guideline-derived Decision Graph (GDGraph), a framework that decouples guideline compilation from case evaluation. During compilation, a large language model partitions guidelines into section-based chunks, extracts local decision subgraphs with linked definitions, and aggregates related branches into an executable decision graph. During inference, a fast System One model answers localized clinical questions while deterministic traversal resolves Boolean logic, turning opaque single-pass predictions into a traceable decision path without task-specific training. Across 347 cases spanning renal cyst, adnexal mass, and thyroid nodule guidelines, GDGraph improves System One accuracy from 57.3% to 90.8%, outperforming retrieval-augmented GPT-4o (80.1%) and graph-guided GPT-4o with chain-of-thought (82.7%) at substantially lower latency and cost. The source code will be available.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40327",
+        "pdf": "https://arxiv.org/pdf/2610.40327",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40432",
+      "title": "Soil Moisture Estimation in Precision Agriculture: A Knowledge Distillation Approach",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Agriculture",
+      "paper": {
+        "id": "2610.40432",
+        "title": "Soil Moisture Estimation in Precision Agriculture: A Knowledge Distillation Approach",
+        "authors": [
+          "Mohammed Rakib",
+          "Vrinda Nagula",
+          "Arunkumar Bagavathi"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Accurate soil moisture estimation is critical for precision agriculture, influencing irrigation, fertilization, and harvesting strategies. Traditional methods primarily rely on meteorological and soil property data, while recent approaches incorporate visual modalities such as aerial and geospatial imagery. However, these high-resolution images are expensive and computationally demanding to analyze. In this work, we propose Soil Moisture Distillation (SMD), a Knowledge Distillation (KD)-based multimodal learning framework that leverages unimodal teachers to enhance multimodal soil moisture estimation. SMD surpasses not only traditional multimodal fusion techniques, including MIS-ME, but also outperforms unimodal models, demonstrating the benefits of guided unimodal knowledge transfer. Additionally, we conduct a comparative analysis of soil patches and crop images, showing that crop images provide superior visual cues, leading to improved prediction accuracy. SMD achieves a 2% improvement in MAPE for soil patches and 1.2% for crops over state-of-the-art baselines, highlighting the effectiveness of leveraging both meteorological and visual data through knowledge distillation for enhanced soil moisture forecasting.",
+        "comment": "Accepted by MWAIS 2025",
+        "abs": "https://arxiv.org/abs/2610.40432",
+        "pdf": "https://arxiv.org/pdf/2610.40432",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40455",
+      "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "Aerial imagery",
+      "paper": {
+        "id": "2610.40455",
+        "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+        "authors": [
+          "Daniel Lengerer",
+          "Richard Schwarzkopf",
+          "Jonas Merkert",
+          "Fabian Immel",
+          "Rupert Polley",
+          "Frank Bieder",
+          "Jan-Hendrik Pauls",
+          "J. Marius Zöllner",
+          "Klaus Bogenberger",
+          "Christoph Stiller",
+          "Carsten Markgraf"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: this https URL",
+        "comment": "Accepted at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)",
+        "abs": "https://arxiv.org/abs/2610.40455",
+        "pdf": "https://arxiv.org/pdf/2610.40455",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40467",
+      "title": "InfantNet: A Large Scale Dataset for Infant Body Pose and Shape Estimation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.40467",
+        "title": "InfantNet: A Large Scale Dataset for Infant Body Pose and Shape Estimation",
+        "authors": [
+          "Zhipeng Hui",
+          "Jiahao Wang",
+          "Xun Dong",
+          "Guofeng Zhang",
+          "Xingrui Wang",
+          "Jiawei Peng",
+          "Qihao Liu",
+          "Xiaoding Yuan",
+          "Yi Zhang",
+          "Junjie Oscar Yin",
+          "Wufei Ma",
+          "Qinfan Lyu",
+          "Sara N. Lupolt",
+          "Keeve Edward Nachman",
+          "Adam Kortylewski",
+          "Alan Yuille"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Infant pose and shape estimation is essential for applications in childcare, developmental monitoring, and medical diagnosis. However, existing methods and datasets are largely designed for adults, and direct transfer to infants fails due to substantial differences in body proportions, articulation limits, and frequent self-occlusion. To address this gap, we introduce InfantNet, the largest real-image infant dataset to date, comprising 108,902 RGB images of infants aged 6-18 months. Each image is annotated with 2D keypoints, and a curated subset of 11,642 images additionally includes 3D pose and shape annotations with full SMIL parameters, verified through multi-view rendering and reprojection-error filtering. We use an iterative annotation pipeline to ensure high fidelity across both 2D and 3D labels. InfantNet establishes a large-scale, comprehensive benchmark for infant 2D keypoint detection and 3D pose-and-shape recovery. Baseline experiments demonstrate that state-of-the-art adult pose estimators do not generalize well to infants, whereas fine-tuning on InfantNet yields a consistent improvement. The gains are even more pronounced for 3D pose and shape estimation, where SMIL-based estimation demonstrates robust performance with accuracy comparable to results reported for SMPL-based models. By releasing the InfantNet dataset and benchmark, we provide a vital resource for advancing infant pose analysis and related healthcare applications.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40467",
+        "pdf": "https://arxiv.org/pdf/2610.40467",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40478",
+      "title": "Accurate MRI-free PET Quantification and Reliability Assessment via CT-to-MRI Synthesis and Conformal Prediction",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2610.40478",
+        "title": "Accurate MRI-free PET Quantification and Reliability Assessment via CT-to-MRI Synthesis and Conformal Prediction",
+        "authors": [
+          "Jungwoo Seo",
+          "Seung Yun Choi",
+          "Kun Ho Lee",
+          "Seun Jeon",
+          "Byoung Seok Ye",
+          "Jiook Cha"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Standardized uptake value ratio (SUVR) quantification of amyloid PET commonly relies on a subject-specific T1-weighted MRI, yet a usable MRI is not always available. We therefore combined CT-to-MRI synthesis with conformal prediction for MRI-free PET quantification with reliability assessment. A slice-consistent Brownian Bridge Diffusion Model was strengthened with multi-dataset training and data-source conditioning to enrich the anatomical prior learned from MRI, and with expanded multi-slice CT context to exploit the through-plane continuity of subject-specific anatomy in CT. Synthetic MRI was used for FreeSurfer-based anatomical parcellation and PET quantification, while deep-ensemble uncertainty was calibrated with conformal prediction to estimate a plausible range for the corresponding real MRI-based SUVR. On $^{11}$C-PiB PET from OASIS-3, the proposed method achieved the highest synthesis and parcellation fidelity among the compared methods. Mean cortical SUVR from the proposed synthetic MRI agreed closely with the real MRI-based reference (MAE $0.016 \\pm 0.015$, Pearson $r = 0.9987$) and yielded the same amyloid-positivity classification as the real MRI in all 87 test subjects at the prespecified cut-off. Conformal prediction achieved empirical coverage close to the prespecified levels, and at 90% target coverage, 85 of 87 subjects had prediction intervals that supported an unambiguous amyloid-positivity decision. Zero-shot evaluation on an independent external cohort showed that the proposed CT-to-MRI model could support PET quantification without retraining, although conformal calibration required target-cohort recalibration to recover the intended coverage. These findings support CT-to-MRI-based MRI-free PET quantification as a promising approach for providing accurate SUVR measurements and an explicit assessment of their reliability.",
+        "comment": "28 pages, 8 figures, including supplementary material. Submitted to Medical Image Analysis",
+        "abs": "https://arxiv.org/abs/2610.40478",
+        "pdf": "https://arxiv.org/pdf/2610.40478",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40580",
+      "title": "RADIOlogy: A Single-Pass Approach to Training-Free Zero-Shot Anomaly Detection",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "RADIOlogy",
+      "paper": {
+        "id": "2610.40580",
+        "title": "RADIOlogy: A Single-Pass Approach to Training-Free Zero-Shot Anomaly Detection",
+        "authors": [
+          "Joaquín Figueira",
+          "Giacomo D'Amicantonio",
+          "Egor Bondarau"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Current zero-shot anomaly detection methods often rely on complex prompt-learning techniques or computationally expensive sliding-window strategies to achieve fine-grained visual alignment to detect small-scale anomalies. This reliance stems from the fundamental limitation of standard CLIP architectures, where [CLS] token attention and spatial patch pooling struggle to capture subtle, localized anomaly features. While prompt-learning approaches aim to bridge this gap, they typically require a large number of ground-truth segmentation masks from auxiliary datasets, which are often unavailable in specialized domains. In this work, we show an emerging property of multi-head attention pooling in vision-language models: remarkable zero-shot anomaly localization and detection right out of the box. We translate this property into a single-pass anomaly detection technique, RADIOlogy, that does not require dense, windowed execution and significantly outperforms other training-free baselines. Instead, the method relies on a simple contrastive scoring approach that compares the average similarity between vision features and a suite of normal and abnormal prompts. Furthermore, we leverage the agglomerative features of RADIO models to enhance pixel-level anomaly segmentation using a dense anomaly refinement pipeline. Finally, we show how the vision-language family of training-free zero-shot anomaly detection techniques can be applied successfully to the medical domain with minimal modifications. Code is available at this https URL.",
+        "comment": "Accepted to WACV 2027. Code available at this https URL",
+        "abs": "https://arxiv.org/abs/2610.40580",
+        "pdf": "https://arxiv.org/pdf/2610.40580",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40587",
+      "title": "Beyond Ground Truth: A Heuristic Unsupervised Quality Assurance Engine for Diagnosing Calibrational Blindness in Dental Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2610.40587",
+        "title": "Beyond Ground Truth: A Heuristic Unsupervised Quality Assurance Engine for Diagnosing Calibrational Blindness in Dental Segmentation",
+        "authors": [
+          "Fatematuj Johura Mim"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "In real-world clinical settings, dental X-ray segmentation using deep learning methods suffers from reliability issues. Even when the segmentation quality is bad, deep learning models show high confidence in their predictions (calibrational blindness). Moreover, in real use, doctors do not have ground-truth masks to check their accuracy. To address this problem, we introduce a simple quality-checking engine called HUS-QA with three stages. We train it on the PRAD (Periapical Dental X-ray) dataset to build our SimCLR self-supervised ResNet-18 U-Net model, which generates the segmentation mask and then evaluates its quality. Our HUS-QA checks the segmentation mask quality without a ground-truth mask. Prediction confidence, edge sharpness, shape connectivity, and area-size penalty are the simple indicators considered in this research. Results show that standard confidence methods fail (r = -0.1394, p = 1.7864e-3, ROC AUC = 0.4275). By contrast, our HUS-QA shows a positive correlation with actual Dice scores (r = 0.4647, p = 3.7510e-28) and achieves a strong ROC-AUC of 0.8405. Therefore, HUS-QA serves as a practical tool for clinical quality control.",
+        "comment": "Accepted at 11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026), Cox's Bazar, Bangladesh. Copyright 2026 IEEE. 5 pages, 5 figures, 3 tables",
+        "abs": "https://arxiv.org/abs/2610.40587",
+        "pdf": "https://arxiv.org/pdf/2610.40587",
+        "listing_date": "2026-10-30",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
