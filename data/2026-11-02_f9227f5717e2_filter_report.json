@@ -1,0 +1,536 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "f9227f5717e222ab4a4ec50e058e8ecdf8f7fe2e92c900fcda33e992e78b0c12",
+  "input_count": 84,
+  "kept_count": 69,
+  "excluded_count": 15,
+  "counts_by_reason": {
+    "medical_biological": 12,
+    "remote_sensing": 2,
+    "agriculture_ecology": 1
+  },
+  "kept_ids": [
+    "2610.40754",
+    "2610.40801",
+    "2610.40832",
+    "2610.40900",
+    "2610.40935",
+    "2610.40947",
+    "2610.40949",
+    "2610.40971",
+    "2610.40973",
+    "2610.41011",
+    "2610.41030",
+    "2610.41037",
+    "2610.41069",
+    "2610.41080",
+    "2610.41118",
+    "2610.41127",
+    "2610.41190",
+    "2610.41199",
+    "2610.41204",
+    "2610.41210",
+    "2610.41231",
+    "2610.41254",
+    "2610.41257",
+    "2610.41260",
+    "2610.41310",
+    "2610.41314",
+    "2610.41373",
+    "2610.41389",
+    "2610.41402",
+    "2610.41408",
+    "2610.41426",
+    "2610.41485",
+    "2610.41501",
+    "2610.41512",
+    "2610.41520",
+    "2610.41598",
+    "2610.41602",
+    "2610.41618",
+    "2610.41629",
+    "2610.41642",
+    "2610.41651",
+    "2610.41673",
+    "2610.41677",
+    "2610.41695",
+    "2610.41705",
+    "2610.41772",
+    "2610.41789",
+    "2610.41814",
+    "2610.41833",
+    "2610.41834",
+    "2610.41983",
+    "2610.41987",
+    "2610.41992",
+    "2610.42002",
+    "2610.42031",
+    "2610.42036",
+    "2610.42082",
+    "2610.42092",
+    "2610.42135",
+    "2610.42136",
+    "2610.42149",
+    "2610.41185",
+    "2610.41216",
+    "2610.41348",
+    "2610.41352",
+    "2610.41671",
+    "2610.41877",
+    "2610.42053",
+    "2610.42141"
+  ],
+  "excluded": [
+    {
+      "id": "2610.40752",
+      "title": "PathoJev: Efficient Pathology Decisions from Shared Visual Context",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2610.40752",
+        "title": "PathoJev: Efficient Pathology Decisions from Shared Visual Context",
+        "authors": [
+          "Chengyang Zhang",
+          "Wenchuan Zhang",
+          "Bo Li",
+          "Xinyu Liu",
+          "Jiaming Yang",
+          "Mengran Li",
+          "Jie Chen",
+          "Wei Ju",
+          "Yuhao Yi",
+          "Hong Bu",
+          "Jiancheng Lv"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Pathology workflows require multiple visual judgments about the same slide, from identifying tumor type to assessing grade and invasion. Generating and parsing a separate textual response for each structured question adds latency between visual evidence and usable decisions. Building on the System One paradigm, we introduce PathoJev, a pathology model that directly predicts answer probabilities for whole-slide and region-level assessment. PathoJev encodes each slide once and evaluates independent question suffixes in batches over the shared visual context. Reusing the hybrid backbone's recurrent states further limits the computation that grows with slide-context length for each additional question. Across three whole-slide benchmarks, the 9B and 27B models achieve mean accuracies of 77.2% and 78.1%, exceeding SlideChat by 5.4 and 6.3 percentage points. Both scales also maintain competitive accuracy on five ROI benchmarks. On WSI-Bench, the 9B model runs 9.1x faster than SlideChat. Shared context accelerates eight-question workloads by 6.9x and 5.9x over separate prefix encoding, rising to 11.2x and 8.9x for 64 questions. These results provide a reusable probabilistic interface for combining multiple visual judgments in whole-slide and local tissue assessment. Code: this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40752",
+        "pdf": "https://arxiv.org/pdf/2610.40752",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40834",
+      "title": "Spatial Atlas-Informed Loss Ensembles for Whole-Body PSMA PET/CT Metastasis Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "prostate",
+      "paper": {
+        "id": "2610.40834",
+        "title": "Spatial Atlas-Informed Loss Ensembles for Whole-Body PSMA PET/CT Metastasis Segmentation",
+        "authors": [
+          "Grant N. Chau",
+          "Bashirul A. Biswas",
+          "Biratal Wagle",
+          "Matthew E. Maeder",
+          "Michael S. Leapman",
+          "James B. Yu",
+          "Indrani Bhattacharya"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Existing whole-body PSMA PET/CT prostate metastasis segmentation methods generally rely on images alone, without explicitly incorporating where metastases tend to occur. We investigate whether a population metastasis atlas can improve lesion detection when integrated into model training. We constructed voxel-wise mean and standard deviation maps from 375 expert-annotated training scans and used them to weight the cross-entropy loss of an nnU-Net. The additional penalties for missed lesions and false positives depend on spatial atlas statistics and diminish as predictions become confidently correct. Seven configurations were compared on validation data; three were combined by majority voting into SAILS (Spatial Atlas-Informed Loss enSemble). We compared SAILS with a baseline nnU-Net and inference-time atlas fusion on AutoPET~III (110 disease-positive cases) and Deep-PSMA (100 external cases). No atlas or registration is needed at inference. Results: On AutoPET~III, SAILS improved whole-body Dice (0.531 vs. 0.520; p=0.006), reduced missed-lesion volume (9.5 vs. 12.1 cc/case; p<0.01), and increased pooled lesion sensitivity (0.857 vs. 0.843; p=0.004). On Deep-PSMA, SAILS detected 126 additional reference lesions (sensitivity 0.769 vs. 0.751; p<0.001), without a significant whole-body Dice change (-0.009; p=0.36). High-risk bone Dice improved in both cohorts (0.576 vs. 0.552 and 0.667 vs. 0.653; both p<0.01). False-positive volume increased by 2.3 and 18.2 cc/case, respectively (p<0.001). Atlas-weighted training improves lesion detection, especially in high-risk bone, without test-time atlas registration, but increases false positives.",
+        "comment": "21 pages, 6 figures",
+        "abs": "https://arxiv.org/abs/2610.40834",
+        "pdf": "https://arxiv.org/pdf/2610.40834",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40905",
+      "title": "Sparse Autoencoders for Expert-Assisted Interpretation of Histopathology Foundation Model Embeddings",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histopathology",
+      "paper": {
+        "id": "2610.40905",
+        "title": "Sparse Autoencoders for Expert-Assisted Interpretation of Histopathology Foundation Model Embeddings",
+        "authors": [
+          "Šimon Šmída",
+          "Wanda Benesova"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Histopathology foundation models learn rich embedding representations, but their internal structure remains difficult to inspect. Concept-level interpretability is particularly relevant in computational pathology because pathologists reason through recurring morphological and tissue-level patterns, including tissue architecture, cellular morphology, staining variation, and artifacts. In this work, we investigate whether sparse autoencoders (SAEs) can decompose embeddings from histopathology foundation models into sparse latent features suitable for expert-assisted interpretation. We train vanilla and Batch-TopK SAE variants on NCT-CRC embeddings, using CONCH as the primary foundation model and UNI2-h as an additional robustness evaluation, and characterize the resulting latent features through reconstruction fidelity, sparsity, coherence, label enrichment, and downstream class-signal preservation. The learned sparse representations preserve most downstream tissue-class information, and their latent features retrieve more coherent and label-concentrated patch groups than raw embedding dimensions or PCA components. Discussions with pathology experts further motivated a WSI-level latent visualization workflow that places feature activations into larger tissue context. Overall, the additional UNI2-h evaluation suggests that the observed behavior is not specific to CONCH, supporting the use of sparse autoencoders for expert-assisted analysis of histopathology foundation-model embeddings, while emphasizing that latent features should be treated as candidate concepts requiring pathological assessment rather than automatically validated histopathological concepts.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.40905",
+        "pdf": "https://arxiv.org/pdf/2610.40905",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.40913",
+      "title": "Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.40913",
+        "title": "Coupled or Independent? Fault Coupling in Agentic Medical Vision Systems",
+        "authors": [
+          "Nishi Kanta Paul",
+          "Md Shihabul Islam Shovo",
+          "Md Mostafijur Rahman",
+          "Jamil Fayyad"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CR"
+        ],
+        "summary": "Vision-language agents equipped with tools expose intermediate outputs for inspection and comparison with the model's reasoning, which may offer safety benefits over single-shot models. This paper tests that potential benefit when the sensor reading itself is untrusted, so that the tool and reasoning channels share a common visual fault. We consider a dermatology agent based on segmentation, contrastive retrieval, and an iterative vision-language reasoner and define a coupling taxonomy that distinguishes single-channel errors from joint errors that agree or disagree. On PAD-UFES-20, we show that typographic injection produces detectable directional retrieval capture, whereas physical corruption does not. Crop-first retrieval preserves the payload at a readable scale and produces 55% joint wrong agreement across all cases (71% of faulty cases); full-image retrieval produces 35% (43%). Under a binary decision, if both channels are wrong, their predictions must agree, so hard-label channel comparison cannot detect joint failures, limiting disagreement recall to 0.29 (crop-first) versus 0.57 (full-image). The direction of the order effect is reproduced on the independent HIBA test set.",
+        "comment": "9 pages, 3 figures, 5 tables",
+        "abs": "https://arxiv.org/abs/2610.40913",
+        "pdf": "https://arxiv.org/pdf/2610.40913",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41063",
+      "title": "Segment Anything Pancreas: A Unified MRI Segmentation Model for Pancreatic Cancer Radiotherapy",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Cancer",
+      "paper": {
+        "id": "2610.41063",
+        "title": "Segment Anything Pancreas: A Unified MRI Segmentation Model for Pancreatic Cancer Radiotherapy",
+        "authors": [
+          "Zach Eidex",
+          "Mojtaba Safari",
+          "Kundan Thind",
+          "Parag J. Parikh",
+          "Zhen Tian",
+          "Xiaofeng Yang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Background: Limited tumor annotations and incomplete labels across MRI datasets hinder unified segmentation of pancreatic tumors and organs at risk (OARs) for MRI-guided radiotherapy. Purpose: We propose Pancreas-MedNeXt, a unified model that segments the whole pancreas, its subregions, tumors, and surrounding OARs from one MRI volume. Methods: The model uses a shared MedNeXt encoder-decoder with supervised whole-pancreas and subregion pretraining, followed by multitask fine-tuning. Three output heads predict the pancreatic subregions, tumor, and OARs (stomach, duodenum, kidneys). An annotation-aware loss allows training on partially labeled data without treating unannotated structures as background. Pancreas and tumor were evaluated by three-fold cross-validation on 142 PANTHER patients (92 diagnostic, 50 MR-Linac), subregions and OARs on Cyst-X and AMOS test sets, and pancreas and OARs on 33 external T1-weighted TotalSegmentator scans. Comparisons with nnU-Net, MedNeXt, VISTA3D, and Swin UNETR used the Dice similarity coefficient (DSC) with paired bootstrap 95% CIs. Results: Pancreas-MedNeXt achieved the highest mean pancreas and tumor DSC on diagnostic and MR-Linac MRI. Tumor DSC was 58.41% and 42.55%, exceeding task-specific MedNeXt by 4.94 (95% CI: 0.28-9.45) and 5.89 (95% CI: 2.37-9.72) percentage points, respectively. Whole-pancreas DSC was 85.73% and 70.66%. Pretraining improved head, body, and tail DSC by 2.01, 3.00, and 3.78 percentage points over training from scratch. It also achieved the highest DSC for the pancreas, duodenum, and right kidney on AMOS, and for all five organs on external MRI, exceeding the next-best method by 4.92-8.85 percentage this http URL: A single Pancreas-MedNeXt model segments tumors, pancreatic subregions, and OARs on diagnostic and MR-Linac MRI, which could streamline contouring for pancreatic cancer radiotherapy.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.41063",
+        "pdf": "https://arxiv.org/pdf/2610.41063",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41111",
+      "title": "An Empirical Study on Learning Rooftop Solar Potential from Satellite Imagery Directly Without Explicit Geometry",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Satellite Imagery",
+      "paper": {
+        "id": "2610.41111",
+        "title": "An Empirical Study on Learning Rooftop Solar Potential from Satellite Imagery Directly Without Explicit Geometry",
+        "authors": [
+          "Joshua Lee"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Rooftop solar potential estimation often relies on LiDAR, digital surface models (DSMs), or pipelines that explicitly reconstruct roof geometry before estimating solar potential. We propose Direct Rooftop Solar Prediction (DRSP), an end-to-end formulation that maps satellite imagery and coarse regional sunlight information directly to application-level solar outputs. DRSP neither requires explicit geometric representations as input nor predicts roof orientation, slope, height, DSMs, or other geometric quantities as intermediate outputs, and therefore requires no geometric intermediate supervision. To enable large-scale study of this formulation, we develop a programmatic data-curation pipeline that converts per-panel information from the Google Solar API into usable-rooftop masks and spatial solar-energy targets, yielding two geographically distinct datasets containing approximately 60K rooftops from the U.S. Midwest and 87K from Texas. We demonstrate the feasibility of DRSP and systematically characterize the effects of geographic training distribution, model depth, image resolution, regional sunlight conditioning, and heatmap regression objectives. Overall, our results suggest that useful rooftop-scale solar information can be learned directly from 2D imagery without explicit geometric intermediate representations, offering a simpler path toward large-scale solar assessment. Our code and dataset are available at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.41111",
+        "pdf": "https://arxiv.org/pdf/2610.41111",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41159",
+      "title": "MATS: A Multi-Agent Framework for Controllable and Reflective Tumor Synthesis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2610.41159",
+        "title": "MATS: A Multi-Agent Framework for Controllable and Reflective Tumor Synthesis",
+        "authors": [
+          "Zhongnan Shi",
+          "Keyang Zhou",
+          "Siyi Li",
+          "Qichao Ying",
+          "Xinchen Ma",
+          "Shuyi Gong",
+          "Wei Tang",
+          "Sheng Li",
+          "Zhenxing Qian"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Synthesizing realistic tumors on medical images helps address data scarcity for clinical AI. Existing diffusion-based methods, however, lack fine-grained attribute-level controllability, closed-loop quality verification, and awareness of which morphological patterns are underrepresented in the target distribution. We present MATS, a multi-agent framework for text-controllable, cross-organ tumor synthesis. Given a target disease, MATS first profiles its morphological distribution over a fine-grained attribute space covering tumor geometry and appearance, and constructs a generation plan that amplifies underrepresented subtypes while keeping common ones dominant. It then localizes the target organ, proposes anatomically valid placement, and executes two-stage diffusion to produce the tumor mask and render texture, each conditioned on the corresponding attributes. A closed-loop reflective mechanism verifies attribute alignment at three checkpoints throughout synthesis and provides targeted feedback to guide re-generation when misalignment is detected. Trained exclusively on a single-source pancreatic neuroendocrine tumor dataset, MATS consistently improves downstream segmentation both in-domain and across LiTS, KiTS, and MSD-Pancreas benchmarks, whereas most prior generative augmentation methods fall below real-only training.",
+        "comment": "IEEE BIBM 2026",
+        "abs": "https://arxiv.org/abs/2610.41159",
+        "pdf": "https://arxiv.org/pdf/2610.41159",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41362",
+      "title": "Task-Performance Routing for Multi-Teacher Distillation in CT Medical Image Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.41362",
+        "title": "Task-Performance Routing for Multi-Teacher Distillation in CT Medical Image Segmentation",
+        "authors": [
+          "Jiaye Yang",
+          "Yao Liu",
+          "Die Dai",
+          "Hanwen Zhang",
+          "Peiyuan Jiang",
+          "Qiao Liu",
+          "Yutong Xie",
+          "Peng Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Pre-trained models offer complementary strengths in CT organ segmentation, but their relative accuracy varies across organs and spatial regions. Multi-teacher knowledge distillation can combine these strengths in a single student, yet global or instance-level teacher weights overlook variation within a 3D volume. We propose Task-Performance Routing (TPR), which uses region-wise segmentation errors to determine teacher weights during training without learned routing parameters. In hard regions, TPR favors teachers with lower prediction errors; in easy regions, it uses uniform weights to combine their knowledge. A hierarchical spatial partition provides fine-grained routing in shallow encoder stages and coarse-grained routing in deep stages. Experiments on BTCV, MSD-Liver, and MSD-Pancreas with two teacher pairs and two backbone architectures show higher Dice scores than the individual teachers, adaptive ensembles, and evaluated multi-teacher distillation baselines. On MSD-Pancreas, TPR achieves Dice scores of 65.40% with SwinUNETR and 68.25% with U-Net, compared with 64.38% and 67.45% for the corresponding adaptive ensembles. Inference uses the student alone, with no routing or teacher overhead. Code is available at this https URL.",
+        "comment": "Accepted at MICCAI 2026. 11 pages, 3 figures, 4 tables. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2610.41362",
+        "pdf": "https://arxiv.org/pdf/2610.41362",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41446",
+      "title": "Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Geospatial",
+      "paper": {
+        "id": "2610.41446",
+        "title": "Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation",
+        "authors": [
+          "Jiawei Ge",
+          "Wenkang Gong",
+          "Jiuxin Cao",
+          "Bo Liu",
+          "Lei Cui",
+          "Haoran Wang",
+          "Xuelin Zhu",
+          "Biwei Cao",
+          "Chang Liu",
+          "Chen Feng",
+          "Ioannis Patras"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Aerial Vision-and-Language Navigation (VLN) requires UAVs to locate language-specified goals in large-scale urban environments, where objects often appear small and visually ambiguous from high-altitude viewpoints. Existing methods largely follow a reactive paradigm common in indoor VLN, repeatedly updating navigation states from local observations while underutilizing the geospatial structure that remains stable during navigation. As a result, visually similar distractors can cause a reactive goal search to repeatedly reinforce locally plausible goal hypotheses based on passively accumulated evidence, leading to unreliable localization. To address this, we propose GeoReasoner, a robust framework that shifts the paradigm of Aerial VLN from reactive trial-and-error to geospatial-guided active reasoning. Specifically, GeoReasoner first performs pre-search geospatial reasoning to derive region-level priors and constrain the goal hypothesis space. Building on these, it further conducts hypothesis-driven exploration to actively acquire discriminative evidence and refine competing goal hypotheses. Finally, consistency-aware goal verification adversarially assesses complementary evidence sources before stopping, hence reducing premature or erroneous goal confirmations. Experiments on the real-world CityNav benchmark demonstrate that GeoReasoner sets a new SOTA among zero-shot Aerial VLN methods while competing favorably with supervised approaches.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.41446",
+        "pdf": "https://arxiv.org/pdf/2610.41446",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41494",
+      "title": "VariaFlow: Uncertainty-Aware Flow Matching for Unsupervised Anomaly Detection",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "pathology",
+      "paper": {
+        "id": "2610.41494",
+        "title": "VariaFlow: Uncertainty-Aware Flow Matching for Unsupervised Anomaly Detection",
+        "authors": [
+          "Arnela Hadzic",
+          "Martin Urschler",
+          "Cosmin I. Bercea"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Reconstruction-based anomaly detection no longer fails at reconstruction. Generative models produce high-quality pseudo-healthy reconstructions, and the remaining difficulty is the step of scoring residuals. The residual between a scan and its reconstruction has two indistinguishable sources, genuine pathology and the anatomical variation that separates one healthy brain from another. Scoring against a single reconstruction treats both as anomalous, inflating false positives where healthy anatomy varies most while small or subtle lesions are lost in the surrounding reconstruction error. We identify the missing quantity as the predictive variance, how much a healthy reconstruction can vary at each location. We introduce VariaFlow, which estimates this variance from an ensemble of mask-guided restorations under an unconditional flow matching prior, each started from a different noise initialization, and which normalizes the residual by the resulting standard deviation. Few-step flow matching keeps the ensemble computationally affordable, and restoring at two spatial scales captures lesions of different size. Across three brain MRI datasets spanning stroke and tumor, VariaFlow is trained once on healthy anatomy and generalizes across all three, attaining the highest AUROC (0.94, 0.80, 0.78) on each and the highest AUPRC on both cross-domain datasets, exceeding the strongest baseline by 37% and 50%. Under domain shift, the same baseline drops by up to 52% in AUPRC, whereas VariaFlow stays more stable and achieves the best small-lesion Dice on all three datasets.",
+        "comment": "Accepted for WACV 2027",
+        "abs": "https://arxiv.org/abs/2610.41494",
+        "pdf": "https://arxiv.org/pdf/2610.41494",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41728",
+      "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Crop Classification",
+      "paper": {
+        "id": "2610.41728",
+        "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+        "authors": [
+          "Jieqiu Wang",
+          "Yuhan Zhang",
+          "Bo Zheng",
+          "Shaoming Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Although self-supervised pre-training mitigates label dependency in remote sensing, existing frameworks primarily target optical imagery or generic spatial SAR scenes, underutilizing temporal backscatter dynamics and polarimetric scattering mechanisms. We propose SAR-TS-BERT, a physics-guided BERT-style self-supervised pre-training framework for SAR time-series crop classification. SAR-TS-BERT integrates backscatter intensities and polarimetric ratio features (VV, VH, and VV/VH) with dual-polarimetric Cloude-Pottier decomposition parameters ($H/\\alpha/A$) into a six-band input representation through two core designs: 1) a physics-guided span masking strategy (SpanPhysics) that adaptively selects contiguous masked spans based on temporal backscatter change rates to prioritize key phenological transitions; and 2) a dual-branch cross-modal fusion encoder that models backscatter and polarimetric decomposition features through separate Transformer branches followed by bidirectional cross-attention fusion. On independent test sets in Estonia (EuroCropsML) and the USA (California CDL), SAR-TS-BERT achieves overall accuracies (OAs) of 96.78% and 87.29%, respectively, and attains a mean monthly OA of 99.37% on Chongming Island, Shanghai. On the Estonia benchmark, pre-training improves OA and Macro F1 by 1.17 and 1.59 percentage points over training from scratch under full supervision, and by 2.58 and 5.19 percentage points using only 1% labeled data. Incorporating SAR scattering physics into temporal self-supervised pre-training effectively enhances crop classification accuracy, parcel-level mapping consistency, and few-shot transferability.",
+        "comment": "18 pages, 13 figures, 18 tables. Jieqiu Wang and Yuhan Zhang contributed equally to this work",
+        "abs": "https://arxiv.org/abs/2610.41728",
+        "pdf": "https://arxiv.org/pdf/2610.41728",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41763",
+      "title": "Measuring What Matters: A Causal Reliance Score for Histopathology Image Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histopathology",
+      "paper": {
+        "id": "2610.41763",
+        "title": "Measuring What Matters: A Causal Reliance Score for Histopathology Image Segmentation",
+        "authors": [
+          "Samuel Thomas",
+          "Daniel Tweneboah Anyimadu",
+          "Ahmed Karam Eldaly",
+          "Somaia Elsheikh",
+          "Mohammed M. Abdelsamea"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Reliable histopathology segmentation requires models that rely on pathology-relevant structures rather than spurious background correlations. In this work, we argue that improving architectures alone is insufficient if models continue to rely on spurious correlations rather than pathology-relevant features. We introduce a causality-inspired evaluation framework based on controlled interventions that explicitly probes model sensitivity to foreground tissue structure and background/domain variation. Building on this, we propose the Causal Reliance Score (CRS), a metric that quantifies the relative sensitivity of model predictions to foreground perturbation versus background/domain variation under controlled interventions. To support this analysis, we design augmentation strategies that act as implicit counterfactual interventions during training, encouraging invariance to nuisance factors while preserving morphology. We demonstrate how these interventions reveal behavioural differences between models that are not captured by standard metrics such as Dice or IoU. While we instantiate our framework using a self-supervised transformer (CAUSE-ViT), the primary contribution of this work is not a new architecture, but a principled intervention-based methodology and evaluation metric for auditing model behaviour in medical image segmentation. Our results suggest that evaluating model behaviour through counterfactual interventions is essential for developing reliable and clinically robust medical image segmentation systems.",
+        "comment": "15 pages, 8 figures, accepted into Medical Image Understanding and Analysis (MIUA) 2026 conference",
+        "abs": "https://arxiv.org/abs/2610.41763",
+        "pdf": "https://arxiv.org/pdf/2610.41763",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41790",
+      "title": "Different Models, Shared Failures: Auditing Frozen-Encoder Pools for Medical Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2610.41790",
+        "title": "Different Models, Shared Failures: Auditing Frozen-Encoder Pools for Medical Segmentation",
+        "authors": [
+          "Eunseob Choi",
+          "Kyeonghun Kim",
+          "Hyuk-Jae Lee",
+          "Nam-Joon Kim"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Average segmentation accuracy and model count do not reveal whether models fail on the same cases. We present CoFailMed, an audit of correlated failures in pretrained-encoder pools for medical segmentation. Across five 2D tasks, we evaluate 11 public pretrained encoders (a controlled sample, not a census) using frozen features and separately trained $1\\times 1$ readouts with four seeds per encoder. Shared-checkpoint pairs have the highest mean per-case Dice correlation. An expanded 17-encoder analysis shows that distinct checkpoints within the same encoder family remain more correlated than cross-family pairs. At the pooled 33rd-percentile Dice threshold, four-member pools drawn from distinct encoders have mean effective sizes of 1.56-2.92, estimated from failure correlations in pools with enough failures and passes per member. In the primary pool, richer readouts and fine-tuning narrow the Dice-correlation gap between pairs sharing a checkpoint (or the DINOv2-B/S release) and all other pairs. Yet dependence between different encoders can increase, and fine-tuning does not consistently increase effective pool size at 33rd-percentile thresholds recomputed for each training recipe. A smaller between-group gap can coexist with greater dependence. Pool evaluation should therefore report absolute dependence and threshold-specific effective size alongside accuracy and nominal pool size. The CoFailMed release provides aligned per-case traces, analysis scripts and study code to reproduce the central audit results.",
+        "comment": "Accepted at NeurIPS 2026, Track on Evaluations and Datasets. 47 pages, 8 figures. Code and data: this https URL",
+        "abs": "https://arxiv.org/abs/2610.41790",
+        "pdf": "https://arxiv.org/pdf/2610.41790",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.41841",
+      "title": "Open-Weight MLLMs Cannot Compare What They Cannot Name",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "microscopy",
+      "paper": {
+        "id": "2610.41841",
+        "title": "Open-Weight MLLMs Cannot Compare What They Cannot Name",
+        "authors": [
+          "Wenxin Su",
+          "Anna Kreshuk"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Multimodal Large Language Models (MLLMs) are increasingly capable of understanding images and performing complex visual reasoning, suggesting the possibility of using them to automate biological image analysis. This need is becoming increasingly urgent as advances in technology continue to generate ever larger and more diverse microscopy datasets, already exceeding the scale at which manual visual analysis is feasible. With the final aim to use MLLMs for visual comparison of complex phenotypes, we investigate a very simple baseline: comparison of the size of body parts in synthetic images of ants. We find that state-of-the-art open-weight MLLMs fail for some body parts, but not for others, even though the comparison itself is visually trivial for all of them. We evaluate different in-context learning strategies and analyze performance on the related object recognition task. Our results suggest a recognition-driven grounding failure: structures that the models cannot recognize are instead associated with a recognizable semantic concept, impairing the grounding and comparison of both. Further analysis of the vision encoder is consistent with the hypothesis that fine-grained visual structure may be less well preserved without semantic support. Together, our results reveal a surprising limitation of current MLLMs: semantic recognition can gate simple visual comparisons that do not intrinsically require semantic understanding. Our code and data are available at this https URL",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2610.41841",
+        "pdf": "https://arxiv.org/pdf/2610.41841",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2610.42152",
+      "title": "GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2610.42152",
+        "title": "GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning",
+        "authors": [
+          "Nattakorn Kittisut",
+          "Roy M. Gabriel",
+          "Marly van Assen",
+          "Mohammadreza Zandehshahvar",
+          "Carlo N. De Cecco",
+          "Elizabeth A. Krupinski",
+          "Ali Adibi"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.HC",
+          "eess.IV",
+          "eess.SP"
+        ],
+        "summary": "Radiologists' visual attention can supervise medical image learning, but how reader panel composition affects its value remains untested. We evaluated GazeRIB (Gaze-guided Radiologist-Informed Blackout), which masks unviewed regions during training and uses unmasked images at inference. Eight experts repeatedly read the same 80 chest X-rays (CXRs). We compared individual readers with three-, five- and eight-reader panels across seven architectures and 10 seeds, evaluating 910 models on a separate 2,897-CXR cohort for four-class severity prediction. Every panel improved macro F1 over the no-gaze baseline by 5.33-7.47 percentage points (pp; Bonferroni-adjusted p < 0.007); no individual reader reached significance on this endpoint. Three readers captured 73-80% of the eight-reader gain in macro F1, the area under the receiver-operating-characteristic curve (ROC-AUC) and the area under the precision-recall curve (AU-PRC). On external validation without retraining, all four panels improved ROC-AUC on SIIM-FISABIO-RSNA by +1.93 to +4.24 pp (p <= 0.004); on MIMIC-Eye no panel differed significantly from baseline, whereas the single-reader average declined (-1.40 pp, p = 0.008). Reader composition therefore influenced performance, although transfer depended on the cohort.",
+        "comment": "20 pages on main manuscripts (3 tables + 4 figures), 14 pages supplementary (10 tables + 8 figures)",
+        "abs": "https://arxiv.org/abs/2610.42152",
+        "pdf": "https://arxiv.org/pdf/2610.42152",
+        "listing_date": "2026-11-02",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
