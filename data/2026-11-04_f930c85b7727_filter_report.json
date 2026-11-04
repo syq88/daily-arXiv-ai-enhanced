@@ -1,0 +1,923 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "f930c85b77272c53c9e90304c0ca4d6f60f41ed36c9b530e8898d17127db1adf",
+  "input_count": 148,
+  "kept_count": 123,
+  "excluded_count": 25,
+  "counts_by_reason": {
+    "medical_biological": 18,
+    "ai4science": 1,
+    "remote_sensing": 5,
+    "other_domain_applications": 1
+  },
+  "kept_ids": [
+    "2611.03717",
+    "2611.03741",
+    "2611.03775",
+    "2611.03936",
+    "2611.03937",
+    "2611.03940",
+    "2611.03942",
+    "2611.03952",
+    "2611.04028",
+    "2611.04034",
+    "2611.04084",
+    "2611.04092",
+    "2611.04102",
+    "2611.04111",
+    "2611.04112",
+    "2611.04164",
+    "2611.04173",
+    "2611.04193",
+    "2611.04195",
+    "2611.04216",
+    "2611.04219",
+    "2611.04221",
+    "2611.04233",
+    "2611.04235",
+    "2611.04242",
+    "2611.04244",
+    "2611.04254",
+    "2611.04262",
+    "2611.04268",
+    "2611.04300",
+    "2611.04303",
+    "2611.04305",
+    "2611.04317",
+    "2611.04358",
+    "2611.04374",
+    "2611.04379",
+    "2611.04386",
+    "2611.04389",
+    "2611.04397",
+    "2611.04414",
+    "2611.04416",
+    "2611.04418",
+    "2611.04422",
+    "2611.04423",
+    "2611.04435",
+    "2611.04438",
+    "2611.04452",
+    "2611.04467",
+    "2611.04472",
+    "2611.04476",
+    "2611.04489",
+    "2611.04490",
+    "2611.04491",
+    "2611.04498",
+    "2611.04529",
+    "2611.04534",
+    "2611.04537",
+    "2611.04548",
+    "2611.04554",
+    "2611.04583",
+    "2611.04591",
+    "2611.04616",
+    "2611.04626",
+    "2611.04633",
+    "2611.04645",
+    "2611.04654",
+    "2611.04666",
+    "2611.04710",
+    "2611.04711",
+    "2611.04712",
+    "2611.04728",
+    "2611.04734",
+    "2611.04754",
+    "2611.04764",
+    "2611.04811",
+    "2611.04822",
+    "2611.04874",
+    "2611.04894",
+    "2611.04903",
+    "2611.04912",
+    "2611.04916",
+    "2611.04932",
+    "2611.04939",
+    "2611.04940",
+    "2611.04943",
+    "2611.04946",
+    "2611.04948",
+    "2611.04950",
+    "2611.04959",
+    "2611.04960",
+    "2611.05004",
+    "2611.05008",
+    "2611.05024",
+    "2611.05049",
+    "2611.05062",
+    "2611.05066",
+    "2611.05083",
+    "2611.05084",
+    "2611.05102",
+    "2611.05145",
+    "2611.05158",
+    "2611.05172",
+    "2611.05181",
+    "2611.05193",
+    "2611.05197",
+    "2611.05205",
+    "2611.05206",
+    "2611.05275",
+    "2611.05279",
+    "2611.05280",
+    "2611.05286",
+    "2611.05291",
+    "2611.05294",
+    "2611.05359",
+    "2611.05361",
+    "2611.05377",
+    "2611.03932",
+    "2611.04166",
+    "2611.04368",
+    "2611.04492",
+    "2611.04873",
+    "2611.05058",
+    "2611.05072"
+  ],
+  "excluded": [
+    {
+      "id": "2611.04012",
+      "title": "SurgEye: Instruction Tuning-Free Perception-Reasoning Framework for Surgical Scene Understanding",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgical",
+      "paper": {
+        "id": "2611.04012",
+        "title": "SurgEye: Instruction Tuning-Free Perception-Reasoning Framework for Surgical Scene Understanding",
+        "authors": [
+          "Qing Xu",
+          "Xiechen Shen",
+          "Xianjian He",
+          "Guqiao Liang",
+          "Zixiao Chai",
+          "Jiale Qin",
+          "Yifan Chen",
+          "Siyi Li",
+          "Tian Yuan",
+          "Yiwei Li",
+          "Ziheng Meng",
+          "Zhen Chen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Surgical scene understanding is pivotal for computer-assisted intervention, yet demands compositional reasoning across instruments, anatomy, and workflow. Existing surgical vision-language models rely on instruction tuning with large-scale question-answer pairs, entailing laborious data curation and costly retraining. To bridge this gap, we propose SurgEye, a perception-reasoning framework that grounds reasoning in a vision foundation model without instruction tuning. Specifically, we devise Routed Multi-Task Perception (RMP) that routes the vision foundation model through task-specific pathways learned from public perception labels, producing spatial and temporal evidence. We further introduce Agentic Compositional Reasoning (ACR) that employs a frozen large language model to coordinate RMP specialists and temporal memory as callable tools, composing evidence across tasks and time into grounded answers. Moreover, we construct SurgEye-Bench spanning eight surgical procedures, pairing each question with perception labels for verifiable evaluation. Extensive experiments demonstrate that SurgEye outperforms state-of-the-arts in surgical reasoning. The source code will be available.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04012",
+        "pdf": "https://arxiv.org/pdf/2611.04012",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04053",
+      "title": "Spatial and Temporal Super-Resolution and Denoising of Intracardiac 4D Flow MRI",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.04053",
+        "title": "Spatial and Temporal Super-Resolution and Denoising of Intracardiac 4D Flow MRI",
+        "authors": [
+          "Yusuf A. Ozturk",
+          "Jie Zheng",
+          "Fanwei Kong"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Intracardiac flow is driven by complex, and time-varying cardiac motion and interaction with the heart valves, producing complex flow features that may provide valuable information for disease diagnosis and treatment planning. 4D Flow MRI enables non-invasive, time-resolved measurement of three-dimensional cardiovascular velocity fields. However, substantial noise and limited spatial and temporal resolution limit its ability to accurately resolve flow features. We propose 4D-MRAR (4D Magnetic Resonance Augmented Reconstruction), a deep learning (DL) method to super-resolve and denoise 4D Flow MRI data. Unlike prior DL methods that train and infer on static vascular regions, our method predicts intracardiac flow within hearts undergoing large deformation. Moreover, it uniquely allows for simultaneous super-resolution in 3D space and time. The method combines a residual convolutional neural network, a recurrent neural network, and an implicit neural field to predict high-resolution velocity and pressure fields while efficiently enforcing the governing equations of fluid flow during training. Trained on a synthetic dataset obtained from computational fluid dynamics (CFD) simulations of left ventricle (LV) flow, our method generalizes to synthetic whole-heart 4D flow MRI data, and demonstrated promising performance on real 4D Flow MRI. The produced super-resolved flow fields exhibit significantly improved accuracy and greater consistency with the governing equations of blood flow compared with prior methods.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04053",
+        "pdf": "https://arxiv.org/pdf/2611.04053",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04087",
+      "title": "ScienceVision: Can AI Observe and Reason Like a Scientist?",
+      "exclude": true,
+      "reason": "ai4science",
+      "label": "AI4Science 专项应用",
+      "field": "abstract_intro",
+      "matched_text": "Scientific discovery",
+      "paper": {
+        "id": "2611.04087",
+        "title": "ScienceVision: Can AI Observe and Reason Like a Scientist?",
+        "authors": [
+          "Tianyi Ma",
+          "Jing Gu",
+          "Haozhe Zhao",
+          "Liang Chen",
+          "Yunfan Zhang",
+          "Haijun Su",
+          "Jialong Wu",
+          "Le Xue",
+          "Arnav Das",
+          "Dustin Tran",
+          "Yinfei Yang",
+          "Andrew Dai",
+          "Kuan Li"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Scientific discovery builds on accurate observations interpreted through domain knowledge and reasoning. For scientific 3D data, this requires understanding structures and spatial relationships, from protein contacts to anatomical organization. Existing multimodal benchmarks largely evaluate text and 2D images, while scientific 3D evaluations vary in representations and protocols across disciplines, limiting cross-disciplinary comparison. To assess these foundational capabilities, we introduce ScienceVision, a cross-domain benchmark for scientific 3D understanding and reasoning through expert-level visual question answering (VQA). We construct 250 questions, with 50 each from Biology, Chemistry, Medical Imaging, Mechanical CAD, and Architecture, through a pipeline combining synthetic question generation with domain-expert review and annotation. Each task pairs a native 3D artifact with a scientific question, a specified response format, and a task-specific reference answer, requiring domain knowledge to be applied to geometric or topological evidence. We evaluate 12 models on the same questions in three settings: visual question answering with native 3D artifacts accessed through an agent harness's file and code-execution tools; the same workflow augmented with expert-inspired viewer inspection and measurement tools exposed through the Model Context Protocol (MCP); and visual question answering from prescribed rendered 2D images using an agent harness. All settings use the same task-specific deterministic final-answer scoring. The inspection environment supports view changes, target isolation, and slice inspection. In this main comparison, the best mean answer score is 0.53 out of 1. Mean scores in the native-artifact workflow without additional MCP tools exceed those in the rendered-image workflow for every model, by 17.2 percentage points on average.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04087",
+        "pdf": "https://arxiv.org/pdf/2611.04087",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04155",
+      "title": "Improving PI-RADS Prediction and Prostate Cancer Detection from Multiparametric MRI with Anatomical Guidance",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Prostate",
+      "paper": {
+        "id": "2611.04155",
+        "title": "Improving PI-RADS Prediction and Prostate Cancer Detection from Multiparametric MRI with Anatomical Guidance",
+        "authors": [
+          "Seungbin Park",
+          "Thibault Heintz",
+          "Rachit Saluja",
+          "Francesca Khani",
+          "Timothy McClure",
+          "Daniel Margolis",
+          "Mert R. Sabuncu",
+          "Heejong Kim"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Accurate prediction of Prostate Imaging Reporting and Data System (PI-RADS) scores from multiparametric MRI (mpMRI) remains challenging, more so than clinically significant prostate cancer (csPCa) detection. Given the importance of lesion location in PI-RADS scoring, we evaluated whether incorporating prostate zonal masks improves PI-RADS prediction and csPCa detection across multiple architectures (3D ResNet-18, ResNet-50, and ViT) using a large-scale internal dataset. Anatomical guidance generally improved performance across architectures, with the best results achieved by ResNet-18 with 2-zone guidance for PI-RADS prediction (QWK = 0.511) and ResNet-50 with 5-zone guidance for csPCa detection (AUC = 0.809). Fine-tuned results on external datasets further demonstrated the benefits of anatomical guidance. Furthermore, models with anatomical guidance improved the utility of model-predicted PI-RADS scores for PI-RADS-based csPCa detection (positive defined as PI-RADS>=3). Combining model-predicted and expert-assigned PI-RADS scores significantly increased the AUC from 0.711 to 0.756 (p < 0.05), suggesting that AI-derived PI-RADS scores may provide complementary information to expert assessment for csPCa detection. Overall, our findings highlight the value of incorporating prostate zonal anatomy into deep learning-based prostate MRI assessment.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04155",
+        "pdf": "https://arxiv.org/pdf/2611.04155",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04200",
+      "title": "Impact of Input Resolution in Mammographic Mass Detection: A Controlled Multi-Architecture Study",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Mammographic",
+      "paper": {
+        "id": "2611.04200",
+        "title": "Impact of Input Resolution in Mammographic Mass Detection: A Controlled Multi-Architecture Study",
+        "authors": [
+          "Kaan Buyukdemirci",
+          "Emine Ulku Saritas"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "summary": "Deep-learning-based mass detectors usually downsample mammograms, trading fine image detail for lower computational cost. However, published studies cannot reveal how much accuracy this trade-off sacrifices, since they also differ in architecture, preprocessing, and evaluation protocol. In this work, we isolated the effect of input resolution in a controlled study on the VinDr-Mammo dataset, training 18 detectors at six input resolutions ranging from 512 x 416 to 1600 x 1280 pixels, for 108 model-resolution combinations. Whole mammograms were resized without cropping or tiling. For each model, preprocessing, model initialization, augmentation, and evaluation procedures were kept fixed across resolutions. Detection accuracy was evaluated by mAP50 on the 219 mass-positive images of the official test split, and 57 combinations with test mAP50 of at least 0.60 were analyzed. From the lowest to the highest resolution, median mAP50 rose from 0.626 to 0.660 and the best mAP50 from 0.670 to 0.709. The best result, achieved by DINO with a ConvNeXt-S backbone, is the highest mAP50 reported to date on mass-positive VinDr-Mammo images. Gains were concentrated in small masses: for the smallest third of lesions, median mAP50 rose by 0.074 (from 0.367 to 0.441), compared with 0.007 and 0.032 for medium and large masses. Median training time increased from 0.45 to 1.40 h, and median inference time from 23.6 to 113.7 ms per image. Therefore, higher input resolution mainly benefits the small masses that are hardest to detect, at a computational cost that remains practical.",
+        "comment": "This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible",
+        "abs": "https://arxiv.org/abs/2611.04200",
+        "pdf": "https://arxiv.org/pdf/2611.04200",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04257",
+      "title": "ProGeo-RC: Prototype-guided Semantic Reliability and Geometric Error Calibration for Semi-supervised Cardiac Image Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.04257",
+        "title": "ProGeo-RC: Prototype-guided Semantic Reliability and Geometric Error Calibration for Semi-supervised Cardiac Image Segmentation",
+        "authors": [
+          "Yunfei Zhu",
+          "Wenfeng Zhang",
+          "Pan Zeng",
+          "Xin Huang",
+          "Tao Jia",
+          "Weiting Shao",
+          "Wei Hu",
+          "Jianming Hu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Semi-supervised medical image segmentation aims to train reliable segmentation models using limited labeled data and abundant unlabeled data. However, existing methods typically rely on prediction confidence or model consistency to estimate pseudo-label reliability, but these criteria are insufficient to characterize both semantic reliability and geometric plausibility. To address this issue, we propose ProGeo-RC, a prototype-guided semantic reliability and geometric error calibration framework for semi-supervised medical image segmentation. ProGeo-RC consists of two key modules: Prototype-guided Semantic Reliability Estimation (PSRE) and Structured Semantic-Geometric Error Calibration (S-SGEC). PSRE uses probabilistic class prototypes to estimate the semantic reliability of unlabeled predictions and calibrate pixel-wise teacher pseudo labels, while S-SGEC introduces signed-distance-field-based geometric constraints to refine ambiguous boundaries and suppress spurious foreground responses outside target structures. Experiments on the ACDC and MVAA-CT datasets show that ProGeo-RC achieves better performance compared with representative semi-supervised segmentation methods. Under the 10\\% labeled setting on ACDC, ProGeo-RC improves DSC and Jaccard by 0.37\\% and 0.49\\% over the corresponding second-best results, while reducing 95HD and ASD by 0.61 and 0.21, respectively. These results indicate that joint semantic reliability estimation and geometric error calibration can provide more reliable pseudo supervision for semi-supervised medical image segmentation.",
+        "comment": "Accepted at IEEE BIBM 2026. 7 pages, 3 figures",
+        "abs": "https://arxiv.org/abs/2611.04257",
+        "pdf": "https://arxiv.org/pdf/2611.04257",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04286",
+      "title": "GroundSeek-CXR: Retrospective Evaluation-Guided Active Observation Framework for Multi-Label Chest Radiography Diagnosis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "lesions",
+      "paper": {
+        "id": "2611.04286",
+        "title": "GroundSeek-CXR: Retrospective Evaluation-Guided Active Observation Framework for Multi-Label Chest Radiography Diagnosis",
+        "authors": [
+          "Yihang Fu",
+          "Xinyu Liu",
+          "Qing Xu",
+          "Xiaofeng Yang",
+          "Zhen Chen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Chest radiography (CXR) diagnosis is critical for thoracic disease assessment, yet challenged by the need to identify subtle lesions and co-occurring abnormalities across regions. While recent vision-language models can actively observe local regions, existing preference-based methods supervise each observation by its immediate effect on the current diagnosis, failing to capture how each observation and stopping decision contributes to the final diagnosis. To address this issue, we propose GroundSeek-CXR, an active CXR diagnosis framework that learns observation and stopping decisions by retrospectively evaluating them with the final diagnosis. Specifically, we first devise a Retrospective Diagnostic Evaluation (RDE) that scores observation and stop candidates from offline Monte Carlo tree search through independent continuations. Moreover, we design a Retrospective Gap-weighted Preference Optimization (RGPO) that learns from retrospective-score preferences weighted by their score gaps, prioritizing actions that improve diagnostic accuracy. Extensive experiments demonstrate that our GroundSeek-CXR framework outperforms state-of-the-art methods, and improves abnormal-image sample-F1 by 4.48% over immediate-score preference learning.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04286",
+        "pdf": "https://arxiv.org/pdf/2611.04286",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04337",
+      "title": "Mitigating Spatial Blindness in Multiple Instance Learning for Whole-Slide Image Analysis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Whole-Slide",
+      "paper": {
+        "id": "2611.04337",
+        "title": "Mitigating Spatial Blindness in Multiple Instance Learning for Whole-Slide Image Analysis",
+        "authors": [
+          "Xiangyu Li",
+          "Jincheng Li",
+          "Xing Xie",
+          "Bin Guan",
+          "Shaohua Kevin Zhou",
+          "Rui Yan",
+          "Ran Su"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Whole-slide multiple instance learning can predict diagnostic and prognostic labels from tissue composition while making limited use of spatial organization. Providing coordinates or a graph does not establish that a trained predictor uses tissue neighborhoods. We examine this gap as spatial blindness and hypothesize that early composition learning can weaken supervision of a spatial pathway. We introduce ResTopoMIL, which freezes a learned composition predictor before training a graph residual with a coordinate-reassignment separation loss. Permutation and information analyses distinguish architectural symmetry, available spatial information and the proposed optimization mechanism. On a controlled spatial task, staged training achieved an AUC of 0.987, compared with 0.684 for the same jointly trained architecture. Performance remained high on a composition-only task. Across four WSI classification and five survival benchmarks, ResTopoMIL improved mean primary performance on eight tasks; four improvements remained significant after Holm-adjusted patient-cluster tests. Coordinate-free residual controls recovered some of the gains, while neighborhood destruction reduced performance close to the composition anchor. Neighborhood-preserving transformations and anatomy-stratified perturbations further characterized this dependence. These results support fixing a composition reference as a practical intervention for learning spatial corrections, while retaining additional appearance capacity as a contributing explanation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04337",
+        "pdf": "https://arxiv.org/pdf/2611.04337",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04352",
+      "title": "ReSMap: Recasting Satellite Priors for Robust and Accurate Online HD Map Construction",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "satellite images",
+      "paper": {
+        "id": "2611.04352",
+        "title": "ReSMap: Recasting Satellite Priors for Robust and Accurate Online HD Map Construction",
+        "authors": [
+          "Kyungmin Kim",
+          "Sumin Lee",
+          "Sungoh Jeong",
+          "DoHyun Lim",
+          "Seonghyun Park",
+          "Soonmin Hwang"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "summary": "Despite recent advances in camera-based online HD map construction, these systems remain susceptible to sensor failures due to their reliance on onboard cameras. In contrast, satellite images remain available independently of real-time sensing conditions as they are cached offline. Existing methods utilizing satellite images, however, primarily leverage them under nominal conditions, without explicitly addressing them as redundancy when a sensor degrades. To address this gap, we propose ReSMap, a redundancy-aware camera-satellite fusion framework for robust online HD map construction. Our framework explicitly leverages satellite images as a complementary source to improve robustness against camera failures. A Predict-then-Fuse (PTF) module fuses camera and satellite BEV features by using each branch's own prediction confidence as a per-pixel reliability weight, with no learned router. An Object-Centric Cooperative Multi-modal Query (OCMQ) decoder then extends this per-modality separation to the query level: each modality cross-attends only to its own BEV, and per-modality updates are merged through a learned per-token gate. Our model achieves state-of-the-art performance on nuScenes across all splits and range settings. More importantly, it also sets the new state-of-the-art under camera-failure scenarios, demonstrating that satellite images serve not only as a strong prior but as practical redundancy for robust online HD mapping.",
+        "comment": "Accepted to NeurIPS 2026. 24 pages, 9 figures, 11 tables. Project page: this https URL Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.04352",
+        "pdf": "https://arxiv.org/pdf/2611.04352",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04405",
+      "title": "DR-LiteNet: A Lightweight Explainable Hybrid CNN Framework for Imbalanced Diabetic Retinopathy Grading via Adaptive SMOTE Fusion",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.04405",
+        "title": "DR-LiteNet: A Lightweight Explainable Hybrid CNN Framework for Imbalanced Diabetic Retinopathy Grading via Adaptive SMOTE Fusion",
+        "authors": [
+          "Nishi Kanta Paul",
+          "Md Shihabul Islam Shovo",
+          "Audrija Chowdhury",
+          "Israt Jahan Esha"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Automated diabetic retinopathy (DR) grading from colour fundus photographs is held back by two compounding challenges: severe class imbalance across five severity grades and the heavy computational cost of large scale architectures in resource constrained clinical settings. We introduce DR-LiteNet, a dual branch hybrid convolutional neural network that tackles both problems at once. The CNN branch extracts 1,280 dimensional deep features through EfficientNetB0, while the handcrafted (HC) branch produces a compact 51 dimensional lesion descriptor capturing vessel density, exudate intensity, texture entropy, and HSV colour histograms. Concatenating both branches yields a 1,331-d hybrid embedding, on which Adaptive SMOTE (ADASYN) is applied during training to synthesise minority class feature vectors, correcting distributional skew without touching the image space. A two phase training protocol first warms up the classification head on balanced features, then fine tunes the full network end to end. Grad CAM saliency maps deliver post-hoc clinical explainability. Tested on APTOS 2019 under five fold stratified cross validation, DR-LiteNet reaches 88.77% +/- 0.61 accuracy, a quadratic weighted kappa (QWK) of 0.884 +/- 0.010, and a macro F1 of 0.792 +/- 0.008 with only 4.69 M parameters beating ResNet50 (23.5 M) by DeltaQWK = 0.022 while staying practical on a single Google Colab T4 GPU. The source code of this project is available at: this https URL.",
+        "comment": "6 pages, 3 figures, 2 tables. Accepted at the 1st International Conference on Next-Generation Electrical & Electronics, Computer Systems, and Technologies (iCONEECT)",
+        "abs": "https://arxiv.org/abs/2611.04405",
+        "pdf": "https://arxiv.org/pdf/2611.04405",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04409",
+      "title": "LCM-UNet: Scale-Selective Mamba with Reparameterizable Multi-Basis Local Modeling for Lightweight Skin Lesion Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Lesion",
+      "paper": {
+        "id": "2611.04409",
+        "title": "LCM-UNet: Scale-Selective Mamba with Reparameterizable Multi-Basis Local Modeling for Lightweight Skin Lesion Segmentation",
+        "authors": [
+          "Md Shihabul Islam Shovo",
+          "Nishi Kanta Paul",
+          "Dip Kumar Saha",
+          "Kishor Morol"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Accurate lesion segmentation underpins automated dermoscopic analysis: masks enable measurements of asymmetry, border and size. Deployment in primary care or on mobile devices requires a compact network. Existing ultra-light Mamba U-Nets offer global context, but global-modeling cost depends on each Mamba block's resolution, while their local branches rely on a single square kernel. We introduce LCM-UNet, a 33,474-parameter U-shaped network that fuses every skip at its native resolution, restricts bidirectional Mamba to stages at one-sixteenth of the input resolution or coarser, and uses local convolutions at finer scales. A multi-basis reparameterizable adapter augments each local branch during training with dilated, horizontal and vertical depthwise kernels, then folds them into the host kernel before inference. Each skip connection also learns a stage-specific gain. Nine networks were retrained on the official ISIC 2017 and ISIC 2018 partitions under a harmonized protocol, with PH$^2$ reserved for external validation and ablations run on a development split. LCM-UNet achieved Dice scores of 88.62%, 89.73% and 90.46% on ISIC 2017, ISIC 2018 and PH$^2$, respectively, ranking first on both ISIC test sets and second on PH$^2$ among the compared models. In the native-resolution host, removing Mamba from the one-eighth-resolution decoder stage eliminated 63% of Mamba operations, corresponding to 5.3% of all operations, with a Dice change of $-0.03$ percentage points. The adapter improved Dice by 0.48 percentage points over a single host kernel without adding deployed parameters or operations. With latency so far measured only on a GPU, LCM-UNet is a candidate for resource-constrained deployment.",
+        "comment": "12 pages, 4 figures, 5 tables. Submitted to IEEE Journal of Biomedical and Health Informatics (JBHI)",
+        "abs": "https://arxiv.org/abs/2611.04409",
+        "pdf": "https://arxiv.org/pdf/2611.04409",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04470",
+      "title": "Using GeoAI and machine learning tools for consistent high-resolution land cover mapping based on time-series NAIP imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "land cover",
+      "paper": {
+        "id": "2611.04470",
+        "title": "Using GeoAI and machine learning tools for consistent high-resolution land cover mapping based on time-series NAIP imagery",
+        "authors": [
+          "Jie Liu",
+          "Xusheng Tang",
+          "Chao Wang",
+          "Zhengxiao Yan",
+          "Yuchen Dai",
+          "Qi Zhang",
+          "Conghe Song"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "High-resolution land-cover maps support ecological monitoring, but consistent historical time series remain scarce because aerial imagery varies across years and sensors. We developed a dual-track workflow to produce temporally coherent 1-m land-cover maps from National Agricultural Imagery Program (NAIP) imagery without historical training samples. For higher-quality imagery from 2009-2017, we used a pretrained U-Net/ResNet-34 model and refined boundaries with the Segment Anything Model (SAM). For lower-quality imagery from 2004-2008, we reconstructed land cover through an NLCD-based spatiotemporal bridging and label back-casting pipeline. Evaluation across six counties in North Carolina and Pennsylvania yielded overall accuracies of 0.887 (2014), 0.886 (2017), and 0.733 (2004). Structure, Water, Wetland, and Cropland consistently achieved high F1-scores. The workflow integrates GeoAI and multiple data sources to address temporal heterogeneity in historical aerial imagery, supporting high-resolution land-change analysis and landscape planning across the conterminous United States.",
+        "comment": "17 pages. Published version",
+        "abs": "https://arxiv.org/abs/2611.04470",
+        "pdf": "https://arxiv.org/pdf/2611.04470",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04524",
+      "title": "E2I-Flow: EEG-to-Image Reconstruction via Wavelet-Temporal Cross-Attention and Conditional Flow Matching",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "EEG",
+      "paper": {
+        "id": "2611.04524",
+        "title": "E2I-Flow: EEG-to-Image Reconstruction via Wavelet-Temporal Cross-Attention and Conditional Flow Matching",
+        "authors": [
+          "Haowei Pan",
+          "Hwa Hui Tew",
+          "Junn Yong Loo",
+          "Fuad Noman",
+          "Hernando Ombao",
+          "Chee-Ming Ting"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Electroencephalography (EEG)-based visual decoding and reconstruction aims to recover visual information from non-invasive brain signals. But there are challenges due to the complex temporal-frequency characteristics of EEG signals and the difficulty of discrete denoising framework in mapping neural activity to meaningful visual representations. Here, we propose E2I-Flow, an EEG-to-image decoding and reconstruction framework that combines a novel EEG encoder for time-frequency representation learning from EEG features, and conditional flow matching for visual decoding. A stationary-wavelet frequency branch and a temporal-mixing branch are integrated through bidirectional cross-attention and adaptive fusion, with the resulting EEG representations aligned to ground-truth image embeddings using contrastive and mean-squared-error loss supervisions. The aligned EEG representation is then used as a condition for a Transformer-based flow-matching model to predict the corresponding visual embedding for image synthesis. Experimental results show strong zero-shot EEG-to-image retrieval and improved visual reconstruction performance, outperforming several state-of-the-art baselines.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04524",
+        "pdf": "https://arxiv.org/pdf/2611.04524",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04624",
+      "title": "Polyp Matching Using Deep Learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Polyp",
+      "paper": {
+        "id": "2611.04624",
+        "title": "Polyp Matching Using Deep Learning",
+        "authors": [
+          "Kristian Dalsbø Hindberg",
+          "Puneet Sharma",
+          "Benedicte Schelde-Olesen",
+          "Ulrik Deding",
+          "Jakob Frederik Frøkjær Justsen",
+          "Jan-Matthias Braun",
+          "Esmaeil S. Nadimi"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "A key challenge in colon capsule endoscopy (CCE) analysis is accurately identifying whether multiple images depict the same polyp, which is critical to avoid over-counting and unnecessary clinical interventions. Additionally, this prevents prolonged follow-up colonoscopies where endoscopists search for duplicate polyps without precise localization. This study presents a novel contrastive learning-based approach to polyp matching using a Siamese neural network architecture. The model was trained on a dataset from the Danish CareForColon2015 trial. The dataset comprises 5,103 image pairs of confirmed same polyp and 5,103 pairs of different polyps, annotated by experienced clinicians. The proposed model employs ResNet variants (ResNet18, ResNet34, ResNet50), DenseNet121 and EfficientNet B0/B3 as backbones and utilizes contrastive learning with cosine vector distance metric for classification. Experimental results demonstrate high classification accuracies of up to 92% and AUC values close to 0.98. These results suggest that automated polyp matching has the potential to reduce polyp over-counting, improve patient risk stratification, and reduce unnecessary follow-up colonoscopies.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04624",
+        "pdf": "https://arxiv.org/pdf/2611.04624",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04709",
+      "title": "Learning from Unlabeled Photographs for General Oral Image Analysis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.04709",
+        "title": "Learning from Unlabeled Photographs for General Oral Image Analysis",
+        "authors": [
+          "Zhong-Shi Zhang",
+          "Zi-Li Yu",
+          "Xiao Xiao",
+          "Huan Liu",
+          "Gui-Song Xia",
+          "Cui Huang",
+          "Meng-Xun Li"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Oral photographs contain rich clinical information and hold significant potential for artificial intelligence applications; however, most models are trained for individual tasks and rely on costly expert annotations. We hypothesized that self-supervised training on unlabeled oral photographs could produce transferable visual representations for heterogeneous vision tasks. To test this hypothesis, we developed DOVE (Dental Optical Visual Encoder) by domain-adaptive self-supervised pretraining on approximately 530,000 unlabeled oral photographs collected from publicly accessible sources. DOVE was benchmarked against 3 established baselines across 5 classification datasets and 4 segmentation datasets, covering both frozen backbone evaluation and end-to-end finetuning. DOVE achieved the strongest overall performance, ranking best in few-shot transfer and label efficiency on most benchmarks. Under the 20-shot frozen-backbone protocol, DOVE outperformed the second best DINOv3 by 4.37 percentage points in mean macro-F1 across classification datasets and by 4.49 percentage points in mean macro-Dice across segmentation tasks. Under end-to-end finetuning, DOVE achieved at least 80% of the strongest full-data baseline's performance across most evaluation datasets using only 10% of the labeled training data. Qualitative retrieval and feature analyses further indicated better organization of image-level and spatial representations. These findings support DOVE as a generalizable and label-efficient backbone for oral vision research.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.04709",
+        "pdf": "https://arxiv.org/pdf/2611.04709",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04755",
+      "title": "iMED: A Multi-Endoscope Dataset for Surgical 3D Perception",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgical",
+      "paper": {
+        "id": "2611.04755",
+        "title": "iMED: A Multi-Endoscope Dataset for Surgical 3D Perception",
+        "authors": [
+          "Sierra Bonilla",
+          "Fengyi Jiang",
+          "Chinedu Nwoye",
+          "Jingpei Lu",
+          "Kailey Reardon",
+          "Humphrey W. Chow",
+          "Francisco Vasconcelos",
+          "Sophia Bano",
+          "Adam Schmidt",
+          "Omid Mohareri"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "summary": "We introduce iMED, the first synchronized multi-endoscope dataset for robot-assisted minimally invasive surgery (RAMIS), designed to address a fundamental limitation in surgical vision benchmarking: the absence of independent held-out viewpoints. Existing surgical datasets capture single-trajectory sequences from a single endoscope, making it impossible to distinguish geometric generalization from photometric interpolation along a narrow forward-facing path. iMED provides 340 sequences ~170K synchronized timepoints with 4 views per timepoint) recorded simultaneously from two independent stereo endoscopes across ex vivo, postmortem, and live surgical settings, spanning 14 specimens with diverse anatomical regions and motion regimes. The dataset includes calibrated camera intrinsics, ArUco-based frame-wise pose estimates with uncertainty quantification, instrument segmentation masks, and rich clinical metadata. Using a train-on-one-endoscope, test-on-another evaluation protocol, we benchmark 23 state-of-the-art methods across rigid and deformable novel view synthesis, pose estimation, feature matching, and monocular depth estimation. Our experiments show that methods relying primarily on photometric supervision degrade substantially under this held-out-endoscope setting, while methods with explicit geometric regularization are more robust across views in our benchmark. Notably, large-scale foundation models transfer surprisingly well to surgical imagery, often outperforming domain-specific models, suggesting pitfalls in current fine-tuning protocols. iMED establishes a new evaluation protocol for geometric generalization in surgical vision.",
+        "comment": "Published at ECCV 2026. 25 pages, including supplementary material. Code and dataset: this https URL",
+        "abs": "https://arxiv.org/abs/2611.04755",
+        "pdf": "https://arxiv.org/pdf/2611.04755",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04759",
+      "title": "Beyond Local Refinement: Wide-Area Precise Cross-View Localization",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "aerial imagery",
+      "paper": {
+        "id": "2611.04759",
+        "title": "Beyond Local Refinement: Wide-Area Precise Cross-View Localization",
+        "authors": [
+          "Qingguo Hu",
+          "Xinyu Ma",
+          "Yujie Lin",
+          "Yaoxiang Wang",
+          "Qi Shi",
+          "Zonghao Guo",
+          "Chi Chen",
+          "Jinsong Su"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Fine-grained cross-view localization aims to precisely localize a ground camera against geo-referenced aerial imagery, but current methods typically assume a narrow geographic prior, substantially limiting their applicability when upstream localization remains coarse. To bridge this gap, we study this task over much larger aerial regions. However, this seemingly simple extension fundamentally changes the localization problem: the growing disparity in spatial extent between ground and aerial views makes reliable cross-view matching difficult to establish directly, while the increasing number of look-alike locations in larger regions introduces substantial visual ambiguity. To address these challenges, we propose RingMatch, a search-and-verification framework for wide-area cross-view localization. RingMatch first leverages predictive uncertainty to uncover plausible locations and progressively zooms into their surroundings to obtain increasingly fine-grained evidence, yielding a compact set of promising candidates. We then introduce the depth ring, a novel geometric representation that reveals subtle variations in the spatial layout around a location and serves as a view-shared spatial signature for an LVLM verifier to resolve residual ambiguity. To benchmark this setting, we construct VIGOR-Pro by composing VIGOR aerial tiles into contiguous regions with spatial extents of up to 400 m. Experiments show that RingMatch maintains strong localization performance as the aerial region expands, consistently outperforming representative end-to-end and retrieval-based methods.",
+        "comment": "Project page: this https URL",
+        "abs": "https://arxiv.org/abs/2611.04759",
+        "pdf": "https://arxiv.org/pdf/2611.04759",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04913",
+      "title": "EP-LVMQA: Evidence-Preserving Coarse-to-Fine Localization for Low-Quality Long Video Moment Question Answering",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.04913",
+        "title": "EP-LVMQA: Evidence-Preserving Coarse-to-Fine Localization for Low-Quality Long Video Moment Question Answering",
+        "authors": [
+          "Guoning Chen",
+          "Zhexun Hu",
+          "Yifan Wei",
+          "Yixuan Weng",
+          "Bin Li",
+          "Yufei Zhao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Long instructional videos are increasingly used in medical education, industrial training, and procedural knowledge transfer, yet their evidence is often incomplete or unreliable: subtitles may be missing, ASR noisy, OCR sparse, and decisive actions briefly shown without narration. Existing VideoQA systems typically return labels or free-form text, making answer support difficult to inspect. We study Long Video Moment Question Answering (LVMQA), where a system returns timestamped answer-supporting evidence. We propose EP-LVMQA, an evidence-preserving coarse-to-fine framework comprising an Uncertainty-Aware Multimodal Evidence Timeline, a Coarse Evidence Planner, and an Evidence-Conditioned Fine Localizer. An evidence card transfers planner scores, matched cues, source-confidence proxies, modality-specific evidence, neighboring context, and a temporal prior between the latter two modules. On MedVidQA, EP-LVMQA achieves 26.1 R1@0.5 and 31.8 mIoU, improving the strongest non-ours results by 6.3 and 5.1 points. It raises Suff.@2 and Ver.@2 to 25.4 and 22.6, gains of 9.5 and 8.8 points. Under matched low-quality perturbations, average relative degradation is reduced from the strongest non-ours value of 14.6% to 11.1%. On Ego4D-NLQ and QVHighlights, EP-LVMQA remains broadly comparable to established task-specific localization methods.",
+        "comment": "9 pages, 4 figures",
+        "abs": "https://arxiv.org/abs/2611.04913",
+        "pdf": "https://arxiv.org/pdf/2611.04913",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.04980",
+      "title": "ProAlign: Progressive Positional and Prototype-Guided Alignment for Aerial-Ground Person Re-Identification",
+      "exclude": true,
+      "reason": "other_domain_applications",
+      "label": "其他明确领域应用",
+      "field": "title",
+      "matched_text": "Person Re-Identification",
+      "paper": {
+        "id": "2611.04980",
+        "title": "ProAlign: Progressive Positional and Prototype-Guided Alignment for Aerial-Ground Person Re-Identification",
+        "authors": [
+          "Qiao Li",
+          "Jing Chen",
+          "Cong Wu",
+          "Kun He",
+          "Ruiying Du",
+          "Lei Tan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Aerial-Ground Person Re-Identification (AG-ReID) aims to match pedestrian images captured by unmanned aerial vehicles (UAVs) and ground-based surveillance cameras. The task remains highly challenging due to severe viewpoint discrepancies, frequent occlusions, and substantial domain gaps between aerial and ground imagery. Beyond these observable factors, existing methods often overlook two fundamental structural issues: cumulative positional drift during hierarchical feature extraction and semantic inconsistency across cross-view feature distributions. To address these challenges, we propose ProAlign, a Progressive Positional and Prototype-Guided Alignment Network for AG-ReID. ProAlign comprises two key components: a Layer-wise Progressive Positional Embedding (LPPE) module and a View-Aware Prototype Contrastive Learning (PCL) module. LPPE performs adaptive positional calibration throughout transformer layers by employing conditional positional encoding in shallow layers to mitigate local spatial distortions, while introducing learnable static positional embeddings in deeper layers to reinforce global semantic priors. Meanwhile, PCL maintains view-specific aerial and ground prototypes for each identity and enforces cross-view semantic consistency via a dual-prototype contrastive objective. Extensive experiments on CARGO and two real-world AG-ReID benchmarks demonstrate the effectiveness of ProAlign, achieving state-of-the-art overall retrieval performance on CARGO with improvements of 1.60% in Rank-1 accuracy and 5.01% in mAP over the strongest competing methods.",
+        "comment": "Accepted by NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.04980",
+        "pdf": "https://arxiv.org/pdf/2611.04980",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05011",
+      "title": "Can saliency maps flag chest radiograph classifier errors at a new hospital? An external validation study",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.05011",
+        "title": "Can saliency maps flag chest radiograph classifier errors at a new hospital? An external validation study",
+        "authors": [
+          "Aashish Chapagai",
+          "Angad Singh Gurtatta",
+          "Erik Cambria"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV"
+        ],
+        "summary": "Saliency maps are offered as a safeguard for medical image classifiers, but whether they reveal individual errors at a new hospital remains largely untested. We trained a convolutional network and a vision transformer on NIH ChestX-ray14 and evaluated 303,768 decisions per model at the training hospital and at two external sites, in the USA and Vietnam, with radiologist-consensus labels. We scored each explanation by its anatomical enrichment, the area-normalized concentration of attribution in a segmented thoracic region, and tested whether it detects errors beyond the model's confidence. Grad-CAM localized findings less often than radiologists (hit rate at most 0.575 versus 0.888). Adding enrichment to a confidence-based error detector calibrated at the training hospital never raised its area under the curve by more than 0.011, and for the convolutional network the relation between enrichment and correctness reversed between hospitals, degrading the transferred detector. Model confidence, not saliency, should anchor deployment monitoring.",
+        "comment": "21 pages, 5 figures, 1 table, 6 Extended Data figures and 4 Extended Data tables. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.05011",
+        "pdf": "https://arxiv.org/pdf/2611.05011",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05131",
+      "title": "High-fidelity training-free photovoltaic module mapping from multi-view UAV imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "UAV imagery",
+      "paper": {
+        "id": "2611.05131",
+        "title": "High-fidelity training-free photovoltaic module mapping from multi-view UAV imagery",
+        "authors": [
+          "WenHao Duana",
+          "Qi Chena",
+          "Penglei Zhang",
+          "Ruizhe Deng",
+          "Zhiling Guo",
+          "Haoran Zhang",
+          "Yuntian Chen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "High-fidelity photovoltaic (PV) module mapping requires complete instance recovery and accurate delineation. Vision foundation models offer zero-shot segmentation, but converting incomplete and inconsistent predictions across views into a complete, geometrically accurate map of individual modules remains challenging. We propose the Multi-View PV Module Mapper (MV-PVMapper), a training-free framework coupling vision foundation models with unmanned aerial vehicle (UAV) photogrammetry. First, Segment Anything Model 3 (SAM 3) generates candidates from original images using text prompts. Their contours are then transferred into object space through per-module slope correction to limit distortion from surface-model noise, and verified against representative module dimensions to guide cross-view instance selection. Finally, accepted instances return to all covering images as box prompts for SAM~3, supplementing text prompts with spatial cues for iterative segmentation, verification and fusion. On five-direction surveys of three operational rooftop PV plants at approximately 1 cm nadir ground sampling distance, two feedback iterations recover 7,710 of 7,711 reference modules with no false positives at an intersection-over-union (IoU) matching threshold of 0.5. Macro-averaged area precision and recall reach 99.00 % and 98.52 %, respectively. Averaged across sites, the aggregated Jaccard index reaches 97.55 %, compared with 60.73 % and 41.24 % for orthomosaic segmentation and multi-view pixel-voting baselines, respectively; average precision at the stricter IoU threshold of 0.95 reaches 95.67 %. Ablation studies show that module-size constraints are critical for instance separation, while slope correction and feedback to all covering views improve boundary accuracy. These results are achieved without task-specific image annotation or segmentation-model weight updates.",
+        "comment": "39 pages, 16 figures",
+        "abs": "https://arxiv.org/abs/2611.05131",
+        "pdf": "https://arxiv.org/pdf/2611.05131",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05192",
+      "title": "From Natural Images to Medical Scans: Transferability of Diffusion Models for Medical Image Generation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.05192",
+        "title": "From Natural Images to Medical Scans: Transferability of Diffusion Models for Medical Image Generation",
+        "authors": [
+          "Efthymios Georgiou",
+          "Ioannis Kakogeorgiou",
+          "Sarah Brüningk"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Transfer learning from natural images is standard in supervised and increasingly adopted in self-supervised medical image analysis, but its role in generative modelling, and in particular diffusion denoisers, remains underexplored. Medical diffusion models typically train the denoiser from scratch, with no systematic evaluation of natural-image transfer. We analyse this across latent and pixel paradigms, model sizes (131M-952M) and two radiology datasets (RadImageNet, BraTS), and ask which aspects of transfer support generation. We find that: i) Natural-image initialisation consistently improves generation, by 21-34% relative gFID in pixel space against 14% in latent space, where the tokeniser supplies much of the prior. gFID gains mirror downstream pathology classification and radiomic-feature FD, both proxies for clinical fidelity. ii) Benefits reflect spatial structure, not semantics: semantic probing does not predict generation quality, whereas a spatial-structure metric adapted to internal denoiser representations tracks gFID at $|r|=0.85$, positioning spatial organisation as a channel through which pretraining manifests. iii) Mixed-domain denoiser training shows that natural and medical images share similar layer-wise representations up to the late blocks, and mixing natural images into medical training improves fidelity. iv) Transfer benefit is tied to natural image initialisation, outperforming in-domain medical pretraining and several reinitialisation schemes. Overall, natural image denoisers transfer positively to medical ones in our setup. Code is available at this https URL",
+        "comment": "WACV 2027",
+        "abs": "https://arxiv.org/abs/2611.05192",
+        "pdf": "https://arxiv.org/pdf/2611.05192",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05223",
+      "title": "PLANTEUR: A Crop-Type Segmentation Benchmark for Tropical Regions",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "satellite images",
+      "paper": {
+        "id": "2611.05223",
+        "title": "PLANTEUR: A Crop-Type Segmentation Benchmark for Tropical Regions",
+        "authors": [
+          "Piper Wolters",
+          "Gabriel Tseng",
+          "Favyen Bastani",
+          "Joseph Redmon",
+          "Yawen Zhang",
+          "Hadrien Sablon",
+          "Ando Shah"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "We introduce PLANTEUR, a benchmark for crop-type mapping from satellite images in the French overseas territories. Building on the PASTIS design, PLANTEUR provides georeferenced and aligned Sentinel-2, Sentinel-1, and Landsat-8 sequences with parcel-derived labels spanning six tropical regions and an 8-class label space. We define both a standard test split and a leave-one-island-out protocol to measure cross-territory generalization, and evaluate fully supervised models, linear probes, and fine-tuned foundation models. The benchmark code and data are open source and available on GitHub and Hugging Face.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05223",
+        "pdf": "https://arxiv.org/pdf/2611.05223",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05231",
+      "title": "Diagnosis by Composition: Detecting and Localizing Unseen Diseases by Composing Learned Radiological Findings",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Radiological",
+      "paper": {
+        "id": "2611.05231",
+        "title": "Diagnosis by Composition: Detecting and Localizing Unseen Diseases by Composing Learned Radiological Findings",
+        "authors": [
+          "Kaihua Hou",
+          "Wei Liu",
+          "Yi Huang",
+          "Hao Zhang",
+          "Haibo Jin",
+          "Yifei Sun",
+          "Yuan gao",
+          "Zuoou Li",
+          "Ling Zhang",
+          "Ahmed Alaa",
+          "Geoffrey H. Tison",
+          "Xu Han",
+          "Ke Yan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deep models for radiological diagnosis are typically trained to predict disease labels directly from images, which limits them to diseases seen during training and makes their decisions hard to interpret in radiologists' terms. Radiology, however, proceeds from visual findings to disease through published guidelines that make this decision rule explicit, interpretable, and reproducible. We introduce diagnosis by composition (DbC), a representation learning framework that encodes this findings-first logic. DbC learns a vocabulary of radiological findings by aligning image features with the text embeddings of the findings, each finding represented as a dense map over the scan. A disease is defined by a set of required findings derived from its guidelines, and its diagnosis map is a fixed, parameter-free composition of the corresponding finding maps. Because the finding-to-disease mapping is derived from guidelines rather than learned, DbC is interpretable and auditable by design, can extend to new diseases by specifying their findings without retraining, and can diagnose unseen diseases by composing their findings. On multi-phase liver CT, DbC detects and localizes unseen diseases, rare diseases from a different institution, and an external cohort significantly better than all comparators, including models that align images with disease names. DbC also improves detection and localization in the fully supervised setting and remains superior across training-set sizes. Although demonstrated on liver CT, DbC applies wherever radiological guidelines define diseases through findings.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05231",
+        "pdf": "https://arxiv.org/pdf/2611.05231",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05348",
+      "title": "OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.05348",
+        "title": "OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation",
+        "authors": [
+          "Qizhen Lan",
+          "Yu-Chun Hsu",
+          "Yuxiang Wei",
+          "Lijing Zhu",
+          "Zenan Sun",
+          "Liang He",
+          "Lishan Yu",
+          "Xiaoqian Jiang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Automatic tools can now generate whole-brain MRI parcellations at cohort scale, but generated-label releases often provide little evidence about which cases are reliable enough to reuse. We introduce OpenBrain, a confidence-aware release of 35,838 provenance-verified OpenNeuro T1w cases from 607 source datasets. OpenBrain is organized as an auditable case-record release rather than a directory of standalone segmentation files: each record links a primary parcellation, two committee parcellations, source/license provenance, raw QC-7 measurements, percentile risks, a combined risk score R, and a confidence tier. QC-7 is a reference-free reliability panel over label geometry, image-label consistency, and committee disagreement, so users can filter, weight, audit, or re-threshold generated labels without rerunning inference. We evaluate this released evidence under a frozen protocol. Across external cohorts, lower QC-7 risk corresponds to higher generated-label quality; in fixed-budget training, lower-risk selections improve paired macro Dice over random selection by +3.2 to +3.7 percentage points. OpenBrain also exposes raw axes, committee outputs, provenance, and datasheet documentation, so confidence claims remain inspectable after download. It does not turn generated labels into manual annotations or clinical-grade segmentations. Its contribution is a large open generated-parcellation substrate, a reusable case-level risk-evidence layer, and an external validation protocol for release-time QC. Dataset: this https URL. Code: this https URL.",
+        "comment": "Accepted at NeurIPS 2026, Evaluations and Datasets Track. Dataset: this https URL code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.05348",
+        "pdf": "https://arxiv.org/pdf/2611.05348",
+        "listing_date": "2026-11-04",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
