@@ -1,0 +1,926 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "6ee24c81ab85f91e92a74cbac5e954ffc966160b704a27592513a9c10967d65f",
+  "input_count": 137,
+  "kept_count": 110,
+  "excluded_count": 27,
+  "counts_by_reason": {
+    "medical_biological": 15,
+    "agriculture_ecology": 2,
+    "remote_sensing": 10
+  },
+  "kept_ids": [
+    "2611.05380",
+    "2611.05403",
+    "2611.05404",
+    "2611.05406",
+    "2611.05407",
+    "2611.05408",
+    "2611.05411",
+    "2611.05449",
+    "2611.05451",
+    "2611.05522",
+    "2611.05565",
+    "2611.05578",
+    "2611.05593",
+    "2611.05599",
+    "2611.05633",
+    "2611.05646",
+    "2611.05648",
+    "2611.05680",
+    "2611.05689",
+    "2611.05693",
+    "2611.05742",
+    "2611.05755",
+    "2611.05801",
+    "2611.05802",
+    "2611.05811",
+    "2611.05818",
+    "2611.05825",
+    "2611.05874",
+    "2611.05893",
+    "2611.05917",
+    "2611.05927",
+    "2611.05945",
+    "2611.05969",
+    "2611.05992",
+    "2611.05994",
+    "2611.06000",
+    "2611.06007",
+    "2611.06020",
+    "2611.06040",
+    "2611.06042",
+    "2611.06046",
+    "2611.06047",
+    "2611.06048",
+    "2611.06061",
+    "2611.06070",
+    "2611.06083",
+    "2611.06085",
+    "2611.06089",
+    "2611.06093",
+    "2611.06113",
+    "2611.06120",
+    "2611.06141",
+    "2611.06143",
+    "2611.06149",
+    "2611.06160",
+    "2611.06168",
+    "2611.06180",
+    "2611.06195",
+    "2611.06203",
+    "2611.06258",
+    "2611.06270",
+    "2611.06273",
+    "2611.06282",
+    "2611.06302",
+    "2611.06343",
+    "2611.06353",
+    "2611.06355",
+    "2611.06377",
+    "2611.06412",
+    "2611.06415",
+    "2611.06422",
+    "2611.06433",
+    "2611.06455",
+    "2611.06518",
+    "2611.06544",
+    "2611.06556",
+    "2611.06593",
+    "2611.06594",
+    "2611.06635",
+    "2611.06637",
+    "2611.06652",
+    "2611.06664",
+    "2611.06685",
+    "2611.06728",
+    "2611.06738",
+    "2611.06741",
+    "2611.06748",
+    "2611.06760",
+    "2611.06781",
+    "2611.06796",
+    "2611.06817",
+    "2611.06838",
+    "2611.06840",
+    "2611.06844",
+    "2611.06849",
+    "2611.06854",
+    "2611.06856",
+    "2611.06864",
+    "2611.06870",
+    "2611.06890",
+    "2611.06899",
+    "2611.06901",
+    "2611.06918",
+    "2611.05738",
+    "2611.05847",
+    "2611.06378",
+    "2611.06453",
+    "2611.06627",
+    "2611.06724",
+    "2611.06908"
+  ],
+  "excluded": [
+    {
+      "id": "2611.05443",
+      "title": "SurgTransfer: Multi-Step Latent Action Modeling for Action Transfer in Surgical World Model",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgical",
+      "paper": {
+        "id": "2611.05443",
+        "title": "SurgTransfer: Multi-Step Latent Action Modeling for Action Transfer in Surgical World Model",
+        "authors": [
+          "Saurabh Koju",
+          "Love Panta",
+          "Deepak Thapa",
+          "Rudra P. K. Poudel",
+          "Prajwal Ghimire",
+          "Angus Watson",
+          "Yash Raj Shrestha",
+          "Prashnna Kumar Gyawali",
+          "Binod Bhattarai"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "summary": "Surgical world models have the potential to provide intra-operative guidance, accelerate risk-free training and facilitate transfer of expert surgical maneuvers. However, the use of world models for transferring surgical expertise has been largely unexplored. Moreover, recent approaches in this domain have mainly relied on ground truth kinematics actions or expert annotations for specific tasks, limiting their applicability beyond the narrow range of tasks with ground-truth annotations. In contrast, existing works in the natural domain have shown promising results in learning latent actions solely from unlabeled videos and transferring the learned actions across contexts. We observe that this paradigm is short-sighted for the surgical domain, failing to capture the hierarchical and goal-directed structure of surgical procedures. Thus, we propose a novel multi-step action learning framework to learn context-invariant latent actions that are easily transferable across various surgical contexts. We perform extensive experiments on the publicly available datasets, SurgToolLoc-2022 and PitVis-2023, verifying our approach with both quantitative metrics and qualitative evaluation by surgical experts. We have published our code and the implementation details at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05443",
+        "pdf": "https://arxiv.org/pdf/2611.05443",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05559",
+      "title": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "abstract_intro",
+      "matched_text": "biodiversity",
+      "paper": {
+        "id": "2611.05559",
+        "title": "How Finely Can Vision-Language Models See Biology? Bio-VQA: A Benchmark for Taxonomic, Morphological, Spatial and Individual Reasoning",
+        "authors": [
+          "S M Rayeed",
+          "Qian Ma",
+          "Charles V. Stewart",
+          "Yao Ma"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "In biodiversity monitoring, a single image raises several questions: which taxon, how many, which trait, and whether the individual has been seen before. Vision-language models (VLMs) could answer all of these from the image, but their ability is largely untested in biology, as existing benchmarks focus mostly on species identification within a few taxonomic groups. We present Bio-VQA, the largest biological visual question answering (VQA) benchmark and the only one to span four aspects of biological visual understanding: hierarchical taxonomic reasoning, fine-grained attribute grounding, quantitative spatial reasoning, and individual re-identification. Bio-VQA contains 1.86M questions over 217K images from 11 public datasets, and extends right-or-wrong scoring to graded scoring, so a near-miss counts for more than a distant one. Evaluating 18 open-weight models from 3.75B to 38.4B parameters, we find that general visual capabilities do not transfer to biological organisms: the best model counts animals exactly on 41.7% of images with 2 to 10 individuals, less than half its accuracy on everyday objects at the same counts. Taxonomic accuracy falls to one sixth, from 0.72 at phylum to 0.12 at scientific name, and scaling helps mostly at coarse ranks. The gap to a domain specialist widens accordingly, from 0.731 against BioCLIP-2's 0.874 at class (1.2x) to 0.269 against 0.544 at scientific name (2x). On trait size measurement, 15 of the 18 models do no better than an image-blind baseline that predicts one fixed number for every specimen, and on re-identification, 17 of the 18 models fall below chance under adversarial conditions. These failures persist across a tenfold range of model size. We hope Bio-VQA becomes a standard test of how well VLM capabilities transfer to the biological domain.",
+        "comment": "Accepted to WACV 2027, 8 pages main paper; 4 figures, 4 tables",
+        "abs": "https://arxiv.org/abs/2611.05559",
+        "pdf": "https://arxiv.org/pdf/2611.05559",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05564",
+      "title": "Lesion Overlap Ranks PET Segmentation Models but Does Not Certify Patient-Level Tumor Burden",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Lesion",
+      "paper": {
+        "id": "2611.05564",
+        "title": "Lesion Overlap Ranks PET Segmentation Models but Does Not Certify Patient-Level Tumor Burden",
+        "authors": [
+          "Tushar Kataria",
+          "Gerald Sabin",
+          "Ponnuswamy Sadayappan",
+          "Shireen Y. Elhabian"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Metabolic tumor volume (MTV) summarizes whole-body PET disease burden for prognostic stratification and treatment assessment. Automated MTV is useful only if its estimate is reliable for the individual patient, yet segmentation models are usually evaluated with overlap metrics such as Dice rather than burden error. We examined whether overlap metrics identify unreliable MTV estimates using 1,014 autoPET FDG PET/CT studies. We evaluated LesionTracer predictions held out from fine-tuning, compared five selected released models on 489 tumor-positive patients, and examined the findings in 597 PSMA studies. Across the five FDG models, ranking by higher mean Dice gave the same order as ranking by lower mean relative MTV error ($\\rho=-1.00$, exact $p=0.017$). At the patient level, however, out-of-fold Dice tracked relative MTV error strongly ($\\rho=-0.75$), yet 82 of 489 patients (16.8\\%) fell on opposite sides of the Dice 0.80 and MTV-error 25\\% thresholds. Within the training-exposed released models, correlations ranged from $-0.47$ to $-0.74$ over narrower, high-Dice ranges. Out of fold, opposing false-positive and false-negative volumes cancelled about one third of spatial error in net MTV. In 236 of 489 patients, each of the five models missed at least one lesion, though not necessarily the same lesion. Thus, agreement in average model rankings did not establish the reliability of individual MTV estimates or reveal shared lesion misses. PET segmentation benchmarks should report patient-level MTV error and missed-lesion counts alongside Dice and other overlap metrics.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05564",
+        "pdf": "https://arxiv.org/pdf/2611.05564",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05569",
+      "title": "Role-based Effectiveness of an Epistemic Uncertainty Estimate in Training Models for Semantic Segmentation of 3D LiDAR Point Clouds",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.05569",
+        "title": "Role-based Effectiveness of an Epistemic Uncertainty Estimate in Training Models for Semantic Segmentation of 3D LiDAR Point Clouds",
+        "authors": [
+          "Krishnakumar N",
+          "Jaya Sreevalsan-Nair"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Point cloud segmentation is a fundamental task in 3D data analysis, with applications across robotics, augmented and virtual reality, and remote sensing. However, the inherent sparsity, noise, and unordered nature of point clouds introduce significant challenges, particularly in achieving reliable classification. While the state-of-the-art rely on training models for explicit modeling of uncertainty, there is a gap in exploring different roles that estimated uncertainty using generative approaches can play. This work investigates the impact of deterministic uncertainty in point cloud segmentation by explicitly modeling epistemic uncertainty and using it in different roles, namely, as a feature and in loss function. We evaluate a baseline artificial neural network (ANN) and two uncertainty-aware variants (uncertainty as an additional input feature and as a per-sample confidence weight in the training loss) on four large-scale LiDAR benchmarks spanning airborne and mobile acquisition, namely ISPRS Vaihingen, AHN3, Paris-Lille-3D, and Toronto-3D, together with PointNet++ and RandLA-Net references and their uncertainty-augmented counterparts under canonical spatially disjoint train and test splits. Under this protocol, uncertainty-aware modeling improves mean Intersection over Union, recovers minority classes that the baseline ANN never predicts at all, and in half of the configurations improves the alignment between prediction error and estimated uncertainty as measured by Patch Accuracy versus Patch Uncertainty. Our findings indicate that uncertainty can play multiple roles in the segmentation pipeline rather than as a device for improving accuracy alone.",
+        "comment": "23 pages, 7 figures, 10 tables",
+        "abs": "https://arxiv.org/abs/2611.05569",
+        "pdf": "https://arxiv.org/pdf/2611.05569",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05570",
+      "title": "ChangeJEPA: Predict Before You Compare for Remote Sensing Change Detection",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.05570",
+        "title": "ChangeJEPA: Predict Before You Compare for Remote Sensing Change Detection",
+        "authors": [
+          "Buddhi Wijenayake",
+          "Dhananjaya Jayasundara",
+          "Vishal M. Patel"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Remote sensing change detection is typically formulated as Siamese feature comparison, where two images are encoded independently and a decoder determines which discrepancies correspond to meaningful change. This is challenging because the encoders preserve both true scene changes and nuisance variations such as illumination, seasonal, radiometric, and geometric differences. We introduce ChangeJEPA, a bitemporal joint-embedding predictive architecture that reformulates change detection as latent post-state prediction. Given a pre-change image and partial post-change evidence, ChangeJEPA predicts the full post-change representation under two complementary conditions: a prior hypothesis derived from the pre-change scene and an updated hypothesis conditioned on observed post-change context. A joint-embedding predictive loss aligns both hypotheses with the target latent representation, encouraging semantic consistency while suppressing transient appearance variations. Change is then inferred from the disagreement among the pre-change representation, the observed post-change target, and the predicted latent states, capturing complementary evidence of change, prior surprise, contextual update, and prediction reliability. Across SYSU-CD, LEVIR-CD+, and CDD, ChangeJEPA consistently outperforms its decoder matched Siamese baseline by up to 1.51 IoU points and achieves the best IoU and F1-score on all three benchmarks, demonstrating the advantage of latent post-state prediction over direct feature comparison. Page: this https URL",
+        "comment": "15 pages",
+        "abs": "https://arxiv.org/abs/2611.05570",
+        "pdf": "https://arxiv.org/pdf/2611.05570",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05579",
+      "title": "Multimodal Fusion Methods for Whole-Slide Images and Clinical Data in Inflammatory Bowel Disease",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Clinical",
+      "paper": {
+        "id": "2611.05579",
+        "title": "Multimodal Fusion Methods for Whole-Slide Images and Clinical Data in Inflammatory Bowel Disease",
+        "authors": [
+          "Ankana Banerjee",
+          "Mark van der Giezen",
+          "Ole Gunnar Aasprong",
+          "Emiel A. M. Janssen",
+          "Øyvind Steinsbø",
+          "Tore Grimstad",
+          "Kjersti Engan"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "summary": "Multimodal AI fusion of histology and clinical data is an active research area in computational pathology, but fusion methods are rarely compared under identical conditions and across different clinical endpoints. We present a modular framework in which slide-level embeddings, obtained by training an attention-based aggregator over patch embeddings from a frozen foundation model, and per-visit clinical embeddings are fed into 15 interchangeable fusion methods with a shared output dimension and prediction head (except decision-level methods). Using a prospective cohort of newly diagnosed inflammatory bowel disease patients, we predicted STRIDE-II-aligned remission outcomes from baseline or follow-up visits. The best fusion method reached macro-F1 of 0.57-0.75, outperforming both single-modality models in four of six scenarios, and differed by outcome and input. Image reliance, the drop in balanced accuracy when the slide embedding is removed, tended to follow the remission type - highest for histological and lowest for endoscopic remission; methods with similar accuracy relied on the slide to very different degrees.",
+        "comment": "5 pages, 4 figures, Submitted to the 2027 IEEE 24th International Symposium on Biomedical Imaging (ISBI)",
+        "abs": "https://arxiv.org/abs/2611.05579",
+        "pdf": "https://arxiv.org/pdf/2611.05579",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05697",
+      "title": "GeoDIVE: Geospatial Descent Informed by Value Estimation",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Geospatial",
+      "paper": {
+        "id": "2611.05697",
+        "title": "GeoDIVE: Geospatial Descent Informed by Value Estimation",
+        "authors": [
+          "Hamza Iqbal",
+          "Dan Cher",
+          "Eric Xing",
+          "Pranavi Kolouju",
+          "Abby Stylianou",
+          "Robert Pless",
+          "Nathan Jacobs"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Finding specific objects, structures, and spatial patterns supports critical work in agriculture, infrastructure planning, environmental monitoring, and disaster response. These features, however, are often dispersed across very large regions and span dramatically different spatial scales, which defines a search space that is costly to embed, maintain, and search naively. We introduce GeoDIVE, a model that treats a multiresolution satellite image gallery as a forest and uses best-first traversal to determine which tiles to encode. At each visited node, a lightweight model then predicts an optimistic estimate of the best query similarity hidden among its descendants using the query and subtree representations. In evaluations with image and open-vocabulary text queries, GeoDIVE matches exhaustive search at 10% of the encoding cost for image queries and leads all tested baselines at every budget in both modalities. To support future evaluation of multiscale geospatial search, we also release object-level image and text queries for Git-10M, constructed from Microsoft building footprints and OpenStreetMap polygons with VLM-generated captions. Source code and models will be made publicly available.",
+        "comment": "Accepted to WACV 2027. Includes supplementary material",
+        "abs": "https://arxiv.org/abs/2611.05697",
+        "pdf": "https://arxiv.org/pdf/2611.05697",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05734",
+      "title": "Mitigating Spurious Invariance in Contrastive Learning: A Probabilistic Self-Supervised Learning Framework for Medical Image Analysis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.05734",
+        "title": "Mitigating Spurious Invariance in Contrastive Learning: A Probabilistic Self-Supervised Learning Framework for Medical Image Analysis",
+        "authors": [
+          "Wei Wei",
+          "Yading Yuan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Owing to the prohibitive cost of manual annotation for enormous medical images, self-supervised learning (SSL) has gained substantial attention and shown promise in various medical imaging tasks. Among SSL approaches, contrastive learning has emerged as a prominent one, encouraging models to encode semantic information that remains invariant between different augmented views. However, this invariance can be spurious for medical images, as subtle but critical medical features can be suppressed during augmentations. In this paper, we mitigate this issue by encoding the learned feature embeddings as probability distributions rather than fixed vectors, thus capturing a richer and more nuanced spectrum of information. Furthermore, we propose a unified probabilistic framework that seamlessly integrates multiple SSL approaches. Our method achieves superior performance over the state-of-the-art SSL methods on various downstream tasks across multiple datasets, including medical image segmentation and classification. We further validate the method through additional analyses of robustness to stronger augmentations, label efficiency under limited fine-tuning labels, and computational trade-offs. The code is released at this https URL.",
+        "comment": "Published in IEEE Transactions on Medical Imaging (TMI), 2026. 17 pages",
+        "abs": "https://arxiv.org/abs/2611.05734",
+        "pdf": "https://arxiv.org/pdf/2611.05734",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05737",
+      "title": "C-WFDM: A ControlNet-Guided Wavelet-Fusion Diffusion Model for Multimodal Brain MRI Completion",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.05737",
+        "title": "C-WFDM: A ControlNet-Guided Wavelet-Fusion Diffusion Model for Multimodal Brain MRI Completion",
+        "authors": [
+          "Muhammad Nabi Yasinzai",
+          "Remika Mito",
+          "Mangor Pedersen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Multimodal brain MRI provides complementary anatomical, tissue, and pathological information to support downstream artificial intelligence (AI) applications. However, modality availability is uneven across public and pooled neuroimaging datasets: T1-weighted (T1w) MRI is widely represented, T2-weighted (T2w) and fluid-attenuated inversion recovery (FLAIR) MRI are less consistently available, and gadolinium-enhanced T1-weighted (T1Gd) MRI is relatively scarce. Pooled datasets therefore contain participants with different combinations of acquired MRI contrasts, reflecting variation in the study designs, acquisition protocols, and clinical or research objectives of the contributing studies. Many missing-modality benchmarks simulate incomplete MRI by withholding contrasts from complete four-modality cases, which may not represent the observed availability patterns in pooled datasets. To address this gap, we introduce C-WFDM, a ControlNet extension of our Wavelet-Fusion Diffusion Model (WFDM), for subject-specific missing-modality completion. C-WFDM is built on an earlier BrainScape snapshot comprising 157 public MRI datasets and 45,880 preprocessed scans. The pretrained WFDM backbone retains target-modality and metadata conditioning, while target-specific ControlNet adapters use MRI contrasts from the same participant to guide synthesis. C-WFDM synthesizes T2w from T1w, FLAIR from T1w and T2w, and T1Gd from T1w, T2w, and FLAIR. Acquired conditioning contrasts are used when available, and generated intermediate contrasts are used only when required. We compare C-WFDM with ALDM, cWDM, and Pix2Pix using paired structural similarity index (SSIM), peak signal-to-noise ratio (PSNR), and mean absolute error (MAE). In the BrainScape completion experiment, C-WFDM achieves the best T2w and FLAIR results among the evaluated models, with SSIM values of 0.9232 and 0.8904, respectively.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05737",
+        "pdf": "https://arxiv.org/pdf/2611.05737",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05766",
+      "title": "ME^2FDiff: Multiscale Expert Enhancing Feature Diffusion in Residual Network for Brain Tumor Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2611.05766",
+        "title": "ME^2FDiff: Multiscale Expert Enhancing Feature Diffusion in Residual Network for Brain Tumor Segmentation",
+        "authors": [
+          "Afrida Rahman",
+          "Bijoy Kundu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Automated segmentation of post-treatment glioma from MRI is essential for accurate diagnosis and treatment planning, yet remains difficult. Surgery and chemoradiotherapy cause structural changes in brain like resection cavities, edema, and fibrosis, that alter imaging appearance and mimic tumor recurrence. Contemporary segmentation architectures attain high accuracy with two limitations. First, the bottleneck originates from the deepest encoder stage, so one representation must serve sub-regions that differ widely in size and appearance. Second, they produce the segmentation in a single forward pass with no mechanism for refinement. We propose ME^2FDiff, a single-model architecture, addressing both. An attention-conditioned spectral diffusion block refines the bottleneck. It uses the image-conditioned latent diffusion process with two processes: a spatial pre-attention gate and a spectral fusion block whose timestep-adaptive bandpass filter selects the informative frequency band at each noise level. A multiscale expert-enhanced feature block fuses the intermediate encoder scales into the bottleneck through expert-selected shared tokens, guaranteeing balanced utilization without an auxiliary loss. On the BraTS 2024 post-treatment glioma dataset, ME^2FDiff achieves the best results on every tumor sub-region among all single-model baselines (91.23% Dice, 84.52% IOU, 2.13 mm HD95 on whole-tumor) and surpasses a three-expert ensemble on both overlap metrics at roughly one-third of its inference cost. Against recent state-of-the-art methods retrained under identical conditions, it maintains the strongest performance with the fewest parameters of any competing model. These findings demonstrate that a single, compact network can absorb the specialization, usually sought through ensembling or larger architectures.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05766",
+        "pdf": "https://arxiv.org/pdf/2611.05766",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05859",
+      "title": "Generative AI for urban planning: synthesizing land-use maps with satellite imagery via DualControlNet",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "land-use",
+      "paper": {
+        "id": "2611.05859",
+        "title": "Generative AI for urban planning: synthesizing land-use maps with satellite imagery via DualControlNet",
+        "authors": [
+          "Qingqi Song",
+          "Yuzhou Chen",
+          "Lingqian Hu",
+          "Shenhao Wang"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Various land-use models characterize land-use patterns and facilitate scenario planning. However, existing models are largely predictive, forecasting transitions based on numeric data without synthesizing new land-use maps from simple text prompts. Meanwhile, generative AI in urban systems remains unimodal, weakly controllable, and evaluated mostly by generic image quality rather than domain-specific metrics. To address these gaps, we introduce DualControlNet, a generative land-use model that jointly synthesizes high-resolution land-use maps and satellite imagery, addressing multimodality, controllability, and verification challenges. Trained on over 40,000 paired tiles from Orlando and Chicago, DualControlNet is evaluated using land-use, spatial consistency, and image quality metrics. Relative to unimodal baselines, DualControlNet improves land-use diversity consistency by 62.8% and building coverage ratio consistency by 16.3%, more than doubles cross-modal spatial consistency, and triples visual quality. Scenario-based experiments demonstrate that DualControlNet supports sustainable development through multidimensional controls, increasing density and diversity, and responding to text prompts like \"high-density development.\" Overall, this work advances land-use modeling via a multimodal, controllable, and verifiable generative framework, lowering technical barriers and enabling intuitive exploration of urban futures.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05859",
+        "pdf": "https://arxiv.org/pdf/2611.05859",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05909",
+      "title": "Do Saliency Maps Fail Dense Breasts? A Chance-Normalized, Confounder-Aware Audit of Explanation Fairness in Mammography",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Mammography",
+      "paper": {
+        "id": "2611.05909",
+        "title": "Do Saliency Maps Fail Dense Breasts? A Chance-Normalized, Confounder-Aware Audit of Explanation Fairness in Mammography",
+        "authors": [
+          "Ahmed Jaheen"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Saliency maps, offered as evidence that mammography classifiers use the cancer, are untested in dense breasts, which can hide cancers. We tested whether they locate cancers worse there, and why. On 1,345 malignant CBIS-DDSM views, we scored three CNNs' Grad-CAM, Integrated Gradients and occlusion maps by whether their peak hits the lesion and a chance-normalized lesion-to-background saliency ratio (bits; +1 doubles it). Unadjusted gaps were large: Grad-CAM peaks hit 44% of dense vs. 58% of non-dense lesions. Case mix, chiefly more calcifications in dense breasts, explained about half or more of each gap. Occlusion kept a significant average of -0.56 bit gap. Controls also implicate the classifiers: unadjusted gaps exceeded an image-only conspicuity map's, and models relied less on dense-breast lesions. We recommend reporting density gaps before and after case-mix adjustment, per classifier, with conspicuity and lesion-reliance controls.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05909",
+        "pdf": "https://arxiv.org/pdf/2611.05909",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05925",
+      "title": "3D Banff Glomerulitis Scoring for Kidney Transplant Pathology: Feasibility Study for Volumetric Quantification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2611.05925",
+        "title": "3D Banff Glomerulitis Scoring for Kidney Transplant Pathology: Feasibility Study for Volumetric Quantification",
+        "authors": [
+          "Yanfan Zhu",
+          "Junchao Zhu",
+          "Ruining Deng",
+          "Shilin Zhao",
+          "Yu Wang",
+          "Yaohong Wang",
+          "Yuechen Yang",
+          "Chongyu Qu",
+          "Zhengyi Lu",
+          "Juming Xiong",
+          "Mengmeng Yin",
+          "Yihan Wang",
+          "Andrew J. Rauch",
+          "Haichun Yang",
+          "Yuankai Huo"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Quantifying glomerular inflammation in kidney-transplant biopsies is traditionally performed on single whole-slide sections using the Banff \"most-severe section\" rule, despite the inherently three-dimensional nature of lesion distribution. This 2D based assessment might lead to instability when inflammation varies across slices. This paper reports a feasibility study examining the technical feasibility and clinical relevance of extending Banff scoring into three dimensions. To this end, we propose a 3D Banff lesion-scoring framework that aligns serial sections, reconstructs glomerular identities across depth, and integrates inflammatory-cell counts in 3D under three scoring strategies: Compatible, Volumetric, and Deduplicated Volumetric. In the experiments, glomerulitis (g-scores) was used as an example Banff metric and applied to multi-section renal allograft biopsies. Our findings indicate that 3D Banff g-scores are more consistent across sections and, under the semi-automatic setting, the Volumetric strategy correlates more strongly with clinical biomarkers than traditional 2D scores. These results show that 3D volumetric quantification offers promising added value, underscoring the potential benefit of 3D-aware Banff scoring for kidney transplant pathology.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.05925",
+        "pdf": "https://arxiv.org/pdf/2611.05925",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.05974",
+      "title": "PathoS2VD: From 2D Histopathology to Pseudo Z-Stack Representations",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histopathology",
+      "paper": {
+        "id": "2611.05974",
+        "title": "PathoS2VD: From 2D Histopathology to Pseudo Z-Stack Representations",
+        "authors": [
+          "Jiamu Wang",
+          "Keunho Byeon",
+          "Ji-Uk Kim",
+          "Jin Tae Kwak",
+          "Heounjeong Go"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "For decades, diagnostic pathology has relied on thin two-dimensional (2D) tissue sections, despite biological tissues exhibiting inherently three-dimensional (3D) morphological organization. Because a single section captures only one focal plane, important morphological cues along the z-axis are inevitably discarded, limiting tissue representation for both human interpretation and computational analysis. In this work, we propose a generative framework that learns z-axis morphological priors from pathology z-stack data, offering a cost-effective alternative to dedicated volumetric imaging, and transfers this knowledge to conventional single-plane histopathology. Specifically, an image-to-video (I2V) latent diffusion model (LDM) is trained to synthesize a pseudo z-stack from a single 2D image, capturing plausible morphological variations across adjacent focal planes rather than reconstructing physical tissue volumes. To enable deployment on large-scale clinical datasets without native z-stack acquisition, we further introduce a prior-preserving mixture fine-tuning strategy that adapts the model to new domains while retaining the learned z-axis morphological prior. Extensive experiments demonstrate that the synthesized pseudo z-stacks exhibit realistic cross-plane morphological continuity and consistently improve downstream prostate cancer classification compared with conventional 2D representations. Our results suggest that learning transferable z-axis priors from limited z-stack data provides a practical way to enrich routine pathology images with complementary morphological information. Code: this https URL.",
+        "comment": "Pre-review version. Accepted at ACCV 2026",
+        "abs": "https://arxiv.org/abs/2611.05974",
+        "pdf": "https://arxiv.org/pdf/2611.05974",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06015",
+      "title": "ChanSFormer: A Channel Agnostic Vision Transformer for Multi-Channel Cell Painting Images",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.06015",
+        "title": "ChanSFormer: A Channel Agnostic Vision Transformer for Multi-Channel Cell Painting Images",
+        "authors": [
+          "Jingwei Zhang",
+          "Srinivasan Sivanandan",
+          "Dimitris Samaras"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "High-content multi-channel imaging, from Cell Painting assays to remote sensing, is central to modern scientific pipelines. Because these channels are highly heterogeneous and experimental configurations frequently evolve, a practical vision backbone must be fundamentally channel-agnostic. Current channel-adaptive vision transformers rely on global self-attention with learnable channel embeddings, which can be computed only for previously known channels. Attempts to overcome this limitation of new channels either discard the embeddings, losing channel identity, or process each channel independently, thereby eliminating critical cross-channel interactions. To address this, we introduce ChanSFormer, an efficient Vision Transformer that replaces rigid embeddings with disentangled spatial-channel attention and individual channel CLS tokens. This architecture natively preserves both distinct channel identities and cross-channel information flow. Furthermore, the individual channel class token design unlocks more informative feature representations for self-supervised learning and enables representation-based channel sampling while remaining channel-agnostic. We evaluate ChanSFormer on two biology multi-channel datasets, CHAMMI, JUMP-CP and a satellite dataset, So2Sat. Experimental results show that ChanSFormer outperforms state-of-the-art methods by 3.93%-4.27% on JUMP-CP in classification accuracy. It also demonstrates exceptional cross-dataset transferability under a self-supervised setting, outperforming previous methods by up to 2.72% in accuracy in the same classification tasks. Furthermore, the disentangled attention reduces the quadratic complexity of channel-by-spatial sequence length of the global attention baseline, thus improving throughput by 55%-313%. Code is available at this https URL.",
+        "comment": "Accepted at NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.06015",
+        "pdf": "https://arxiv.org/pdf/2611.06015",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06096",
+      "title": "Many Pixels, One Composition: Self-Supervised Spectra for Specimen-Level Prediction",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "hyperspectral",
+      "paper": {
+        "id": "2611.06096",
+        "title": "Many Pixels, One Composition: Self-Supervised Spectra for Specimen-Level Prediction",
+        "authors": [
+          "Eleftheria Tetoula-Tsonga",
+          "George Arvanitakis",
+          "Theodoros Giannakas"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Can hyperspectral (HS) imaging be used to predict the elemental composition of physical specimens found on the Earth's surface? We approach this problem as a supervised regression task, using an open dataset of specimens, each comprising a HS cube and elemental characterization. In particular, we train an encoder in a self-supervised fashion that operates on pixel-level; then freeze the encoder and train a lightweight attention-based regression head in a supervised manner, by pairing many representations of a given specimen with its corresponding elemental label. In test specimens, our approach significantly outperforms traditional spectral matching and unmixing baselines. It also outperforms supervised learning models based on the mean spectrum (of similar model capacity), while full model fine-tuning achieves the strongest performance, at substantially higher model capacity.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06096",
+        "pdf": "https://arxiv.org/pdf/2611.06096",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06105",
+      "title": "XuanJian-DINOSAR: A SAR Foundation Model Based on Global and Local Semantic Consistency",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "synthetic aperture radar",
+      "paper": {
+        "id": "2611.06105",
+        "title": "XuanJian-DINOSAR: A SAR Foundation Model Based on Global and Local Semantic Consistency",
+        "authors": [
+          "Chunxiao Wu",
+          "Huixin Huang",
+          "Jialei Pan",
+          "Qiang Liang",
+          "Tao Wu",
+          "Cheng Wu",
+          "Long Huang",
+          "Yuanji Li",
+          "Qiang Cheng",
+          "Aifang Liu",
+          "Linghao Xia",
+          "Rui Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Self-supervised pre-training on synthetic aperture radar (SAR) imagery enables transferable representations, but the optical-SAR domain gap and speckle perturbations limit representation stability. Most SAR foundation models use masked image modeling (MIM) through pixel reconstruction or structural feature prediction, which is sensitive to speckle or relies on predefined operators. Joint modeling of cross-view semantics and perturbation stability at corresponding spatial locations remains underexplored. We propose XuanJian-DINOSAR, a SAR foundation model based on global and local semantic consistency. We curate over 360K publicly available SAR target chips, detection images, and scene images spanning diverse targets, scenes, and sensors, and adapt an optically pre-trained DINOv2 model to SAR through self-supervised learning. The framework combines DINO global semantic self-distillation, iBOT local masked modeling, and KoLeo feature-distribution regularization to learn globally discriminative and locally structure-aware representations. We introduce a local semantic consistency branch tailored to SAR intensity statistics and coherent imaging characteristics. Shared geometric transformations produce spatially aligned teacher weak views and student strong views. Intensity transformations and Gamma multiplicative speckle perturbations are applied to student views, while a cosine consistency loss aligns patch tokens at corresponding locations, promoting stability under radiometric perturbations. This objective complements the cross-region and cross-scale semantic consistency of DINOv2 multi-crop training, jointly enforcing global and local semantic consistency. Experiments on multiple downstream classification and detection datasets demonstrate state-of-the-art performance on most evaluation metrics, validating the generality and transferability of the learned representations.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06105",
+        "pdf": "https://arxiv.org/pdf/2611.06105",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06221",
+      "title": "FedXCrop: Privacy-Preserving Crop Disease Detection via Federated Learning with Post-Aggregation Explainability under Non-IID Farm Distributions",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Crop Disease",
+      "paper": {
+        "id": "2611.06221",
+        "title": "FedXCrop: Privacy-Preserving Crop Disease Detection via Federated Learning with Post-Aggregation Explainability under Non-IID Farm Distributions",
+        "authors": [
+          "Kriti Saini",
+          "Manikandan P"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deep learning can classify crop diseases accurately from benchmark leaf images, but centralized training requires farms to share raw data, and predictions without explanations offer limited support for treatment decisions. We present FedXCrop, a federated crop disease classification pipeline that quantitatively evaluates explanations of the aggregated global model. A MobileNetV2 model trained centrally on PlantVillage achieved 99.38% test accuracy (standard deviation 0.05 over three seeds) on a fixed test set of 5,428 images across 38 classes. Federated models initialized with ImageNet weights were trained for 30 rounds across five clients. FedAvg achieved 98.81% accuracy with identically distributed clients and 98.81%, 98.59%, and 97.78% under Dirichlet label skew (alpha = 1, 0.5, and 0.1, respectively). FedProx was not significantly different from FedAvg at any heterogeneity level (McNemar p > 0.3). Grad-CAM and SmoothGrad explanations were evaluated on 380 test images. Both attributed more energy to the leaf than chance (0.70-0.78 versus 0.60), while Grad-CAM maps from federated and centralized models showed Spearman correlations of 0.74-0.76. Agreement decreased as heterogeneity increased, lesion localization was only modestly above chance, and a model-randomization test indicated that SmoothGrad maps depended substantially on image structure rather than learned parameters. In this setting, label skew reduced federated accuracy by 0.6-1.6 percentage points relative to centralized training. FedAvg largely preserved Grad-CAM behavior, while FedProx provided no measurable benefit.",
+        "comment": "26 pages. Includes 38-class crop disease classification experiments, federated learning evaluation under non-IID client distributions, and quantitative explainability analysis using Grad-CAM and SmoothGrad. Code and experimental results: this https URL",
+        "abs": "https://arxiv.org/abs/2611.06221",
+        "pdf": "https://arxiv.org/pdf/2611.06221",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06230",
+      "title": "Homology Features for X-Ray Hyperspectral Images Segmentation",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Hyperspectral",
+      "paper": {
+        "id": "2611.06230",
+        "title": "Homology Features for X-Ray Hyperspectral Images Segmentation",
+        "authors": [
+          "Fethi Harkat",
+          "Guillaume Gey",
+          "Valérie Perrier",
+          "Kévin Polisano"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Characterizing Multi-Energy X-ray Transmission (XRT) hyperspectral images presents significant challenges for traditional classification frameworks due to high-dimensional redundancy and non-linear spectral overlaps. Although manifold learning techniques such as UMAP enhance spectral representation by preserving non-linear correlations, they do not explicitly utilize the geometric structure of the embedded manifold for segmentation. This study introduces a hybrid architecture that integrates topological features derived from persistent homology with convolutional and graph neural networks. The approach computes Vietoris-Rips persistent homology on UMAP-projected superpixel point clouds to capture H 1 cyclic structures that encode spectral heterogeneity. These topological descriptors are combined with pixel-level CNN features through a broadcasting mechanism that propagates superpixel-level graph representations to full spatial resolution. Experimental results on XRT multi-energy imagery demonstrate that the proposed hybrid model significantly outperforms both CNN-only and superpixel-pooling fusion baselines, suggesting that topological features provide complementary discriminative information to local spectralspatial descriptors.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06230",
+        "pdf": "https://arxiv.org/pdf/2611.06230",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06247",
+      "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.06247",
+        "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
+        "authors": [
+          "Aniket Junghare",
+          "Biplab Banerjee"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) and multispectral imagery. Recent JEPA-based Predictive self-supervised approaches such as X-JEPA formulate cross-modal alignment as a deterministic latent forecasting task, implicitly assuming uniform patch predictability and leaving cross-modal distributional alignment unaddressed. We propose CAPE-JEPA, a probabilistic cross-modal Joint Embedding Predictive Architecture with three contributions: (i) a cross-attentional Gaussian predictor outputting per-patch parameters (mu, sigma^2) conditioned on opposite-modality context, trained via negative log-likelihood to model inherent cross-sensor prediction uncertainty; (ii) adversarial distributional regularization combining unimodal isotropic Gaussian regularization with a novel cross-modal adversarial variant that aligns modality distributions via worst-case Epps-Pulley characteristic function tests without explicit sample pairing; and (iii) in-training contrastive learning with attention-pooled heads for scene-level discriminative grounding. Evaluated on BigEarthNet-14K (BEN-14K) and fMoW across SAR, multispectral, and RGB modalities, CAPE-JEPA surpasses X-JEPA by up to 13.74 points on BEN-14K and 15.59 points on fMoW, outperforming all baselines including SkySense and CROMA across both unimodal and cross-modal directions while using fewer parameters (407.30M vs. 432.72M).",
+        "comment": "Accepted for publication at the British Machine Vision Conference (BMVC 2026)",
+        "abs": "https://arxiv.org/abs/2611.06247",
+        "pdf": "https://arxiv.org/pdf/2611.06247",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06452",
+      "title": "Within-Family EfficientNet Scaling under Fixed-Resolution Transfer Learning for Spectral-Domain Optical Coherence Tomography Retinal Disease Classification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Retinal",
+      "paper": {
+        "id": "2611.06452",
+        "title": "Within-Family EfficientNet Scaling under Fixed-Resolution Transfer Learning for Spectral-Domain Optical Coherence Tomography Retinal Disease Classification",
+        "authors": [
+          "Shkelqim Sherifi"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "summary": "Background/Objectives: CNNs perform well in retinal disease classification from spectral-domain optical coherence tomography (SD-OCT), but whether EfficientNet's natural-image scaling hierarchy transfers to medical-image transfer learning at fixed resolution remains unclear. This study evaluates EfficientNet-B0-B7 for four-class SD-OCT classification and accuracy-efficiency trade-offs. Methods: Eight ImageNet-pretrained variants (4.05-64.10M instantiated backbone parameters) were evaluated at 224x224 on the Kermany dataset. Grayscale images were replicated to RGB and processed using model-embedded preprocessing and augmentation. Training comprised frozen-backbone head training followed by partial fine-tuning. Metrics covered classification, discrimination, efficiency, and visual analyses. Results: Test accuracy varied non-monotonically from 95.93% (B0) to 96.95% (B1); B7 achieved 96.73%. B1 had the highest accuracy and Drusen F1 (0.8780), while B7 had Drusen F1 of 0.8720 and the highest Drusen recall (0.9177). Drusen had the lowest F1 across all variants and contributed 82.2% of the summed squared deviation in class-specific F1; class ranking remained Normal > CNV > DME > Drusen. The OCT accuracy ranking differed from the reported ImageNet hierarchy, where B7 ranked first. The accuracy-to-parameter ratio fell from 19.82 to 1.48 percentage points per million total parameters. The final train-test gap had a weak, non-significant association with test accuracy (r = 0.26, p = 0.53). Conclusions: Larger EfficientNet variants did not consistently improve SD-OCT classification. B1 achieved the highest accuracy and Drusen F1, whereas B7 showed a secondary accuracy recovery at greater model size and CPU latency, indicating task and protocol dependent scaling effects. As cross-partition duplicates have not been independently audited, results are conditional on the supplied split.",
+        "comment": "46 pages, 20 figures, 18 tables",
+        "abs": "https://arxiv.org/abs/2611.06452",
+        "pdf": "https://arxiv.org/pdf/2611.06452",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06471",
+      "title": "A 3D foundation model unifying CT interpretation and segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.06471",
+        "title": "A 3D foundation model unifying CT interpretation and segmentation",
+        "authors": [
+          "Yulu Xie",
+          "Zilong Li",
+          "Shen Xu",
+          "Yifan Bai",
+          "Liuhong Shi",
+          "Jiao Chen",
+          "Xianglei Kong",
+          "Wenchao Zhu",
+          "Na Shen",
+          "Xianghua Ye",
+          "Yang Yan",
+          "Jiaju Zheng",
+          "Yunsong Peng",
+          "Yanzhou Su",
+          "Chaohui Yu",
+          "Hao Luo",
+          "Fan Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Radiologists interpret computed tomography (CT) scans by jointly determining what a finding represents and where it lies in three-dimensional (3D) anatomy. However, CT models have treated CT interpretation and 3D segmentation as separate tasks, leaving textual findings spatially unverifiable and overlooking potential synergy between clinical understanding and spatial perception. Here we present HoloCT, a generalist 3D foundation model unifying CT interpretation and voxel-level segmentation by jointly modelling whole-volume context and fine-grained anatomical detail, providing 3D masks as evidence. We curated HoloDATA, comprising 195,921 CT scans from 73 public datasets and six clinical cohorts, with 6.2 million instruction dialogues and 2.8 million CT-mask pairs. Across 346 tasks spanning segmentation, lesion screening, visual question answering, and report generation on 61 internal and 12 external datasets, HoloCT outperformed specialist and foundation models. In multicentre validation across 11,455 clinical CT scans from five hospitals, HoloCT outperformed competing models in lesion segmentation and report generation by 18.2 and 15.3 points. It also achieved 85.1% mean accuracy in screening thyroid tumours and colon lesions, exceeding all four participating radiologists in a retrospective reader study. Further analyses revealed bidirectional semantic-spatial synergy: language-guided segmentation delineated unseen anatomical structures and lesions as well as diffuse free-text findings, outperforming the leading approach by 22.1 points, whereas prompting the model to generate corresponding 3D masks alongside its textual outputs significantly improved interpretation performance. HoloCT shows that clinical understanding and spatial perception can be learned together within a single foundation model and offers a path towards more accurate and reliable CT analysis.",
+        "comment": "114 pages, including Supplementary Information; 7 main figures and 2 Extended Data figures",
+        "abs": "https://arxiv.org/abs/2611.06471",
+        "pdf": "https://arxiv.org/pdf/2611.06471",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06540",
+      "title": "Spatially and Compositionally Controlled Multimodal Glioblastoma MRI Synthesis with Latent Diffusion",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.06540",
+        "title": "Spatially and Compositionally Controlled Multimodal Glioblastoma MRI Synthesis with Latent Diffusion",
+        "authors": [
+          "Steven Glass",
+          "Max Van Puyvelde",
+          "Marija Pizurica",
+          "Mia Meyer",
+          "Olivier Gevaert",
+          "Willie Brink"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Glioblastoma exhibits substantial heterogeneity in tumour morphology and composition across MRI modalities, often making available clinical datasets highly unbalanced in terms of patient pathologies. We propose a two-stage latent diffusion model (LDM) framework for the generation of explicitly controllable 2D glioblastoma MRI scans. First, a segmentation LDM generates tumour maps conditioned on location, spatial extent, axial position, and subregion composition. Second, a modality-conditioned LDM with ControlNet generates T1, T1Gd, T2, and FLAIR images adhering to the requested segmentation. On a held-out test set, generated segmentations achieved a mean centroid error of 0.842 pixels and a subregion proportion error of 0.795 percentage points. ControlNet improved Fréchet inception distance (FID) across all four modalities, reducing pooled FID from 42.59 to 36.12. An expert reader study yielded mean quality ratings of 6.60 for real images, 6.83 for ControlNet-generated images, and 6.77 for fully synthetic images.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06540",
+        "pdf": "https://arxiv.org/pdf/2611.06540",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06624",
+      "title": "Learning to Track Cells from Sparse Annotations in 3D Time-Lapse Microscopy",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Microscopy",
+      "paper": {
+        "id": "2611.06624",
+        "title": "Learning to Track Cells from Sparse Annotations in 3D Time-Lapse Microscopy",
+        "authors": [
+          "Yusuke Uchida"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Reconstructing cell lineages from 3D time-lapse microscopy requires distinguishing cell motion from division and inferring temporally consistent connections. When only a subset of cells is annotated, however, training procedures that treat unannotated regions as background or incorrect correspondences can be problematic. We propose a cell tracking pipeline that integrates detection from sparse annotations, calibration of candidate connections using image features, and joint selection of lineage graph events. For detection, we combine the outputs of 2.5D and 3D models trained to suppress erroneous background supervision at unannotated cells. We then calibrate ordinary link and division probabilities using motion features from dense flow, correspondence features from a learned cell-matching model, and features from models that identify cells immediately before division, dividing parents, and daughters immediately after division. Ordinary links, divisions represented as daughter pairs, and node inclusion are selected jointly under a surrogate objective derived from the evaluation metric, followed by gap filling and temporal coordinate refinement. The pipeline achieves an overall score of 0.9762 in 5-fold cross-validation on 199 videos from 2 zebrafish embryos. With candidates and calibrated values held fixed, joint selection outperforms a sequential method that allows replacement of existing divisions and reoptimization of ordinary links by 0.0105. The improvement arises primarily from division recovery.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06624",
+        "pdf": "https://arxiv.org/pdf/2611.06624",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06631",
+      "title": "Trick-or-Treat: Adversarial Evaluation of Multimodal Medical Reasoning with Synthetic Images",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.06631",
+        "title": "Trick-or-Treat: Adversarial Evaluation of Multimodal Medical Reasoning with Synthetic Images",
+        "authors": [
+          "Oishi Banerjee",
+          "Eujin Lee",
+          "Sung Eun Kim",
+          "Alexandra N. Willauer",
+          "Christine Y. Zhou",
+          "Zhizhou Yang",
+          "Pranav Rajpurkar"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "We used medical image synthesis to create a challenging multimodal evaluation framework that exposes hallucination behaviors in frontier models. Evaluating multimodal reasoning has historically been difficult because existing medical datasets rarely pair different image modalities, such as radiographs and external clinical photographs. To address this gap, we introduce Trick-or-Treat, an adversarial multimodal medical benchmark that pairs real chest radiographs with synthetic clinical photographs to challenge models' cross-modal reasoning. For each of a wide range of conditions, we created two pairs of images, where the pairs share a single chest radiograph but contain different external photographs. In matched pairs, the chest radiograph and photograph both contain findings suggesting the same disease (e.g., varicella pneumonia suggested by lung opacities and crusted skin lesions seen in chickenpox). In mismatched pairs, the photograph depicts an alternative clinical finding that would not lead to the same unifying diagnosis (e.g. replacing crusted skin lesions with ordinary acne). Synthetic photograph generation allows clinical findings to be varied while the person's features and photographic setting stay consistent, reducing confounding. In an investigation of three frontier models, we found that models hallucinated clinically significant photograph findings in 45-57.5% of mismatched pairs, up from 25-37.5% for the same photographs shown alone. When faced with mismatched pairs, models tended to ignore mismatches and instead hallucinated findings that better matched the radiograph (e.g. misreading acne as crusted skin lesions to justify diagnosing chickenpox). Trick-or-Treat both demonstrates concerning error pattern in frontier models' medical reasoning and provides a proof of concept for the use of synthetic images in adversarial multimodal evaluation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.06631",
+        "pdf": "https://arxiv.org/pdf/2611.06631",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06701",
+      "title": "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2611.06701",
+        "title": "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation",
+        "authors": [
+          "Sicheng Yang",
+          "Rui Tang",
+          "Haipeng Zhou",
+          "Hongqiu Wang",
+          "Zhaohu Xing",
+          "Jianda Ma",
+          "Lie Dai",
+          "Guang Yang",
+          "Lei Zhu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deep learning methods for pathology are constrained by the limited availability and high cost of large-scale pixel-level annotations. Synthetic data can alleviate this limitation, but existing pipelines often lack reliable quality control and remain weakly connected to downstream analysis. To address these issues, we propose a three-stage framework that integrates automated data screening, generative representation learning, and efficient adaptation to downstream tasks. First, we develop a pathology agent system to assess image quality and filter samples, resulting in TCGA-200K, a dataset containing 217,030 pathology patches selected from the public TCGA repository. Second, we train a generative model on the screened data. In addition to image synthesis, its backbone learns structural and semantic representations that can be transferred to downstream tasks. Third, we adapt the pretrained generative backbone to semantic segmentation using a lightweight task-specific head. We further introduce PathSeg-380K, a semantic segmentation dataset with expert annotations for approximately 380,000 cells across 12 cell types. Experiments on multiple pathology datasets show that the proposed framework achieves state-of-the-art segmentation performance. Our code is publicly available at this https URL.",
+        "comment": "Code available at: this https URL",
+        "abs": "https://arxiv.org/abs/2611.06701",
+        "pdf": "https://arxiv.org/pdf/2611.06701",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.06770",
+      "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.06770",
+        "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+        "authors": [
+          "Jiawei Zhang",
+          "Rizhao Cai",
+          "Dayan Guan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark built from unmanned aerial vehicle (UAV) images for multiple urban management tasks such as traffic monitoring, urban construction, environmental quality, and disaster warning. Evaluations on UMBench reveal that current MLLMs often rely on scene-level priors and overlook fine-grained visual evidence. To address this issue, we further propose a novel evidence-first chain-of-thought method that directs models to inspect fine-grained visual evidence in a training-free manner. Experiments show that our method can improve the performance of both open-source and commercial MLLMs on UMBench.",
+        "comment": "Accepted by IEEE AP-GARSS 2026; 4 pages, 3 figures, 3 tables",
+        "abs": "https://arxiv.org/abs/2611.06770",
+        "pdf": "https://arxiv.org/pdf/2611.06770",
+        "listing_date": "2026-11-05",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
