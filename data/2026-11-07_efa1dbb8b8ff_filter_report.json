@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "efa1dbb8b8fff8fa7027dadaa4709fb4d13f5404aa3ef93c7c237d5ea1d12327",
+  "input_count": 120,
+  "kept_count": 102,
+  "excluded_count": 18,
+  "counts_by_reason": {
+    "medical_biological": 12,
+    "remote_sensing": 4,
+    "industrial_applications": 2
+  },
+  "kept_ids": [
+    "2611.06974",
+    "2611.06993",
+    "2611.07009",
+    "2611.07049",
+    "2611.07055",
+    "2611.07063",
+    "2611.07081",
+    "2611.07132",
+    "2611.07148",
+    "2611.07176",
+    "2611.07294",
+    "2611.07301",
+    "2611.07329",
+    "2611.07354",
+    "2611.07392",
+    "2611.07397",
+    "2611.07398",
+    "2611.07408",
+    "2611.07443",
+    "2611.07481",
+    "2611.07498",
+    "2611.07502",
+    "2611.07513",
+    "2611.07540",
+    "2611.07543",
+    "2611.07551",
+    "2611.07553",
+    "2611.07555",
+    "2611.07566",
+    "2611.07573",
+    "2611.07580",
+    "2611.07604",
+    "2611.07613",
+    "2611.07632",
+    "2611.07644",
+    "2611.07647",
+    "2611.07648",
+    "2611.07658",
+    "2611.07662",
+    "2611.07665",
+    "2611.07673",
+    "2611.07677",
+    "2611.07682",
+    "2611.07683",
+    "2611.07702",
+    "2611.07705",
+    "2611.07709",
+    "2611.07711",
+    "2611.07713",
+    "2611.07718",
+    "2611.07765",
+    "2611.07793",
+    "2611.07810",
+    "2611.07811",
+    "2611.07828",
+    "2611.07836",
+    "2611.07867",
+    "2611.07873",
+    "2611.07900",
+    "2611.07902",
+    "2611.07922",
+    "2611.07939",
+    "2611.07941",
+    "2611.07955",
+    "2611.07961",
+    "2611.07994",
+    "2611.08005",
+    "2611.08054",
+    "2611.08091",
+    "2611.08099",
+    "2611.08128",
+    "2611.08138",
+    "2611.08147",
+    "2611.08157",
+    "2611.08216",
+    "2611.08264",
+    "2611.08271",
+    "2611.08286",
+    "2611.08288",
+    "2611.08294",
+    "2611.08330",
+    "2611.08342",
+    "2611.08352",
+    "2611.08393",
+    "2611.08436",
+    "2611.08441",
+    "2611.08477",
+    "2611.08485",
+    "2611.08486",
+    "2611.07411",
+    "2611.07417",
+    "2611.07463",
+    "2611.07730",
+    "2611.07850",
+    "2611.08111",
+    "2611.08156",
+    "2611.08275",
+    "2611.08368",
+    "2611.08372",
+    "2611.08407",
+    "2611.08413",
+    "2611.08449"
+  ],
+  "excluded": [
+    {
+      "id": "2611.07061",
+      "title": "Segment What It Can Draw: Querying a Text-to-Image Generator with Its Own Images for Skin Lesion Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Lesion",
+      "paper": {
+        "id": "2611.07061",
+        "title": "Segment What It Can Draw: Querying a Text-to-Image Generator with Its Own Images for Skin Lesion Segmentation",
+        "authors": [
+          "Hongyu Cao",
+          "Guangfu Guo",
+          "Jinghan Zhang",
+          "Dakshak Keerthi Chandra",
+          "Ying Zhang",
+          "Kunpeng Liu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Skin lesion segmentation without annotated masks requires the target to be specified through other cues. Existing approaches rely on dermoscopy-specific rules, annotation-derived model priors, or user-selected regions. A general text-to-image diffusion transformer offers a text interface to the target, but its concept-word attention is unreliable on dermoscopy images: in the model's attention-output space, the word-derived skin-to-lesion direction is poorly aligned with the direction separating real skin from real lesions. We show that the direction derived from generated healthy-skin and lesion images is substantially better aligned. Based on this finding, we propose GENIQ, a training-free method that constructs initial skin and lesion prototypes from generated images and refines them using the most skin-like and lesion-like patches from unlabelled dermoscopy images. It scores test patches along the refined direction and applies a gated threshold to suppress contextual spill-over around small lesions. Without inference-time annotations or additional models, GENIQ achieves Dice scores of 0.85-0.88 on three dermoscopy test sets. It outperforms zero-shot and word-based attention methods on all three sets, and a hand-designed dermoscopy pipeline in Dice and IoU on two.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.07061",
+        "pdf": "https://arxiv.org/pdf/2611.07061",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07188",
+      "title": "MammoSeek: A Mammography Agent with selective zooming for grounded reports",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Mammography",
+      "paper": {
+        "id": "2611.07188",
+        "title": "MammoSeek: A Mammography Agent with selective zooming for grounded reports",
+        "authors": [
+          "Haoyan Ding",
+          "Qian Wang",
+          "Lixia Wang",
+          "Debiao Li"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Radiologists read a screening mammogram by first forming a global impression of the four views and then selectively magnifying suspicious regions before assigning a BI-RADS assessment. MLLMs, in contrast, see the whole image at a fixed, reduced resolution, which makes sub-millimeter calcifications invisible, and they perform close to chance on mammography. Therefore, we present MammoSeek, a mammography agent that reproduces this reading process. After forming an impression of each breast, the agent performs selective zooming: it decides by itself which detector candidates deserve a closer look and inspects only those on full-resolution views. Guided by a BI-RADS assessment skill, it then assigns a category and generates a localized, lexicon-structured report for each breast; its assessment is combined with image-model scores in a decision layer to decide recall. On an internal (EMBED) and an external (VinDr-Mammo) dataset, \\ours reaches exam-level AUCs of 0.824 and 0.818, far above other MLLMs, mammography agent and CNN classifiers. Selective zooming also outperforms both no zooming and forced zooming in localization, structured-report F1 and recall decisions at low cost.",
+        "comment": "5 pages, 2 figures",
+        "abs": "https://arxiv.org/abs/2611.07188",
+        "pdf": "https://arxiv.org/pdf/2611.07188",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07431",
+      "title": "TRiST: Topology-Reinforced Swin Transformer for Medical Image Analysis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.07431",
+        "title": "TRiST: Topology-Reinforced Swin Transformer for Medical Image Analysis",
+        "authors": [
+          "Pengfei Gu",
+          "Huimin Li",
+          "Guangyu Meng",
+          "Hao Zheng",
+          "Haoteng Tang",
+          "Bin Fu",
+          "Danny Z. Chen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical images contain topological patterns, such as connected components and loops, at scales ranging from small lesions to organ boundaries. Although hierarchical Vision Transformers have advanced medical image analysis, they do not explicitly incorporate topology throughout their multiscale representations. We propose Topology-Reinforced Swin Transformer (TRiST), a framework that integrates topological information into feature construction, refinement, and attention. First, a Hierarchical Multi-Scale Topology Representation algorithm computes 2D persistent homology (H0 and H1) independently at four native Swin stages, producing descriptors aligned with each stage's token grid rather than downsampling fine-scale topology. Second, a Band-Aware H0/H1 Residual Refinement module uses gated residual networks to process short-, medium-, and long-persistence information separately. Third, a Persistence-Band Progressive Attention Bias converts stage-specific descriptors into learned key-saliency scores that directly modify shifted-window attention logits. We instantiate TRiST as Topo-SwinV2-B for classification and Topo-Swin-UNet for segmentation, preserving the underlying Swin-based backbones. Experiments on five medical image datasets show consistent improvements over Swin-based baselines and competitive performance relative to existing topology-augmented methods.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.07431",
+        "pdf": "https://arxiv.org/pdf/2611.07431",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07575",
+      "title": "Georeferenced Cross-View 3D Reconstruction from Ground and Satellite Images",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Satellite Images",
+      "paper": {
+        "id": "2611.07575",
+        "title": "Georeferenced Cross-View 3D Reconstruction from Ground and Satellite Images",
+        "authors": [
+          "David G. Shatwell",
+          "Mubarak Shah"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Georeferenced 3D reconstruction from ground images requires recovering not only the local scene geometry, but also localizing every camera center and 3D point in a geographic coordinate frame. Existing cross-view geo-localization methods are able to estimate the GPS coordinate of a single ground camera, but do not reconstruct dense 3D geometry, while recent feed-forward multi-view 3D reconstruction models predict point maps and camera poses only in a local coordinate frame. We introduce X-VGGT, a feed-forward cross-view geometry transformer that unifies these tasks by jointly processing a set of ground-level images and a georeferenced satellite image to predict ground-view camera poses, dense 3D point maps, and a scene-level transform parameterized by gravity, scale, yaw and translation. This transform projects the local reconstruction into the satellite plane, resulting in the geo-registration of all ground images with the georeferenced satellite image. We further propose an evaluation protocol for this joint task and show that, across multiple cross-view datasets, X-VGGT produces accurate georeferenced reconstructions and outperforms prior cross-view geo-localization and multi-view 3D reconstruction models.",
+        "comment": "Accepted in NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.07575",
+        "pdf": "https://arxiv.org/pdf/2611.07575",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07593",
+      "title": "TACT-KV: Tri-Axis Cosine Transform for Compressing Volumetric KV Caches in Medical VLMs",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.07593",
+        "title": "TACT-KV: Tri-Axis Cosine Transform for Compressing Volumetric KV Caches in Medical VLMs",
+        "authors": [
+          "Chongyu Qu",
+          "Ritchie Zhao",
+          "Yufan He",
+          "Dong Yang",
+          "Zhengyi Lu",
+          "Junchao Zhu",
+          "Tianyuan Yao",
+          "Juming Xiong",
+          "Junlin Guo",
+          "Yanfan Zhu",
+          "Yuechen Yang",
+          "Daguang Xu",
+          "Bennett Allan Landman",
+          "Yucheng Tang",
+          "Yuankai Huo"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Vision-language models (VLMs) applied to 3D medical scans face a structural memory wall. A single CT or MRI volume produces tens of thousands of vision tokens, and the resulting key-value (KV) cache scales linearly with both batch and context. Existing KV compression methods operate on the cache's feature or token statistics, or apply 1D and 2D transforms, leaving the three-axis spatial structure in the cache unexploited. We propose TACT-KV (Tri-Axis Cosine Transform), a calibration-free KV compression method that exploits strong spatial correlations in visual KV states along all three anatomical axes of 3D scans. This correlation concentrates the KV cache energy under a frequency-domain transform. TACT-KV applies a separable 3D discrete cosine transform to the KV cache, allocates a per-layer bit budget across frequency bins via reverse water-filling (more bits to high-energy components), and quantizes each bin with a fixed scalar codebook. We derive a close-form relation: the distortion reduction from adaptive bit allocation is dominated by the spectral concentration of the transformed cache. Across six medical VLMs and two 3D CT benchmarks, TACT-KV achieves the lowest 1-bit prediction-flip rate on eleven of twelve model and dataset pairs in our main comparison. The same advantage reproduces on four general-purpose VLMs evaluated on video tasks, indicating that the benefit of exploiting three-axis structure generalizes beyond medical imaging. At equal high-bandwidth memory (HBM), TACT-KV scales the decoding batch size on a single GPU by up to $8\\times$.",
+        "comment": "Accepted at NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.07593",
+        "pdf": "https://arxiv.org/pdf/2611.07593",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07814",
+      "title": "CMDiff: Left Atrial Scar Segmentation from 3D LGE MRI Using Conditional Mask Diffusion Model: A Feasibility Study",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.07814",
+        "title": "CMDiff: Left Atrial Scar Segmentation from 3D LGE MRI Using Conditional Mask Diffusion Model: A Feasibility Study",
+        "authors": [
+          "Jing Zhang",
+          "Bastien Bergere",
+          "Jonas Leite",
+          "Emilie Bollache",
+          "Mikaël Laredo",
+          "Alban Redheuil",
+          "Nadjia Kachenoura"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Late gadolinium enhancement (LGE) cardiac MRI enables non-invasive assessment of left atrial (LA) scar, an imaging marker associated with atrial fibrillation ablation outcome. However, automatic scar segmentation is hindered by low contrast, the thin atrial wall, scarce labels, and extreme class imbalance. Conditional diffusion offers iterative mask generation, but its suitability for sparse 3D LA scar segmentation remains unclear. To address this gap, we propose Conditional Mask Diffusion (CMDiff), which predicts clean masks using a dynamic-encoder-conditioned 3D sinusoidal UNet. We compared CMDiff with a deterministic baseline on identical cases in five-fold cross-validation of 60 scar-labelled public LASCARQS subjects, with 48 training and 12 held-out cases per fold. CMDiff achieved a scar DSC of 0.47 $\\pm$ 0.08, HD95 of 12.89 $\\pm$ 6.39 mm, and ASD of 1.91 $\\pm$ 0.96 mm, compared with deterministic baseline values of 0.51 $\\pm$ 0.08, 10.86 $\\pm$ 5.39 mm, and 1.58 $\\pm$ 1.03 mm, respectively. Under the same implementation, clean-mask prediction performed substantially better than the noise-prediction configuration evaluated in this study. Thus, CMDiff was technically feasible but did not improve segmentation performance: DSC was lower, and both HD95 and ASD were higher. Direct mask diffusion therefore provides an analytical alternative, but not a competitive performance advance for this task. The source code is publicly available at this https URL.",
+        "comment": "15 pages, 3 figures, 4 tables",
+        "abs": "https://arxiv.org/abs/2611.07814",
+        "pdf": "https://arxiv.org/pdf/2611.07814",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07843",
+      "title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "tumor",
+      "paper": {
+        "id": "2611.07843",
+        "title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
+        "authors": [
+          "Asif Rahman",
+          "Maqsood Hayat",
+          "Nadeem Iqbal",
+          "Fawaz Khaled Alarfaj",
+          "Salem Alkhalaf",
+          "Fahad Alturise"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Recent innovations in medical imaging have markedly improved brain tumor identification, surpassing conventional diagnostic approaches that suffer from low resolution, radiation exposure, and limited contrast. Magnetic Resonance Imaging (MRI) is pivotal in precise and accurate tumor characterization owing to its high-resolution, non-invasive nature. This study investigates the synergy among multiple feature representation schemes such as local Binary Patterns (LBP), Gabor filters, Discrete Wavelet Transform, Fast Fourier Transform, Convolutional Neural Networks (CNN), and Gray-Level Run Length Matrix alongside five learning algorithms namely: k-nearest Neighbor, Random Forest, Support Vector Classifier (SVC), and probabilistic neural network (PNN), and CNN. Empirical findings indicate that LBP in conjunction with SVC and CNN obtained high specificity and accuracy, rendering it a promising method for MRI-based tumor diagnosis. Further to investigate the contribution of LBP, Statistical analysis chi-square and p-value tests are used to confirm the significant impact of LBP feature space for identification of brain Tumor. In addition, The SHAP analysis was used to identify the most important features in classification. In a small dataset, CNN obtained 97.8% accuracy while SVC yielded 98.06% accuracy. In subsequent analysis, a large benchmark dataset is also utilized to evaluate the performance of learning algorithms in order to investigate the generalization power of the proposed model. CNN achieves the highest accuracy of 98.9%, followed by SVC at 96.7%. These results highlight CNN's effectiveness in automated, high-precision tumor diagnosis. Code: this https URL",
+        "comment": "15 pages. Published in Scientific Reports 15, 29411 (2025). Open access under CC BY 4.0",
+        "abs": "https://arxiv.org/abs/2611.07843",
+        "pdf": "https://arxiv.org/pdf/2611.07843",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07865",
+      "title": "OcTreeMamba: Topology-Aware Mamba for 3D Medical Segmentation via Octree Sparsification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.07865",
+        "title": "OcTreeMamba: Topology-Aware Mamba for 3D Medical Segmentation via Octree Sparsification",
+        "authors": [
+          "Kaixiang Mai",
+          "Jiaqi Yu",
+          "Yuzhu Ji",
+          "Yiqun Zhang",
+          "Zhijie Wang",
+          "Haijun Zhang",
+          "Yiu-ming Cheung"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Accurate segmentation of 3D anatomical structures is crucial to medical image analysis. Recently, Mamba-based approaches have achieved promising segmentation performance in capturing long-range dependencies with linear-time computational complexity. However, heuristic selective scanning strategies inherently disrupt the intrinsic spatial hierarchy and increase computational redundancy, ignoring the inherent sparsity of 3D anatomical structures. To this end, we propose OcTreeMamba, a hierarchical framework that incorporates Octree structures into SSM, achieving 3D topology-aware long-range context feature propagation and integration. Specifically, a Structure Learner performs anatomy-adaptive structured sparsification through hierarchical gating and Gumbel-Softmax sampling, enabling differentiable selection of anatomical regions. The selected regions are subsequently organized by a Dynamic Octree Builder into a multi-level topology that preserves their hierarchical connectivity. Based on the constructed Octree, a bidirectional Tree-SSM propagates and integrates contextual features along connectivity-aware leaf--parent--root and root--parent--leaf trajectories. Extensive experiments on four benchmark datasets show that our proposed OcTreeMamba achieves competitive performance \\wrt topological continuity and computational efficiency, particularly for recovering the complex structure on vascular datasets. The code is available at this https URL.",
+        "comment": "8 pages, 5 figures, accepted by IEEE BIBM 2026",
+        "abs": "https://arxiv.org/abs/2611.07865",
+        "pdf": "https://arxiv.org/pdf/2611.07865",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07883",
+      "title": "InnerLogic-Surg: An Open Surgical Foundation Model via Continual Pretraining",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgical",
+      "paper": {
+        "id": "2611.07883",
+        "title": "InnerLogic-Surg: An Open Surgical Foundation Model via Continual Pretraining",
+        "authors": [
+          "Kun Yuan",
+          "Hao Ding",
+          "Yiqing Shen",
+          "Gasper Podobnik",
+          "Benjamin Killeen",
+          "Tito Porras",
+          "Axel Krieger",
+          "Mathias Unberath"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Vision foundation models are the backbone of modern surgical image analysis, yet most surgical systems still rely on encoders pretrained on natural images or on specialist models trained from scratch on comparatively small datasets. Pretraining encoders on large amounts of surgery-specific data has the potential to generally enhance the performance of surgical image analysis methods simply by providing stronger backbones. Here we present InnerLogic-Surg, an open family of surgical vision encoders (21M--300M parameters) obtained by continually pretraining a transformer-based image encoder on millions of surgical images curated from 11,965 internet-sourced surgical videos spanning ~2,900 hours and more than fifteen procedure types. Our training recipe inherits DINOv3's pretraining stage to preserve representation ability after surgical adaptation, and additionally applies a learned feature-upsampling module for high-resolution dense prediction at low token cost. Across a benchmark covering workflow, instrument and anatomy recognition, segmentation, detection, and monocular depth, under the same architecture, the largest InnerLogic-Surg model achieves the best linear-probe performance in all 20 surgical tasks. We demonstrate that surgical continual pretraining yields transferable representations that generalize across procedures, anatomical regions, and task types, showing our surgical image encoders as a promising and scalable alternative to the procedure-specific representation learning approaches that have traditionally dominated surgical computer vision.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.07883",
+        "pdf": "https://arxiv.org/pdf/2611.07883",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.07935",
+      "title": "Towards Scalable Diagnostic-Driven Whole-Slide Image Retrieval for Pathology Archives",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2611.07935",
+        "title": "Towards Scalable Diagnostic-Driven Whole-Slide Image Retrieval for Pathology Archives",
+        "authors": [
+          "Jingsong Liu",
+          "Youssef Wally Han Li",
+          "Weiwei Zhou",
+          "Jing Dai",
+          "Elisabeth Wetzer",
+          "Peter J. Schüffler"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "The growing adoption of digital pathology has rapidly expanded collections of hematoxylin-and-eosin whole-slide images, yet efficient navigation through these archives remains challenging, as metadata is often inconsistent or unavailable. Content-based image retrieval addresses this challenge by identifying similar cases directly from visual representations instead of manual annotations or metadata. Existing retrieval systems have demonstrated promising performance but largely rely on handcrafted indexing pipelines and predefined sampling strategies, constraining scalability and generalization. Here, we present CLEAR-WSI (Constant-Length Embedding for Automatic Retrieval of Whole-Slide Images) as a scalable, diagnostic-driven slide-retrieval framework, validated on both public and clinical data. Using a fixed-length slide embedding, CLEAR-WSI refines retrieved candidates with either a predicted diagnostic label or the ground-truth label, depending on the retrieval setting. Newly processed cases are subsequently added to the expanding memory bank, allowing the retrieval archive to grow over time. On a comprehensive benchmark consisting of two public and one private clinical datasets representing four retrieval tasks, CLEAR-WSI improves Precision@5 over the strongest evaluated baseline, with gains on CAMELYON16 (3.10), BRACS-1 (2.75), BRACS-2 (1.95), and X-HER2 (3.75). Additional ablation and latency studies further examine the contribution of each component and highlight its potential for scalable deployment.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.07935",
+        "pdf": "https://arxiv.org/pdf/2611.07935",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08003",
+      "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Earth Observation",
+      "paper": {
+        "id": "2611.08003",
+        "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
+        "authors": [
+          "Kshitij Raj Sharma",
+          "Pierre Adorni",
+          "Minh-Tan Pham",
+          "Dirk Tiede",
+          "Sébastien Lefèvre"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (VHR) imagery, where individual buildings, roads, and amenities are resolved. We study which pretraining regimes transfer well to this scale. We introduce VHR-Bench, a benchmark suite of ten datasets at 1.5m GSD or finer spanning five task families, eight application domains, and both satellite and aerial platforms. We evaluate twelve encoders in three pretraining tiers with frozen backbones at two training-data fractions. We find that both pretraining on large natural-image collections and VHR-specific pretraining transfer effectively to VHR tasks, with complementary strengths. SkySense leads when labels are scarce; at the full label fraction the web-pretrained DINOv3 ViT-L edges ahead, with the two close together there. Encoders pretrained only on Sentinel-scale imagery transfer least well under RGB input. Guided by these complementary results, we continue the self-supervised pretraining of DINOv3 ViT-L on 1.02 million held-out VHR tiles and evaluate the resulting encoder without changing the downstream protocol. The continued model gives a clear improvement over the released backbone when labels are scarce and a modest one at the full fraction, at no increase in inference parameters or compute. These findings support a generalize-then-specialize strategy: already strong, broad natural-image pretraining can be further improved by a short VHR continuation stage while preserving its general visual features.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.08003",
+        "pdf": "https://arxiv.org/pdf/2611.08003",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08080",
+      "title": "Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning",
+      "exclude": true,
+      "reason": "industrial_applications",
+      "label": "工业检测与基础设施专项应用",
+      "field": "title",
+      "matched_text": "Industrial Anomaly Detection",
+      "paper": {
+        "id": "2611.08080",
+        "title": "Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning",
+        "authors": [
+          "S-Wei Chen",
+          "Siangyu Yang",
+          "Yi-Chen Jan",
+          "Chun-Yi Lee",
+          "Shao-Yuan Lo"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Industrial Anomaly Detection (IAD) is a long-established problem that aims to detect defects in industrial products during manufacturing for quality control. Most existing studies focus on static visual patterns as the basis for detection. However, in real manufacturing environments, many anomalies are dynamics-based, such as irregular movements that cannot be perceived from static cues alone. We observe that even recent Multimodal Large Language Model (MLLM)-based approaches fall short in identifying such dynamic anomalies due to limited temporal modeling capability. To address this, we introduce MUSTARD: MUltimodal SpatioTemporal Anomaly Reasoning and Detection, a framework that equips MLLMs with fine-grained spatiotemporal dynamics awareness for detecting and reasoning about dynamics-based defects. MUSTARD introduces optical-flow-guided keyframe selection and augmented modalities to capture critical motion irregularities through local motion patterns and global dynamic evolution. Its normal pattern-based reasoning pipeline requires only a few normal reference samples as the detection basis, avoiding any model updates. This enables efficient adaptation across various products and provides high decision interpretability. MUSTARD is the first MLLM-based framework for dynamics-based IAD. Experiments demonstrate its superior performance in detecting spatiotemporal anomalies and providing plausible explanations. The code will be made publicly available.",
+        "comment": "Accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2027",
+        "abs": "https://arxiv.org/abs/2611.08080",
+        "pdf": "https://arxiv.org/pdf/2611.08080",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08081",
+      "title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Earth Observation",
+      "paper": {
+        "id": "2611.08081",
+        "title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
+        "authors": [
+          "Benedikt Blumenstiel",
+          "Hugues Devimeux",
+          "Johannes Jakubik",
+          "Konrad Schindler"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural images, they transfer poorly to Earth observation (EO) data due to differing semantics, scales, sensing modality, and geographic context. To date, large-scale EO-specific datasets and benchmarks for OVS remain scarce. We, therefore, introduce TerraMesh-Masks, a large-scale open-vocabulary segmentation dataset for EO, comprising 16 million binary masks aligned with nine million multimodal TerraMesh samples and annotated using OpenStreetMap and Overture-derived semantics. In addition, we provide an expert-reviewed evaluation set of 523 samples covering over 200 classes to enable robust evaluation. To demonstrate the impact of TerraMesh-Masks, we build an open-vocabulary version of TerraMind. Our results demonstrate significantly improved performance over general-purpose state-of-the-art models reaching 35.18% IoU versus 16.29% for this http URL and 11.33% for SAM-3. We release the dataset publicly under a permissive license at this https URL.",
+        "comment": "Accepted at NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.08081",
+        "pdf": "https://arxiv.org/pdf/2611.08081",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08095",
+      "title": "National-scale mapping of tree species composition in Switzerland from high-resolution aerial imagery and multimodal data",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "aerial imagery",
+      "paper": {
+        "id": "2611.08095",
+        "title": "National-scale mapping of tree species composition in Switzerland from high-resolution aerial imagery and multimodal data",
+        "authors": [
+          "Yixin Zhou",
+          "Luca Ferrari",
+          "Verena C. Griess",
+          "Nataliia Rehush",
+          "Konrad Schindler",
+          "Mirela Beloiu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Tree-species composition shapes forest productivity and how forests respond to climate disturbances such as drought, windthrow and insect outbreaks. Yet most national forest maps assign each pixel a single dominant species and cannot show the share of accompanying species. We mapped the basal-area shares of ten main tree species and a residual Other class across Switzerland at 30 m resolution. A deep-learning model combining 0.1 m aerial RGB imagery, airborne laser scanning (ALS), annual AlphaEarth satellite embeddings, and climate variables was trained on basal-area observations from 3,992 Swiss National Forest Inventory (NFI) sites. In spatial cross-validation, the model reached a macro-$R^2$ of 0.485 across the 11 classes. On an independent forest-reserve dataset, the map reached a macro-$R^2$ of 0.552 for individual 30 m pixels and 0.733 for plots, and identified the dominant class in 73.2% of pixels and 81.1% of plots. The map shows maple and ash as widespread minor components that dominant-class maps omit. It also reproduces the elevational sequence from broadleaved lowland stands through spruce to larch and Arolla pine near the treeline. By resolving the species mixture within each 30 m pixel, the map complements field inventory statistics with spatially continuous information that can support forest monitoring, the management of mixed stands, and climate-adaptation planning across Switzerland.",
+        "comment": "39 pages, 17 figures (11 in the main text, 6 in the supplementary material). Submitted to Remote Sensing of Environment",
+        "abs": "https://arxiv.org/abs/2611.08095",
+        "pdf": "https://arxiv.org/pdf/2611.08095",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08125",
+      "title": "ProtoGestalt: Interpretable Prototypes for Facial Phenotyping and Diagnosis of Rare Genetic Disorders",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.08125",
+        "title": "ProtoGestalt: Interpretable Prototypes for Facial Phenotyping and Diagnosis of Rare Genetic Disorders",
+        "authors": [
+          "Ranga Baminiwatte",
+          "Alexander Hustinx",
+          "Fabio Hellmann",
+          "Aaron J Masino"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Rare genetic disorders are difficult to diagnose due to their diversity and overlapping clinical features. Facial morphology can provide diagnostic clues, yet most diagnostic models offer limited interpretability and are not designed to support broad screening for undiagnosed disease. We present ProtoGestalt, an interpretable prototype-based framework for facial phenotyping, rare-disease screening, and syndrome identification. The method extends prototype learning by constraining learned visual features to select facial regions, allowing predictions to be explained through localized and additive evidence. We assess ProtoGestalt's ability to distinguish syndromic from unaffected faces on multiple control datasets and class prevalence values. We further evaluate it's diagnostic performance on syndromes observed during training. The learned prototype-based representations provide significant separation between syndromic and case-matched control images and retain useful performance as the proportion of controls increases. The framework also demonstrates the ability to differentiate among syndromes. Although reasonably accurate specialized models for facial classification of rare disorders already exist, ProtoGestalt offers an interpretable alternative that links predictions to anatomically meaningful facial regions, potentially supporting clinical decision-making and the discovery of phenotype-gene associations.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.08125",
+        "pdf": "https://arxiv.org/pdf/2611.08125",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08140",
+      "title": "Fault-Guided Cross-Layer Prediction for Unsupervised Anomaly Detection",
+      "exclude": true,
+      "reason": "industrial_applications",
+      "label": "工业检测与基础设施专项应用",
+      "field": "abstract_intro",
+      "matched_text": "industrial anomaly detection",
+      "paper": {
+        "id": "2611.08140",
+        "title": "Fault-Guided Cross-Layer Prediction for Unsupervised Anomaly Detection",
+        "authors": [
+          "Tao Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Feature reconstruction is widely used for unsupervised industrial anomaly detection in the single-class setting, where only normal images from one product category are available for training. We propose a single-class detector that asks what information one block can pass to another. We treat the depth of a frozen vision transformer as a sequence of discrete transitions. A directed predictor learns a block-to-block hidden-state transition pointwise over tokens. Adjacent-layer cosine similarity exposes four sharp fault lines in DINOv2 ViT-L, separating stable depth segments. The deepest blocks retain semantic context but lose local detail; a prediction from deep or shallow sources to sensitive targets therefore exposes the information that cannot be transported. The fault structure fixes the source and target roles, and the same rule transfers to ViT-B and RADIO-B. We use a bounded foreground prior calibrated solely on training images: it attenuates background evidence without also erasing defects outside the estimated foreground. Using one predictor architecture and a common training-only calibration protocol, image AUROC is 99.75 on MVTec-AD, 99.42 on VisA and 94.27 on Real-IAD. On Real-IAD the object-level AUROC is 96.26. At 256x256 pixel resolution, P-AUROC/P-AUPRO are 98.46/95.97 on MVTec-AD, 99.21/96.12 on VisA and 99.26/96.59 on Real-IAD.",
+        "comment": "20 pages including appendix; 4 figures and 21 tables. Preprint",
+        "abs": "https://arxiv.org/abs/2611.08140",
+        "pdf": "https://arxiv.org/pdf/2611.08140",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08185",
+      "title": "Multimodal Hierarchical Mixture-of-Experts for 3D Medical Vision-Language Modeling",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.08185",
+        "title": "Multimodal Hierarchical Mixture-of-Experts for 3D Medical Vision-Language Modeling",
+        "authors": [
+          "Gizem Mert",
+          "Szymon Płotka",
+          "Pedro R. A. S. Bassi",
+          "Wenxuan Li",
+          "Zongwei Zhou",
+          "Jarosław B. Ćwikła",
+          "Arkadiusz Sitek",
+          "Ewa Szczurek"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical 3D scans and reports are inherently hierarchical, with diagnostic cues concentrated in specific anatomical regions across multiple levels of organization. Yet, most medical vision-language models ignore this structure and fail to focus on clinically relevant anatomy. We introduce MedHiVE, which combines hierarchical vision-language Soft Mixture-of-Experts (SMoE) with contrastive learning to jointly model fine-grained anatomy and global scan context. To our knowledge, MedHiVE is the first framework to route both vision and text tokens through a two-level SMoE hierarchy organized by anatomical scale, coupling this with report-derived anatomy-level contrastive alignment for 3D medical imaging. This replaces the direct region-text alignment of statically pooled features and vision-only hierarchical routing of prior work with dynamic, slot-based cross-modal information flow across anatomical scales. MedHiVE operates via a two-level, learnable token-routing mechanism, where local image and text features are first routed through a local SMoE and then fused by a global SMoE into unified multimodal representations. Contrastive learning aligns both anatomy-level and global vision-language representations in a unified space. Pre-trained on 25,000+ CT scans with anatomical supervision, MedHiVE consistently surpasses 11 state-of-the-art methods across 6 datasets on 3 tasks: segmentation, classification, and detection, demonstrating the importance of hierarchical modeling. The code for MedHiVE is at this http URL.",
+        "comment": "Accepted at WACV 2027. Copyright 2027 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses",
+        "abs": "https://arxiv.org/abs/2611.08185",
+        "pdf": "https://arxiv.org/pdf/2611.08185",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.08360",
+      "title": "OraRefer: Segmentation-Guided Multi-Photograph Fusion for Oral Cancer Screening with Guaranteed Patient-Level Sensitivity",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Cancer",
+      "paper": {
+        "id": "2611.08360",
+        "title": "OraRefer: Segmentation-Guided Multi-Photograph Fusion for Oral Cancer Screening with Guaranteed Patient-Level Sensitivity",
+        "authors": [
+          "Rupam Mukherjee",
+          "Mehakdeep Singh",
+          "Shirin Dasgupta",
+          "Subhamoy Mandal"
+        ],
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "summary": "Oral cancer and the oral potentially malignant disorders (OPMD) that can precede it are visible on the oral mucosa, which makes smartphone photographs a promising tool for screening. Deep learning models for this task classify individual photographs. However, screening refers patients, not photographs: a patient is usually photographed several times, and the referral decision must miss no more than a set share of patients with disease. We propose OraRefer, a patient-level screening model that reads each photograph with a segmentation-guided foundation model that conditions its class decision on the predicted lesion, combines all photographs of a patient with risk factors, and refers through a threshold with a finite-sample sensitivity guarantee. The model localizes the mouth itself, so inference needs no annotation. On 3000 photographs of 714 patients, patient-level fusion reaches an AUROC of 0.919 and outperforms attention-based multiple-instance learning. At a 90% sensitivity target, OraRefer detects 95% of patients with OPMD or cancer and misses 3 of 61 patients with cancer, at a specificity of 0.610. Because the threshold is calibrated without retraining, each clinic can set its own guaranteed operating point on a local calibration sample.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.08360",
+        "pdf": "https://arxiv.org/pdf/2611.08360",
+        "listing_date": "2026-11-06",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
