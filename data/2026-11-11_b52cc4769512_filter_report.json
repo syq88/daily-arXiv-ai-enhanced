@@ -1,0 +1,1120 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "b52cc4769512ab764a0e4c7acb10e6e4492e83fe0a7eed3567f009ecbd2d4d40",
+  "input_count": 126,
+  "kept_count": 93,
+  "excluded_count": 33,
+  "counts_by_reason": {
+    "medical_biological": 21,
+    "remote_sensing": 10,
+    "agriculture_ecology": 2
+  },
+  "kept_ids": [
+    "2611.12911",
+    "2611.12932",
+    "2611.12969",
+    "2611.12975",
+    "2611.12976",
+    "2611.12978",
+    "2611.12997",
+    "2611.13000",
+    "2611.13004",
+    "2611.13010",
+    "2611.13028",
+    "2611.13120",
+    "2611.13150",
+    "2611.13172",
+    "2611.13177",
+    "2611.13178",
+    "2611.13180",
+    "2611.13192",
+    "2611.13200",
+    "2611.13213",
+    "2611.13245",
+    "2611.13262",
+    "2611.13280",
+    "2611.13304",
+    "2611.13308",
+    "2611.13310",
+    "2611.13384",
+    "2611.13453",
+    "2611.13486",
+    "2611.13488",
+    "2611.13496",
+    "2611.13504",
+    "2611.13511",
+    "2611.13530",
+    "2611.13540",
+    "2611.13576",
+    "2611.13581",
+    "2611.13620",
+    "2611.13621",
+    "2611.13626",
+    "2611.13628",
+    "2611.13654",
+    "2611.13700",
+    "2611.13711",
+    "2611.13739",
+    "2611.13759",
+    "2611.13772",
+    "2611.13784",
+    "2611.13785",
+    "2611.13808",
+    "2611.13820",
+    "2611.13870",
+    "2611.13890",
+    "2611.13892",
+    "2611.13903",
+    "2611.13907",
+    "2611.13911",
+    "2611.13920",
+    "2611.13992",
+    "2611.13995",
+    "2611.13997",
+    "2611.14025",
+    "2611.14033",
+    "2611.14060",
+    "2611.14074",
+    "2611.14076",
+    "2611.14097",
+    "2611.14113",
+    "2611.14118",
+    "2611.14135",
+    "2611.14176",
+    "2611.14207",
+    "2611.14218",
+    "2611.14254",
+    "2611.14279",
+    "2611.14307",
+    "2611.14365",
+    "2611.14380",
+    "2611.14420",
+    "2611.14436",
+    "2611.14440",
+    "2611.14451",
+    "2611.14469",
+    "2611.14498",
+    "2611.13271",
+    "2611.13528",
+    "2611.13685",
+    "2611.13769",
+    "2611.13971",
+    "2611.14257",
+    "2611.14286",
+    "2611.14432",
+    "2611.14470"
+  ],
+  "excluded": [
+    {
+      "id": "2611.12977",
+      "title": "Selective Surgical Action-Center Localization:Retaining Localization Gains through Supervised Scoring",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgical",
+      "paper": {
+        "id": "2611.12977",
+        "title": "Selective Surgical Action-Center Localization:Retaining Localization Gains through Supervised Scoring",
+        "authors": [
+          "Yanchong Xue",
+          "Wanting Zhang",
+          "Lingtao Yu",
+          "Guochao Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Surgical action-center localization requires both an accurate reference point and a decision about whether to report it. When frames with and without a reportable center are mixed, the benefit of improved localization depends on which correct candidates survive selection. We present a selective localization pipeline combining heatmap and coordinate supervision with a logistic-regression scorer. The scorer learns to identify predictions with a reportable center and a localization error within a specified tolerance. The internal evaluation uses 5,000 frames from 50 surgical sources, five source-grouped folds and two random seeds. Matched locator and scoring comparisons track correct candidates and their rejection. At an 80% acceptance quota per source and a tolerance of 0.10 times the image diagonal, our method retains 46.08 correct outputs per 100 inputs. The baseline locator with the same scoring approach retains 44.20. The gain is 1.88 (descriptive 95% source-paired bootstrap interval, 0.94 to 2.79). Under entropy-based selection, increased rejection of correct predictions offsets the higher supply of correct predictions on average. For the coordinate-supervised locator, supervised scoring reduces these rejections from 6.15 to 2.99 per 100 inputs. Evaluating retained correct outputs reveals whether a selection rule preserves or erodes an improvement in localization.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.12977",
+        "pdf": "https://arxiv.org/pdf/2611.12977",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.12981",
+      "title": "Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.12981",
+        "title": "Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases",
+        "authors": [
+          "Haoqing Li",
+          "Jun Shi",
+          "Tou Li",
+          "Xianmeng Chen",
+          "Rui Wang",
+          "Yating Peng",
+          "Qiwei Jia",
+          "Li Gao",
+          "Qianyi Chen",
+          "Hong An",
+          "Ruoyun Ouyang",
+          "Xiaowen Hu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Overlapping imaging manifestations complicate the differential diagnosis of Diffuse Cystic Lung Diseases (DCLDs), while limited annotated data constrain supervised model development. Multimodal Large Language Models (MLLMs) can integrate imaging and clinical information, but their diagnostic reasoning remains limited by incomplete volumetric perception and insufficient grounding in disease-specific evidence. We propose DCLDs-EIR, an evidence-grounded iterative reasoning framework coupling diagnostic hypothesis refinement with multimodal evidence acquisition and verification. Multiview renderings of predicted lung and cyst segmentations characterize global cyst distributions and initialize the differential diagnosis. Competing hypotheses guide axial CT inspection to identify local findings that, together with clinical context, inform retrieval from a disease-specific knowledge graph. Accumulated patient observations and retrieved knowledge are jointly assessed for diagnostic support and refutation to revise the diagnostic state. Updated hypotheses and unresolved distinctions guide subsequent inspection, forming a feedback loop between evidence acquisition and hypothesis verification. Multicenter evaluation demonstrates that DCLDs-EIR consistently improves diagnostic accuracy over baselines and enables traceable differential diagnosis through explicit links between diagnostic hypotheses, patient observations, and disease-specific knowledge.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.12981",
+        "pdf": "https://arxiv.org/pdf/2611.12981",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13009",
+      "title": "Instance-preserving graded semantic reporting for surgical action triplets",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "surgical",
+      "paper": {
+        "id": "2611.13009",
+        "title": "Instance-preserving graded semantic reporting for surgical action triplets",
+        "authors": [
+          "Yanchong Xue",
+          "Wanting Zhang",
+          "Lingtao Yu",
+          "Guochao Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Complete-or-reject reporting of surgical action triplets can discard a correctly identified instrument and action when the target is uncertain. We introduce instance-preserving graded semantic reporting, which separates instance selection from the choice of semantic detail. Each selected instance retains its predicted mask and labels while hierarchical correctness scores guide instrument (I), instrument-verb (IV), or complete instrument-verb-target (IVT) reporting. The utility-increment rule DELTA weighs the expected gain from finer reporting against its error cost. We compare three decision rules on 5,641 test frames from eight surgical videos using fixed predictions and scores. At the 10% development calibration target, DELTA retains correct partial reports for 80.0% of candidates rejected by a matched complete-or-reject baseline (5,329/6,662). Adding IV increases source-normalized weighted correct-report yield by 19.13 to 23.13 per 100 frames across all three rules relative to separately recalibrated I/IVT controls. Weighted reporting risk changes by -0.77 to +1.01 percentage points, with complete correct-triplet counts unchanged or reduced. Graded reporting makes partial surgical predictions available as localized descriptions, with an explicit trade-off between report utility and completeness.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.13009",
+        "pdf": "https://arxiv.org/pdf/2611.13009",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13045",
+      "title": "MICRO: A Surgery-Phase Retinal Image Rigid Registration Benchmark and One-Step Frequency-Structure Similarity Registration Learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Surgery",
+      "paper": {
+        "id": "2611.13045",
+        "title": "MICRO: A Surgery-Phase Retinal Image Rigid Registration Benchmark and One-Step Frequency-Structure Similarity Registration Learning",
+        "authors": [
+          "Mingdao Gong",
+          "Yan Hu",
+          "Mingzhen Yuan",
+          "Jialu Zhang",
+          "Junming Feng",
+          "Yiming Jiang",
+          "Jing Ma",
+          "Jinghua Liu",
+          "Huazhu Fu",
+          "Hai Lu",
+          "Xiaoqing Zhang",
+          "Jiang Liu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Precise multimodal retinal image rigid registration (MRIRG) is essential for aligning cross-modal vessel structures, offering critical guidance for ophthalmic surgery. Despite its significance, the advancement of MRIRG is hindered by the lack of publicly available multimodal retinal image rigid registration datasets spanning various ophthalmic surgery phases (e.g., preoperative, intraoperative, and postoperative). To address this issue, we introduce the MICRO dataset, a large-scale MRIRG benchmark, comprising 1,365 cross-modal retinal image pairs with standardized annotations across all ophthalmic surgery phases. Moreover, existing deep registration methods achieve competitive MRIRG results via a two-step segmentation-then-detection framework, but segmentation quality heavily constrains their performance. We argue that this dependency stems from an implicit need for keypoint topology constraints, which have not been exploited for MRIRG through a one-step registration framework. Inspired by the above analysis, we propose a novel One-step Frequency-Structure Similarity Registration (OFS2Reg) learning framework for MRIRG that leverages the potential of cross-modal vessel structure similarities to construct keypoint topology constraints under a shared detection network. To be specific, OFS2Reg applies a well-designed frequency-guided structure preservation descriptor to construct coarse keypoint topology constraints in descriptors by highlighting significant vessel structures. Additionally, we develop a new cross-modal vessel structure similarity learning method that refines cross-modal keypoint topology constraints to precisely align pixel-level cross-modal vessel structures by leveraging cross-modal vessel structure similarity priors.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.13045",
+        "pdf": "https://arxiv.org/pdf/2611.13045",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13046",
+      "title": "SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.13046",
+        "title": "SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution",
+        "authors": [
+          "Yan Zhang",
+          "Runfeng Luo",
+          "Liangke Gao",
+          "Lin Yuan",
+          "Bin Xiao",
+          "Xinbo Gao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated the absolute spatial resolution itself as a reconstruction prior, thereby disregarding the inherent spatial context of objects, which frequently leads to spatial-related distortions and compromised performance in downstream remote sensing applications. To address these challenges, we introduce SpatialSR, a SRe-centric arbitrary-scale RSISR method that leverages the spatial resolution (SRe) of remote sensing images (RSI) as an essential prior for super-resolution reconstruction. Distinct from existing SR methods, SpatialSR aims to restore high-resolution remote sensing images with a target SRe (typically set to 0.1m/pixel to align with the metadata of commonly used downstream task datasets). Specifically, we design a Spatial Resolution Estimation Module (SREM) to estimate the SRe of low-resolution (LR) images, thereby dynamically determining the required arbitrary scaling factor. Next, we employ a pretrained SRe-to-image diffusion model to extract SRe-specified texture-style codes, which are further incorporated into a carefully designed Resolution-aware Style Consistency Module (RSCM) to constrain the SRe-aware texture consistency of reconstructed images. Furthermore, to overcome the high computational expense inherent in diffusion-based SR methods, we wrap the iterative diffusion process as a Trajectory Consistency (TC) loss, which enables comparable reconstructed texture quality of the generative model in SpatialSR within a single step. Extensive experiments demonstrate that the proposed SpatialSR achieves state-of-the-art (SOTA) performance on commonly used RSISR and downstream (image classification and segmentation tasks) datasets.",
+        "comment": "39 pages, 20 figures and tables,",
+        "abs": "https://arxiv.org/abs/2611.13046",
+        "pdf": "https://arxiv.org/pdf/2611.13046",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13191",
+      "title": "Comparative Evaluation of Deep Learning Models for Geographic Atrophy Segmentation in En Face OCT Images",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "OCT Images",
+      "paper": {
+        "id": "2611.13191",
+        "title": "Comparative Evaluation of Deep Learning Models for Geographic Atrophy Segmentation in En Face OCT Images",
+        "authors": [
+          "Utkarsh Doshi",
+          "Adarsh Gadari",
+          "Sharat Chandra Vupparaboina",
+          "Joseph DeCicco",
+          "Giulia Gregori",
+          "Nicola Valsecchi",
+          "Nasiq Hasan",
+          "Elham Sadeghi",
+          "Josè-Alain Sahel",
+          "Jay Chhablani",
+          "Kiran Kumar Vupparaboina",
+          "Sandeep Chandra Bollepalli"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Background: Geographic atrophy (GA) is an advanced form of age-related macular degeneration (AMD). It causes irreversible vision loss due to progressive degeneration of the retinal pigment epithelium (RPE) and photoreceptors. Accurate segmentation of GA in en-face image is crucial for early diagnosis, monitoring disease progression, and developing personalized treatment strategies. However, existing deep learning approaches are typically evaluated using single architectures and single-device datasets, limiting insight into relative performance and cross-device robustness. Methods: We trained and systematically compared five deep learning architectures for GA segmentation: Nested U-Net, ResU-Net, nnUnet, Swin-Unet and MedSegDiff model, together with a thresholding based classical baseline. The models were trained on a dataset of en-face OCT images derived from 269 OCT volumes from two different devices, following a three-step preprocessing technique involving normalization and inpainting to enhance the quality of the en-face images. Results: On the fixed held-out validation set comprising OCT scans from both Cirrus (R) (Carl Zeiss Meditec, Inc., USA) and Spectralis (R) (Heidelberg Engineering, Germany) devices, nnUnet achieved the highest mean Dice similarity coefficient (DSC) of 0.8882 +/- 0.0033. The other models yielded the following Dice scores: Nested U-Net (0.7932 +/- 0.0423), ResU-Net (0.8453 +/- 0.0074), Swin-Unet (0.6886 +/- 0.0294), and Diffusion model (0.7959 +/- 0.0242). Conclusions: nnUnet framework, demonstrated most reliable performance for GA segmentation in en-face OCT under limited data conditions. It offers the best balance of accuracy, stability, and efficiency for GA quantification.",
+        "comment": "30 pages, 11 figures",
+        "abs": "https://arxiv.org/abs/2611.13191",
+        "pdf": "https://arxiv.org/pdf/2611.13191",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13297",
+      "title": "Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Echocardiography",
+      "paper": {
+        "id": "2611.13297",
+        "title": "Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography",
+        "authors": [
+          "Mahyar Bolhassani",
+          "Tijana Geroski",
+          "Narayana S. Singam",
+          "Amir Amini"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "The rapid advancement of foundation models has transformed computer vision, yet their adaptation to medical imaging, particularly purpose built foundation models for spatio temporal echocardiography videos, remains limited. In this work, we explore the feasibility of fine tuning a pretrained foundation model for video (TimeSformer) for automated diagnosis of reduced ejection fraction heart failure (HFrEF) from apical four chamber videos. The model is finetuned on the publicly available RVENet A4C dataset with a phase aware clip generation strategy that captures complementary systolic and diastolic dynamics. We employ divided space time attention, layer wise learning rate decay, and multi clip inference to enhance robustness under limited data. Experimental results show that full fine tuning of the proposed model outperforms classifier only tuning and a 3D CNN baseline. These findings highlight the potential of leveraging foundation video models for echocardiography based heart failure diagnosis and motivates further domain adaptation studies in medical imaging.",
+        "comment": "6 pages, 6 figures, accepted and presented at Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2026)",
+        "abs": "https://arxiv.org/abs/2611.13297",
+        "pdf": "https://arxiv.org/pdf/2611.13297",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13330",
+      "title": "Uni-Loc: Weakly Supervised 3D CT Pathology Localization via Spatially Grounded Vision-Language Classification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2611.13330",
+        "title": "Uni-Loc: Weakly Supervised 3D CT Pathology Localization via Spatially Grounded Vision-Language Classification",
+        "authors": [
+          "Hao-Chih Lee",
+          "Zahi A. Fayad",
+          "Xueyan Mei"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Accurate localization of abnormalities in three-dimensional (3D) CT scans is essential for linking automated predictions with clinically relevant pathological findings. We propose Uni-Loc, a vision-language framework that unifies pathology classification and 3D localization using scan-level supervision. Uni-Loc derives both predictions and localization maps from spatial similarities between pathology-conditioned queries and image features. A token-to-voxel upsampling module enables high-resolution localization, while gradient-guided thresholding identifies pathology regions without additional learned parameters. Evaluated on five localization tasks comprising 355 annotated CT scans, Uni-Loc achieves macro-averaged voxel-level AUROC/AUPR of 96.1\\%/34.5\\%, outperforming relevance propagation (80.7%/13.9%) and gradient saliency (88.7%/8.1%). Uni-Loc also achieves classification AUROC of 88.39% on CT-RATE and 78.03% on RAD-ChestCT, improving over a matched baseline. These results demonstrate effective 3D pathology localization without requiring pathology-specific voxel-level supervision.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.13330",
+        "pdf": "https://arxiv.org/pdf/2611.13330",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13425",
+      "title": "Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Echocardiography",
+      "paper": {
+        "id": "2611.13425",
+        "title": "Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model",
+        "authors": [
+          "Moein Heidari",
+          "Alvin Kimbowa",
+          "Mahdi Tabatabaei",
+          "Afshin Bozorgpour",
+          "Sina Ghorbani Kolahi",
+          "River Jiang",
+          "Wenjin Chen",
+          "David J. Foran",
+          "Jasmine Grewal",
+          "Dorit Merhof",
+          "Ilker Hacihaliloglu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Automated segmentation in multi-view echocardiography is essential for comprehensive cardiac assessment, yet remains challenging due to substantial anatomical and appearance variability across standard acoustic windows. In this paper, we present P2Echo, a unified framework capable of segmenting diverse cardiac structures across multiple standard echocardiographic views using a single model controlled by structured view-aware text prompts. Unlike recent foundation model adaptations that rely on implicit latent priors, P2Echo explicitly conditions the segmentation process via a novel Dynamic Image-Text Alignment (DyITA) module. DyITA integrates a differentiable routing mechanism and token differential operators to dynamically modulate decoder features according to the requested view and target structure. This allows the network to adaptively switch its processing pathways for different views without architectural changes. Extensive experiments on a large-scale internal dataset (seen during training) and held-out evaluation on three external datasets demonstrate that P2Echo matches or exceeds both view-specific specialists and state-of-the-art universal models at a fraction of their computational cost, offering an efficient, controllable solution for multi-plane cardiac analysis. Code is available at: this https URL.",
+        "comment": "10 pages, 5 figures, 7 tables",
+        "abs": "https://arxiv.org/abs/2611.13425",
+        "pdf": "https://arxiv.org/pdf/2611.13425",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13510",
+      "title": "Distribution Shift Detection in Remote Sensing Imagery using Machine Learning Models",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.13510",
+        "title": "Distribution Shift Detection in Remote Sensing Imagery using Machine Learning Models",
+        "authors": [
+          "Abdullah Almansour",
+          "Ozan K. Tonguz"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV",
+          "eess.SP"
+        ],
+        "summary": "Remote sensing imagery acquired by Unmanned Aerial Vehicles (UAVs) supports wide range of applications; however, deploying machine learning (ML) models on resource-constrained aerial platforms introduces challenges beyond predictive accuracy, particularly when deployment data differ from the distributions observed during training. Such shifts are common in remote sensing due to geographic, sensor, seasonal, and other visual variations. A practical solution is to equip deployed models with mechanisms that detect emerging distribution shifts and support subsequent responsive actions. This paper presents an empirical case study of three open-source detection tools: (i) Alibi-Detect; (ii) NannyML; and (iii) PyTorch-OOD. Using cross-dataset remote-sensing shifts, we evaluate both detection effectiveness and computational latency of these tools. Our results reveal differences in detection behavior and processing cost across methods and implementations, highlighting trade-offs between detection capability and response-time. These findings motivate further work toward lightweight, and latency-aware monitoring mechanisms for resource-constrained systems.",
+        "comment": "Accepted as a short paper at the 4th Workshop on Computer Vision for Earth Observation (CV4EO), held in conjunction with WACV 2027",
+        "abs": "https://arxiv.org/abs/2611.13510",
+        "pdf": "https://arxiv.org/pdf/2611.13510",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13513",
+      "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "glaucoma",
+      "paper": {
+        "id": "2611.13513",
+        "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
+        "authors": [
+          "Hai Siong Tan",
+          "Kuancheng Wang"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "We propose a novel conditional entropy function as a basis for quantifying predictive uncertainty in Evidential Deep Learning (EDL) for glaucoma detection from retinal fundus images. Using the EyePACS-AIROGS-light-V2 and RIM-ONE-DL datasets for validation, we found that our proposed EDL model regularized by conditional entropy function produced uncertainty estimates with substantially lower calibration errors than Deep Ensembles, MC Dropout, post-hoc calibration and the conventional EDL framework based on Dempster uncertainty. To further probe our models' interpretability, we analyzed Grad-CAM heatmaps using a focus index representing spatial concentration. Compared with the other uncertainty quantification methods, EDL models exhibited greater separation between the index distributions of correctly and incorrectly classified fundus images. In particular, false negatives were associated with localized Grad-CAM activations that were displaced from the optic disc, consistent with its established clinical importance in glaucoma assessment. Overall, our findings suggest that our proposed EDL framework for glaucoma detection provides not only enhanced uncertainty calibration but also admits a more physiologically consistent interpretability.",
+        "comment": "15 pages, 4 figures. To appear in TAAI 2026",
+        "abs": "https://arxiv.org/abs/2611.13513",
+        "pdf": "https://arxiv.org/pdf/2611.13513",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13514",
+      "title": "Seeing the Small: Deformable Duality Mamba for Retinal Lesion Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Retinal",
+      "paper": {
+        "id": "2611.13514",
+        "title": "Seeing the Small: Deformable Duality Mamba for Retinal Lesion Segmentation",
+        "authors": [
+          "Chang Yu",
+          "Siqing Li",
+          "Yuanchen Liu",
+          "Zhenyu Bu",
+          "Luming Yang",
+          "Alper Yilmaz"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Diabetic retinopathy (DR) lesions vary widely in shape, and microaneurysms (MAs) span only a few pixels. We hypothesize that modeling the spatial organization of lesion regions, with global context and shape-adaptive scanning, improves the segmentation of such small and irregular lesions. To test this, we propose D$^2$Mamba, which couples non-causal state space duality with deformable Mamba scanning. We evaluate it with five-fold cross-validation on the DDR dataset, comparing against representative segmentation baselines under an identical training protocol, and conduct ablations on each component. D$^2$Mamba achieved the best overall performance, with 33.87% mIoU, 2.99 percentage points above the strongest baseline. The largest gain appeared on MAs, the smallest and most easily missed lesions, where Dice improved by 10.06 percentage points. These results confirm our hypothesis that spatially adaptive state space modeling benefits tiny-lesion segmentation. Code and pretrained weights are available at this https URL.",
+        "comment": "5 pages, 4 figures, 1 table",
+        "abs": "https://arxiv.org/abs/2611.13514",
+        "pdf": "https://arxiv.org/pdf/2611.13514",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13638",
+      "title": "picoEmergencyNet : Attention-Enhanced Ultra-Small Deep Learning Model for Aerial Image Classification in Emergency Monitoring",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Aerial Image",
+      "paper": {
+        "id": "2611.13638",
+        "title": "picoEmergencyNet : Attention-Enhanced Ultra-Small Deep Learning Model for Aerial Image Classification in Emergency Monitoring",
+        "authors": [
+          "Christos Kyrkou"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Real-time disaster recognition from aerial imagery requires deep learning models that operate under strict memory, compute, and latency constraints. While recent approaches achieve high accuracy, their computational cost limits deployment on resource-constrained UAV platforms. This work introduces picoEmergencyNet, an ultra-lightweight convolutional neural network designed for aerial image disaster classification. The proposed architecture combines depthwise dilated convolutions with efficient channel attention and channel shuffling to enable multi-scale feature extraction at minimal computational cost. picoEmergencyNet has 23k parameters and 7M FLOPs, requiring only 0.1 MB of model storage. Evaluated on the AIDER and AIDERv2 disaster datasets, it achieves up to 96.1% accuracy, matching or exceeding state-of-the-art lightweight models that are orders of magnitude larger. Deployment experiments on the NVIDIA Jetson AGX Orin show that, without hardware-specific optimizations, picoEmergencyNet achieves 258 FPS on GPU and 46 FPS on CPU with a 7x lower activation memory footprint compared to competing models. These results demonstrate that careful architectural specialization, rather than model scaling, enables highly efficient and accurate TinyML-ready disaster recognition for real-time UAV-based emergency monitoring.",
+        "comment": "6 pages, Appeared in IJCNN2026 C. Kyrkou, \"picoEmergencyNet: Attention-Enhanced Ultra-Small Deep Learning Model for Aerial Image Classification in Emergency Monitoring,\" 2026 International Joint Conference on Neural Networks (IJCNN), Maastricht, Netherlands, 2026, pp. 1-6",
+        "abs": "https://arxiv.org/abs/2611.13638",
+        "pdf": "https://arxiv.org/pdf/2611.13638",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13649",
+      "title": "Predicting Single-Cell Spatial Gene Expression from H&E using Pathology Foundation Models",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Pathology",
+      "paper": {
+        "id": "2611.13649",
+        "title": "Predicting Single-Cell Spatial Gene Expression from H&E using Pathology Foundation Models",
+        "authors": [
+          "Ashley P. Tsang",
+          "Evan Liu",
+          "Conrad Foo",
+          "Bob Chen",
+          "Hassaan Maan",
+          "Donny Chan",
+          "Elisa Penna",
+          "Veronica Ibarra Lopez",
+          "Hector Corrada Bravo",
+          "Aicha BenTaieb",
+          "Lisa M. McGinnis",
+          "Runmin Wei",
+          "Kenneth T. Gao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Predicting gene expression directly from hematoxylin and eosin (H&E) images offers a scalable and cost-effective approach to deriving spatial molecular insights from routine histology. Pathology foundation models, typically pretrained using tile-level objectives, may not adequately capture the fine-grained cellular features required for single-cell molecular prediction. In this work, we systematically evaluate and establish domain-informed and task-specific strategies for adapting pathology foundation models to single-cell spatial gene expression prediction. Using paired H&E and Xenium 5K data, our approach improves mean gene-wise Pearson correlation by 2.67x over the standard zero-shot baseline and achieves state-of-the-art performance on this task. We demonstrate strong gene-detection performance across the full gene panel (AUROC = 0.800) and importantly identify that predictive performance varies substantially across biological contexts, with our model achieving its highest Pearson correlation for spatially variable genes (r = 0.643). Our findings demonstrate that, despite the challenges of sparse single-cell measurements, H&E-derived representations can recover biologically meaningful spatial expression patterns, highlighting both the opportunities and limitations of morphology-based molecular inference at cellular resolution.",
+        "comment": "NeurIPS 2026 Workshop on AI at Scale for Clinical Impact. Project page: this https URL",
+        "abs": "https://arxiv.org/abs/2611.13649",
+        "pdf": "https://arxiv.org/pdf/2611.13649",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13776",
+      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.13776",
+        "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
+        "authors": [
+          "Zhijian Li",
+          "Jiawei Song",
+          "Chao Ren",
+          "Yidan Zhang",
+          "Peijin Wang",
+          "Xian Sun",
+          "Kun Fu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision-language models (VLMs) and tool-augmented agents offer strong multimodal reasoning and perception, but they struggle to provide the evidence required for high-stakes verification. To address these limitations, we propose DisasterAgent, an evidence-driven agent that uses a Perception-Augmentation-Generation workflow to generate verifiable disaster reports from bitemporal optical imagery. DisasterAgent first invokes a specialized vision expert toolkit in the perception phase to build a Spatiotemporal Perception Graph (STPG), serving as a structured memory to store and organize disaster-induced changes across space and time. Evidence-based Augmentation (EA) then extracts evidence from the STPG, attaching inline citations that form a closed evidence loop from each statement to the supporting visual evidence. Extensive experiments on the DisasterM3 and RSCC benchmarks demonstrate that DisasterAgent consistently outperforms general-domain VLMs, remote sensing-specialized models, and existing remote sensing agents. Notably, compared with the original model, it improves the average score for disaster report generation on DisasterM3 by 13.5\\% and ST5-SCS on RSCC by 15.34\\%, providing a more accurate and verifiable solution for disaster emergency response. The code will be available at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.13776",
+        "pdf": "https://arxiv.org/pdf/2611.13776",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13807",
+      "title": "Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.13807",
+        "title": "Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining",
+        "authors": [
+          "Xianping Ma",
+          "Yu Zhang",
+          "Mingzhe Jiang",
+          "Wanxin Xie",
+          "Qing Zhu",
+          "Nan Xu",
+          "Xiaokang Zhang",
+          "Yuanxin Ye"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Multimodal remote sensing pretraining commonly relies on exact instance-level correspondence across modalities, implicitly treating strictly paired observations as a prerequisite for learning transferable representations. In this work, we revisit this assumption by relaxing cross-modal correspondence from the instance level to the semantic level. We introduce Semantic Pairing (SemPair), a pairing-relaxed pretraining strategy that replaces exact instance pairs with class-consistent cross-instance pairs. To characterize the effect of correspondence relaxation, we formulate a latent-factor model that separates cross-modal dependence into shared semantic structure and instance-specific correlation, showing that SemPair preserves the former while marginalizing instance-specific cross-modal correlations in expectation. We further introduce Mixed Pairing (MixPair) as a controlled interpolation between semantic and exact pairing to study correspondence granularity along a continuous spectrum. Extensive experiments consistently show that SemPair achieves transfer performance comparable to exact pairing (ExaPair), while MixPair reveals a non-monotonic relationship between downstream transfer and the instance-pairing ratio. These results demonstrate that exact instance correspondence is not a prerequisite for effective multimodal remote sensing pretraining and establish cross-modal correspondence granularity as an important design dimension for transferable multimodal representation learning. More broadly, this finding suggests a practical route toward scaling multimodal pretraining with reduced dependence on costly instance-aligned data.",
+        "comment": "16 pages, 9 figures, 13 tables",
+        "abs": "https://arxiv.org/abs/2611.13807",
+        "pdf": "https://arxiv.org/pdf/2611.13807",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13849",
+      "title": "Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "Geospatial",
+      "paper": {
+        "id": "2611.13849",
+        "title": "Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification",
+        "authors": [
+          "Sandarbh Agrawal",
+          "Rakshith Sathish",
+          "Ashwathi Nambiar"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretraining data. We study five matched pairs of Earth-observation (EO) and generic encoders sharing objective and architecture (DINO/SatDINO, DINOv3/DINOv3-SAT, MAE/SatMAE, MAE/Scale-MAE, CLIP/RemoteCLIP) within a benchmark of 14 frozen encoders on five RGB scene-classification datasets (0.06-30 m GSD). With native preprocessing, we evaluate k-NN, linear and attentive probes and image retrieval over six low-label splits, using paired per-image significance tests. EO pretraining is not uniformly helpful: on most datasets and metrics, it significantly improves three pairs (SatDINO, Scale-MAE, RemoteCLIP, the latter evaluated only on unseen datasets) and significantly hurts two (linear probe: DINOv3-SAT by up to 22.5 points, SatMAE by up to 8.8), with opposite outcomes even for two MAEs pretrained on the same fMoW-RGB imagery. These effects are robust to patch-token pooling and attentive probing, concentrate on small man-made objects, and are largest with 1-5% labels. Across encoders, the silhouette score of frozen embeddings predicts k-NN accuracy and retrieval mAP almost perfectly (Spearman $\\rho \\geq 0.96$ on four of five datasets). Pretraining on satellite imagery is thus not a reliable selection criterion; candidate checkpoints must be validated on target data.",
+        "comment": "Accepted at the 3rd Workshop on Computer Vision for Geospatial Image Analysis (GeoCV) at WACV 2027",
+        "abs": "https://arxiv.org/abs/2611.13849",
+        "pdf": "https://arxiv.org/pdf/2611.13849",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13851",
+      "title": "Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.13851",
+        "title": "Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy",
+        "authors": [
+          "Xianping Ma",
+          "Kunlin Wu",
+          "Xiaofeng Liu",
+          "Xiaokang Zhang",
+          "Yuanxin Ye"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Remote sensing scene classification (RSSC) is traditionally formulated as a vision-centric problem, where inference relies on rich visual representations extracted from images. In this work, we revisit this assumption by introducing text-only RSSC, a new problem setting that investigates whether remote sensing scenes can be recognized using only textual semantic representations. To enable this study, we propose SeProRS, which reformulates RSSC as a text-only classification task through semantic proxy generation. Specifically, a vision-language model (VLM) is first employed to convert remote sensing images into textual descriptions, termed semantic proxies, which are then encoded by a text embedding model for scene classification. This decoupled pipeline provides a unified and reproducible benchmark for evaluating text-only scene understanding. Furthermore, we investigate representative prompting strategies and proxy generators, and analyze their impact on classification performance, text embedding behavior, cross-generator transferability, and efficiency. Extensive experiments on three well-known RSSC datasets show that semantic proxies can preserve substantial discriminative information, while also revealing inherent limitations of purely text-based scene understanding. This paper does not aim to replace image-based RSSC, but instead establishes a new research direction by quantifying the feasibility and boundaries of semantic proxy-based scene recognition. The proposed benchmark and analysis provide a foundation for future research on efficient and modality-reduced remote sensing scene understanding. The source code and datasets will be accessible at this https URL.",
+        "comment": "13 pages, 4 figures, 14 tables, including appendices",
+        "abs": "https://arxiv.org/abs/2611.13851",
+        "pdf": "https://arxiv.org/pdf/2611.13851",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13883",
+      "title": "The BRIDGE dataset: paired brightfield whole-slide images of prostate core-needle biopsies in paraffin, after deparaffinization and H&E staining",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "prostate",
+      "paper": {
+        "id": "2611.13883",
+        "title": "The BRIDGE dataset: paired brightfield whole-slide images of prostate core-needle biopsies in paraffin, after deparaffinization and H&E staining",
+        "authors": [
+          "Julia A. Mielcarz",
+          "Justyna Durślewicz",
+          "Marek Zdrenka",
+          "Ahmad Abbadi",
+          "Martin Eklund",
+          "Mateusz Matusiak",
+          "Łukasz Szylberg",
+          "Andrea Camilloni"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Computational approaches are increasingly being explored to streamline histopathology workflows, including label-free methods that aim to reduce reliance on chemical staining. Among these, deep learning-based label-free virtual staining uses images of unstained tissue to computationally generate stained images. Despite growing interest, model development and validation remain constrained by the scarcity of paired, clinically annotated whole-slide imaging datasets. We present BRIDGE, a dataset of prostate core-needle biopsies collected at the Prof. Franciszek Lukaszczyk Oncology Centre in Bydgoszcz, Poland. The dataset comprises 869 glass slides from 169 patients, each digitized sequentially after sectioning, deparaffinization, and hematoxylin and eosin staining, yielding in total 2607 whole-slide images. The dataset supports the development and external validation of label-free virtual staining, virtual unstaining, image-registration and segmentation methods. Each slide is accompanied by a Gleason score, enabling downstream analyses of cancer classification and grading concordance. The stained images can be used independently for color normalization and cross-scanner robustness studies. All images are de-identified, distributed in their native scanner format and will be available through the BioImage Archive.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.13883",
+        "pdf": "https://arxiv.org/pdf/2611.13883",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13884",
+      "title": "Region-Wise Logit Fusion and Utility-Gated Refinement for Brain Metastasis Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "tumor",
+      "paper": {
+        "id": "2611.13884",
+        "title": "Region-Wise Logit Fusion and Utility-Gated Refinement for Brain Metastasis Segmentation",
+        "authors": [
+          "Zhenye Lou",
+          "Qing Xu",
+          "Wenting Duan",
+          "Zhen Chen"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "BraTS-METS 2026 Task 1 evaluates segmentation of brain metastases and postoperative resection cavities on heterogeneous multiparametric MRI, requiring detection of small enhancing foci while preserving the geometry and hierarchy of enhancing tumor (ET), tumor core (TC), whole tumor (WT), and resection cavity (RC). We present COMPASS-METS (Component-Aware Multi-Trainer Probability Assembly with Structured Segmentation), which combines three five-fold nnU-Net configurations into aligned regional probability ensembles. A structured-probability anchor applies region-specific component decisions, TC boundary completion, RC filtering, and hierarchy-preserving conversion. Omitted ET candidates are recovered additively using learned component confidence and deterministic multi-trainer support for ET and its TC/WT parents; a final utility gate admits only disconnected candidates with sufficient lesion-existence and geometry-safety probabilities. On the reused 179-case challenge development cohort, COMPASS-METS (Team: MicroBT) achieved Small F1 0.354, lesion-wise DSC 0.712, NSD 0.714, All F1 0.779, and HD95 56.6 mm. Relative to ResEncXL, it improved DSC, NSD, and All F1 and reduced HD95, while Small F1 changed from 0.367 to 0.354. Stagewise analysis attributes the principal geometric gains to structured probability construction and shows that guarded ET refinement recovers most of the associated small-lesion detection loss. These 179-case results remain selection-aware development estimates. The source code is publicly available at this https URL.",
+        "comment": "Accepted at the Brain Tumor Segmentation Challenge - Metastases (BraTS-METS), held in conjunction with MICCAI 2026",
+        "abs": "https://arxiv.org/abs/2611.13884",
+        "pdf": "https://arxiv.org/pdf/2611.13884",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13912",
+      "title": "MicroBT: Centroid-Guided Synergistic Learning for Multi-Modal Micro Brain Tumor Segmentation and Counting",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2611.13912",
+        "title": "MicroBT: Centroid-Guided Synergistic Learning for Multi-Modal Micro Brain Tumor Segmentation and Counting",
+        "authors": [
+          "Zhenye Lou",
+          "Qing Xu",
+          "Stefanie Thust",
+          "Dorothee P. Auer",
+          "Zhen Chen",
+          "Wenting Duan"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Multi-modal brain tumor segmentation is essential for clinical diagnosis, radiotherapy planning, and longitudinal monitoring. While recent studies have achieved remarkable overall segmentation performance, they rely on overlap-based objectives that inherently favor large regions, causing sub-3 mm micro-lesions to be systematically suppressed during training. Moreover, existing pixel-level segmentation frameworks lack explicit instance-level modeling, leading to unreliable lesion counting that directly impacts clinical staging and therapeutic decisions. To address these challenges, we propose MicroBT, a unified multi-modal framework for micro brain tumor segmentation and counting. Our core insight is that a fundamental geometric property is inherently scale-invariant: regardless of size, each lesion possesses a well-defined centroid. Leveraging this, we first devise a centroid-anchored synergistic paradigm that utilizes predicted centroids as shared anchors to simultaneously condition dense segmentation and instance-level localization. To counteract the tumor size imbalance, we further devise a Volume-Calibrated Loss (VC-Loss) that adaptively amplifies the gradient contribution of micro-lesions, alongside a Size-Aware Curriculum Optimization (SACO) that stabilizes multi-task training by establishing global representations before progressively unlocking fine-grained localization. Extensive experiments demonstrate that MicroBT outperforms state-of-the-art methods, particularly on metastases, where micro-lesion ($\\leq 3$ mm) localization precision improves by approximately 7% and counting estimation errors decrease by approximately 26%. The code is available at this https URL.",
+        "comment": "Accepted at the 37th British Machine Vision Conference (BMVC), 2026",
+        "abs": "https://arxiv.org/abs/2611.13912",
+        "pdf": "https://arxiv.org/pdf/2611.13912",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13933",
+      "title": "The Case for AI-Enabled Gate Monitoring as Farm Security in the UK: A PRISMA-Guided Review of the Evidence on Rural Crime, Livestock Predation and Farm Access",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Livestock",
+      "paper": {
+        "id": "2611.13933",
+        "title": "The Case for AI-Enabled Gate Monitoring as Farm Security in the UK: A PRISMA-Guided Review of the Evidence on Rural Crime, Livestock Predation and Farm Access",
+        "authors": [
+          "Steve Symes",
+          "Paul Fergus",
+          "Mark Carr",
+          "Omar McIver",
+          "Arwyn Jones"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Farm security in the UK rests on thinner evidence than its cost suggests. We ran a PRISMA guided review: twelve searches of Web of Science and Scopus on 2nd -4th November 2026 returned 1,183 records (761 unique), and grey-literature and hand-searches added 35 assessed sources. We synthesised 96 database records and 24 grey sources narratively. UK peer-reviewed evidence is small (16 records), and the main UK survey of crime and farmer mental health has 80 responses. Cost estimates rest on insurer claims: NFU Mutual put UK rural crime at £41.5 million in 2025, with livestock theft up almost 30% to about £4.5 million and dog attacks on livestock costing £1.95 million. The Home Office states that agricultural crime cannot be separately identified in its central data. We found no independent evaluation of cameras, sensors, trackers or marking; light and sound deterrents lost effect within one to five months in a systematic review of anti-predator interventions; and no study examined how often farm gates are left open or what follows. Camera-trap AI papers report accuracy on ecological datasets, none at a farm gate in the records we found, and in one comparison machine learning detected 41% of wildlife against 81% for analysts. We argue, as an inference from these gaps and not as a demonstrated effect, that continuous gate-level AI-mediated monitoring, as implemented in Fieldmark AI, would be highly beneficial for UK farm security. It would create the farm-level, time-stamped record that no official source holds, verify events that periodic human checks miss, resolve whether foxes, dogs or people were responsible, and give every other security measure something to be tested against. No study has yet shown that it reduces loss, and we set out the evaluation needed to show it.",
+        "comment": "Keywords: farm security; rural crime; livestock predation; camera traps; computer vision; PRISMA; evidence review",
+        "abs": "https://arxiv.org/abs/2611.13933",
+        "pdf": "https://arxiv.org/pdf/2611.13933",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.13935",
+      "title": "MEOW: Medical Open-World Interactive Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.13935",
+        "title": "MEOW: Medical Open-World Interactive Segmentation",
+        "authors": [
+          "Philip Matthias Winter",
+          "Maria Wimmer",
+          "Bernhard Schäfl",
+          "David Major",
+          "Dimitrios Lenis",
+          "Astrid Berg",
+          "Theresa Neubauer",
+          "Ariharasudhan Muthusami",
+          "Johannes Novotny",
+          "Georg Zotti",
+          "Katja Bühler"
+        ],
+        "categories": [
+          "cs.CV",
+          "stat.ML"
+        ],
+        "summary": "In open-world recognition, machine learning models not only make predictions on unknown structures (\"generalized open-set\"), but also continually learn and improve from those predictions over time. Interactive segmentation, despite its access to user feedback, has so far remained confined to the open-set setting. In this work we introduce MEOW, the first framework that turns non-interactive segmentation backbones into interactive open-world learners without updating learnable model parameters. MEOW combines parameter-free transductive reasoning with memory consolidation to accumulate knowledge and thereby improve future performance. Focusing on medical data, we show that MEOW consistently improves its own predictions on classes never seen during training, and transfers zero-shot to unfamiliar domains, including micro-CT data and other imaging modalities.",
+        "comment": "Preprint. 18 pages, 9 figures",
+        "abs": "https://arxiv.org/abs/2611.13935",
+        "pdf": "https://arxiv.org/pdf/2611.13935",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14013",
+      "title": "A Stage-Wise Explainable Pipeline for Arteriolar-to-Venular Ratio Estimation and Retinopathy Screening",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "retinal",
+      "paper": {
+        "id": "2611.14013",
+        "title": "A Stage-Wise Explainable Pipeline for Arteriolar-to-Venular Ratio Estimation and Retinopathy Screening",
+        "authors": [
+          "Sharan Sharmeela Karuppannan",
+          "Yoga Sri Varshan V",
+          "Subin Sahayam",
+          "Umarani Jayaraman"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "The arteriolar-to-venular diameter ratio (AVR) is a clinically motivated marker of retinal vascular health. We present a five-stage pipeline for AVR estimation and exploratory retinopathy screening from fundus images, with inspectable intermediate outputs at each stage. The pipeline combines vessel and artery-vein masks, optic-disc localization, vessel-calibre estimation using a minimal-chord boundary walk, and AVR computation from dominant arterial and venular branches. An explicit threshold-based rule produces the screening decision, enabling errors to be traced to individual processing stages. On an exploratory cohort of 30 HRF images, we report 96.7% accuracy, an F1-score of 0.968 and ROC-AUC of 0.978. Ablation studies and an exploratory comparison with VascX examine the effects of vessel pairing, calibre measurement and aggregation. Interpretation is limited by the small cohort, proxy disease labels and absence of independent reference calibre measurements. The pipeline provides a transparent framework for investigating retinal vascular biomarkers, with further validation needed on larger, clinically graded cohorts.",
+        "comment": "Accepted for presentation at the 23rd IEEE India Council International Conference (INDICON 2026)",
+        "abs": "https://arxiv.org/abs/2611.14013",
+        "pdf": "https://arxiv.org/pdf/2611.14013",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14018",
+      "title": "Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "radiology",
+      "paper": {
+        "id": "2611.14018",
+        "title": "Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation",
+        "authors": [
+          "Chentao Huang",
+          "Runlong Lin",
+          "Zhijun Wang",
+          "Yunxiang Li",
+          "Yuanyuan Sun",
+          "Jian Wang",
+          "Hongfei Lin",
+          "Ling Luo"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Automated radiology report generation can draft clinically plausible reports, yet the pathway from visual evidence to reported findings remains opaque, leaving the diagnostic basis of these reports unexplained and the generated reports difficult to review or revise. We introduce ARIVE (Anatomy-guided Reasoning with Interleaved Visual Evidence), an explainable report generation framework that interleaves anatomical inspection with diagnostic reasoning prior to final report composition. To support this process, we constructed 159,416 multimodal chain-of-thought (MCoT) trajectories from MIMIC-CXR, wherein visual evidence from inspected anatomical regions informs subsequent clinical interpretation. Trained on these trajectories and further optimized using anatomical and clinical-content rewards, ARIVE achieved superior clinical-efficacy performance compared with strong baselines on MIMIC-CXR and the abnormality-centered MIMIC-ABN. ARIVE's reports were competitive with those of leading models in blinded expert grading, and its MCoT trajectories earned high ratings for diagnostic traceability. Furthermore, a paired review evaluation suggests that access to MCoT can aid in identifying errors within generated reports.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14018",
+        "pdf": "https://arxiv.org/pdf/2611.14018",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14058",
+      "title": "CURRENT: A Recurrent Neural Network for Concurrent Spatial and Temporal Super-Resolution of 4D Flow MRI",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.14058",
+        "title": "CURRENT: A Recurrent Neural Network for Concurrent Spatial and Temporal Super-Resolution of 4D Flow MRI",
+        "authors": [
+          "Luuk Jacobs",
+          "Pietro Dirix",
+          "Sebastian Kozerke"
+        ],
+        "categories": [
+          "cs.CV",
+          "physics.med-ph"
+        ],
+        "summary": "Objective: To improve the spatial and temporal resolution of aortic 4D flow MRI through a unified deep learning framework for post-acquisition super-resolution (SR) of reconstructed velocity vector fields. Methods: We propose CURRENT, a recurrent neural network that performs spatial and temporal SR with a single network architecture. Supervised training was conducted using paired low- and high-resolution datasets generated by embedding computational fluid dynamics simulations of aortic flow into in vivo thoracic MRI backgrounds, followed by controlled spatial and temporal downsampling. CURRENT was evaluated for two-fold spatial and temporal SR against 4DFlowNet and for two-fold spatiotemporal SR against sequential spatial and temporal SR pipelines based on 4DFlowNet. Image-based and k-space-based quantitative metrics were considered and conventional interpolation were used as baselines. In addition, the impact of CURRENT's spatiotemporal SR on physics-informed relative pressure estimation was assessed. Finally, the ability of CURRENT to generalize from synthetic training data to in vivo acquisitions was investigated. Results: CURRENT achieved superior spatial SR performance and comparable temporal SR performance to dedicated 4DFlowNet models while providing a unified solution for both tasks. Simultaneous spatiotemporal SR using CURRENT yielded more accurate relative pressure estimates than either spatial or temporal SR alone and outperformed sequential 4DFlowNet-based spatial and temporal SR approaches. Furthermore, the proposed model demonstrated promising generalization to in vivo 4D flow MRI data despite being trained exclusively on synthetic datasets. Conclusion: CURRENT provides a unified framework for spatial and temporal SR of 4D flow MRI. The proposed approach has the potential to enhance physics-based analysis and broaden the applicability of accelerated 4D flow MRI.",
+        "comment": "Under review",
+        "abs": "https://arxiv.org/abs/2611.14058",
+        "pdf": "https://arxiv.org/pdf/2611.14058",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14124",
+      "title": "CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.14124",
+        "title": "CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data",
+        "authors": [
+          "Vito Recchia",
+          "Giuseppe Guarino",
+          "Cássio Fraga Dantas",
+          "Giuseppina Andresini",
+          "Annalisa Appice",
+          "Dino Ienco"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-modal SSL further exploits the complementarity between co-located sensors, but existing cross-modal frameworks align modalities mostly through global image-level representations or treat them as largely redundant, leaving their fine-grained complementary structure underexploited. We propose CroCoMAE, a cross-modal SSL framework for SAR-optical remote sensing that unifies contrastive learning and masked image modeling within a ViT-based architecture, operating at two complementary levels. At the image level, an intra-modality contrastive loss on the class token yields globally discriminative, augmentation-invariant representations. At the patch level, masked image modeling drives fine-grained per-modality representations, while a cross-modal contrastive objective aligns a shared subspace across SAR and optical patch tokens, leaving the complementary subspace unconstrained to retain modality-specific information. On two SAR-optical benchmarks covering scene classification and semantic segmentation, CroCoMAE improves over uni-modal SSL baselines and outperforms state-of-the-art cross-modal frameworks in most configurations, with gains in both single-modality and multi-modal evaluation across varying label regimes and the largest improvements on semantic segmentation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14124",
+        "pdf": "https://arxiv.org/pdf/2611.14124",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14129",
+      "title": "Continuous 3D Spatial Transcriptomics Reconstruction via Histology-Informed Implicit Neural Representations",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histology",
+      "paper": {
+        "id": "2611.14129",
+        "title": "Continuous 3D Spatial Transcriptomics Reconstruction via Histology-Informed Implicit Neural Representations",
+        "authors": [
+          "Kaito Shiku",
+          "Ryoma Bise",
+          "Ahtisham Fazeel Abbasi",
+          "Yuichiro Iwashita",
+          "Shumpei Takezaki",
+          "Andreas Dengel",
+          "Muhammad Nabeel Asim"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Three-dimensional spatial transcriptomics (3D ST) enables the analysis of gene-expression patterns across tissue depths. However, 3D ST measurements are acquired from discrete 2D tissue sections, which are often sparsely sampled due to high acquisition costs. To address this limitation, we propose a histology-informed multi-task implicit neural representation (HIM-INR) for continuous 3D gene-expression reconstruction from sparse ST observations. HIM-INR jointly reconstructs gene-expression profiles and histological representations using an INR with a shared backbone, leveraging densely sampled histological images as auxiliary spatial supervision. Once trained, HIM-INR predicts gene expression at arbitrary 3D coordinates without requiring histological images. Experiments on two 3D ST datasets demonstrate improved reconstruction over existing methods, particularly as the number of missing ST sections increases.",
+        "comment": "5 pages, 2 figures",
+        "abs": "https://arxiv.org/abs/2611.14129",
+        "pdf": "https://arxiv.org/pdf/2611.14129",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14281",
+      "title": "UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote-Sensing",
+      "paper": {
+        "id": "2611.14281",
+        "title": "UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks",
+        "authors": [
+          "Jianlong He",
+          "Liang Liao",
+          "Jing Xiao",
+          "Chaofeng Chen",
+          "Gui-Song Xia"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Remote-sensing foundation models increasingly unify representations across sensing modalities and downstream tasks, yet their prediction mechanisms remain largely task-specific. Separate decoders, prediction heads, and objectives leave prediction fragmented across tasks. This naturally raises a question: can heterogeneous remote-sensing tasks share the prediction process? UniFlow-RS answers this question with a single latent flow-matching predictor shared across tasks. This requires addressing two key challenges: unifying heterogeneous prediction spaces and harmonizing joint optimization across tasks. First, we cast heterogeneous task outputs into structured visual targets in a common latent space, allowing them to be modeled by the same pretrained flow predictor. Task-dependent conditioning further accommodates differences in input configurations. Second, we optimize all tasks with a common Flow Matching objective, eliminating task-specific prediction losses. To mitigate optimization mismatch across tasks and modalities, we introduce Task-Modality Adaptive Timestep Sampling (TMAS), which dynamically allocates training timesteps according to the online learning state of each task-modality group. Using a single shared model, UniFlow-RS handles six tasks and thirteen datasets, surpassing recent task-specific state-of-the-art methods on several benchmarks while remaining competitive on the others. Beyond these benchmarks, the same checkpoint demonstrates strong zero-shot transfer across unseen datasets, task settings, occlusion conditions, and near-infrared false-color imagery, without target-specific adaptation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14281",
+        "pdf": "https://arxiv.org/pdf/2611.14281",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14476",
+      "title": "BoviShift: A Six-Year Multi-Attribute Audit of Visual Cattle Phenotyping Across Animals and Time",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "abstract_intro",
+      "matched_text": "livestock",
+      "paper": {
+        "id": "2611.14476",
+        "title": "BoviShift: A Six-Year Multi-Attribute Audit of Visual Cattle Phenotyping Across Animals and Time",
+        "authors": [
+          "Mobasshir Bhuiya Shagor",
+          "Nilambar Halder Tonmoy",
+          "Md Saef Ullah Miah"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Computer vision offers a scalable, non-contact means of estimating livestock traits, but correlated images and video frames make reliable evaluation difficult. Image-random splitting can place views of the same animal in both training and test sets, while deployment further requires transfer to animals captured in future years. We introduce BoviShift, a corpus reconstructed from six consecutive annual cohorts of an operational cattle marketplace collected from 2021 to 2026. It contains 2{,}657 cattle, 10{,}610 still images, and 2{,}566 walk-around videos across nine recorded breed categories. We evaluate three splitting strategies through four configurations: image-random and pooled cattle-disjoint splits over the same development cohorts, followed by separate future-2025 and locked future-2026 evaluations. Using a fixed ResNet-50 multi-task baseline, we assess weight, age, height, breed, and coat color. Differences between image-random and cattle-disjoint splitting are task-dependent rather than a universal leakage penalty. Future-cohort behavior is also attribute- and cohort-specific: breed declines relative to pooled evaluation; mean weight and age performance fails to beat constant baselines in 2025; height remains above baseline; and color transfers well to 2025 but degrades in 2026. Multi-task training improves all five point estimates in a single-seed ablation, still-view aggregation helps selectively, and zero-shot video-frame aggregation exposes a still-to-video domain gap. To our knowledge, BoviShift is the longest-spanning cattle-vision resource combining consecutive annual cohorts with physical and visual attributes.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14476",
+        "pdf": "https://arxiv.org/pdf/2611.14476",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14496",
+      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.14496",
+        "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
+        "authors": [
+          "Tanishq Rachamalla",
+          "Srishti Kaushik",
+          "Muhammad Attique Khan",
+          "Gustau Camps-Valls",
+          "Swalpa Kumar Roy"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either reconstruct sensor-specific pixel detail, align each image only with its co-registered twin, or rely on large transformers with 118-173M parameters (and up to 398M). We introduce RS-JEPA, a compact joint-embedding predictive framework built on a Vision Mamba encoder shared by both sensors. Since a state-space encoder reads an image as an ordered sequence of patches, we propose scan-path views, which treat two reading orders of the same image as two views with identical pixels and predict the hidden patches in one order from the visible patches in the this http URL keep this prediction challenging, we propose Adversarial View Coupling (AVC), which learns the hardest split of the visible patches, and a neighbourhood consensus loss that aligns the scene similarities of both sensors. Extensive experiments on SAR-optical (BEN-14K, CBRSIR-VS) and PAN-MS (DSRSID) benchmarks demonstrate that RS-JEPA achieves the highest F1@5 among twelve re-implemented methods (72.92, 80.35 and 94.43) with a retrieval network of only 3.88M parameters (14.57M in training, 8-16times fewer than prior JEPA retrievers). Like prior methods, RS-JEPA trains on co-registered pairs. Our results highlight reading order as a source of self-supervised views. code: this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14496",
+        "pdf": "https://arxiv.org/pdf/2611.14496",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14518",
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.14518",
+        "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+        "authors": [
+          "Sheethal Bhat",
+          "Bogdan Georgescu",
+          "Awais Mansoor",
+          "Florin C. Ghesu",
+          "Sasa Grbic",
+          "Andreas Maier"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "DeepLearning (DL)-based Computer-Aided Diagnostic (CAD) systems have shown great promise in supporting clinicians, but their performance heavily depends on the availability of large, well-annotated datasets. In medical lesion detection, the scarcity of comprehensive, stan dardized annotations and the heterogeneity of existing datasets limit the development of robust foundation models. In this work, we introduce a novel approach to building a multi-domain foundation model for le sion detection by integrating diverse medical image datasets annotated for both anatomical structures and abnormalities. We first propose a student-teacher training strategy to effectively combine datasets with heterogeneous label spaces, mitigating catastrophic forgetting, and im proving feature learning. In addition, building on our previously pro posed example-based EM-DETR framework, we adapt it to jointly learn from multiple domain-specific datasets, enabling fine-grained, example driven detection across modalities. Our model achieves state-of-the-art (SOTA) results, with image-level AUC scores exceeding previous SOTA by 1% point on four key findings in CXRs. We achieve a leading mAP50 in CXRs and mammography, surpassing EM-DETR trained on a single dataset by 2-3% points. This approach paves the way for scalable foundation models in medical imaging that leverage heterogeneous data while maintaining robust and generalizable performance.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14518",
+        "pdf": "https://arxiv.org/pdf/2611.14518",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.14519",
+      "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.14519",
+        "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+        "authors": [
+          "Emre Kutlusan",
+          "Yongmin Li"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will replace models trained for each task. Most comparisons, however, use data from the training distribution and a single task-specific baseline whose configuration is rarely justified, and therefore provide limited evidence of performance at new clinical sites. It also remains unclear how much of a foundation model must be adapted, and what determines this. We adapted a foundation model, DINOv2, with strategies ranging from tuning only its bias terms to full fine-tuning, and compared it with U-Nets and ResU-Nets trained from scratch. Experiments covered colonoscopy, breast ultrasound and dermoscopy, with testing on held-out data from the training source and on independent datasets from other institutions. The adapted foundation model generalised better on every external dataset. Within the training distribution, the task-specific models remained competitive when training data were abundant, and delineated boundaries more precisely, while the foundation model more often missed small lesions. Only a small fraction of the foundation model required adaptation, and the capacity needed was determined by the imaging domain rather than by the adaptation method. A widely used polyp test set was also found to duplicate images from another benchmark. Foundation-model adaptation is therefore warranted where models must work across sites, with capacity selected on the target domain.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.14519",
+        "pdf": "https://arxiv.org/pdf/2611.14519",
+        "listing_date": "2026-11-11",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
