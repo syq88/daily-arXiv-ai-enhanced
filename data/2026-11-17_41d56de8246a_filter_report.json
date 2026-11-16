@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "41d56de8246aed57bb70802ba5ce50e40cc24cbea5a47c11eb19ff49f534f3b2",
+  "input_count": 77,
+  "kept_count": 62,
+  "excluded_count": 15,
+  "counts_by_reason": {
+    "medical_biological": 10,
+    "remote_sensing": 4,
+    "agriculture_ecology": 1
+  },
+  "kept_ids": [
+    "2611.17400",
+    "2611.17438",
+    "2611.17505",
+    "2611.17585",
+    "2611.17629",
+    "2611.17671",
+    "2611.17695",
+    "2611.17707",
+    "2611.17733",
+    "2611.17752",
+    "2611.17755",
+    "2611.17762",
+    "2611.17767",
+    "2611.17786",
+    "2611.17789",
+    "2611.17821",
+    "2611.17825",
+    "2611.17828",
+    "2611.17831",
+    "2611.17853",
+    "2611.17868",
+    "2611.17881",
+    "2611.17897",
+    "2611.17900",
+    "2611.17903",
+    "2611.17930",
+    "2611.17952",
+    "2611.17957",
+    "2611.17966",
+    "2611.18006",
+    "2611.18023",
+    "2611.18024",
+    "2611.18033",
+    "2611.18053",
+    "2611.18057",
+    "2611.18078",
+    "2611.18099",
+    "2611.18101",
+    "2611.18143",
+    "2611.18170",
+    "2611.18172",
+    "2611.18189",
+    "2611.18240",
+    "2611.18256",
+    "2611.18261",
+    "2611.18324",
+    "2611.18340",
+    "2611.18363",
+    "2611.18417",
+    "2611.18429",
+    "2611.18438",
+    "2611.18482",
+    "2611.18516",
+    "2611.18519",
+    "2611.18549",
+    "2611.18550",
+    "2611.18559",
+    "2611.17442",
+    "2611.17598",
+    "2611.17720",
+    "2611.17751",
+    "2611.18359"
+  ],
+  "excluded": [
+    {
+      "id": "2611.17586",
+      "title": "Where to Predict in Retinal OCT? Anatomy-Guided Target Selection for I-JEPA",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Retinal",
+      "paper": {
+        "id": "2611.17586",
+        "title": "Where to Predict in Retinal OCT? Anatomy-Guided Target Selection for I-JEPA",
+        "authors": [
+          "Yunchu Feng",
+          "Wai Tak Lau",
+          "Kaveri A. Thakoor"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Self-supervised learning aims to learn meaningful representations from unlabeled data, potentially allowing models to capture subtle anatomical variations across patients and reduce the amount of labeled data needed. Image-based Joint-Embedding Predictive Architecture (I-JEPA) learns by predicting target-region representations from visible context rather than reconstructing pixels. However, its uniform target placement does not account for the anatomical structure of retinal OCT, where retinal tissue occupies only part of each B-scan. We investigate anatomy-guided target selection using image intensity and predicted retinal segmentation while retaining the I-JEPA architecture and latent prediction objective. We compare anatomy-guided rectangular targets, anatomy-shaped targets and coverage-constrained placement with uniform masking, and evaluate the learned representations using linear probing for glaucoma classification on FairVision. We found that rectangular targets guided by image intensity achieved the highest linear-probe AUC in our comparisons. We show that anatomically meaningful target selection is promising for retinal OCT representation learning, while greater anatomical specificity did not consistently improve performance.",
+        "comment": "18 pages. Accepted as a poster at the GenAI for Health Workshop at NeurIPS 2026 (non-archival)",
+        "abs": "https://arxiv.org/abs/2611.17586",
+        "pdf": "https://arxiv.org/pdf/2611.17586",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17708",
+      "title": "QCAP-VQA: Question-Conditioned Capped Prior-Mass Supervision for Medical Visual Question Answering",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.17708",
+        "title": "QCAP-VQA: Question-Conditioned Capped Prior-Mass Supervision for Medical Visual Question Answering",
+        "authors": [
+          "Yining Zhao",
+          "Catarina Moreira",
+          "Mukesh Prasad",
+          "Ali Braytee"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical visual question answering models can answer correctly without attending to the anatomy that the question names. Automatic region priors allow spatial supervision without expert masks, but they are noisy, and it is unclear how strongly they should shape attention and how their effect should be verified. We present QCAP-VQA, which supervises a subset of cross-attention heads with a question-conditioned prior built from ranked segmentation proposals. Its capped prior-mass objective penalizes insufficient attention inside the prior only below a threshold. We evaluate attention against SLAKE structure boxes that play no role in training, separating attention on the named anatomy from how attention shifts between questions about the same image. QCAP-VQA matches the accuracy of a baseline without spatial supervision (84.26% vs. 84.23%), and every evaluated prior-supervised model places more attention on the annotated structures. Over a 64-fold range of regularization strength, the capped objective keeps prior mass between 0.67 and 0.77, whereas a pooled region-mass objective drives it to 0.97 and loses accuracy. The cost lies in question conditioning: as the constraint widens or strengthens, attention shifts agree less with the expert-defined contrast. Across 13 configurations, prior-referenced and expert-referenced evaluation rank the models in largely opposite order (Spearman correlation of -0.87), and the capped models it favors track the prior's own errors. Because clinical use of medical visual question answering requires answers grounded in the queried anatomy, supervision from automatic priors should be judged against independent anatomical references.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17708",
+        "pdf": "https://arxiv.org/pdf/2611.17708",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17758",
+      "title": "Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.17758",
+        "title": "Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance",
+        "authors": [
+          "Kwanghee Lee",
+          "Hyeongsub Lee",
+          "Youngwoo Kim",
+          "Hyunji Jeong"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease. MRI-based genotype inference is a potential low-cost complement to genetic testing. However, although many deep learning methods have been developed for classifying various MR images, applying them to ADPKD remains challenging: (1) abdominal MR images are generally too large to be handled by deep learning models designed for smaller images like brain MRI, and (2) the amount of labeled data for ADPKD genetic mutations is insufficient to train deep learning models. In order to address these challenges, we propose E3PN, an efficient 3D MRI-based ADPKD genotype classification network that relies on point sampling and E(3)-invariance. We utilize a point representation of 3D MRI, which consumes less GPU memory than a voxel representation. For further memory efficiency, 3D points are sampled from a mixture distribution over the two kidneys in each image. Since E(3)-invariance has been shown to improve data efficiency, we also incorporate it into our model through coordinate canonicalization. On our ADPKD dataset, E3PN trains 163 times faster and uses 103x less GPU memory than a 3D ResNet, while also improving F1 from 0.165 to 0.226 over both baselines. These results establish a first benchmark for five-way ADPKD genotype classification from 3D MRI and show that point sampling and coordinate canonicalization yield two-orders-of-magnitude efficiency gains with a modest but consistent improvement in F1.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17758",
+        "pdf": "https://arxiv.org/pdf/2611.17758",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17852",
+      "title": "PADSNet: Physics-Aware Dual-Stream Network with Biomechanical Priors for Laryngeal Lesion Classification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Lesion",
+      "paper": {
+        "id": "2611.17852",
+        "title": "PADSNet: Physics-Aware Dual-Stream Network with Biomechanical Priors for Laryngeal Lesion Classification",
+        "authors": [
+          "Zhenzhen You",
+          "Weifeng Yu",
+          "Zhenghao Shi",
+          "Shuangli Du",
+          "Minghua Zhao",
+          "Yingcheng Zhao",
+          "Xinhong Hei",
+          "Demin Kong",
+          "Xiaoyong Ren",
+          "Jin Hou"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Precise classification of laryngeal lesions is clinically crucial yet highly challenging, as inter-class visual differences are often subtle. While abnormalities in vocal fold vibratory dynamics provide complementary discriminative information, existing deep learning models predominantly rely on visual appearance and lack explicit mechanisms for modeling clinically meaningful vibratory dynamics. To address this, we propose PADSNet, a Physics-Aware Dual-Stream Network for laryngeal lesion classification that integrates visual representations with explicit biomechanical reasoning. Specifically, a Wavelet-Attention Enhancement Module (WAEM) is designed to bridge the spectral-semantic gap, enabling complementary learning of spatial texture and dynamic frequency representations. Meanwhile, a Knowledge Computing Module (KCM) extracts interpretable biomechanical indices from temporal glottal distance waveforms, including indicators of mobility, symmetry, glottal closure, and vibration stability. These descriptors are subsequently incorporated into a Physics-Aware Gating Module (PAGM) as biomechanical priors to adaptively recalibrate visual feature toward pathology-relevant vibratory patterns. Extensive experiments on a clinical dataset demonstrate that PADSNet achieves an accuracy of 0.8452, an F1-score of 0.8090, a sensitivity of 0.7953, and a specificity of 0.8866. These results indicate that explicitly integrating biomechanical priors with deep visual representations provides a more accurate, robust, and clinically interpretable framework for automated laryngeal lesion classification.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17852",
+        "pdf": "https://arxiv.org/pdf/2611.17852",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17878",
+      "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Satellite Imagery",
+      "paper": {
+        "id": "2611.17878",
+        "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+        "authors": [
+          "Kailai Sun",
+          "Zijie Gao",
+          "Mingyi He",
+          "Can Rong",
+          "Alok Prakash",
+          "Baoshen Guo",
+          "Shenhao Wang",
+          "Jinhua Zhao"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Cities account for over two-thirds of the world's energy and more than 70% of global carbon dioxide emissions. City energy is essential for achieving the 2050 net-zero target and the UN's Sustainable Development Goals 7 and 11. Although existing studies have made progress, they are limited by data and methodological gaps. Existing studies are largely predictive for existing cities rather than generative for future cities; fine-grained, aligned monthly dynamic energy data are scarce; and existing GenAI models struggle to generate dynamic urban functional monthly energy. We present DySENSE, a joint multimodal GenAI framework that synthesizes static urban satellite imagery together with spatially aligned, dynamic monthly building energy consumption maps. We decouple long-term static urban morphology from short-term dynamic energy consumption. By conditioning on static urban land use, DySENSE can generate realistic, diverse and new static urban imagery with aligned energy maps. By conditioning on dynamic monthly and climate prompts, DySENSE can jointly generate dynamic, monthly energy consumption maps while keeping the urban morphology static. Experiments across four cities (New York, Washington, Norfolk, Busan) demonstrated that DySENSE can generate annotated high-fidelity synthetic energy data using less than 25% labelled data, boosting downstream prediction performance by 8% mIoU, and achieving strong energy dynamic consistency. Compared to existing methods, DySENSE significantly improved prediction performance (8.7% accuracy) and reduced prediction error (9%-18% CVRMSE, ASHRAE). DySENSE offers an effective foundation for energy-efficient cities, peak-load analysis, building performance simulation and dynamic demand response for city, energy, and building science. The data and code: this https URL and this https URL",
+        "comment": "Accpted by KDD 2027",
+        "abs": "https://arxiv.org/abs/2611.17878",
+        "pdf": "https://arxiv.org/pdf/2611.17878",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17899",
+      "title": "More Genes, Faster Inference: Efficient Large-Panel Spatial Transcriptomics Prediction from Histology",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histology",
+      "paper": {
+        "id": "2611.17899",
+        "title": "More Genes, Faster Inference: Efficient Large-Panel Spatial Transcriptomics Prediction from Histology",
+        "authors": [
+          "Songming Zhang",
+          "Yuxiao Luo",
+          "Shifu Luo",
+          "Siran Chen",
+          "Shuquan Su",
+          "Jinyan Li"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "q-bio.QM"
+        ],
+        "summary": "Spatial transcriptomics (ST) prediction from histology aims to infer spatially resolved gene expression profiles directly from tissue images. This is a challenging problem that is currently often addressed with complicated model architectures, additional inputs, and complicated training procedures, while remaining limited to fixed, small gene panels. This raises a natural question: Is there an efficient method for large-panel ST prediction? Here, we present GeneFlow, a simpler yet effective framework for large-scale spatial gene expression prediction that unifies flow-matching generative modeling with structured multimodal fusion. Specifically, GeneFlow first encodes both histological morphology and cross-gene interactions in spatial spots through histology and gene tokenizers. The model directly predicts spatial gene expression, rather than an intermediate velocity field, while being trained with a velocity-based flow-matching objective. We show that, even without relying on heavy generative pipelines, GeneFlow achieves state-of-the-art performance across multiple ST benchmarks, with up to 56.8% gains in 1,000-gene prediction. Extensive experiments further show that GeneFlow produces biologically meaningful spot profiles while reducing computational cost by orders of magnitude, thereby improving efficiency and scalability, particularly in clinical settings. We believe GeneFlow provides an opportunity for leveraging widely available histology images for downstream biological discovery. Code is available at: this https URL",
+        "comment": "Accepted at KDD 2027",
+        "abs": "https://arxiv.org/abs/2611.17899",
+        "pdf": "https://arxiv.org/pdf/2611.17899",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17905",
+      "title": "Cracks in Embeddings: Robustness and Stability of JEPA-Based Chest X-Ray Representations",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.17905",
+        "title": "Cracks in Embeddings: Robustness and Stability of JEPA-Based Chest X-Ray Representations",
+        "authors": [
+          "Zahid Mansur",
+          "Kalpana Yadav",
+          "Deepak Mishra"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Self-supervised Joint Embedding Predictive Architecture (JEPA) models are increasingly used for medical imaging, however there is a limited understanding about robustness of these models toward real-world image changes. We test four JEPA-based chest X-ray encoders, trained on 78,468 NIH ChestX-ray14 images, under six tests: two black-box adversarial attacks (SPSA, Boundary Attack), three image corruptions (Gaussian noise, brightness shift, contrast shift), and a label-scarcity test, measuring embedding change and classification AUROC. These perturbations cause severe, model-dependent damage: encoder-level Cosine Similarity drops as low as 0.33, and AUROC falls by as much as 0.12 in the worst case (I-JEPA under the Boundary Test). We test two ways of training the small predictor on top of each frozen encoder to address this. Adversarial fine-tuning, trained on clean and perturbed images together, raises embedding consistency above 0.97 in nearly every case and improves AUROC, relative to the same perturbed baseline, for most models, with the largest gain of $+0.10$ on I-JEPA. A Vector-Quantized codebook method, trained only on clean images and evaluated on perturbed test images for the first time, instead degrades under distortion for all four models, most noticeably for I-JEPA ($-0.15$ AUROC on average), showing that its discrete bottleneck alone does not provide the robustness that comes from training on perturbed data directly.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17905",
+        "pdf": "https://arxiv.org/pdf/2611.17905",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17909",
+      "title": "CardioTrace: Motion-Aware Cine Synthesis via Coupled Tracing and Segmentation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "clinical",
+      "paper": {
+        "id": "2611.17909",
+        "title": "CardioTrace: Motion-Aware Cine Synthesis via Coupled Tracing and Segmentation",
+        "authors": [
+          "Zhi Chen",
+          "Le Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Cardiac cine MRI provides time-resolved visualization of cardiac motion and is essential for evaluating ventricular function and anatomy. In routine clinical acquisition, however, cine sequences are frequently temporally sparse or degraded by arrhythmia, motion, and scan-time constraints, which can hinder reliable quantification and downstream analysis. We present CardioTrace, a motion-aware cine synthesis framework that generates a full cardiac cine sequence from limited input while explicitly modeling and tracing cardiac motion. CardioTrace couples two complementary pathways: a pixel-translation branch that directly predicts cine frames in a residual formulation, and a flow-field branch that estimates time-resolved deformation fields from a reference phase to provide interpretable motion correspondences across frames. To further preserve anatomical plausibility, a segmentation branch supervises clinically meaningful cardiac structures at key phases, and a cross-branch consistency objective encourages the synthesized appearance dynamics to follow the explicit motion guidance, mitigating temporal drift and unrealistic shape transitions over long sequences. The framework also supports prompt-style conditioning to incorporate auxiliary patient or acquisition information, improving robustness across heterogeneous multi-center data. Experiments on public cardiac cine MRI datasets demonstrate that CardioTrace improves perceptual quality and temporal coherence over representative GAN- and diffusion-based baselines, while better preserving ventricular morphology throughout the cardiac cycle. \\textit{Our codes are available after review}.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17909",
+        "pdf": "https://arxiv.org/pdf/2611.17909",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17919",
+      "title": "Vessel2Brain: Edge-Aware Multi-Scale Flow Matching for 3D Brain Image Generation from Vessel Masks",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.17919",
+        "title": "Vessel2Brain: Edge-Aware Multi-Scale Flow Matching for 3D Brain Image Generation from Vessel Masks",
+        "authors": [
+          "Zhi Chen",
+          "Tianyang Zhang",
+          "Theodoros N. Arvanitis",
+          "Le Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Generating realistic 3D brain MRI volumes from sparse anatomical priors is a highly ill-posed yet clinically valuable problem, with important applications in data augmentation, simulation, and downstream neuroimaging analysis. In this work, we investigate the challenging task of synthesising full 3D brain MRI volumes conditioned solely on vascular label maps. While vascular structures provide strong anatomical and topological cues, they occupy only a small fraction of the brain volume and offer no direct information about surrounding tissue appearance. To address this challenge, we propose Vessel2Brain, an edge-aware multi-scale conditional flow matching framework that explicitly incorporates vascular structure information into the generative process. Our approach formulates vessel-guided brain image synthesis as a conditional continuous flow, enabling stable training and flexible generation while preserving structural correspondence. A multi-scale flow matching strategy is introduced to jointly model global anatomical coherence and fine-grained local details, with auxiliary velocity predictions providing additional supervision across spatial resolutions. Furthermore, we design an edge-aware objective that emphasises vascular boundaries during training, encouraging anatomically faithful tissue synthesis around vessel structures. We evaluate Vessel2Brain on two public 3D brain MRI datasets with paired vascular annotations. Extensive quantitative and qualitative experiments demonstrate that our method consistently outperforms state-of-the-art generative models in terms of reconstruction accuracy, structural consistency, and distributional realism.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17919",
+        "pdf": "https://arxiv.org/pdf/2611.17919",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.17956",
+      "title": "nnAEU: a Simple and Efficient CNN-Autoencoder for Hyperspectral Unmixing",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Hyperspectral",
+      "paper": {
+        "id": "2611.17956",
+        "title": "nnAEU: a Simple and Efficient CNN-Autoencoder for Hyperspectral Unmixing",
+        "authors": [
+          "Edgard Dabier",
+          "Christophe Kervazo",
+          "Pietro Gori",
+          "Florence Tupin"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deep learning-based hyperspectral unmixing (HSU) has followed a trajectory of increasing architectural complexity, from simple autoencoders to transformers and, most recently, Mamba-based models, each claiming to advance the state of the art. Contrary to this trend, we propose a lightweight CNN-based autoencoder, coined \"Not New Autoencoder Unmixing\" (nnAEU). It is derived from the backbone of UNMamba (2025) through a pruning study that removes the Mamba component entirely. nnAEU uses less than 10 times fewer parameters than UNMamba, and far fewer than other transformer- and GAN-based methods, while outperforming them in accuracy. We provide a complete, minimal, reproducible code, available at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.17956",
+        "pdf": "https://arxiv.org/pdf/2611.17956",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.18097",
+      "title": "AG-JEPA: Anatomically Guided Joint Embedding Predictive Architecture for Neurodegenerative Representation Learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "Alzheimers",
+      "paper": {
+        "id": "2611.18097",
+        "title": "AG-JEPA: Anatomically Guided Joint Embedding Predictive Architecture for Neurodegenerative Representation Learning",
+        "authors": [
+          "Azad Singh",
+          "Ayantika Das",
+          "Amog Rao",
+          "Aiman Farooq",
+          "Anirban Porya",
+          "Ananya Shukla",
+          "Sowbhagya Suresh",
+          "Srinivasan Iyengar",
+          "Mohit Jain",
+          "Mercy Prasanna Ranjit"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Brain MRI can reveal early signs of Alzheimers disease (AD) before measurable cognitive decline becomes apparent. However, during the transition from cognitively normal (CN) to mild cognitive impairment (MCI), the disease-related signals are often subtle and confined to only a few brain regions. Existing Joint Embedding Predictive Architecture (JEPA) models learn general structural representations but do not explicitly capture the anatomical regions affected in AD. We propose Anatomically Guided JEPA (AG-JEPA), which introduces anatomical tokens that interact with patch tokens during pretraining to learn region-specific representations from brain regions relevant to neurodegeneration. Building on this representation space, we further propose Prog-AG-JEPA, which models disease progression trajectory as a conditioned latent displacement within this space. We evaluate AG-JEPA across five downstream tasks spanning Alzheimer's disease diagnosis and progression prediction. AG-JEPA improves diagnosis and MCI prognosis, achieving an 8.4 percentage point AUROC gain over the strongest baseline on CN/MCI classification and a 7.1 percentage point gain on out-of-distribution CN/AD classification on the MR-RATE dataset, highlighting its effectiveness across both early-stage detection and cross-cohort generalization. For disease progression modeling, Prog-AG-JEPA consistently outperforms all baselines on future diagnosis and brain volume change prediction, demonstrating the value of anatomically grounded neurodegeneration representations for diagnosis and prognosis.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.18097",
+        "pdf": "https://arxiv.org/pdf/2611.18097",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.18251",
+      "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Satellite Imagery",
+      "paper": {
+        "id": "2611.18251",
+        "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+        "authors": [
+          "Ata Akbari Asanjan",
+          "Anit Upadhyaya",
+          "Jeremy Kravitz",
+          "Subash Yeggina"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision transformer (DINOv3), removes the positional bias in its dense features by projecting them onto the subspace orthogonal to a positional basis estimated once from a constant image, and centers the debiased features on the mean feature computed across the whole area before comparison. Lens forms a query by averaging the centered features of a small neighborhood of patches around a chosen point, or of an entire tile for scene-level search, and matches it against the index by cosine similarity. It stores the centered patch features in a byte-quantized similarity index that supports real-time range search over a mosaic of thousands of patches, and a coarser whole-tile embedding index for scene-level retrieval. A guided upsampling network (AnyUp) runs once per tile to recover pixel-accurate boundaries beyond the native feature grid, and the result is cached so later queries reuse it. We evaluated Lens on the 5,128-tile DFC2020 test set and ran it as an interactive tool on five Sentinel-2 areas spanning agricultural, industrial, and desert terrain; the pipeline is not tied to a specific sensor. On DFC2020 a single click reaches 0.09 to 0.80 pixel F1 across eight land-cover classes at the per-class best threshold, with a mean F1 of 0.39, and it beats a pairwise INSID3 baseline on six of the eight classes at roughly four hundred times lower query cost. Indexing 1.31 million patches takes 169 s on one CPU thread, and a click returns a rendered overlay in 6 to 10 ms.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.18251",
+        "pdf": "https://arxiv.org/pdf/2611.18251",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.18350",
+      "title": "MaskSCD: Bitemporal Mask Classification for Semantic Change Detection in Remote Sensing Images",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.18350",
+        "title": "MaskSCD: Bitemporal Mask Classification for Semantic Change Detection in Remote Sensing Images",
+        "authors": [
+          "Weikang Yu",
+          "Pedram Ghamisi"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Semantic change detection (SCD) identifies where the land surface has changed and which land-cover transition has taken place. Most deep SCD networks predict the change map and the land-cover map of each date with separate per-pixel decoders. These outputs need not agree, so a pixel can be labeled as changed although it has the same class at both dates, and per-pixel decisions fragment objects. We present MaskSCD, which formulates SCD as the mask classification of a bitemporal label-pair image. Each bitemporal segment, a region of constant land-cover class pair, is predicted as one mask shared by both dates together with one class per date, and the change map is derived from the predicted class pair. This formulation keeps the change and semantic maps consistent and the label space linear in the number of classes. A bitemporal masked-attention transformer decoder implements it by reading each segment in both images and relating the two readings, and a bitemporal fusion pyramid provides per-date and change-aware features. MaskSCD is evaluated on SECOND, Landsat-SCD and Hi-UCD, which span 0.1 to 30 m resolution and four to nine land-cover classes, against fourteen recent SCD models re-trained under one protocol. MaskSCD achieves the best separated kappa, semantic change $F_1$ and transition $F_1$ on all three datasets and exceeds the strongest competitor by about five points in mean separated kappa. It produces no contradictory change pixels, which account for nearly 30% of the predicted change of some multi-task networks. The code is available at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.18350",
+        "pdf": "https://arxiv.org/pdf/2611.18350",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.18375",
+      "title": "AI-Based Multi-View Echocardiographic Image Synthesis using Dynamic Shape Control",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Echocardiographic",
+      "paper": {
+        "id": "2611.18375",
+        "title": "AI-Based Multi-View Echocardiographic Image Synthesis using Dynamic Shape Control",
+        "authors": [
+          "João Freitas",
+          "Anca Balinisteanu",
+          "Ahmed Youssef",
+          "Vitor Hugo Pereira",
+          "Jan D'hooge",
+          "Sandro Queirós"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Although automated methods have improved echocardiographic workflows, progress remains constrained by the need for large, well-annotated datasets. As the development of clinical databases is often limited by ethical and logistical challenges, synthetic data generation has emerged as a promising alternative. However, existing approaches commonly rely on left ventricle shape-based supervision or are tailored to specific cardiac views, limiting the generation of additional standard and unconventional imaging planes and the preservation of multi-view consistency across cardiac chambers. To address these limitations, we propose a novel framework for shape-controlled synthesis of multi-view echocardiographic sequences. First, multi-view cross-sections are extracted from dynamic whole-heart meshes. Ultrasound-like appearance is then introduced through a two-stage AI-based pipeline. In Stage 1, an unpaired GAN-diffusion model translates these cross-sections into realistic echocardiographic frames. As this translation is performed independently at the frame level, Stage 2 employs masked video reconstruction to improve temporal coherence and cardiac motion. Evaluation demonstrated high frame-level realism for both stages, while the integration of Stage 2 substantially improved video-level motion quality and temporal consistency. Overall, the proposed framework enables the generation of realistic multi-view echocardiographic sequences from diverse cardiac models, providing a scalable source of annotated data for dataset augmentation and the development of multi-view cardiac assessment methods.",
+        "comment": "5 pages, 2 figures, accepted for publication in the Proceedings of the 2026 IEEE International Ultrasonics Symposium (IUS 2026)",
+        "abs": "https://arxiv.org/abs/2611.18375",
+        "pdf": "https://arxiv.org/pdf/2611.18375",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.18530",
+      "title": "Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Agricultural",
+      "paper": {
+        "id": "2611.18530",
+        "title": "Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction",
+        "authors": [
+          "Abhilekha Dalal",
+          "Avishek Das",
+          "Samatha Ereshi Akkamahadevi"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Convolutional Neural Networks (CNNs) can classify images using background-dominated patches that contain little or none of the target object, showing that they exploit contextual information. Previous studies detected this behavior through classification accuracy but say little about what CNN hidden layers represent. We investigate whether Concept Induction can reveal interpretable visual properties associated with hidden-neuron activations on contextual image patches. Using five agricultural datasets with high, moderate, and low contextual bias, we analyze four CNN architectures at three network depths and five patch locations. Quantitative image descriptors of each patch are encoded in a knowledge graph and used as background knowledge for Concept Induction, which derives logical expressions characterizing neuron activation. These expressions are tested on held-out images using the Mann-Whitney U test and Cliff's delta. Of 48,013 tested neuron-feature pairs, 13,164 (27.4%) were validated. Validation was most frequent at intermediate depths (mean 40.2% at mid layers versus 12.0% at deep layers), and no patch location dominated across datasets. Among the tested descriptors, edge, Gabor, and Tamura texture features had the highest validation rates. Stronger contextual bias did not correspond to higher neuron-feature validation rates: moderately biased Sugarcane had the highest rate (40.5%) and highly biased Cassava the lowest (19.2%). These results suggest that behavioral context dependence and the semantic interpretability of hidden neurons capture different aspects of CNN behavior, and that Concept Induction can complement patch-based bias detection.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.18530",
+        "pdf": "https://arxiv.org/pdf/2611.18530",
+        "listing_date": "2026-11-16",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
