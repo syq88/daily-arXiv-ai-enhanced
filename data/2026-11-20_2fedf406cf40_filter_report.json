@@ -1,0 +1,1027 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "2fedf406cf408808bbdc8288b4add4b4d75ba599ebb1800542f82abb56c7e8aa",
+  "input_count": 197,
+  "kept_count": 171,
+  "excluded_count": 26,
+  "counts_by_reason": {
+    "medical_biological": 18,
+    "remote_sensing": 5,
+    "ai4science": 2,
+    "industrial_applications": 1
+  },
+  "kept_ids": [
+    "2611.23416",
+    "2611.23417",
+    "2611.23432",
+    "2611.23442",
+    "2611.23446",
+    "2611.23450",
+    "2611.23477",
+    "2611.23491",
+    "2611.23513",
+    "2611.23516",
+    "2611.23529",
+    "2611.23554",
+    "2611.23578",
+    "2611.23581",
+    "2611.23591",
+    "2611.23606",
+    "2611.23615",
+    "2611.23616",
+    "2611.23646",
+    "2611.23661",
+    "2611.23670",
+    "2611.23674",
+    "2611.23680",
+    "2611.23695",
+    "2611.23697",
+    "2611.23705",
+    "2611.23717",
+    "2611.23720",
+    "2611.23727",
+    "2611.23736",
+    "2611.23752",
+    "2611.23754",
+    "2611.23755",
+    "2611.23765",
+    "2611.23769",
+    "2611.23770",
+    "2611.23793",
+    "2611.23807",
+    "2611.23808",
+    "2611.23813",
+    "2611.23822",
+    "2611.23845",
+    "2611.23859",
+    "2611.23860",
+    "2611.23865",
+    "2611.23871",
+    "2611.23872",
+    "2611.23881",
+    "2611.23887",
+    "2611.23889",
+    "2611.23891",
+    "2611.23929",
+    "2611.23933",
+    "2611.23934",
+    "2611.23941",
+    "2611.23944",
+    "2611.23946",
+    "2611.23950",
+    "2611.23954",
+    "2611.23958",
+    "2611.23962",
+    "2611.23964",
+    "2611.23970",
+    "2611.23972",
+    "2611.23991",
+    "2611.23994",
+    "2611.23996",
+    "2611.24003",
+    "2611.24007",
+    "2611.24010",
+    "2611.24012",
+    "2611.24038",
+    "2611.24042",
+    "2611.24060",
+    "2611.24077",
+    "2611.24079",
+    "2611.24080",
+    "2611.24084",
+    "2611.24095",
+    "2611.24098",
+    "2611.24102",
+    "2611.24116",
+    "2611.24137",
+    "2611.24145",
+    "2611.24152",
+    "2611.24154",
+    "2611.24157",
+    "2611.24161",
+    "2611.24164",
+    "2611.24170",
+    "2611.24182",
+    "2611.24184",
+    "2611.24190",
+    "2611.24192",
+    "2611.24193",
+    "2611.24200",
+    "2611.24212",
+    "2611.24222",
+    "2611.24223",
+    "2611.24233",
+    "2611.24240",
+    "2611.24243",
+    "2611.24247",
+    "2611.24253",
+    "2611.24256",
+    "2611.24259",
+    "2611.24267",
+    "2611.24277",
+    "2611.24284",
+    "2611.24296",
+    "2611.24316",
+    "2611.24327",
+    "2611.24330",
+    "2611.24352",
+    "2611.24371",
+    "2611.24373",
+    "2611.24380",
+    "2611.24384",
+    "2611.24404",
+    "2611.24408",
+    "2611.24410",
+    "2611.24419",
+    "2611.24431",
+    "2611.24433",
+    "2611.24445",
+    "2611.24451",
+    "2611.24457",
+    "2611.24479",
+    "2611.24512",
+    "2611.24521",
+    "2611.24524",
+    "2611.24558",
+    "2611.24565",
+    "2611.24578",
+    "2611.24579",
+    "2611.24616",
+    "2611.24633",
+    "2611.24643",
+    "2611.24672",
+    "2611.24681",
+    "2611.24696",
+    "2611.24706",
+    "2611.24719",
+    "2611.24726",
+    "2611.24731",
+    "2611.24738",
+    "2611.24762",
+    "2611.24785",
+    "2611.24792",
+    "2611.24793",
+    "2611.24795",
+    "2611.24805",
+    "2611.24806",
+    "2611.24840",
+    "2611.24862",
+    "2611.24864",
+    "2611.24915",
+    "2611.24917",
+    "2611.24941",
+    "2611.23517",
+    "2611.23620",
+    "2611.23855",
+    "2611.23935",
+    "2611.24011",
+    "2611.24074",
+    "2611.24138",
+    "2611.24171",
+    "2611.24360",
+    "2611.24494",
+    "2611.24778",
+    "2611.24940"
+  ],
+  "excluded": [
+    {
+      "id": "2611.23484",
+      "title": "Reference-Guided Data Curation for 3D Medical Vision-Language Pretraining",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.23484",
+        "title": "Reference-Guided Data Curation for 3D Medical Vision-Language Pretraining",
+        "authors": [
+          "Faidra Patsatzi",
+          "Ashwin Kumar",
+          "Chong Wang",
+          "Curtis P. Langlotz",
+          "Reinhard Heckel",
+          "Akshay S. Chaudhari"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Training 3D vision-language models (VLMs) on large medical imaging datasets collected across institutions is constrained by data quality. Vast, uncurated pools of image-report pairs are characterized by redundancy, class imbalance, and cross-institutional heterogeneity. We address this challenge of data curation for improving 3D VLM pretraining by proposing an offline, training-free, reference-guided data curation recipe. Our approach leverages a small, high-quality reference set to independently extract quality signals for each modality of a large, uncurated pool and merges them through a rank-aggregation step into a single ranking that guides sample selection. We validate this method on datasets comprising 35k 3D abdominal CT volume-report pairs from two institutions and 58k 2D chest X-ray image-report pairs. On 3D CT, using our reference-guided data curation strategy, our curated model matches the zero-shot disease classification performance of a state-of-the-art baseline (Merlin) while using $3.3\\times$ less training data and a reference set of 5k samples. On 2D chest X-rays, our method yields a curated model that matches or exceeds the zero-shot disease classification performance of a model trained on the full pool while using up to $10\\times$ less training data and a reference set of only 74 samples. Ablations show that the selection is stable under resampling of the reference, that smaller reference sets still outperform random sampling, and that label rebalancing does not improve performance. To support reproducibility, we release our code.",
+        "comment": "Accepted at WACV 2027. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.23484",
+        "pdf": "https://arxiv.org/pdf/2611.23484",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23501",
+      "title": "MedHarness: A Unified Budgeted Runtime for Reliable Medical Imaging Agents",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.23501",
+        "title": "MedHarness: A Unified Budgeted Runtime for Reliable Medical Imaging Agents",
+        "authors": [
+          "Haofan Wu",
+          "Le Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Medical imaging agents already return answers on heterogeneous imaging surfaces, yet deployment still faces a limited verification budget where each wrong accept can harm clinical trust. When a thin check and a deeper evidence pass disagree on the same case, deciding when to stop, open more evidence, repair, or reject without a shared controller remains ill-posed. Tool-using workflows often lock a surface-specific evidence order per dataset, or a private always-open full-depth verification path; those pipelines stay costly, leave many wrong accepts, and cannot share one controller across modalities. We present MedHarness, a registered multi-surface runtime reliability layer that reformulates post-answer control as shared decision-object attachment after a proposer's initial prediction. Under Shared Decision Object, Minimum-Sufficient Verification, and Intermediate Repair, one shared policy with surface recipe adapters lets a new imaging surface join the same stop / open-evidence / repair / reject controller by recipe registration. On a 512-case live pool, MedHarness cuts wrong accepts versus a full-verification baseline by about 47% and raises accepted accuracy to 83.2% vs. 72.9% at 86.1% coverage versus full release under that baseline. On a failure-enriched multi-surface stress ranking, the same controller cuts estimated remote service calls per case by about 71% versus that baseline under a matched context-load setting. A held-out three-surface check and an alternate language-model transfer keep the same control ordering. The code is available at this https URL.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.23501",
+        "pdf": "https://arxiv.org/pdf/2611.23501",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23672",
+      "title": "Image-Condition-Controlled Diffusion Network with Large-Scale CT Pretraining for CT-Free Attenuation Correction in Dynamic Cardiac PET",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "Clinical",
+      "paper": {
+        "id": "2611.23672",
+        "title": "Image-Condition-Controlled Diffusion Network with Large-Scale CT Pretraining for CT-Free Attenuation Correction in Dynamic Cardiac PET",
+        "authors": [
+          "Zhejia Zhang",
+          "Scott M. Leonard",
+          "Jinkui Hao",
+          "Ryan J. Avery",
+          "Richard L. Weinberg",
+          "Bo Zhou"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Positron emission tomography (PET) provides quantitative information on myocardial perfusion. In dynamic PET, tracer kinetics are tracked through a series of reconstructed time frames. Reliable attenuation correction is essential for accurate measurements. Clinical attenuation maps ($\\mu$-maps) are typically derived from computed tomography (CT), which adds radiation exposure and may introduce PET-CT misregistration due to respiratory and cardiac motion. Moreover, supervised CT-free methods rely on paired non-attenuation-corrected (NAC) PET and CT data, which are scarce, whereas large-scale unpaired CT data are more readily available. To address these challenges, we propose Large-scale Unpaired CT-Informed Diffusion (LUCID), a framework that transfers anatomical priors learned from 10,000 chest CT volumes in the public CT-RATE dataset to $\\mu$-map synthesis for dynamic cardiac $^{82}$Rb PET. First, a convolutional neural network (CNN) predicts an initial $\\mu$-map from each NAC PET frame. Second, the CT-pretrained diffusion backbone refines a low-noise perturbation of the CNN prediction through a single denoising step, conditioned on the corresponding NAC PET frame via ControlNet. Finally, frame-wise predictions are averaged voxel-wise to obtain the final $\\mu$-map. We further introduce the voxel-wise temporal standard deviation (TSD) to quantify inter-frame variability without requiring a reference $\\mu$-map. We evaluated LUCID on an in-house dataset of 102 patients and found that it achieved the best quantitative accuracy while maintaining competitive inter-frame consistency. Ablation studies showed that refinement with a diffusion backbone pretrained on in-house CT data from the training patients was less accurate than the CNN prediction alone, highlighting the importance of large-scale CT pretraining.",
+        "comment": "11 pages, 6 figures, 3 tables. Submitted to IEEE Transactions on Radiation and Plasma Medical Sciences",
+        "abs": "https://arxiv.org/abs/2611.23672",
+        "pdf": "https://arxiv.org/pdf/2611.23672",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23781",
+      "title": "When accuracy hides risk: risk-controlled confirmation of the critical view of safety under expert disagreement",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "laparoscopic",
+      "paper": {
+        "id": "2611.23781",
+        "title": "When accuracy hides risk: risk-controlled confirmation of the critical view of safety under expert disagreement",
+        "authors": [
+          "Bowen Xiang",
+          "Xiao Yu",
+          "Mingze Xu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Automated assessment of the critical view of safety (CVS) in laparoscopic cholecystectomy has advanced rapidly, but a deployed check must decide, before the first clip, whether to confirm CVS. The standard rule calibrates a threshold so that false confirmations are rare on average. We show that this rule concentrates its errors on disputed videos, which one of three expert raters judged sufficient, and that the failure is structural. When reference labels are votes of a panel sampled from a larger expert pool, the rule that maximizes sensitivity at a fixed average false-confirmation rate also maximizes false confirmation of disputed videos, and for recognizers that recover expert judgement with less noise this rate rises with accuracy. We propose certified confirmation, a risk-controlled monitoring rule whose threshold is selected by multiple testing so that, with probability at least 1 - {\\delta}, false confirmation is at most {\\alpha} overall, among disputed videos, within vendor and country groups, and before CVS is visible, using disputed labels only to calibrate. In a pre-specified, hash-locked evaluation on the 300 test videos (18 countries) of the SAGES CVS Challenge, standard calibration falsely confirmed 8 of 39 disputed videos (0.21; one-sided p = 0.037 against {\\alpha} = 0.10), whereas certified confirmation confirmed 2 (one-sided 95% upper bound 0.15). On development data, protection held for vendor and country groups left out of calibration. The cost was confirming 10% rather than 35% of sufficient videos on time. Average accuracy hides this risk; disputed cases must be protected explicitly.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.23781",
+        "pdf": "https://arxiv.org/pdf/2611.23781",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23840",
+      "title": "TOGBench: Benchmarking and Improving Tiny-Object Generation Fidelity in Aerial Imagery",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Aerial Imagery",
+      "paper": {
+        "id": "2611.23840",
+        "title": "TOGBench: Benchmarking and Improving Tiny-Object Generation Fidelity in Aerial Imagery",
+        "authors": [
+          "Chanhwi Jeong",
+          "Dongmin You",
+          "Seungwook Kim"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Advances in deep generative models now enable the synthesis of realistic imagery. However, aerial imagery is dominated by tiny objects, such as vehicles, ships, and aircraft, which occupy only a few pixels owing to the overhead, wide-area nature of aerial imaging. Existing generative models struggle substantially more with tiny objects than with larger ones. This limitation has been overlooked, as prior work on generative evaluation emphasizes prompt following or human preference rather than whether small objects are rendered faithfully. To address this gap, we introduce TOGBench, a quantitative, object-level benchmark for evaluating tiny-object generation fidelity in aerial imagery. We further propose two simple train-/inference-time techniques that improve the ability of layout-to-image generators to render small objects, raising their performance on TOGBench.",
+        "comment": "Accepted to WACV 2027 Round 2. 20 pages, 7 figures",
+        "abs": "https://arxiv.org/abs/2611.23840",
+        "pdf": "https://arxiv.org/pdf/2611.23840",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23862",
+      "title": "Grounding Radiology Reports in 3D Chest CT: Results of the ReXGrounding Challenge",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Radiology",
+      "paper": {
+        "id": "2611.23862",
+        "title": "Grounding Radiology Reports in 3D Chest CT: Results of the ReXGrounding Challenge",
+        "authors": [
+          "Mohammed Baharoon",
+          "Mahmoud Hussain Alabbad",
+          "Sung Eun Kim",
+          "Xiaoman Zhang",
+          "Lucas Bijnens",
+          "Zirong Chen",
+          "Jiayu Wang",
+          "Xi Ouyang",
+          "Mingyang Yu",
+          "Weiqiu Jin",
+          "Xiaodan Ye",
+          "Dijia Wu",
+          "Kwang-Hyun Uhm",
+          "Inhwa Son",
+          "Rachel van 't Hull",
+          "Tim Veenboer",
+          "Cees Snoek",
+          "Kevin Groot Lipman",
+          "Daesung Kim",
+          "Junha Im",
+          "Youngjun Jun",
+          "Sangwon Lee",
+          "Katelyn Morrison",
+          "Adam Perer",
+          "Mijin Yun",
+          "Ali Piracha",
+          "Reem Alwasiah",
+          "Talal Yahyan",
+          "Abdulrahman Alamoudi",
+          "Mashael Alshehri",
+          "Rayan Alsager",
+          "Hannah Hancock",
+          "Anna M. Hunkemöller",
+          "Peter Youssef",
+          "Mona A. Alhammad",
+          "Afnan Aljumayan",
+          "Brecht Van Berkel",
+          "Eric Bijnens",
+          "Saud Alhussain",
+          "Maarten Steyvers",
+          "Rolf Symons",
+          "Bryan Eelen",
+          "Ayed Alaklubi",
+          "Maha Buraykan Alshammari",
+          "Amirah Fahad Alshammeri",
+          "Tomas Gilvydis",
+          "Ibrahim AlTurki",
+          "Monerah Almohideb",
+          "Ali Alburkani",
+          "Shahad Alhomaiani",
+          "Fatima Jabali",
+          "Maximilian Rokuss",
+          "Moritz Langenberg",
+          "Yannick Kirchhoff",
+          "Benjamin Hamm",
+          "Klaus Maier-Hein",
+          "Ibrahim Ethem Hamamci",
+          "Sezgin Er",
+          "Michael Moritz",
+          "Hassan R. Alomaish",
+          "Luyang Luo",
+          "Pranav Rajpurkar"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Segmenting each reported finding in a radiology scan would allow findings to be measured and tracked over time and let AI systems generate reports that are verifiable, but so far AI models have performed poorly at this task. To advance this task, we organized the ReXGrounding Challenge at MICCAI 2026, the first challenge dedicated to it. Given a non-contrast chest CT scan and the set of findings from its report, participants trained models to produce the corresponding set of 3D segmentations. The challenge used 2,992 training and 200 validation scans from the ReXGroundingCT dataset, and evaluated methods on a held-out test set of 300 scans with 582 findings, exhaustively annotated by board-certified radiologists. In total, 48 teams from 15 countries made 760 submissions, and the best method reached a Dice of 0.375 and a hit rate of 0.77, matching agreement between two independent radiologist groups (Dice 0.32, hit rate 0.76, on a 50-scan subset). On the 100 scans of the pre-challenge benchmark, the winner reached a Dice of 0.390, against 0.285 for VoxTell, the best model before the challenge, which five of the six best teams fine-tuned. Non-focal findings remained far harder to segment than focal ones, instance F1 stayed below inter-reader agreement (0.34 vs. 0.47), and models sometimes segmented the right abnormality in the wrong location. Top methods thus match radiologist agreement in Dice, but non-focal findings, findings with multiple instances, and adherence to the anatomical location described in the text remain open problems.",
+        "comment": "25 pages, 13 figures, 4 tables",
+        "abs": "https://arxiv.org/abs/2611.23862",
+        "pdf": "https://arxiv.org/pdf/2611.23862",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.23953",
+      "title": "MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Single-Cell",
+      "paper": {
+        "id": "2611.23953",
+        "title": "MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation",
+        "authors": [
+          "Ting Long",
+          "Xiaojing Sun",
+          "Cheng Han",
+          "Zhicheng Ji",
+          "Yingnian Wu",
+          "Jiebo Luo",
+          "Heng Fan",
+          "Dongfang Liu"
+        ],
+        "categories": [
+          "cs.CV",
+          "q-bio.QM"
+        ],
+        "summary": "A cell observed after a gene knockdown has an uncertain future, both in how its appearance will evolve and when it will divide. Existing approaches predict endpoints or population-level changes without jointly modeling individual trajectories and division timing. In this work, we present MitoWorld, a stochastic world model that generates these future appearances as continuous evolution in a Gaussian reference latent, terminated by a division hazard and converted into images by a conditional diffusion renderer. The ordinary transition provably preserves its Gaussian reference, tying its noise to its dynamics; paired observations identify its discrete transition where stationary marginals cannot. The hazard turns division timing into a survival likelihood that can be tested against real cycle lengths. On 325 held-out MitoCheck tracks spanning 17 knockdowns and a control, MitoWorld lowers FID by 34.6\\% and the video metric JEDi by 45.6\\% relative to the strongest baselines. Its latent-space prediction intervals achieve near-nominal 90\\% coverage, are 35\\% narrower than those of a model with freely fitted noise. The hazard also yields cell-cycle length distributions with KS distance close to the model-based finite-sample reference. Testable single-cell stochastic dynamics thus offer a generative tool for time-lapse perturbation screens.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.23953",
+        "pdf": "https://arxiv.org/pdf/2611.23953",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24002",
+      "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.24002",
+        "title": "ProtoBridge-CLIP: Observation-Masked Finding Prototypes for Medical Image--Report Representation Learning",
+        "authors": [
+          "Jinrui Wu",
+          "Yun Peng"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Radiology reports distinguish affirmed findings, explicit negations, and unmentioned concepts, but conventional global image--report contrastive learning often compresses these different evidence states into a single study-level target. We introduce \\model{}, which combines symmetric global image--report alignment with observation-masked finding supervision and a soft relation objective over affirmed report concepts. Text-derived finding prototypes are aligned with local visual tokens, while uncertain and unmentioned concepts are excluded from direct finding labels. We evaluate the framework on three CT benchmarks and five chest-radiograph benchmarks, together with component ablations, paired and clinical retrieval, localization, perturbation robustness, calibration, and per-finding analyses. \\model{} achieves macro-AUROC values of 73.6%, 66.5\\%, and 68.8% on CT-RATE, RAD-ChestCT, and INSPECT, and 80.2%, 91.4%, 78.5%, 86.5%, and 90.8% on ChestXray14, CheXpert, PadChest, RSNA, and SIIM-ACR, respectively. Relative to the matched global-only controls, the findings and relation objectives yield consistent gains across the evaluated datasets. These results demonstrate the practical value of treating observed and unobserved report concepts differently during medical image--text representation learning.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24002",
+        "pdf": "https://arxiv.org/pdf/2611.24002",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24016",
+      "title": "Rethinking Contrastive Targets in Radiology Language-Image Pretraining",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Radiology",
+      "paper": {
+        "id": "2611.24016",
+        "title": "Rethinking Contrastive Targets in Radiology Language-Image Pretraining",
+        "authors": [
+          "Yunhe Gao",
+          "Ashwin Kumar",
+          "Jiaming Liu",
+          "Chong Wang",
+          "Maya Varma",
+          "Fuying Wang",
+          "Stefania L. Moroianu",
+          "Louisa Fay",
+          "Sergios Gatidis",
+          "Akshay S. Chaudhari",
+          "Curtis Langlotz"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "CLIP-style contrastive image-text pretraining is widely used in radiology data, where each image is paired with one report and every other report in the batch is treated as a negative. Under this recipe, two failures appear, neither of which is systematically addressed by existing contrastive learning theory: zero-shot evaluation peaks then degrades while training loss keeps decreasing, and training fails to learn from large batches. We hypothesize the cause is structural rather than radiology-specific: many unpaired reports share clinical findings with a given image, so CLIP's paired-identity target is systematically biased, not merely noisy. To test this, we construct CLEVR-Radiology, a synthetic testbed that preserves only this overlapping-fact structure and reproduces both failures. With evidence that the structure is sufficient to reproduce the failures, we develop a target-misspecification theory that explains both failures from a single deterministic gradient bias amplified by batch size, and use it to motivate a minimal compatibility-based correction, CorLIP: text is treated as positive whenever its clinical assertions agree with the image, with no architecture changes. Beyond benchmark improvements, CorLIP largely removes the post-peak degradation, makes large-batch training succeed where it previously collapsed, substantially amplifies the gains from more data, and is the only configuration that remains stable up to B=2048. The correction transfers from chest X-ray to 3D CT modalities.",
+        "comment": "NeurIPS 2026",
+        "abs": "https://arxiv.org/abs/2611.24016",
+        "pdf": "https://arxiv.org/pdf/2611.24016",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24018",
+      "title": "Semi-Supervised GAN-Based Segmentation of CTPA Scans for Pulmonary Emboli Boundary Extraction",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "angiography",
+      "paper": {
+        "id": "2611.24018",
+        "title": "Semi-Supervised GAN-Based Segmentation of CTPA Scans for Pulmonary Emboli Boundary Extraction",
+        "authors": [
+          "Maria Thoma",
+          "Michalis Savelonas",
+          "Foteini Malli",
+          "Dimitris Iakovidis"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Pulmonary embolism (PE) is a pulmonary vascular disease associated with high morbidity and mortality, where delayed diagnosis can be fatal. While computed tomography pulmonary angiography (CTPA) is the clinical gold standard for PE detection, interpreting these scans manually is time-consuming and error-prone. In this work, we propose a semi-supervised segmentation method, employing generative adversarial networks (GANs) to leverage large pools of unlabeled CTPA scans. The proposed method addresses more effectively the challenges of CTPA image segmentation than previous methods by employing the dice loss and the cross-entropy loss to tackle the highly imbalanced nature of CTPA scans, the feature matching loss to encourage the generator to produce anatomically plausible segmentation maps that are indistinguishable from ground truth, as well as the self-training loss to reinforce learning from highly-confident pseudo-labeled samples. The experimental evaluation on a publicly available dataset shows that the proposed method maintains accurate segmentation, despite a limited number of labeled CTPA scans. with a Dice coefficient of 88.75% and a 95th percentile Hausdorff distance (HD95) of 1.74, outperforming fully supervised baselines.",
+        "comment": "2026 IEEE 39th International Symposium on Computer-Based Medical Systems (CBMS), Limassol, Cyprus",
+        "abs": "https://arxiv.org/abs/2611.24018",
+        "pdf": "https://arxiv.org/pdf/2611.24018",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24023",
+      "title": "STAR++: A Physical-Aware Benchmark and Framework for Astronomical Super-Resolution across Multiple Filters",
+      "exclude": true,
+      "reason": "ai4science",
+      "label": "AI4Science 专项应用",
+      "field": "title",
+      "matched_text": "Astronomical",
+      "paper": {
+        "id": "2611.24023",
+        "title": "STAR++: A Physical-Aware Benchmark and Framework for Astronomical Super-Resolution across Multiple Filters",
+        "authors": [
+          "Guohang Zhuang",
+          "Jiaze Li",
+          "Kuo-cheng Wu",
+          "Hao Du",
+          "Jinyang Huang",
+          "Xiang Zhang",
+          "Wanli Ouyang",
+          "Yan Lu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Astronomical super-resolution (ASR) aims to reconstruct high-resolution star fields from low-resolution telescope observations across multiple filters for astrophysical analysis. However, developing a physics-aware ASR framework faces two challenges: 1) Data view: no large-scale benchmark supports field-level ASR, especially on unseen filters. 2) Method view: Existing ASR methods often fail to preserve stellar flux across spatial resolutions. Moreover, ASR requires reconstructing high-frequency components, including accurate star locations and profiles, making it more ill-posed than natural-image SR. To tackle these problems, we introduce STAR++, a large-scale benchmark comprising approximately 1.7 million flux-consistent image pairs across 36 filters, derived from Hubble Space Telescope (HST) observations. STAR++ uses a flux-preserving data generation pipeline to ensure photometric consistency across resolutions and provides the Flux Error (FE) metric to evaluate ASR models from a physical perspective. To address method-level challenges, we propose a Flux-Invariant Super-Resolution Plus (FISR++) model that generalizes to unseen filters while accurately reconstructing flux-consistent high-resolution images. Beyond the flux-preserving modules, FISR++ introduces two novel components. Specifically, a Filter-Aware Adapter (FAA) incorporates filter metadata to adapt image representations to varying spectral and optical conditions. In addition, a Spatial Ambiguity Disentangle Loss (SADL) models spatial ambiguity as pixel-shift uncertainty, mitigating the smoothing of learned conditional mean reconstructions caused by this ambiguity. Extensive experiments demonstrate that FISR++ consistently outperforms existing ASR methods in reconstruction quality and flux accuracy, while generalizing to unseen filters, highlighting its effectiveness for photometrically faithful ASR.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24023",
+        "pdf": "https://arxiv.org/pdf/2611.24023",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24068",
+      "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote-Sensing",
+      "paper": {
+        "id": "2611.24068",
+        "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
+        "authors": [
+          "Jun Wang",
+          "Fengpeng Li",
+          "Wei Han",
+          "Yuxuan Li",
+          "Tianjin Huang",
+          "Jining Yan",
+          "Sheng Wang",
+          "Kan Sun",
+          "Lizhe Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 questions based on hyperspectral imagery across three dimensions: reasoning reliability, prior_evidence contrast, and spectral discrimination. It covers ten task types, with both multiple-choice and open-ended response formats. Integrating hyperspectral satellite imagery with geological annotations and verified evidence, HyGeoBench examines reasoning errors, conflicts between geological priors and visual evidence, and cross-band inconsistencies. Evaluations reveal limitations in fine-grained recognition and evidence-grounded interpretation. To address these challenges, we propose HyGeoAgent, a tool-augmented framework integrating region observation, text knowledge retrieval, same-band image retrieval, and native PCA analysis through adaptive tool use. Experiments demonstrate consistent improvements over the corresponding base models, improving geological image interpretation across diagnostic dimensions.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24068",
+        "pdf": "https://arxiv.org/pdf/2611.24068",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24081",
+      "title": "Learning Where and How Much to Sample: Volume-Adaptive k-Space Acquisition for Accelerated MRI",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.24081",
+        "title": "Learning Where and How Much to Sample: Volume-Adaptive k-Space Acquisition for Accelerated MRI",
+        "authors": [
+          "Reyhaneh Neshatavar",
+          "Mohsen Yavartanoo",
+          "Kyoung Mu Lee"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Magnetic resonance imaging (MRI) is an essential medical imaging technique, but its high costs and long acquisition times can limit accessibility. Accelerated MRI reduces acquisition time through k-space undersampling, yet conventional methods often rely on predefined sampling patterns and uniform slice budgets, overlooking anatomical variations and inter-slice relationships. In this paper, we propose a volume-adaptive k-space acquisition framework that jointly learns where and how much to sample across an entire MRI volume. Using only acquired auto-calibration signal (ACS) measurements, our method exploits volume-wide anatomical information to adaptively allocate sampling budgets across slices while identifying informative k-space lines. A learned joint slice--frequency refinement module coordinates sampling decisions while preserving an exact total volume-level acquisition budget. To reconstruct the acquired measurements, we design a sensitivity-aware synchronous cross-slice reconstruction network that estimates coil sensitivities from ACS measurements and progressively refines neighboring-slice reconstructions while enforcing hard k-space data consistency. Both networks are jointly optimized using reconstruction-based supervision without requiring fully sampled k-space at inference. Experiments on knee and brain MRI across multiple contrasts and acceleration factors demonstrate the adaptive behavior of our acquisition framework and evaluate its reconstruction performance.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24081",
+        "pdf": "https://arxiv.org/pdf/2611.24081",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24104",
+      "title": "SCOPE: Single-Cell Omics Prediction from Histology via RNA-Protein Prior Enhancement",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histology",
+      "paper": {
+        "id": "2611.24104",
+        "title": "SCOPE: Single-Cell Omics Prediction from Histology via RNA-Protein Prior Enhancement",
+        "authors": [
+          "Leyang Tao",
+          "Xuan Gong",
+          "Luyuan Xie",
+          "Arjun Beniwal",
+          "Yuqi Tan",
+          "Kun-Hsing Yu"
+        ],
+        "categories": [
+          "cs.CV",
+          "q-bio.GN"
+        ],
+        "summary": "Predicting the RNA and protein content of cells from routine H&E images could extend spatial molecular profiling to existing slide archives. However, both H&E-spatial proteomics and H&E-spatial transcriptomics paired datasets are limited by the number of available markers and the insufficient availability of high-quality, cell-resolved data. We present SCOPE (Single-Cell Omics Prediction via RNA-protein prior Enhancement), a unified framework that leverages biologically complementary information between RNA and proteins to address the limited availability of single-omics supervision. Our key insight is that, although RNA and proteins represent distinct molecular modalities, their biological relationships provide valuable shared knowledge that can benefit single-omics prediction tasks. To this end, SCOPE introduces biologically informed biomarker priors to enhance shared gene-level representations, enabling knowledge transfer across RNA and protein modalities through gene-protein correspondence and molecular associations. By exploiting these complementary relationships, SCOPE enables both prediction tasks to benefit from a shared backbone enriched with cross-omics biological knowledge. Furthermore, its biomarker correlation design facilitates the prediction of unseen markers, extending spatially resolved molecular profiling beyond directly supervised targets. Across test datasets spanning 16 organs, SCOPE improves the average RNA Pearson correlation over the strongest baseline by 8.8%. On two external protein cohorts, it improves the average Pearson correlation over the strongest baseline by 9.7% for seen markers and 11.9% for unseen markers.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24104",
+        "pdf": "https://arxiv.org/pdf/2611.24104",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24122",
+      "title": "How Well Do Generalist CT Foundation Models Differentiate Liver Tumors?",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumors",
+      "paper": {
+        "id": "2611.24122",
+        "title": "How Well Do Generalist CT Foundation Models Differentiate Liver Tumors?",
+        "authors": [
+          "Yosuke Yamagishi",
+          "Tomohiro Kikuchi",
+          "Shouhei Hanaoka",
+          "Takeharu Yoshikawa",
+          "Osamu Abe"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Generalist CT foundation models detect many findings with high performance, but their ability to differentiate detected lesions remains largely unevaluated. This retrospective study evaluated two generalist models, RADAR and Merlin, for differentiating liver tumors using a public single-institution multiphase CT dataset (517 cases: hepatocellular carcinoma, intrahepatic cholangiocarcinoma, breast and colorectal cancer liver metastases, and hemangioma). The models were evaluated in a zero-shot setting using their existing outputs and with linear probing, in which only a linear classifier was trained on frozen image features (stratified fivefold cross-validation repeated five times). In the zero-shot setting, RADAR achieved an accuracy of 54.4% (95% CI: 49.9, 58.8) and a $\\kappa$ of 0.37 for four-class differentiation at the portal venous phase and predicted 31% (129 of 421) of malignant tumors as hemangioma. With linear probing of four-phase features, its accuracy improved to 79.9% (95% CI: 76.6, 83.4) with a $\\kappa$ of 0.72, and 1% (five of 421) of malignant tumors were predicted as hemangioma; Merlin achieved an accuracy of 60.9% (95% CI: 56.9, 65.0). Generalist CT foundation models showed limited zero-shot ability to differentiate liver tumors, which improved substantially with linear probing alone.",
+        "comment": "12 pages, 3 figures. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.24122",
+        "pdf": "https://arxiv.org/pdf/2611.24122",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24163",
+      "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "EEG",
+      "paper": {
+        "id": "2611.24163",
+        "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
+        "authors": [
+          "YaoYang Liu",
+          "ZhuoShi Tang",
+          "Haopeng Lai",
+          "Weijun Sun",
+          "Xiaozhao Fang",
+          "Jie Wen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Visual neural decoding aims to infer perceived visual stimuli from brain activity, offering important insights into human visual cognition while enabling transformative applications in brain computer interfaces and artificial intelligence. Recent advances in pretrained vision-language models have provided a semantically rich representation space for this task. However, reliable alignment between EEG/MEG signals and visual embeddings remains challenging because neural responses are noisy, highly variable across trials, and subject dependent. To address this issue, we propose a unified neural-to-image retrieval framework that improves retrieval performance by aligning neural and image representations in a shared semantic space. The framework integrates dual-stream adaptation, frequency-domain calibration, and phase-guided temperature modulation to promote more robust cross-modal semantic alignment. Specifically, dual-stream adaptation models a low-dimensional shared subspace with correlation regularization to suppress redundant noise and enhance cross-modal consistency. Frequency-domain calibration conditionally modulates neural representations using amplitude and phase statistics. Phase-guided temperature modulation further adjusts the supervision strength in contrastive learning according to the stability of neural responses. Experiments on THINGS-EEG and THINGS-MEG under both intra-subject and inter-subject settings demonstrate that the proposed framework consistently outperforms strong baselines. These results suggest that robust neural-to-image retrieval under heterogeneous neural conditions benefits from a stable shared semantic space, frequency-informed representation calibration, and adaptive supervision. Code will be released at this http URL.",
+        "comment": "12 pages",
+        "abs": "https://arxiv.org/abs/2611.24163",
+        "pdf": "https://arxiv.org/pdf/2611.24163",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24197",
+      "title": "From Neural Tokens to Language: Dual-View EEG Semantic Bridging for Brain-to-Text Generation",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "EEG",
+      "paper": {
+        "id": "2611.24197",
+        "title": "From Neural Tokens to Language: Dual-View EEG Semantic Bridging for Brain-to-Text Generation",
+        "authors": [
+          "YaoYang Liu",
+          "Jun Dai",
+          "ZhuoShi Tang",
+          "Weijun Sun",
+          "Xiaozhao Fang",
+          "Jie Wen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Visually evoked EEG-to-text generation aims to produce natural-language descriptions from neural responses elicited by visual stimuli. Existing approaches typically compress EEG signals into a single global representation and directly project it into the hidden space of a large language model (LLM), which may limit the preservation of complementary visual semantics under noisy and subject-dependent EEG signals. We propose a dual-view semantic token bridging framework that exploits raw images and sketch images as complementary visual supervision to learn raw-oriented and sketch-oriented EEG semantic token streams. To interface these structured neural representations with an LLM, we introduce a branch-specific semantic query bridge that aggregates each token stream into compact semantic slots and converts them into LLM-compatible soft prompts. A progressive adaptation strategy further transitions the learned visual-semantic interface from image-supported training to image-free EEG-conditioned generation. Experiments demonstrate strong subject-wise EEG classification performance and competitive EEG-to-text generation across multiple LLM backbones. Ablation, branch-level representation, and EEG-label disentanglement analyses further show that the two EEG streams learn complementary view-oriented representations and that EEG-derived prompts provide sample-specific information beyond category labels.",
+        "comment": "30 pages, 15 pages of supplementary material",
+        "abs": "https://arxiv.org/abs/2611.24197",
+        "pdf": "https://arxiv.org/pdf/2611.24197",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24366",
+      "title": "SCOUT: Risk-Guided Foundation-Model Escalation for Robust Tissue Detection in Whole-Slide Images",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Whole-Slide",
+      "paper": {
+        "id": "2611.24366",
+        "title": "SCOUT: Risk-Guided Foundation-Model Escalation for Robust Tissue Detection in Whole-Slide Images",
+        "authors": [
+          "Cristian Tommasino",
+          "Antonio M. Rinaldi"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Reliable tissue detection is essential for whole-slide image analysis, yet high average segmentation accuracy can conceal failures involving pale tissue, small fragments, and heterogeneous staining. Pathology foundation models offer transferable representations, but exhaustive inference is computationally demanding and may introduce false-positive tissue predictions. We propose SCOUT (Selective Correction of Uncertain Tissue), a risk-guided cascade that selectively refines an initial thumbnail-based tissue mask. A lightweight audit network estimates the spatial distribution of segmentation errors and prioritizes candidate regions for processing by a frozen pathology foundation model. An asymmetric consensus rule integrates the resulting predictions with the initial mask to recover missed tissue while limiting false positives. A calibrated slide-level review score additionally controls the marginal rate of unflagged case-group failures under the calibration assumptions. Evaluation on a public multi-source, multi-stain benchmark shows that SCOUT reduces the proportion of case groups requiring mask correction from 38.1% for the best released detector to 18.6%, with particularly pronounced improvements in immunohistochemistry. Source-held-out experiments demonstrate better generalization than a segmentation network trained on the same annotations, while selective inference achieves an observed failure rate no higher than processing all candidate regions. Downstream, lymph-node classification with SCOUT masks is non-inferior to that obtained with two of the three released detectors evaluated. A variant built on an openly licensed foundation model is publicly released as an installable Python package with trained weights. These results support risk-guided foundation-model inference as an effective approach to tissue detection across heterogeneous histopathology data.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24366",
+        "pdf": "https://arxiv.org/pdf/2611.24366",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24401",
+      "title": "Reliable Tree Recruitment from Scarce Annotations for Forest Inventory Expansion",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "UAV imagery",
+      "paper": {
+        "id": "2611.24401",
+        "title": "Reliable Tree Recruitment from Scarce Annotations for Forest Inventory Expansion",
+        "authors": [
+          "Luiz Fernando Souza Luz",
+          "Pedro J. Soto Vega",
+          "Matheus Pinheiro Ferreira",
+          "Laura Elena Cué la Rosa",
+          "Hudson Franklin Pessoa Veras",
+          "Ernandes Macedo da Cunha Neto",
+          "Evandro Orfanó Figueiredo",
+          "Ana Paula Dalla Corte",
+          "Carlos Roberto Sanquetta",
+          "José Matheus Segre Moneva Viveiros",
+          "Matheus Santos Fuza",
+          "Heitor Eduardo Ferreira Campos Morato Filpi",
+          "Cristiano Vinícius Vidal",
+          "Vinícius Moura Costa",
+          "Débora Nascimento Rosário",
+          "Danilo Roberti Alves de Almeida",
+          "Paulo Guilherme Molin",
+          "Dário Augusto Borges Oliveira"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Species-level inventories of individual tree crowns (ITCs) from UAV imagery are limited by annotation cost: in tropical forests, many species are represented by only a handful of field-validated crowns. We propose a reliable tree recruitment framework that expands a small annotated inventory by iteratively self-training a multi-task DeepLabV3 network, combining semantic segmentation with a crown-distance regression head, on RGB UAV orthomosaics. At each iteration, candidate crowns enter the training inventory only if they pass a confidence filter on class probability and distance map and a morphology filter on crown area and solidity, with at most five new crowns per species, keeping recruited samples consistent with the reference inventory. We evaluate the framework at two Brazilian sites: an Amazonian rainforest in Acre (17 species, 355 annotated crowns, 4 cm GSD) and a forest site in the Cerrado of Maranhão (4 species, 51 annotated crowns, 1.8 cm GSD). Over 20 iterations, the number of retained crowns grew from about 500 to 960 in Acre and from about 700 to over 3100 in Maranhão, while crown-level F1 exceeded single- and multi-task DeepLabV3 baselines (53.5% vs. 50.0% and 45.2%; 92.2% vs. 79.7% and 83.6%). The framework offers a low-cost route to expanding species inventories with consumer-grade UAVs and limited fieldwork.",
+        "comment": "20 pages, 15 figures",
+        "abs": "https://arxiv.org/abs/2611.24401",
+        "pdf": "https://arxiv.org/pdf/2611.24401",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24440",
+      "title": "Explainable and CPU-Efficient Brain Tumor Classification from MRI Using Two-Phase EfficientNetB3 Fine-Tuning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Tumor",
+      "paper": {
+        "id": "2611.24440",
+        "title": "Explainable and CPU-Efficient Brain Tumor Classification from MRI Using Two-Phase EfficientNetB3 Fine-Tuning",
+        "authors": [
+          "Deepro Das",
+          "Saad Kabir Uddin",
+          "Mohammad Alauddin",
+          "Bornali Sarker",
+          "Thasnim Akhter"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Brain tumors are among the most lethal neurological disorders, with over 308,000 new diagnoses annually worldwide. Accurate classification of tumor type from Magnetic Resonance Imaging (MRI) scans is critical for treatment planning; however, manual radiological interpretation is time-consuming and prone to inter-observer variability. This paper proposes an automated deep learning pipeline for four-class brain MRI classification (glioma, meningioma, no tumor, and pituitary tumor) using EfficientNetB3 transfer learning with a custom classification head. A two-phase training strategy is adopted: Phase 1 trains the head with a frozen backbone (best validation accuracy: 92.77%), and Phase 2 selectively fine-tunes the top 37 layers at a 100x reduced learning rate (best validation accuracy: 94.91%). On an independent balanced test set of 1,600 MRI images, the system achieves 90.62% overall accuracy and a macro-average AUC of 0.9854. Gradient-weighted Class Activation Mapping (Grad-CAM) is integrated for class-discriminative visual explainability. The proposed system simultaneously addresses three dimensions absent in prior work: high accuracy, CPU-only computational efficiency, and clinical interpretability.",
+        "comment": "6 pages, 5 figures, 6 tables",
+        "abs": "https://arxiv.org/abs/2611.24440",
+        "pdf": "https://arxiv.org/pdf/2611.24440",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24443",
+      "title": "NativeSeg: Native Vision Language Segmentation of 3D Computed Tomography via Spatial Visual Tokens and Verified Local Zoom",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "medical",
+      "paper": {
+        "id": "2611.24443",
+        "title": "NativeSeg: Native Vision Language Segmentation of 3D Computed Tomography via Spatial Visual Tokens and Verified Local Zoom",
+        "authors": [
+          "Chengqian Ma",
+          "Gaole Dai",
+          "Zijie Meng",
+          "Weixuan Jin",
+          "Yijie Du",
+          "Yuexiao Ma",
+          "Xiawu Zheng",
+          "Fei Chao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Text prompted 3D computed tomography (CT) segmentation requires both full slice context and fine boundary precision across volumes where over $80\\%$ of organ prompted slices lack the queried target. Existing medical vision language models (VLMs) are largely non native segmenters: they delegate pixel delineation outside the VLM by compressing reasoning into a 1D [SEG] vector for an external Segment Anything Model (SAM) decoder, quantizing masks into lossy discrete codebooks, or issuing box prompts to stateless external SAM tools without empty slice screening or spatial state memory. We introduce NativeSeg, a native vision language segmentation framework on Low Rank Adaptation (LoRA) adapted Qwen3.8-27B that performs dense mask decoding, volumetric triage, spatial error self diagnosis, and multiround local zoom directly over the VLM's 2D spatial visual tokens without external SAM decoders. NativeSeg decodes confidence maps from upper layer 2D spatial tokens fused with a five slice U-Net pathway, halts at zero zooms on $>91\\%$ of standalone evaluations via a native presence gate (<pres>), localizes uncertain boundaries via a 20 cell multiscale error gate (<err>), and accepts zoomed updates only when predicted error decreases. Trained solely on adult CT, NativeSeg improves Round $0$ DSC by $+19.81$ and $+7.04$ points over discrete codebook and 1D [SEG] readouts on the identical backbone, reaches $86.81\\%$ adult and $87.04\\%$ zero shot pediatric DSC, and safely refines 2D nnU-Net ($89.52\\%$ adult; $86.86\\%$ pediatric), 3D SegVol ($86.81\\%$), and 3D VoxTell ($89.85\\%$).",
+        "comment": "13 pages, 5 figures, 4 tables. Code: this https URL ; Weights: this https URL",
+        "abs": "https://arxiv.org/abs/2611.24443",
+        "pdf": "https://arxiv.org/pdf/2611.24443",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24462",
+      "title": "Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.24462",
+        "title": "Anchoring with Visual Evidence: Explicit Semantic Anchors for Joint Change Detection and Captioning",
+        "authors": [
+          "Kai Zheng",
+          "Hang-Cheng Dong",
+          "Puyi Fang",
+          "Junjia Pan",
+          "Zhenkai Wu",
+          "Wei Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Joint change detection and captioning seeks to localize changes and describe them from bi-temporal remote sensing images. A key challenge is translating dense visual evidence into the semantic conditions that guide description generation. We propose Explicit Semantic Anchors (ESA), a supervised interface that exposes entity presence, temporal appearance variation, and spatial extent. A prediction-guided readout combines visual features and predicted change probabilities, and three factor heads estimate the corresponding anchor activations. These activations guide generation through two complementary routes. The context route maps the three factor activations to three separate memory tokens, one per factor, and appends them to the dense visual memory, while the lexicon route produces an additive vocabulary bias at each decoding step. Dense visual memory remains available for spatial detail and information beyond the explicit factors. Anchor targets are derived from existing images and change annotations, requiring no additional anchor-level language annotation. At inference, all conditions are computed from the input image pair and the model's own predictions. Experiments on LEVIR-MCI and WHU-CDC show strong joint detection and captioning performance, supporting the use of supervised visual attributes as explicit conditions for change description generation.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.24462",
+        "pdf": "https://arxiv.org/pdf/2611.24462",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24541",
+      "title": "Fuse Before Reconstruct: A Novel Reconstruction Paradigm for Multimodal Industrial Anomaly Detection",
+      "exclude": true,
+      "reason": "industrial_applications",
+      "label": "工业检测与基础设施专项应用",
+      "field": "title",
+      "matched_text": "Industrial Anomaly Detection",
+      "paper": {
+        "id": "2611.24541",
+        "title": "Fuse Before Reconstruct: A Novel Reconstruction Paradigm for Multimodal Industrial Anomaly Detection",
+        "authors": [
+          "Zhi Li",
+          "Hanyu Wang",
+          "Qiyu Chen",
+          "Fei Shen",
+          "Zhengtao Zhang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Industrial anomaly detection plays a pivotal role in precision manufacturing, where joint analysis of multimodal data emerges as a critical approach to enhance detection accuracy. Feature reconstruction, a dominant paradigm for such joint analysis, is primarily implemented through intra-modal and cross-modal methods, both of which are plagued by significant limitations. Intra-modal reconstruction neglects complementary cross-modal information, while its cross-modal counterpart is prone to projection errors and ambiguous one-to-many mappings (e.g., same textures mapping to multiple geometries), leading to detection failures. To address these limitations, we propose a novel feature reconstruction paradigm, Fuse Before Reconstruct (FBR), which first fuses multimodal features and then performs reconstruction for anomaly detection. Firstly, we propose a bidirectional cross-modal attention mechanism to achieve deep feature complementarity between image and point cloud features, mitigating projection bias through channel alignment and dynamic spatial prior integration. Besides, a learnable pixel-wise gated fusion strategy is adopted to preserve multi-modal structural consistency while optimizing local feature combination. Finally, dual-path collaborative reconstruction is implemented to recover original modal features from the fused representations, where cross-modal consistency constraints effectively eliminate mapping ambiguities. Extensive experiments show that FBR achieves 98.3% I-AUROC on MVTec 3D-AD and 92.6% I-AUROC on Eyecandies, surpassing previous state-of-the-art methods by +2.9% and +4.1%, respectively.",
+        "comment": "Preprint before peer review. Includes supplementary material. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.24541",
+        "pdf": "https://arxiv.org/pdf/2611.24541",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24597",
+      "title": "DAL: Dynamic Angular Loss for Imbalanced Medical Image Classification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.24597",
+        "title": "DAL: Dynamic Angular Loss for Imbalanced Medical Image Classification",
+        "authors": [
+          "Salman Mohammad",
+          "Furkan Kasım",
+          "Manuel Günther"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Class imbalance remains a major obstacle in medical image classification, where rare but clinically important classes are often overshadowed by majority categories. Although current strategies for reducing bias, including angle-based softmax (ABS) losses, offer strong discriminative features, their behavior in settings with a small number of severely imbalanced classes remains insufficiently understood. Previous approaches that estimate the intrinsic parameters of ABS rely on the assumption of many classes, which does not hold in medical settings. We derive data-driven upper and lower bounds for the scale parameter and an upper bound for the angular margin using negative-angle statistics, and use these to drive a batch-adaptive angular margin (BAAM), which we combine with dynamically-weighted cross entropy (DWCE) to define our dynamic angular loss (DAL). Across four highly imbalanced medical image classification benchmarks spanning dermatology, ophthalmology, and gastrointestinal endoscopy, our method consistently achieves superior balanced accuracy and the lowest coefficient of variation of per-class recall. Although this entails a small performance reduction on majority classes, the gains on minority categories are substantial, yielding a reliable and equitable overall classifier. Our source code is available at: this https URL.",
+        "comment": "Accepted at the British Machine Vision Conference (BMVC) 2026. 18 pages, 5 figures, 4 tables. Code: this https URL",
+        "abs": "https://arxiv.org/abs/2611.24597",
+        "pdf": "https://arxiv.org/pdf/2611.24597",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24723",
+      "title": "Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields",
+      "exclude": true,
+      "reason": "ai4science",
+      "label": "AI4Science 专项应用",
+      "field": "title",
+      "matched_text": "Galaxy",
+      "paper": {
+        "id": "2611.24723",
+        "title": "Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields",
+        "authors": [
+          "Yuzhe Wu",
+          "Jialin Zhu",
+          "Doğa Yılmaz",
+          "Daisuke Kawata",
+          "He Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "We propose a novel view synthesis tool for galaxies based on Gaussian Splatting (GS). Unlike RGB data, where GS has achieved success, galaxy observations consist of multi-band signals from a massive number of bodies, contain complex patterns of cross-band interactions, and capture light propagation in highly heterogeneous media. As a result, the underlying physical process poses great challenges in model representation and optimization, which have not been investigated in existing research. To this end, we propose a physically inspired Gaussian Splatting method, GalaxyGS, which is equipped with physically meaningful components that capture both the energy emission mechanism of different astronomical bodies and the light propagation between them. In the absence of directly comparable baseline methods, we adopt a wide range of possible alternative approaches. Comparisons conclusively demonstrate that GalaxyGS is better in accuracy and physical fidelity across datasets and metrics.",
+        "comment": "10 pages, 3 figures",
+        "abs": "https://arxiv.org/abs/2611.24723",
+        "pdf": "https://arxiv.org/pdf/2611.24723",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.24904",
+      "title": "ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "aerial imagery",
+      "paper": {
+        "id": "2611.24904",
+        "title": "ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection",
+        "authors": [
+          "Shagun Mittal",
+          "Raymond A. Yeh",
+          "Satish Ukkusuri"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Overhead aerial imagery feeds dense-prediction pipelines that are routinely trained in one geographic region and deployed in another, yet no benchmark measures how shadow detection models transfer across regions. Existing overhead shadow datasets either lack a geographic transfer protocol or rely on automatically generated labels. We introduce ShadowTransfer, a benchmark of 4,500 human-verified shadow masks across three U.S. cities at two native resolutions, paired with a leave-one-city-out evaluation protocol. Under vanilla training, holding out the test city costs 3.5 to 7.8 mIoU across four architectures, the gap remains significant when the training set grows from 225 to 900 images, and six of eight adaptation methods degrade more than vanilla training on average. We propose a three-probe framework that diagnoses where and how the transfer breaks: the failure operates in feature space, beyond the reach of pixel-histogram matching, shows up as a confidence collapse on shadow pixels while background confidence stays intact, and is recoverable by retraining different architectural components depending on the model: encoder for some, decoder for others. These findings replicate on INRIA building footprints, suggesting they describe geographic transfer beyond shadows. Guided by the diagnosis, we build Spectral Information Bottleneck (SIB), a plug-in module with one component per finding. Across the 9 (architecture, held-out city) cells, SIB has the smallest mean gap to the within-city upper bound of the ten methods we evaluate (6.42 mIoU), level with FDA. The benchmark, LOCO protocol, code, and trained models are released to support reproducible evaluation of geographic transfer in overhead dense prediction.",
+        "comment": "Accepted at NeurIPS 2026, Track on Evaluations and Datasets. 53 pages. Project page: this https URL . Code: this https URL . Data: this https URL (DOI https://doi.org/10.57967/hf/11483)",
+        "abs": "https://arxiv.org/abs/2611.24904",
+        "pdf": "https://arxiv.org/pdf/2611.24904",
+        "listing_date": "2026-11-19",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
