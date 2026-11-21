@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rules_sha256": "6096f5f60b2d0c73221aaba0adf74bc516c57f1e9ba44bc314bf3db177af10c1",
+  "input_sha256": "659de81a82250be7a90c9b8b54761df2d4dc8e3ac0ea3cff633e56ee27e16ac3",
+  "input_count": 191,
+  "kept_count": 177,
+  "excluded_count": 14,
+  "counts_by_reason": {
+    "medical_biological": 7,
+    "remote_sensing": 5,
+    "agriculture_ecology": 2
+  },
+  "kept_ids": [
+    "2611.24995",
+    "2611.25061",
+    "2611.25069",
+    "2611.25113",
+    "2611.25126",
+    "2611.25166",
+    "2611.25168",
+    "2611.25172",
+    "2611.25179",
+    "2611.25204",
+    "2611.25210",
+    "2611.25239",
+    "2611.25248",
+    "2611.25257",
+    "2611.25265",
+    "2611.25279",
+    "2611.25283",
+    "2611.25296",
+    "2611.25297",
+    "2611.25333",
+    "2611.25338",
+    "2611.25340",
+    "2611.25347",
+    "2611.25369",
+    "2611.25371",
+    "2611.25382",
+    "2611.25389",
+    "2611.25391",
+    "2611.25406",
+    "2611.25414",
+    "2611.25417",
+    "2611.25419",
+    "2611.25436",
+    "2611.25437",
+    "2611.25444",
+    "2611.25453",
+    "2611.25454",
+    "2611.25457",
+    "2611.25461",
+    "2611.25469",
+    "2611.25474",
+    "2611.25478",
+    "2611.25500",
+    "2611.25506",
+    "2611.25508",
+    "2611.25513",
+    "2611.25523",
+    "2611.25524",
+    "2611.25535",
+    "2611.25537",
+    "2611.25551",
+    "2611.25553",
+    "2611.25555",
+    "2611.25567",
+    "2611.25574",
+    "2611.25578",
+    "2611.25593",
+    "2611.25595",
+    "2611.25620",
+    "2611.25621",
+    "2611.25626",
+    "2611.25628",
+    "2611.25632",
+    "2611.25635",
+    "2611.25639",
+    "2611.25648",
+    "2611.25672",
+    "2611.25675",
+    "2611.25680",
+    "2611.25689",
+    "2611.25696",
+    "2611.25708",
+    "2611.25711",
+    "2611.25712",
+    "2611.25713",
+    "2611.25719",
+    "2611.25722",
+    "2611.25728",
+    "2611.25730",
+    "2611.25731",
+    "2611.25747",
+    "2611.25771",
+    "2611.25776",
+    "2611.25787",
+    "2611.25801",
+    "2611.25802",
+    "2611.25814",
+    "2611.25815",
+    "2611.25819",
+    "2611.25822",
+    "2611.25834",
+    "2611.25838",
+    "2611.25847",
+    "2611.25849",
+    "2611.25865",
+    "2611.25873",
+    "2611.25889",
+    "2611.25925",
+    "2611.25930",
+    "2611.25934",
+    "2611.25935",
+    "2611.25946",
+    "2611.25963",
+    "2611.25975",
+    "2611.25979",
+    "2611.26035",
+    "2611.26040",
+    "2611.26045",
+    "2611.26056",
+    "2611.26058",
+    "2611.26065",
+    "2611.26072",
+    "2611.26098",
+    "2611.26107",
+    "2611.26116",
+    "2611.26120",
+    "2611.26128",
+    "2611.26164",
+    "2611.26165",
+    "2611.26177",
+    "2611.26178",
+    "2611.26179",
+    "2611.26191",
+    "2611.26199",
+    "2611.26211",
+    "2611.26218",
+    "2611.26234",
+    "2611.26249",
+    "2611.26254",
+    "2611.26262",
+    "2611.26269",
+    "2611.26294",
+    "2611.26318",
+    "2611.26321",
+    "2611.26334",
+    "2611.26347",
+    "2611.26367",
+    "2611.26370",
+    "2611.26380",
+    "2611.26386",
+    "2611.26388",
+    "2611.26389",
+    "2611.26408",
+    "2611.26409",
+    "2611.26431",
+    "2611.26433",
+    "2611.26434",
+    "2611.26437",
+    "2611.26438",
+    "2611.26456",
+    "2611.26478",
+    "2611.26493",
+    "2611.26511",
+    "2611.26516",
+    "2611.26522",
+    "2611.26540",
+    "2611.26595",
+    "2611.26603",
+    "2611.26615",
+    "2611.26617",
+    "2611.26627",
+    "2611.26629",
+    "2611.25005",
+    "2611.25105",
+    "2611.25134",
+    "2611.25215",
+    "2611.25445",
+    "2611.25575",
+    "2611.25667",
+    "2611.25904",
+    "2611.25980",
+    "2611.26103",
+    "2611.26146",
+    "2611.26405",
+    "2611.26420",
+    "2611.26444",
+    "2611.26613"
+  ],
+  "excluded": [
+    {
+      "id": "2611.25309",
+      "title": "VoxForge: A Unified Foundation Model for Dense 3D Features Across MRI, CT and PET",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "MRI",
+      "paper": {
+        "id": "2611.25309",
+        "title": "VoxForge: A Unified Foundation Model for Dense 3D Features Across MRI, CT and PET",
+        "authors": [
+          "Rushil Anirudh",
+          "Jayaraman J. Thiagarajan"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "A unified 3D medical foundation model promises reusable, frozen features that serve a wide variety of tasks such as segmentation, classification and registration on MRI, CT and PET as well as specialist models do. Generalist models still need separate backbones for localized and global tasks, specialist models are confined to a single modality, with the concern that spanning modalities under-emphasizes fine anatomy, and both typically rely on end-to-end fine-tuning to be competitive. We present VoxForge, a single encoder that integrates recent advances in 3D architecture, self-distillation and cross-modal curricula to learn transferable features from permissively licensed MRI and CT volumes. We evaluate it strictly frozen, the test a reusable foundation model must pass, against state-of-the-art generalist and specialist models on segmentation, classification and registration across MRI and CT, and on PET, which it never sees. VoxForge has the best or tied-best average rank in every task group, serves localized and global tasks across modalities at the level of state-of-the-art specialists, and is extremely label-efficient, matching top-performing models on TotalSegmentator CT with a tenth of the labels.",
+        "comment": "34 pages (8-page main paper, references, and 23-page supplementary material), 7 figures. Rushil Anirudh and Jayaraman J. Thiagarajan contributed equally",
+        "abs": "https://arxiv.org/abs/2611.25309",
+        "pdf": "https://arxiv.org/pdf/2611.25309",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25418",
+      "title": "Bilateral Evidence Selection and Reasoning for Mammography Vision--Language Models",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Mammography",
+      "paper": {
+        "id": "2611.25418",
+        "title": "Bilateral Evidence Selection and Reasoning for Mammography Vision--Language Models",
+        "authors": [
+          "Zhengbo Zhou",
+          "Dooman Arefan",
+          "Shandong Wu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Medical vision--language models (VLMs) often need to identify small, subtle lesions within high-resolution images containing extensive normal anatomy and redundant visual information. Visual-token compression improves efficiency, but preserving salient regions alone can discard the context needed for diagnostic interpretation. This context can extend across images: in bilateral mammography, the opposite breast provides a patient-specific anatomical reference. Yet retaining such evidence does not ensure that the model uses it effectively. We propose Bilateral Evidence Selection and Reasoning (BESR), which connects evidence preservation with comparative assessment through a bilateral-guided token selector and a bilateral reward. Under a shared token budget, the selector jointly prioritizes lesion appearance and its local and bilateral context, while the reward encourages assessments that benefit from the preserved comparison. Experiments on a bilateral dataset constructed from CBIS-DDSM and on VinDr-Mammo demonstrate improved evidence retention and diagnostic performance under constrained visual-token budgets. Inference benchmarking further shows reduced prefill latency.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.25418",
+        "pdf": "https://arxiv.org/pdf/2611.25418",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25458",
+      "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "Remote Sensing",
+      "paper": {
+        "id": "2611.25458",
+        "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
+        "authors": [
+          "Junzhe Dang",
+          "Mengmeng Zhang",
+          "Yuxiang Zhang",
+          "Wei Li"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural approaches and compare their performance. Second, we design a scalable method for constructing pre-training data and build an effective pre-training dataset with a degree of diversity. Methods trained on this dataset achieve promising zero-shot performance. Third, we construct three benchmarks that support stratified evaluation and design three metrics for path generation. We investigate this problem through extensive experiments. The results show that the zero-shot performance of methods trained on the constructed pre-training dataset can exceed that of some advanced commercial VLMs. Code and Dataset can be available at this https URL",
+        "comment": "18 pages, 10 figures",
+        "abs": "https://arxiv.org/abs/2611.25458",
+        "pdf": "https://arxiv.org/pdf/2611.25458",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25475",
+      "title": "SegAnyFruit: Learning Generalizable and Edge Deployable Fruit Instance Segmentation at Scale",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "abstract_intro",
+      "matched_text": "agricultural",
+      "paper": {
+        "id": "2611.25475",
+        "title": "SegAnyFruit: Learning Generalizable and Edge Deployable Fruit Instance Segmentation at Scale",
+        "authors": [
+          "Yanan Wang",
+          "Yuzheng wang",
+          "Yibin Ying",
+          "Zhenghao Fei"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Deploying fruit instance segmentation in real agricultural settings requires generalizing across unseen species, orchards, and imaging conditions under strict onboard compute and annotation budgets. We introduce SegAnyFruit (SAF), a data construction and progressive training framework that distills foundation-model priors into lightweight, prompt-free segmenters. SAF combines generic mask pre-training, broad mid-training on automatically annotated web imagery from our curated WebFruits dataset, and human-verified agricultural refinement post-training on PaperFruits, together spanning 733K images and 9.66M whole-fruit masks across 165 fruit types. Across seven benchmarks, zero-shot SAF-RF-DETR-XL reaches 69.06 average mask AP50:95 (+4.76 over SAM 3) while remaining deployable on edge devices. SAF initialization also boosts few-shot to full-shot adaptation across five agricultural domains while mitigating catastrophic forgetting. Finally, we systematically analyze training stages, data scale, model capacity, and generative augmentation, and validate our pipeline's transferability to underwater, cell, and human segmentation. We will release our datasets, code, and SAF models.",
+        "comment": "11 pages, 6 figures",
+        "abs": "https://arxiv.org/abs/2611.25475",
+        "pdf": "https://arxiv.org/pdf/2611.25475",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25724",
+      "title": "Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "remote sensing",
+      "paper": {
+        "id": "2611.25724",
+        "title": "Verifying Before Enhancing: Target Evidence Chain Verification for Infrared Small Target Detection",
+        "authors": [
+          "Jiayi Zuo",
+          "Songwei Pei",
+          "Shuhuai Wang",
+          "Yifei Wu",
+          "Shangguang Wang"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Infrared small target detection is essential for early warning, surveillance, remote sensing, and space-based target perception. However, infrared small targets are typically tiny, weakly textured, and boundary-blurred, making them difficult to distinguish from complex backgrounds. Moreover, target-like background structures can produce salient responses across multiple scales, making response strength alone insufficient for reliable target discrimination. To address this challenge, we propose VBE-UNet, a Target Evidence Chain Verification Network that assesses candidate reliability beyond response magnitude through complementary evidence cues. Specifically, counterfactual background explanation models local target evidence, while joint evidence verification integrates cross-scale support and perturbation-based contribution verification to guide feature recomposition. The resulting reliability estimates guide selective feature refinement, promoting target-relevant responses while reducing unsupported background activations. Extensive experiments on IRSTD-1K, NUDT-SIRST, and NUAA-SIRST demonstrate that VBE-UNet achieves superior detection accuracy and lower false-alarm rates compared with state-of-the-art methods. Ablation studies and evidence reliability analysis further validate the effectiveness of the proposed verification framework.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.25724",
+        "pdf": "https://arxiv.org/pdf/2611.25724",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25761",
+      "title": "AdaptReg: Skip-level FiLM Adapter for Task-Specific Adaptation of a Frozen Registration Foundation Model",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "abstract_intro",
+      "matched_text": "prostate",
+      "paper": {
+        "id": "2611.25761",
+        "title": "AdaptReg: Skip-level FiLM Adapter for Task-Specific Adaptation of a Frozen Registration Foundation Model",
+        "authors": [
+          "Shuyue Shi",
+          "Rong Yuan",
+          "Lin Tian"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "summary": "Longitudinal PSMA-PET/CT registration is a key step in assessing treatment response in prostate cancer, and it requires more than generic alignment accuracy: the deformation must preserve lesion volume, so that measured changes in metabolic tumor volume (MTV) and total lesion glycolysis (TLG) reflect treatment response rather than registration artifacts. We propose AdaptReg, which adapts a frozen registration foundation model to such task-specific requirements through a lightweight trainable adapter branch with identity-preserving initialization. Keeping uniGradICON fully frozen, we apply FiLM-style per-voxel affine modulation ($\\gamma$, $\\beta$) to its decoder skip connections; the modulation is generated from anatomical semantic features of a frozen TotalSegmentator encoder and supervised by a lesion volume-preservation loss. On the official Codabench validation set (20 pairs), AdaptReg achieves DSC 0.7585, HD95 6.33 mm, MTV/TLG errors of 1.68%/2.11%, and 0.0022% non-diffeomorphic voxels, improving on the uniGradICON + instance optimization baseline by $+0.05$ DSC and reducing the MTV/TLG errors by 70.9%/67.7%. On the hidden official test set (160 pairs), AdaptReg achieves CT DSC 0.816, PET DSC 0.598, and MTV/TLG errors of 4.02%/3.46%, ranking fourth among 16 teams in the final PSMAReg evaluation. Code: this https URL",
+        "comment": "9 pages, 2 figures, 3 tables. Paper for the Learn2Reg 2026 PSMAReg challenge (PSMA-PET/CT longitudinal registration), 4th place among 16 teams on the hidden test set",
+        "abs": "https://arxiv.org/abs/2611.25761",
+        "pdf": "https://arxiv.org/pdf/2611.25761",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25824",
+      "title": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "hyperspectral",
+      "paper": {
+        "id": "2611.25824",
+        "title": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
+        "authors": [
+          "Mattia Ferrari",
+          "Lorenzo Bruzzone"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Precise forest species mapping using spaceborne hyperspectral data is challenging due to high spectral similarity and the inherent sub-pixel heterogeneity of natural forest stands. While traditional deep learning models exploit spatial context through convolutional architectures, these approaches can introduce noise in fragmented or mixed-species forests. In this paper, we propose a hierarchy-aware, multimodal deep learning framework to resolve sub-pixel forest composition by integrating PRISMA (PRecursore IperSpettrale della Missione Applicativa) hyperspectral imagery, high-resolution panchromatic data, and digital elevation models. The architecture features a multi-branch encoder combining an EfficientNetV2-based one-dimensional convolutional neural network (CNN) for spectral signatures and twin two-dimensional CNNs for spatial and topographic features, coupled with a novel structurally-masked Transformer. By using a binary transition tensor to condition the Transformer slot embeddings and constrain inference, the model enforces taxonomic consistency between broad forest categories and fine-grained species distributions. The framework is validated across three diverse Italian biogeographical regions (the Alps and the Central and Southern Apennines) using field-surveyed plots. The proposed method consistently outperforms state-of-the-art multi-label and ranking-based paradigms, particularly in identifying subordinate species and their relative dominance. The bidirectional learning mechanism allows sub-pixel compositional features to refine macroscopic forest type predictions, while the integration of topographic priors effectively resolves spectral ambiguities in complex terrains. This knowledge-driven method supports regional-scale biodiversity monitoring and forest characterization within the evaluated PRISMA scenarios.",
+        "comment": "19 pages, 6 figures",
+        "abs": "https://arxiv.org/abs/2611.25824",
+        "pdf": "https://arxiv.org/pdf/2611.25824",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25840",
+      "title": "Harnessing Medical Visual-Language Models with Agentic Evidence Management",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Medical",
+      "paper": {
+        "id": "2611.25840",
+        "title": "Harnessing Medical Visual-Language Models with Agentic Evidence Management",
+        "authors": [
+          "Qiming Huang",
+          "Hanze Dong",
+          "Jipeng Zhang",
+          "Mike Zheng Shou",
+          "Xinxing Xu",
+          "Furu Wei"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Medical vision-language agents increasingly rely on segmentation tools, and recent work has focused on acquiring the right mask, often treating a good mask as the end point of tool use. But do these agents use the resulting evidence effectively? To answer this question, we need a benchmark that separates evidence use from segmentation quality, spans multiple medical image types, and allows the same mask to be presented in different ways. Existing medical VQA datasets do not jointly provide these properties. We therefore construct Mask-Evidence MedVQA, a 2.5K-example benchmark spanning four image types, where each question is paired with an answer-relevant ground-truth mask and multiple possible renderings. Our study reveals two limitations of direct tool use. First, evidence presentation matters. Different renderings of the same fixed mask can substantially change model behavior. Second, masks introduce an evidence trade-off. Highlighting a relevant region can expose diagnostic evidence the model previously missed, but the added visual cue can also induce incorrect associations. As a result, even a ground-truth mask can correct some answers while turning initially correct ones into incorrect ones. Together, these findings show that acquiring the right mask is not enough. An agent must also decide how to present the evidence and whether it should change the answer. We therefore introduce TUNE (Tool Use is Not Enough), an evidence-management harness that explicitly manages what evidence to acquire, how to present it, and whether to accept the resulting answer update. Across three public medical VQA benchmarks, evidence management improves the fine-tuned Qwen3.5-9B backbone's mean accuracy by 4.0 percentage points. Full TUNE improves over direct tool use by 9.1 points on average across seven benchmarks and achieves competitive results against existing medical VLMs and agents.",
+        "comment": "22 pages, 3 figures. Qiming Huang, Hanze Dong, and Jipeng Zhang contributed equally",
+        "abs": "https://arxiv.org/abs/2611.25840",
+        "pdf": "https://arxiv.org/pdf/2611.25840",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.25902",
+      "title": "Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "abstract_intro",
+      "matched_text": "aerial images",
+      "paper": {
+        "id": "2611.25902",
+        "title": "Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping",
+        "authors": [
+          "Dharani Deivasihamani",
+          "Nandakishore Puttashamachar"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Self-supervised foundation models are often said to need fewer labels than supervised training. We test this on a forestry task: classifying 20 tree species classes in 0.2 m aerial images from the TreeSatAI dataset. We compare a frozen DINOv3 model pretrained on 493 million satellite images, with only a linear classifier trained on top, against an ImageNet ResNet-50 that is fine-tuned end to end. On the official split, fine-tuning wins clearly (macro F1 0.764 vs. 0.685). However, 28.8% of the official test patches overlap a training or validation patch, and copying the label of the nearest such patch is correct for 83.6% of them. We therefore build a spatial split that holds out whole 2 km squares with a 200 m buffer. On this split the comparison becomes inconclusive (0.648 vs. 0.640, paired 95% CI of the difference [-0.054, 0.016]), and the learning curves of the two models overlap at every label budget from 343 to 33,126 training patches. On the five rarest classes, the frozen model achieves a higher mean F1 (0.566 vs. 0.445), although the confidence interval for this difference includes zero ([-0.05, 0.23]). Diagnostics show that the frozen features mainly miss differences between closely related species, such as the two native oaks. Choosing the input size and layer on validation data (224 px, block 16) raises the frozen model to 0.662 on the spatial split. A comparison that looks decisive on the official split is thus inconclusive under geographically separated evaluation. We release the spatial split and our code.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.25902",
+        "pdf": "https://arxiv.org/pdf/2611.25902",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.26145",
+      "title": "Can World Models Predict Rice Growth? Toward Agricultural World Models",
+      "exclude": true,
+      "reason": "agriculture_ecology",
+      "label": "农牧业与生态专项应用",
+      "field": "title",
+      "matched_text": "Agricultural",
+      "paper": {
+        "id": "2611.26145",
+        "title": "Can World Models Predict Rice Growth? Toward Agricultural World Models",
+        "authors": [
+          "Wenkai Ji",
+          "Zeteng Li",
+          "Yinkun Guo",
+          "Jie Zhou",
+          "Liang He",
+          "Zhenong Jin"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CL"
+        ],
+        "summary": "World models can imagine how a physical scene evolves over the next few seconds, but growers need to know how a crop will develop over weeks to months: will this rice plant have headed a month from now, and how will it look at harvest? We introduce agricultural world modeling, the task of predicting how the same plant will look at a requested horizon of days to months, from one photo of it, its cultivar, and its camera view. In preliminary analysis, even state-of-the-art image generators get this wrong: they often grow the plant too little or give it the color and form of the wrong growth stage. We argue that they do not work out the plant's developmental state, which the photo reveals only indirectly. We therefore propose AgroWM, which reasons about development before it draws growth. Its reasoning module, PhenoClock, works out the current growth stage, predicts the future one, and writes a Growth Script with numeric targets for height, plant area, and color; its generation module, the Rooted Renderer, then edits the photo to follow this script, adding new organs and colors to the photographed plant. Because pixel scores can prefer an unchanged copy of the photo, we instead check each forecast's traits and developmental timing against the plant's own later photos. On rice, 54.6% of the forecasts of AgroWM are matched to the target stage (Stage R@1), against 34.8% for GPT Image 2.5, 24.0% for Qwen Image 2.1, and 47.4% for the strongest domain-specific baseline, the same backbone fine-tuned without Growth Scripts; 9 to 20 weeks ahead, it still reaches 46.4%, against 35.7% for that baseline. On maize, a crop with a different body plan and stage scale, the same design again scores best on all four measures.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.26145",
+        "pdf": "https://arxiv.org/pdf/2611.26145",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.26159",
+      "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Whole-Slide",
+      "paper": {
+        "id": "2611.26159",
+        "title": "When Foundation Models Disagree: Representational Heterogeneity for Calibrated Uncertainty in Whole-Slide Image Classification",
+        "authors": [
+          "Yekai Shen",
+          "Yuqian Wang",
+          "Zishun Liao",
+          "Rongsheng Wang",
+          "Wenting Chen",
+          "S. Kevin Zhou",
+          "Qingsong Yao"
+        ],
+        "categories": [
+          "cs.CV",
+          "q-bio.QM"
+        ],
+        "summary": "Pathology foundation models supply strong representations for whole-slide image classification, yet the confidence attached to their predictions remains hard to trust. Prevailing uncertainty estimators act within a single feature space and thereby overlook the uncertainty that the choice of foundation-model representation itself induces. This work introduces CALIFUSE, a calibration-oriented framework that fuses several pathology foundation models for the specific purpose of uncertainty estimation. Departing from accuracy-driven fusion, CALIFUSE reads representational heterogeneity across encoders as an explicit confidence cue. Slide-level decision consensus is coupled with chunk-level evidence agreement quantified through Jensen-Shannon divergence, so that both prediction stability and fine-grained evidence consistency inform the estimate. Foundation-model encoders stay frozen. A task-specific nnMIL classifier is still trained for each FM; CALIFUSE then estimates confidence at inference without training an extra fusion module. Evaluated on seven WSI classification tasks under several foundation-model combinations, the framework sharpens calibration, misclassification detection, and selective prediction relative to both the strongest single-encoder baseline and naive ensemble averaging, all while preserving competitive balanced accuracy.",
+        "comment": "accepted by IEEE BIBM 2026",
+        "abs": "https://arxiv.org/abs/2611.26159",
+        "pdf": "https://arxiv.org/pdf/2611.26159",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.26195",
+      "title": "A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data",
+      "exclude": true,
+      "reason": "remote_sensing",
+      "label": "遥感与地球观测",
+      "field": "title",
+      "matched_text": "synthetic aperture radar",
+      "paper": {
+        "id": "2611.26195",
+        "title": "A version of the Cloude/van Zyl decomposition for full/quad pol synthetic aperture radar data",
+        "authors": [
+          "Allan Aasbjerg Nielsen",
+          "Paul Jacques Connetable",
+          "Henning Skriver",
+          "Knut Conradsen"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "summary": "Based on the Cloude/van Zyl decomposition of reflection symmetric polarimetric SAR data we present a version for full/quad polarisation data. We demonstrate both versions on X-band F-SAR data over Vejers, Denmark. Differences between the original and our version of the decomposition occur especially for very bright man-made targets. These differences come with lower entropy for our version giving an improved focus on a more pronounced dominant scattering mechanism for these objects. Interpretation of the scattering mechanism related to the full/quad pol version of the decomposition is facilitated by means of the Cloude/Pottier $\\bar{\\alpha}$ angle.",
+        "comment": "11 pages, 5 figures",
+        "abs": "https://arxiv.org/abs/2611.26195",
+        "pdf": "https://arxiv.org/pdf/2611.26195",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.26316",
+      "title": "C-LiTE: A Lightweight Foundation Model for Cellular feature learning in Histopathology",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "Histopathology",
+      "paper": {
+        "id": "2611.26316",
+        "title": "C-LiTE: A Lightweight Foundation Model for Cellular feature learning in Histopathology",
+        "authors": [
+          "Esha Sadia Nasir",
+          "Jiaqi Lv",
+          "Gozde N. Gunesli",
+          "Shan E Ahmed Raza"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Characterising individual cells is fundamental to computational pathology, as cellular morphology informs tasks such as tumour grading, mitotic assessment and immune profiling. However, most pathology foundation models are trained on tissue patches and capture cellular features only implicitly, while existing cell-level models are either restricted to specific cell populations or rely on computationally expensive architectures with hundreds of millions of parameters. Applying ViTs directly to small cellular crops also presents an architectural challenge: upsampling increases computational cost without adding morphological information and may introduce interpolation artefacts. To address these limitations, we introduce C-LiTE, a lightweight foundation model for cellular representation learning in H&E-stained histopathology, with only 22 million parameters. C-LiTE employs a native-resolution tokenisation strategy tailored to cellular inputs, processing 64 x 64 px cell-centred crops using a 4 x 4 patch embedding to produce a 16 x 16 token grid without image upsampling. To transfer visual knowledge from large-scale pre-training, we adapt the patch embedding weights of a pre-trained ViT-5-S using a pseudoinverse-based transformation, enabling weight initialisation at the finer patch resolution. We further assemble a pre-training dataset of 60 million cell-centred crops from TCGA, balanced across 19 cancer types and 16 tissue types. To our knowledge, this represents the largest public dataset for self-supervised pre-training on H&E images at the cellular level. We evaluate C-LiTE on seven public datasets spanning mitotic figure recognition, nucleus and cell-type classification, and immune cell phenotyping. Under frozen-feature evaluation, C-LiTE achieves a mean macro-F1 of 0.670, approaching CytoFormer (0.682) with approximately 30x fewer parameters.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.26316",
+        "pdf": "https://arxiv.org/pdf/2611.26316",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    },
+    {
+      "id": "2611.26562",
+      "title": "Multi-institutional grading of Barrett's esophagus dysplasia without stain normalization using a pathology foundation model and multiple instance learning",
+      "exclude": true,
+      "reason": "medical_biological",
+      "label": "医学影像与生物应用",
+      "field": "title",
+      "matched_text": "pathology",
+      "paper": {
+        "id": "2611.26562",
+        "title": "Multi-institutional grading of Barrett's esophagus dysplasia without stain normalization using a pathology foundation model and multiple instance learning",
+        "authors": [
+          "Amirali Khosravi",
+          "Jaidip M. Jagtap",
+          "D. Chamil Codipilly",
+          "Catherine E. Hagen",
+          "Jason T. Lewis",
+          "Rickey E. Carter",
+          "Shahriar Faghani",
+          "Vani J. A. Konda",
+          "Fouad Otaki",
+          "Shajan Peter",
+          "Nicholas Shaheen",
+          "Sachin Wani",
+          "Prasad G. Iyer",
+          "Bradley J. Erickson"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "summary": "Barrett's esophagus dysplasia grading suffers substantial inter-observer variability, particularly for low-grade dysplasia, complicating clinical decision-making. We conducted a retrospective multi-institutional diagnostic accuracy study of a foundation model-based deep learning system for dysplasia grading, using 969 H\\&E-stained whole slide images from four institutions. Patch-level classifiers trained on expert annotations identified diagnostically relevant regions, followed by attribute-aware multiple instance learning for slide-level classification as non-dysplastic Barrett's esophagus (NDBE), low-grade dysplasia, or high-grade dysplasia. On a held-out test set (n = 130), macro-averaged AUC was 0.96 (95\\% CI 0.93--0.98). For binary dysplasia detection, sensitivity was 98\\% (80/82) and specificity 81\\% (39/48), with a negative likelihood ratio of 0.030 and quadratic-weighted \\kap{} of 0.83 against expert consensus. No high-grade dysplasia case was misclassified as NDBE. Performance was consistent across institutions without stain normalization, indicating that stain-robust foundation-model representations may remove the site-specific preprocessing that has constrained prior systems to institution-specific deployment.",
+        "comment": null,
+        "abs": "https://arxiv.org/abs/2611.26562",
+        "pdf": "https://arxiv.org/pdf/2611.26562",
+        "listing_date": "2026-11-20",
+        "listing_type": "new"
+      }
+    }
+  ]
+}
